@@ -15,13 +15,13 @@
   height: 39.78px;
   background-color: $basic-white;
 
-    &--chosen {
-      background-color: $basic-blue-light;
-      color: $basic-white;
-    }
+  &--chosen {
+    background-color: $basic-blue-light;
+    color: $basic-white;
+  }
 
-    &--chosen-grey {
-      background: $basic-grey;
-      color: $basic-blue-light;
-    }
+  &--chosen-grey {
+    background: $basic-grey;
+    color: $basic-blue-light;
+  }
 }

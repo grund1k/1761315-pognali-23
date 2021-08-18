@@ -1,5 +1,4 @@
 // Global
-@import "global/normalize.scss";
 @import "global/fonts.scss";
 @import "global/veriables.scss";
 @import "global/visually-hidden.scss";
@@ -48,12 +47,10 @@
 @import "blocks/companions.scss";
 @import "blocks/user-profile.scss";
 @import "blocks/desire-countries.scss";
-@import "blocks/paginatione.scss";
 
 //Form
 @import "blocks/profile-settings.scss";
 @import "blocks/tags-form.scss";
-@import "blocks/transport-form.scss";
 @import "blocks/plans.scss";
 @import "blocks/plans-cards.scss";
 @import "blocks/add-plan.scss";
@@ -61,6 +58,5 @@
 @import "blocks/counter.scss";
 @import "blocks/month-slider.scss";
 @import "blocks/calendar.scss";
-@import "blocks/country-selector.scss";
 @import "blocks/countries-dropdown.scss";
 @import "blocks/country-enviroment.scss";

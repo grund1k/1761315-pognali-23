@@ -1,6 +1,6 @@
 .users {
   background-color: $text-blue;
-  background-image: url(../../img/back.png);
+  background-image: url("../../img/back.png");
   background-repeat: no-repeat;
   background-position: center 40px;
 }
@@ -19,9 +19,9 @@
   padding: 0;
   margin: 0 0 25px;
 
-    &--bold {
-      font-weight: bold;
-    }
+  &--bold {
+    font-weight: bold;
+  }
 }
 
 .users__cards-list {

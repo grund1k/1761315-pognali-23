@@ -11,9 +11,10 @@
   font-size: 14px;
   line-height: 18px;
   color: $special-grey;
-    &--weekend {
-      color: $red;
-    }
+
+  &--weekend {
+    color: $red;
+  }
 }
 
 .calendar__day,

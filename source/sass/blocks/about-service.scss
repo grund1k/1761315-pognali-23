@@ -1,6 +1,6 @@
 .about-service {
   background-color: $text-blue;
-  background-image: url(../../img/about-mobile.png);
+  background-image: url("../../img/about-mobile.png");
   background-repeat: no-repeat;
   background-position: bottom;
 }
@@ -18,9 +18,9 @@
   margin: 0 0 20px;
   padding: 0;
 
-    &--bold {
-      font-weight: bold;
-      padding-bottom: 82px;
-      margin: 0;
-    }
+  &--bold {
+    font-weight: bold;
+    padding-bottom: 82px;
+    margin: 0;
+  }
 }

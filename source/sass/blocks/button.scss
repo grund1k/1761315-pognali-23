@@ -11,23 +11,23 @@
   text-decoration: none;
   padding: 22px 22px 20px 23px;
 
-    &--blue-border {
-      border: 3px solid #192144;
-      border-radius: 10px;
-    }
+  &--blue-border {
+    border: 3px solid #192144;
+    border-radius: 10px;
+  }
 
-    &--blue {
-      background-color: $button-blue;
-      border-radius: 20px;
-      padding: 12.5px 68px;
-    }
+  &--blue {
+    background-color: $button-blue;
+    border-radius: 20px;
+    padding: 12.5px 68px;
+  }
 
-    &--round {
-      font-weight: bold;
-      font-size: 17px;
-      line-height: 30px;
-      text-transform: uppercase;
-      padding: 7px 29px 7px 31px;
-      border-radius: 20px;
-    }
+  &--round {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 30px;
+    text-transform: uppercase;
+    padding: 7px 29px 7px 31px;
+    border-radius: 20px;
+  }
 }
