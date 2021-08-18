@@ -1,0 +1,19 @@
+.button-authorization{
+  display: inline-block;
+  vertical-align: middle;
+  background-color: $button-yellow;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $text-dark-blue;
+  border-radius: 25px;
+  padding: 12px 81px 8px 78px;
+
+  &--small{
+    line-height: 20px;
+    border-radius: 25px;
+    padding: 12px 40px 8px 40px;
+  }
+}

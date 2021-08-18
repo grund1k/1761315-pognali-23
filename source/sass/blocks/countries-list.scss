@@ -1,0 +1,13 @@
+.countries-list {
+  list-style: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: $special-grey;
+}
+
+.countries-list__link {
+  color: $special-grey;
+  text-decoration: none;
+}

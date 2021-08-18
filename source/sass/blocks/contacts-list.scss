@@ -1,0 +1,25 @@
+.contacts-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.contacts-list__item:last-child {
+  margin-bottom: 41px;
+}
+
+.contacts-list__link {
+  text-decoration: none;
+  color: $text-blue;
+    &--yellow {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 22px;
+      color: $button-yellow;
+    }
+}

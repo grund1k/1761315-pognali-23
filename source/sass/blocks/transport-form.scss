@@ -1,0 +1,26 @@
+.transport-form__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $basic-blue-light;
+  margin-bottom: 19px;
+}
+
+.transport-from__legend {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $basic-blue-light;
+}
+
+.transport-form__fieldset {
+  border: 1px solid #CBCED9;
+  border-radius: 10px;
+  width: 270px;
+  height: 63px;
+  margin-bottom: 34px;
+}

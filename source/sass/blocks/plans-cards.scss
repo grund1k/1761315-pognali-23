@@ -1,0 +1,48 @@
+.plans-cards{
+  list-style: none;
+}
+
+.plans-cards__item {
+  background-color: $basic-white;
+  padding: 24px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.plans-cards__item:last-child {
+  margin-bottom: 30px;
+}
+
+.plans-cards__countries {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  color: $basic-blue-light;
+  margin-bottom: 20px;
+}
+
+.plans-cards__text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $basic-blue-light;
+  margin: 0;
+  padding: 0;
+}
+
+.plans-cards__change-link {
+  margin-top: 24px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $black;
+  opacity: 0.3;
+}

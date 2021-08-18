@@ -1,1 +1,66 @@
-// Начните писать стили здесь
+// Global
+@import "global/normalize.scss";
+@import "global/fonts.scss";
+@import "global/veriables.scss";
+@import "global/visually-hidden.scss";
+@import "global/container.scss";
+
+//Blocks
+@import "blocks/page-body.scss";
+@import "blocks/page-header.scss";
+@import "blocks/nav.scss";
+@import "blocks/nav-list";
+@import "blocks/button-authorization.scss";
+@import "blocks/contacts-list.scss";
+@import "blocks/social-list.scss";
+@import "blocks/page-main.scss";
+@import "blocks/description.scss";
+@import "blocks/quote.scss";
+@import "blocks/usage-steps.scss";
+@import "blocks/title.scss";
+@import "blocks/about-service.scss";
+@import "blocks/directions.scss";
+@import "blocks/direction-card.scss";
+@import "blocks/button.scss";
+@import "blocks/users.scss";
+@import "blocks/user-card.scss";
+@import "blocks/country-list.scss";
+@import "blocks/transport-list.scss";
+@import "blocks/add-profile.scss";
+@import "blocks/rate-list.scss";
+@import "blocks/registration.scss";
+@import "blocks/login-link.scss";
+@import "blocks/map.scss";
+@import "blocks/page-footer.scss";
+
+
+//Catalog
+@import "blocks/country-filter.scss";
+@import "blocks/continent-list.scss";
+@import "blocks/alphabet-search.scss";
+@import "blocks/countries-list.scss";
+@import "blocks/companion-filter.scss";
+@import "blocks/companion-hobby.scss";
+@import "blocks/music-form.scss";
+@import "blocks/food-form.scss";
+@import "blocks/transport-form.scss";
+@import "blocks/level-form.scss";
+@import "blocks/companions.scss";
+@import "blocks/user-profile.scss";
+@import "blocks/desire-countries.scss";
+@import "blocks/paginatione.scss";
+
+//Form
+@import "blocks/profile-settings.scss";
+@import "blocks/tags-form.scss";
+@import "blocks/transport-form.scss";
+@import "blocks/plans.scss";
+@import "blocks/plans-cards.scss";
+@import "blocks/add-plan.scss";
+@import "blocks/step.scss";
+@import "blocks/counter.scss";
+@import "blocks/month-slider.scss";
+@import "blocks/calendar.scss";
+@import "blocks/country-selector.scss";
+@import "blocks/countries-dropdown.scss";
+@import "blocks/country-enviroment.scss";

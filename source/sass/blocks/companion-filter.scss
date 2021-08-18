@@ -1,0 +1,30 @@
+.companion-filter__wrapper {
+  background-color: $button-yellow;
+  border-radius: 20px;
+  padding: 26px 25px 22px 25px;
+  margin-bottom: 28px;
+}
+
+.companion-filter__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: $basic-blue-light;
+  margin-bottom: 23px;
+}
+
+.companion-filter__submit-button {
+  border: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $dark-blue;
+  background: $basic-white;
+  border-radius: 25px;
+  padding: 14px 73px;
+}

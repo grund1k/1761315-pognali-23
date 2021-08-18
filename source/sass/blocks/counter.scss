@@ -1,0 +1,19 @@
+.counter__title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: $basic-blue-light;
+}
+
+.counter__dimension {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: right;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: $basic-blue-light;
+  opacity: 0.3;
+}

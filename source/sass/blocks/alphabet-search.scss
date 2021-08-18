@@ -1,0 +1,27 @@
+.alphabet-search {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $basic-blue-light;
+  border-collapse: collapse;
+}
+
+.alphabet-search__table-cell {
+  border: 1px solid $border-grey;
+  width: 42px;
+  height: 39.78px;
+  background-color: $basic-white;
+
+    &--chosen {
+      background-color: $basic-blue-light;
+      color: $basic-white;
+    }
+
+    &--chosen-grey {
+      background: $basic-grey;
+      color: $basic-blue-light;
+    }
+}

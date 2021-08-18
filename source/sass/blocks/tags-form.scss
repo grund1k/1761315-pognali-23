@@ -1,0 +1,26 @@
+.tags-form {
+  border: 1px solid #CBCED9;
+  border-radius: 10px;
+}
+
+.tags-form__legend {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $basic-blue-light;
+}
+
+.tags-form__textarea {
+  width: 270px;
+  height: 89px;
+  font-size: 16px;
+  line-height: 18px;
+  color: $special-grey;
+  opacity: 0.6;
+  border: none;
+  background-color: inherit;
+  padding: 17px 28px 26px 25px;
+  box-sizing: border-box;
+}
