@@ -1,6 +1,5 @@
 .calendar {
-  font-weight: 500;
-  font-size: 14px;
+  @include text-small-medium;
   line-height: 18px;
   color: $basic-blue-light;
   border-collapse: collapse;
@@ -8,8 +7,6 @@
 
 .calendar__day {
   font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
   color: $special-grey;
 
   &--weekend {

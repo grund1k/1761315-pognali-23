@@ -1,10 +1,8 @@
 .countries-list {
-  list-style: none;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
+  @include text;
   line-height: 22px;
   color: $special-grey;
+  list-style: none;
 }
 
 .countries-list__link {

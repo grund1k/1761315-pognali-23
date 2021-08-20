@@ -1,7 +1,5 @@
 .alphabet-search {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
+  @include text-small-medium;
   line-height: 14px;
   text-align: center;
   text-transform: uppercase;

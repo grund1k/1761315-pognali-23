@@ -1,14 +1,11 @@
 .quoute {
-  font-size: 16px;
-  line-height: 22px;
-  margin: 0 0 29px;
+  @include text-light;
+  margin: 0 0 29px 0;
   padding: 0;
 }
 
 .quoute__paragraph {
-  font-weight: 300;
-  margin: 0 0 18px;
-  padding: 0;
+  margin: 0 0 18px 0;
 }
 
 .quoute__author {

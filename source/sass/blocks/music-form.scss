@@ -1,16 +1,9 @@
 .music-form__title {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: $basic-blue-light;
+  @include form-title;
   margin-bottom: 16px;
 }
 
 .music-filter__label {
-  font-style: normal;
-  font-weight: normal;
   font-size: 15px;
   line-height: 20px;
   color: $black;

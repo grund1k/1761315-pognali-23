@@ -7,37 +7,26 @@
 }
 
 .user-profile__user-name {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 20px;
-  color: $basic-blue-light;
+  @include h3-blue;
   margin: 0;
-  padding: 0;
 }
 
 .user-profile__likes-number {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
+  @include text-small-bold;
   line-height: 16px;
   text-transform: uppercase;
   color: $text-dark-blue;
 }
 
 .user-profile__user-tags {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
+  @include text-meduim-15-size;
   line-height: 18px;
   color: $special-grey;
 }
 
 .user-profile__wish-list-title,
 .user-profile__transport-list-title {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
+  @include text-meduim-15-size;
   line-height: 16px;
   color: $special-grey;
 }
@@ -48,14 +37,11 @@
 }
 
 .user-profile__choose-button {
-  text-decoration: none;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 17px;
+  @include button-text;
   line-height: 17px;
   text-align: center;
-  text-transform: uppercase;
   color: $text-dark-blue;
+  text-decoration: none;
   padding: 14px 78px 13px;
   background-color: $button-yellow;
   border-radius: 25px;

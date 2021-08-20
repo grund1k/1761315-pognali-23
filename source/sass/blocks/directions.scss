@@ -1,17 +1,16 @@
 .ditections {
   background-color: $basic-grey;
+  padding-top: 71px;
+  padding-bottom: 34px;
 }
 
-.direction__title {
-  padding-top: 71px;
+.directions__title {
+  @include h2-orange;
   margin-bottom: 19px;
 }
 
-.direction__text {
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 22px;
+.directions__text {
+  @include text-light;
   color: $special-grey;
   margin-bottom: 60px;
 }

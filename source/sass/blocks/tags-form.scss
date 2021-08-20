@@ -1,24 +1,25 @@
 .tags-form {
+  @include text;
   border: 1px solid $border-grey;
   border-radius: 10px;
+  padding: 0;
 }
 
 .tags-form__legend {
-  font-style: normal;
   font-weight: bold;
-  font-size: 16px;
   text-align: center;
   text-transform: uppercase;
   color: $basic-blue-light;
 }
 
 .tags-form__textarea {
-  width: 270px;
-  height: 89px;
-  font-size: 16px;
+  @include text;
   line-height: 18px;
+  font-family: inherit;
   color: $special-grey;
   opacity: 0.6;
+  width: 268px;
+  height: 89px;
   border: none;
   background-color: inherit;
   padding: 17px 28px 26px 25px;

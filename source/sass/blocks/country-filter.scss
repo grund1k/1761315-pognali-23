@@ -1,22 +1,15 @@
 .country-filter {
   background-color: $filter-blue;
-}
-
-.country-filter__wrapper {
   padding-top: 20px;
   padding-bottom: 28px;
-  margin-bottom: 21px;
 }
 
 .country-filter__title {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
+  @include text-bold;
   line-height: 18px;
   text-transform: uppercase;
   color: $text-blue;
   margin: 0;
-  padding: 0;
 }
 
 .country-filter__continent-list {
@@ -30,13 +23,11 @@
 
 .country-filter__countries-list {
   padding: 0;
-  margin: 0 0 28px;
+  margin: 0 0 28px 0;
 }
 
 .country-filter__bottom-close-button {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
+  @include text-bold;
   line-height: 20px;
   letter-spacing: 0.05em;
   text-transform: uppercase;

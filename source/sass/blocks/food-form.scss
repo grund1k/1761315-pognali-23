@@ -1,9 +1,4 @@
 .food-form__title {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: $basic-blue-light;
+  @include form-title;
   margin-bottom: 12px;
 }

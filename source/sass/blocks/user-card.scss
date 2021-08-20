@@ -9,25 +9,20 @@
 }
 
 .user-card__name {
-  font-style: normal;
   font-weight: bold;
   font-size: 21px;
   line-height: 21px;
   text-align: center;
   color: $basic-blue-light;
-  margin: 0 0 15px;
-  padding: 0;
+  margin: 0 0 15px 0;
 }
 
 .user-card__tags {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
+  @include text;
   line-height: 18px;
   text-align: center;
   color: $special-grey;
   margin: 0;
-  padding: 0;
 }
 
 .users__cards-item:last-child {

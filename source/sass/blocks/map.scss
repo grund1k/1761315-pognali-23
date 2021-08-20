@@ -5,10 +5,12 @@
 }
 
 .map__address {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
+  @include text-bold;
   line-height: 22px;
   text-transform: uppercase;
   color: $basic-blue-light;
+}
+
+.map__link {
+  text-decoration: none;
 }

@@ -3,9 +3,7 @@
 }
 
 .desire-counties__name {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
+  @include text-meduim-15-size;
   line-height: 16px;
   text-transform: uppercase;
   color: $basic-blue-light;

@@ -6,24 +6,16 @@
 }
 
 .companion-filter__title {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 22px;
+  @include h2-small-blue;
   letter-spacing: 0.02em;
-  color: $basic-blue-light;
   margin-bottom: 23px;
 }
 
 .companion-filter__submit-button {
-  border: none;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 17px;
+  @include button-text;
   line-height: 17px;
-  text-align: center;
-  text-transform: uppercase;
   color: $dark-blue;
+  border: none;
   background: $basic-white;
   border-radius: 25px;
   padding: 14px 73px;

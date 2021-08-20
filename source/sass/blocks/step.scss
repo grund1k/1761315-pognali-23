@@ -1,23 +1,20 @@
+.step {
+  padding: 24px 24px 23px 24px;
+}
+
 .step__title {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 20px;
-  color: $basic-blue-light;
+  @include h3-blue;
 }
 
 .step__description {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
+  @include text;
   line-height: 22px;
   color: $special-grey;
-  margin: 0 0 20px;
+  margin: 0 0 20px 0;
 }
 
 .step__children-checkbox {
-  font-weight: normal;
-  font-size: 15px;
+  @include text-meduim-15-size;
   line-height: 15px;
   color: $basic-blue-light;
 }
@@ -27,18 +24,15 @@
 }
 
 .step__button-previous {
+  @include button-text;
   text-decoration: none;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 17px;
   line-height: 30px;
   letter-spacing: 0.01em;
-  text-transform: uppercase;
   color: $basic-blue-light;
 }
 
 .step__button-submit {
-  font-size: 17px;
+  @include button-text;
   line-height: 30px;
   padding: 8px 70px;
   border: none;

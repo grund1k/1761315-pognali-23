@@ -1,14 +1,10 @@
 .button {
-  display: inline-block;
-  vertical-align: middle;
-  background-color: $button-yellow;
-  border-radius: 10px;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
+  @include text-large-bold;
   line-height: 18px;
   color: $basic-blue-light;
   text-decoration: none;
+  background-color: $button-yellow;
+  border-radius: 10px;
   padding: 22px 22px 20px 23px;
 
   &--blue-border {
@@ -23,10 +19,8 @@
   }
 
   &--round {
-    font-weight: bold;
-    font-size: 17px;
+    @include button-text;
     line-height: 30px;
-    text-transform: uppercase;
     padding: 7px 29px 7px 31px;
     border-radius: 20px;
   }

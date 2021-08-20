@@ -3,6 +3,7 @@
 @import "global/veriables.scss";
 @import "global/visually-hidden.scss";
 @import "global/container.scss";
+@import "global/mixins.scss";
 
 //Blocks
 @import "blocks/page-body.scss";
@@ -16,7 +17,6 @@
 @import "blocks/description.scss";
 @import "blocks/quote.scss";
 @import "blocks/usage-steps.scss";
-@import "blocks/title.scss";
 @import "blocks/about-service.scss";
 @import "blocks/directions.scss";
 @import "blocks/direction-card.scss";

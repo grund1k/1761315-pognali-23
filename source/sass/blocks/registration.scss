@@ -1,21 +1,16 @@
 .registration {
   background-color: $text-blue;
+  padding-top: 72px;
+  padding-bottom: 29px;
 }
 
 .registration__title {
-  padding-top: 72px;
-  margin-bottom: 19px;
+  @include h2-orange;
   text-align: center;
+  margin-bottom: 19px;
 }
 
 .registration__text {
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 22px;
+  @include text-light;
   text-align: center;
-}
-
-.registration__conatacts-list:last-child {
-  padding-bottom: 29px;
 }

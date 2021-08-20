@@ -5,9 +5,7 @@
 }
 
 .page-footer__link-text {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
+  @include text;
   line-height: 16px;
   color: $special-grey;
 }
