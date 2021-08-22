@@ -1,0 +1,7 @@
+.companion-hobby__title {
+  @include text-bold;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $basic-blue-light;
+  margin-bottom: 12px;
+}

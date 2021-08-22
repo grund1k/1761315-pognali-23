@@ -1,0 +1,16 @@
+.registration {
+  background-color: $text-blue;
+  padding-top: 72px;
+  padding-bottom: 29px;
+}
+
+.registration__title {
+  @include h2-orange;
+  text-align: center;
+  margin-bottom: 19px;
+}
+
+.registration__text {
+  @include text-light;
+  text-align: center;
+}

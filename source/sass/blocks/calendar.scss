@@ -1,0 +1,26 @@
+.calendar {
+  @include text-small-medium;
+  line-height: 18px;
+  color: $basic-blue-light;
+  border-collapse: collapse;
+}
+
+.calendar__day {
+  font-weight: normal;
+  color: $special-grey;
+
+  &--weekend {
+    color: $red;
+  }
+}
+
+.calendar__day,
+.calendar__date {
+  width: 32px;
+  height: 32px;
+}
+
+.calendar__date {
+  border: 1px solid $calendar-table-grey;
+  text-align: center;
+}

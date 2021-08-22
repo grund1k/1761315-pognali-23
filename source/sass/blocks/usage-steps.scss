@@ -1,0 +1,26 @@
+.usage-steps {
+  @include text-large-bold;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 18px;
+  color: $text-dark-blue;
+}
+
+.usage-steps__item {
+  padding: 22px 21px 24px 24px;
+  border-radius: 10px;
+
+  &:not(:first-child) {
+    margin-top: -20px;
+  }
+
+  $colors-list: $special-orange $usage-steps-orange $usage-steps-yellow-dark $button-yellow;
+
+  @each $current-color in $colors-list {
+    $i: index($colors-list, $current-color);
+    &:nth-child(#{$i}) {
+      background-color: $current-color;
+    }
+  }
+}

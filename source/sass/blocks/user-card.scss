@@ -1,0 +1,30 @@
+.user-card {
+  background-color: $basic-white;
+  border-radius: 10px;
+}
+
+.user-card__photo {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.user-card__name {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  text-align: center;
+  color: $basic-blue-light;
+  margin: 0 0 15px 0;
+}
+
+.user-card__tags {
+  @include text;
+  line-height: 18px;
+  text-align: center;
+  color: $special-grey;
+  margin: 0;
+}
+
+.users__cards-item:last-child {
+  margin-bottom: 20px;
+}

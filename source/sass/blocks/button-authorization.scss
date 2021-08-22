@@ -1,0 +1,15 @@
+.button-authorization {
+  @include button-text;
+  line-height: 30px;
+  text-decoration: none;
+  color: $text-dark-blue;
+  background-color: $button-yellow;
+  border-radius: 25px;
+  padding: 12px 81px 8px 78px;
+
+  &--small {
+    line-height: 20px;
+    border-radius: 25px;
+    padding: 12px 40px 8px 40px;
+  }
+}

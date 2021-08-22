@@ -1,0 +1,82 @@
+.add-profile {
+  background: $grey-blue;
+  padding-top: 53px;
+}
+
+.add-profile__title {
+  @include h2-orange;
+  position: relative;
+  margin: 0 0 43px 0;
+  width: 107px;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-image: url("../img/rates.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 37px;
+    left: 145px;
+  }
+}
+
+.add-profile__modal {
+  @include text-bold;
+  line-height: 16px;
+  color: $light-blue;
+  text-decoration: none;
+}
+
+.add-profile__modal-popup {
+  width: 270px;
+  background: $basic-white;
+  box-shadow: 0 2px 8px rgba(29, 46, 91, 0.14);
+  border-radius: 20px;
+}
+
+.add-profile__modal-wrapper {
+  padding: 34px 26px 34px 25px;
+}
+
+.add-profile__modal-title {
+  @include h2-orange;
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.add-profile__modal-list {
+  @include text-light;
+  line-height: 22px;
+  color: $special-grey;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.add-profile__modal-item:last-child {
+  margin-bottom: 34px;
+}
+
+.add-profile__modal-text {
+  margin: 0;
+}
+
+.add-profile__modal-tax {
+  margin: 0;
+}
+
+.add-profile__modal-close {
+  @include text-bold;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $basic-blue-light;
+  background-color: $light-grey;
+  padding: 21px 0;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: 100%;
+  border: none;
+}

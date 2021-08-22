@@ -1,0 +1,22 @@
+.about-service {
+  padding-top: 279px;
+  padding-bottom: 82px;
+  background-color: $text-blue;
+  background-image: url("../img/about-mobile.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.about-service__title {
+  @include h2-orange;
+}
+
+.about-service__text {
+  @include text-light;
+  margin: 0 0 20px 0;
+
+  &--bold {
+    font-weight: bold;
+    margin: 0;
+  }
+}

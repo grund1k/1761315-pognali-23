@@ -1,0 +1,20 @@
+.transport-form__title {
+  @include form-title;
+  margin-bottom: 19px;
+}
+
+.transport-from__legend {
+  @include text-bold;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $basic-blue-light;
+}
+
+.transport-form__fieldset {
+  border: 1px solid $border-grey;
+  border-radius: 10px;
+  width: 268px;
+  height: 63px;
+  padding: 0;
+}

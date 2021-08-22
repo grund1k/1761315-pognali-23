@@ -1,0 +1,19 @@
+.rate-list {
+  @include text-light;
+  color: $special-grey;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.rate-list__item {
+  line-height: 16px;
+}
+
+.rate-list__text {
+  margin: 0 0 6px 0;
+}
+
+.rate-list__tax {
+  margin: 0 0 16px 0;
+}

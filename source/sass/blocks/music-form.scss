@@ -1,0 +1,10 @@
+.music-form__title {
+  @include form-title;
+  margin-bottom: 16px;
+}
+
+.music-filter__label {
+  font-size: 15px;
+  line-height: 20px;
+  color: $black;
+}

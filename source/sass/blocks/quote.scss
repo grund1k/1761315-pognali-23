@@ -1,0 +1,14 @@
+.quoute {
+  @include text-light;
+  margin: 0 0 29px 0;
+  padding: 0;
+}
+
+.quoute__paragraph {
+  margin: 0 0 18px 0;
+}
+
+.quoute__author {
+  font-weight: bold;
+  font-style: normal;
+}

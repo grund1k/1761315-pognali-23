@@ -1,0 +1,29 @@
+.users {
+  background-color: $text-blue;
+  background-image: url("../img/back.png");
+  background-repeat: no-repeat;
+  background-position: center 40px;
+  padding-top: 70px;
+  padding-bottom: 31px;
+}
+
+.users__title {
+  @include h2-orange;
+  margin: 0 0 19px 0;
+}
+
+.users__text {
+  @include text-light;
+  color: $basic-white;
+  margin: 0 0 25px 0;
+
+  &--bold {
+    font-weight: bold;
+  }
+}
+
+.users__cards-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,16 @@
+.add-plan {
+  background: $add-plan-background;
+  padding-top: 30px;
+  padding-bottom: 43px;
+}
+
+.add-plan__title {
+  @include h2-blue;
+  margin-bottom: 0 0 29px 0;
+}
+
+.add-plan__step {
+  background-color: $basic-white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}

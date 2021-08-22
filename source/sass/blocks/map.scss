@@ -1,0 +1,16 @@
+.map__wrapper {
+  background-color: $button-yellow;
+  padding-top: 31px;
+  padding-bottom: 35px;
+}
+
+.map__address {
+  @include text-bold;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: $basic-blue-light;
+}
+
+.map__link {
+  text-decoration: none;
+}

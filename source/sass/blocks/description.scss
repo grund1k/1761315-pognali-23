@@ -1,0 +1,18 @@
+.description {
+  background-color: $dark-blue;
+  background-image:
+    url("../img/traveller-illustration1.png"),
+    url("../img/globe-back-1.png");
+  background-repeat: no-repeat;
+  background-position:
+    50% 40%,
+    center 0;
+}
+
+.description__title {
+  @include h1;
+  line-height: 40px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 245px;
+}

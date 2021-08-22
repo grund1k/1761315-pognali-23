@@ -1,0 +1,11 @@
+.countries-list {
+  @include text;
+  line-height: 22px;
+  color: $special-grey;
+  list-style: none;
+}
+
+.countries-list__link {
+  color: $special-grey;
+  text-decoration: none;
+}
