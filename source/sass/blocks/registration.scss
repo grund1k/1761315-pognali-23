@@ -12,3 +12,9 @@
 .registration__text {
   text-align: center;
 }
+
+.registration__conatacts-list {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}

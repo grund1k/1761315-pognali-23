@@ -8,23 +8,16 @@
   </head>
   <body class="page-body body-1">
     <header class="page-header">
-    <!-- <header class="page-header page-header--statick page-header--sticky"> -->
-      <!-- <div class="container">
-        <a class="page-header__logo-link">
-          <img class="page-header__logo" src="img/logo_text.svg" alt="Логотип «Погнали»" width="96" height="15">
-        </a>
-        <button class="page-header__nav-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      </div> -->
       <nav class="nav nav--menu-opened">
-        <div class="container">
+        <div class="container nav__wrapper">
           <div class="nav__logo-wrapper">
             <a class="nav__logo-link">
-              <img class="page-header__logo" src="img/logo_text.svg" alt="Логотип «Погнали»" width="96" height="15">
+              <img class="nav__logo" src="img/logo_text.svg" alt="Логотип «Погнали»" width="96" height="15">
             </a>
             <button class="nav__toggle" type="button" aria-label="Открыть меню"></button>
           </div>
           <div class="nav__menu-wrapper">
-            <ul class="nav-list medium">
+            <ul class="nav__site-list nav-list medium">
               <li class="nav-list__item">
                 <a class="nav-list__link blue" href="#">О сервисе</a>
               </li>
@@ -74,20 +67,22 @@
     <main class="page-main">
       <h1 class="visually-hidden"> Онлайн-площадка подбора попутчиков «Погнали»</h1>
       <section class="description">
-        <div class="container">
+        <div class="container description__wrapper">
           <p class="description__title h1">В путешествие с крутыми попутчиками!</p>
           <h2 class="visually-hidden">Как пользоваться сервисом</h2>
-          <ul class="description__conatacts contacts-list">
-            <li class="contacts-list__item">
-              <img src="img/icon_phone_btn.svg" alt="Иконка телефона" width="40" height="40">
-              <a class="contacts-list__link" href="tel:88005558628"><span class="visually-hidden">8 800 555-86-28</span></a>
-            </li>
-            <li class="contacts-list__item">
-              <img src="img/icon_mail_btn.svg" alt="Иконка E-mail" width="40" height="40">
-              <a class="contacts-list__link" href="mailto:mail@htmlacademy.ru"><span class="visually-hidden">mail@htmlacademy.ru</span></a>
-            </li>
-          </ul>
-          <a class="description__button-authorization button button--authorization button--yellow dark-blue" href="#">Авторизация</a>
+          <div class="description__interaction-buttons">
+            <ul class="description__conatacts contacts-list">
+              <li class="contacts-list__item">
+                <img src="img/icon_phone_btn.svg" alt="Иконка телефона" width="40" height="40">
+                <a class="contacts-list__link" href="tel:88005558628"><span class="visually-hidden">8 800 555-86-28</span></a>
+              </li>
+              <li class="contacts-list__item">
+                <img src="img/icon_mail_btn.svg" alt="Иконка E-mail" width="40" height="40">
+                <a class="contacts-list__link" href="mailto:mail@htmlacademy.ru"><span class="visually-hidden">mail@htmlacademy.ru</span></a>
+              </li>
+            </ul>
+            <a class="description__button-authorization button button--authorization button--yellow dark-blue" href="#">Авторизация</a>
+          </div>
           <blockquote class="description__quoute quoute">
             <p class="quoute__paragraph light">«Лучшее приложение,<br>
               что я видел в жизни!»</p>
@@ -96,7 +91,7 @@
               главный редактор<br>
               газеты «гаджетлайф»</cite>
           </blockquote>
-          <ol class="usage-steps subtitle bold dark-blue">
+          <ol class="descroption__list usage-steps subtitle bold dark-blue">
             <li class="usage-steps__item">
               Выберите<br>
               направление
@@ -116,23 +111,25 @@
           </ol>
         </div>
       </section>
-      <section class="about-service">
+      <section class="about-service"> <!--Тут не вижу смысла делать сетку, достаточно будет ограничить ширину текста, на этапе пиксель перфекта-->
         <div class="container">
           <h2 class="about-service__title h2 orange">О сервисе</h2>
           <p class="about-service__text light">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
           <p class="about-service__text bold">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
         </div>
       </section>
-      <section class="ditections">
-        <div class="container">
-          <h2 class="directions__title h2 orange">Направления</h2>
-          <p class="directions__text light special-grey">
-            Мы не продаем туры<br>
-            и ничего не рекламируем.<br>
-            Люди сами пишут о странах,<br>
-            куда хотели бы отправиться<br>
-            и чем можно там заняться.
-          </p>
+      <section class="directions">
+        <div class="container directions__wrapper">
+          <div class="directions__text-wrapper">
+            <h2 class="directions__title h2 orange">Направления</h2>
+            <p class="directions__text light special-grey">
+              Мы не продаем туры<br>
+              и ничего не рекламируем.<br>
+              Люди сами пишут о странах,<br>
+              куда хотели бы отправиться<br>
+              и чем можно там заняться.
+            </p>
+          </div>
           <ul class="directions__cards-list">
             <li class="directions__cards-item direction-card medium">
               <img class="direction-card__pic" src="img/thailand-w270.png" alt="Тайланд" width="270" height="110">
@@ -182,12 +179,14 @@
       </section>
 
       <section class="users">
-        <div class="container">
-          <h2 class="users__title h2 orange">Попутчики</h2>
-          <p class="users__text light">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
-          <p class="user__text bold">
-            Теперь можно легко найти<br>
-            единомышленников!</p>
+        <div class="container users__wrapper">
+          <div class="users__text-wrapper">
+            <h2 class="users__title h2 orange">Попутчики</h2>
+            <p class="users__text light">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
+            <p class="user__text bold">
+              Теперь можно легко найти<br>
+              единомышленников!</p>
+          </div>
           <ul class="users__cards-list">
             <li class="users__cards-item user-card">
               <img class="user-card__photo" src="img/user-image-tatiyana_w270.jpg" alt="Фотография пользователя" width="270" height="270">
@@ -346,7 +345,7 @@
     </main>
 
     <footer class="page-footer">
-      <div class="container">
+      <div class="container page-footer__wrapper">
         <img src="img/logo_footer.svg" alt="Логотип «Погнали»" width="96" height="15">
         <ul class="page-footer__socials social-list">
           <li class="social-list__item">
@@ -374,5 +373,22 @@
         </a>
       </div>
     </footer>
+    <script>
+      const navigation = document.querySelector(".nav");
+      const navigationToggle = navigation.querySelector(".nav__toggle");
+
+      navigation.classList.remove("nav--no-js");
+      navigation.classList.remove("nav--menu-opened");
+
+      navigationToggle.addEventListener('click', function() {
+        if (navigation.classList.contains('nav--menu-closed')) {
+          navigation.classList.remove('nav--menu-closed');
+          navigation.classList.add('nav--menu-opened');
+        } else {
+          navigation.classList.add('nav--menu-closed');
+          navigation.classList.remove('nav--menu-opened');
+        }
+      });
+    </script> <!--Скрипты позже закину в отедельный файл-->
   </body>
 </html>

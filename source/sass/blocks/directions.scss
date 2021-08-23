@@ -4,6 +4,13 @@
   padding-bottom: 34px;
 }
 
+.directions__wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .directions__title {
   margin-bottom: 19px;
 }
@@ -14,4 +21,8 @@
 
 .directions__cards-list {
   @include list-style;
+
+  @media (min-width: $desktop-width) {
+    grid-row: -1/3;
+  }
 }

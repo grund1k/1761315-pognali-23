@@ -41,6 +41,12 @@
   @include list-style;
 }
 
+.add-profile__modal-item {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
 .add-profile__modal-item:last-child {
   margin-bottom: 34px;
 }
