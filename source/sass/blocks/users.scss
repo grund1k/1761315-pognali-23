@@ -8,22 +8,13 @@
 }
 
 .users__title {
-  @include h2-orange;
   margin: 0 0 19px 0;
 }
 
 .users__text {
-  @include text-light;
-  color: $basic-white;
   margin: 0 0 25px 0;
-
-  &--bold {
-    font-weight: bold;
-  }
 }
 
 .users__cards-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  @include list-style;
 }

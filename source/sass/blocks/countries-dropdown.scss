@@ -6,9 +6,7 @@
 }
 
 .countries-dropdown__title {
-  @include text-small-medium;
-  line-height: 18px;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.28px;
   text-transform: uppercase;
   background-color: $basic-blue-light;
   padding: 14px 17px;
@@ -18,6 +16,6 @@
 }
 
 .countrise-dropdown__list {
+  @include list-style;
   padding: 20px;
-  margin: 0;
 }

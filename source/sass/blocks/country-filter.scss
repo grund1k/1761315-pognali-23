@@ -5,10 +5,7 @@
 }
 
 .country-filter__title {
-  @include text-bold;
-  line-height: 18px;
   text-transform: uppercase;
-  color: $text-blue;
   margin: 0;
 }
 
@@ -27,12 +24,8 @@
 }
 
 .country-filter__bottom-close-button {
-  @include text-bold;
-  line-height: 20px;
   letter-spacing: 0.8px;
   text-transform: uppercase;
-  text-decoration: none;
-  color: $text-blue;
   background: $filter-button-blue;
   border-radius: 20px;
   padding: 12px 83px 10px 84px;

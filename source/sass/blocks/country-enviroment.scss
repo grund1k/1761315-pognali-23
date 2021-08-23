@@ -1,13 +1,4 @@
-.country-enviroment__title {
-  @include text-large-medium;
-  line-height: 18px;
-  color: $basic-blue-light;
-}
-
 .country-enviroment__textarea {
-  @include text;
-  font-family: inherit;
-  line-height: 22px;
   width: 220px;
   height: 220px;
   box-sizing: border-box;

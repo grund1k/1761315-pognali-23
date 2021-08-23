@@ -1,10 +1,7 @@
 .desire-countries {
-  list-style: none;
+  @include list-style;
 }
 
 .desire-counties__name {
-  @include text-meduim-15-size;
-  line-height: 16px;
   text-transform: uppercase;
-  color: $basic-blue-light;
 }

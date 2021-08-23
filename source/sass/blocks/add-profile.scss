@@ -4,7 +4,6 @@
 }
 
 .add-profile__title {
-  @include h2-orange;
   position: relative;
   margin: 0 0 43px 0;
   width: 107px;
@@ -22,13 +21,6 @@
   }
 }
 
-.add-profile__modal {
-  @include text-bold;
-  line-height: 16px;
-  color: $light-blue;
-  text-decoration: none;
-}
-
 .add-profile__modal-popup {
   width: 270px;
   background: $basic-white;
@@ -41,18 +33,12 @@
 }
 
 .add-profile__modal-title {
-  @include h2-orange;
   text-align: center;
   margin-bottom: 28px;
 }
 
 .add-profile__modal-list {
-  @include text-light;
-  line-height: 22px;
-  color: $special-grey;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  @include list-style;
 }
 
 .add-profile__modal-item:last-child {
@@ -68,11 +54,9 @@
 }
 
 .add-profile__modal-close {
-  @include text-bold;
-  line-height: 24px;
+  font-size: inherit;
   text-transform: uppercase;
   text-align: center;
-  color: $basic-blue-light;
   background-color: $light-grey;
   padding: 21px 0;
   border-bottom-left-radius: 20px;

@@ -10,9 +10,11 @@
 }
 
 .description__title {
-  @include h1;
-  line-height: 40px;
   text-align: center;
   margin-top: 0;
   margin-bottom: 245px;
+}
+
+.description__button-authorization {
+  padding: 12px 40px 8px 40px;
 }

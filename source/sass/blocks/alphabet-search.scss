@@ -1,9 +1,6 @@
 .alphabet-search {
-  @include text-small-medium;
-  line-height: 14px;
   text-align: center;
   text-transform: uppercase;
-  color: $basic-blue-light;
   border-collapse: collapse;
 }
 

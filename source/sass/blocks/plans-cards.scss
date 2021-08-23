@@ -1,9 +1,5 @@
-.plans {
-  @include text-small-medium;
-}
-
 .plans-cards {
-  list-style: none;
+  @include list-style;
 }
 
 .plans-cards__item {
@@ -14,26 +10,18 @@
 }
 
 .plans-cards__countries {
-  @include text-bold;
-  line-height: 16px;
-  color: $basic-blue-light;
   margin-bottom: 20px;
 }
 
 .plans-cards__text {
-  line-height: 14px;
   letter-spacing: 0.84px;
   text-transform: uppercase;
-  color: $basic-blue-light;
   margin: 0;
 }
 
 .plans-cards__change-link {
-  text-decoration: none;
-  line-height: 14px;
   letter-spacing: 0.42px;
   text-transform: uppercase;
-  color: $black;
   opacity: 0.3;
   margin-top: 24px;
 }

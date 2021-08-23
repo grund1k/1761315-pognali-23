@@ -1,5 +1,5 @@
 .social-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  @include list-style;
+  padding-left: 85px;
+  padding-right: 80px;
 }

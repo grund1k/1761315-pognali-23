@@ -6,15 +6,11 @@
 }
 
 .companion-filter__title {
-  @include h2-small-blue;
   letter-spacing: 0.44px;
   margin-bottom: 23px;
 }
 
 .companion-filter__submit-button {
-  @include button-text;
-  line-height: 17px;
-  color: $dark-blue;
   border: none;
   background: $basic-white;
   border-radius: 25px;

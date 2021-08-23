@@ -1,7 +1,32 @@
 .nav {
-  background-color: $basic-white;
+  padding-top: 25px;
+  padding-bottom: 35px;
+  background-color: #161c34;
+
+  &--menu-opened {
+    background-color: $basic-white;
+  }
+}
+
+.nav__logo-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__menu-wrapper {
+  padding-top: 67px;
 }
 
 .nav__button {
-  margin-bottom: 51px;
+  margin-bottom: 50px;
+  padding: 9px 81px 11px 78px;
+  display: block;
+}
+
+.nav__socials {
+  display: flex;
+}
+
+.nav__socials .social-list__item {
+  margin-right: 25px;
 }

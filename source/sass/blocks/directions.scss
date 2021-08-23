@@ -5,18 +5,13 @@
 }
 
 .directions__title {
-  @include h2-orange;
   margin-bottom: 19px;
 }
 
 .directions__text {
-  @include text-light;
-  color: $special-grey;
   margin-bottom: 60px;
 }
 
 .directions__cards-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  @include list-style;
 }

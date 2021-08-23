@@ -1,8 +1,5 @@
 .counter {
-  @include text-medium;
-  line-height: 16px;
   text-transform: uppercase;
-  color: $basic-blue-light;
 }
 
 .counter__title {

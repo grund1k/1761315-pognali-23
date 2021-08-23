@@ -9,19 +9,13 @@
 }
 
 .user-card__name {
-  font-weight: bold;
-  font-size: 21px;
-  line-height: 21px;
   text-align: center;
-  color: $basic-blue-light;
   margin: 0 0 15px 0;
 }
 
 .user-card__tags {
-  @include text;
   line-height: 18px;
   text-align: center;
-  color: $special-grey;
   margin: 0;
 }
 

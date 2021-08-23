@@ -1,9 +1,14 @@
 .contacts-list {
-  @include text-bold;
-  line-height: 18px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  @include list-style;
+}
+
+.contacts-list__item {
+  display: flex;
+  align-items: center;
+}
+
+.contacts-list__icon {
+  margin-right: 15px;
 }
 
 .contacts-list__item:last-child {
@@ -11,11 +16,5 @@
 }
 
 .contacts-list__link {
-  text-decoration: none;
-  color: $text-blue;
-
-  &--yellow {
-    line-height: 22px;
-    color: $button-yellow;
-  }
+  text-transform: uppercase;
 }
