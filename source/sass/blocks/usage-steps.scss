@@ -1,3 +1,7 @@
+.usage-steps {
+  @include subtitle;
+}
+
 .usage-steps__item {
   padding: 22px 21px 24px 24px;
   border-radius: 10px;

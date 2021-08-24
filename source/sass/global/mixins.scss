@@ -36,3 +36,8 @@
   line-height: 22px;
   color: $basic-white;
 }
+
+@mixin subtitle {
+  font-size: 18px;
+  line-height: 18px;
+}
