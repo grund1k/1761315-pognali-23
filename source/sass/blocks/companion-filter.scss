@@ -6,6 +6,7 @@
 }
 
 .companion-filter__title {
+  @include h2-size-s;
   letter-spacing: 0.44px;
   margin-bottom: 23px;
 }

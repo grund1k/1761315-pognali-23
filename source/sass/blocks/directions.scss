@@ -12,6 +12,7 @@
 }
 
 .directions__title {
+  @include h2;
   margin-bottom: 19px;
 }
 

@@ -5,6 +5,7 @@
 }
 
 .registration__title {
+  @include h2;
   text-align: center;
   margin-bottom: 19px;
 }

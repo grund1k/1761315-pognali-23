@@ -7,6 +7,10 @@
   background-position: bottom;
 }
 
+.about-service__title {
+  @include h2;
+}
+
 .about-service__text {
   margin-bottom: 20px;
 }

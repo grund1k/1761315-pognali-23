@@ -4,6 +4,7 @@
 }
 
 .add-profile__title {
+  @include h2;
   position: relative;
   margin-bottom: 43px;
   width: 107px;
@@ -33,6 +34,7 @@
 }
 
 .add-profile__modal-title {
+  @include h2;
   text-align: center;
   margin-bottom: 28px;
 }

@@ -18,6 +18,7 @@
 }
 
 .description__title {
+  @include h1;
   text-align: center;
   margin-bottom: 245px;
 }

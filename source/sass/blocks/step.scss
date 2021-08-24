@@ -2,6 +2,10 @@
   padding: 24px 24px 23px 24px;
 }
 
+.step__title {
+  @include h3;
+}
+
 .step__description {
   margin-bottom: 20px;
 }

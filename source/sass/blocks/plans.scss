@@ -5,6 +5,7 @@
 }
 
 .plans__title {
+  @include h2;
   text-align: center;
   margin-bottom: 29px;
 }

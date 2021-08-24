@@ -16,6 +16,10 @@
   padding: 26px 24px 24px 25px;
 }
 
+.direction-card__title {
+  @include h3;
+}
+
 .direction-card__text {
   opacity: 0.3;
 }
