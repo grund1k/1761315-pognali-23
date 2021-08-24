@@ -3,6 +3,7 @@
 }
 
 .user-profile__likes-number {
+  @include text-1;
   text-transform: uppercase;
 }
 

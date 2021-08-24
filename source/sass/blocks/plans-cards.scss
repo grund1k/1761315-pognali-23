@@ -10,11 +10,13 @@
 }
 
 .plans-cards__text {
+  @include text-1;
   letter-spacing: 0.84px;
   text-transform: uppercase;
 }
 
 .plans-cards__change-link {
+  @include text-1;
   letter-spacing: 0.42px;
   text-transform: uppercase;
   opacity: 0.3;

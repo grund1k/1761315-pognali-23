@@ -6,6 +6,7 @@
 }
 
 .countries-dropdown__title {
+  @include text-1;
   letter-spacing: 0.28px;
   text-transform: uppercase;
   background-color: $basic-blue-light;
