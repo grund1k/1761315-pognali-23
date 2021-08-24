@@ -1,0 +1,47 @@
+.modal-menu {
+  width: 100%;
+  background-color: $basic-white;
+}
+
+.modal-menu__wrapper {
+  position: relative;
+}
+
+.modal-menu__logo-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    max-width: 335px;
+  }
+}
+
+.modal-menu__toggle {
+  display: block;
+  padding: 0;
+  border: none;
+  border-radius: 1.5px;
+  width: 24px;
+  height: 2px;
+  background: $light-silver;
+  transform: rotate(45deg);
+
+  &::before {
+    content: "";
+    width: 24px;
+    height: 2px;
+    display: block;
+    background: $light-silver;
+    border-radius: 1.5px;
+    transform: rotate(90deg);
+  }
+}
+
+.modal-menu__button {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
