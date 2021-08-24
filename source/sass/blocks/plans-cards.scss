@@ -1,7 +1,3 @@
-.plans-cards {
-  @include list-style;
-}
-
 .plans-cards__item {
   background-color: $basic-white;
   padding: 24px;
@@ -16,7 +12,6 @@
 .plans-cards__text {
   letter-spacing: 0.84px;
   text-transform: uppercase;
-  margin: 0;
 }
 
 .plans-cards__change-link {

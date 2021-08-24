@@ -20,8 +20,6 @@
 }
 
 .directions__cards-list {
-  @include list-style;
-
   @media (min-width: $desktop-width) {
     grid-row: -1/3;
   }

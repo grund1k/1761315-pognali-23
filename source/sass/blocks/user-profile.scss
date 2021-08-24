@@ -2,24 +2,11 @@
   border-radius: 50%;
 }
 
-.user-profile__link {
-  text-decoration: none;
-}
-
-.user-profile__user-name {
-  margin: 0;
-}
-
 .user-profile__likes-number {
   text-transform: uppercase;
 }
 
-.user-profile__desire-list {
-  padding: 0;
-  margin: 0;
-}
-
 .user-profile__choose-button {
-  padding: 14px 78px 13px;
+  padding: 14px 78px 13px 78px;
   border-radius: 25px;
 }

@@ -15,16 +15,14 @@
 }
 
 .users__title {
-  margin: 0 0 19px 0;
+  margin-bottom: 19px;
 }
 
 .users__text {
-  margin: 0 0 25px 0;
+  margin-bottom: 25px;
 }
 
 .users__cards-list {
-  @include list-style;
-
   @media (min-width: $tablet-width) {
     display: flex;
   }

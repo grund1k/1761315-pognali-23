@@ -10,12 +10,10 @@
   text-transform: uppercase;
   background-color: $basic-blue-light;
   padding: 14px 17px;
-  margin: 0;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
 }
 
 .countrise-dropdown__list {
-  @include list-style;
   padding: 20px;
 }

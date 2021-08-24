@@ -19,7 +19,6 @@
 
 .description__title {
   text-align: center;
-  margin-top: 0;
   margin-bottom: 245px;
 }
 
@@ -32,13 +31,14 @@
 }
 
 .description__quoute {
+  margin-bottom: 29px;
+
   @media (min-width: $desktop-width) {
     justify-self: end;
   }
 }
 
 .description__conatacts {
-  @include list-style;
   display: flex;
 }
 

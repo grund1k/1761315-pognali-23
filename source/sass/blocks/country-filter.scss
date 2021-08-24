@@ -6,12 +6,6 @@
 
 .country-filter__title {
   text-transform: uppercase;
-  margin: 0;
-}
-
-.country-filter__continent-list {
-  margin: 0;
-  padding: 0;
 }
 
 .country-filter__table {
@@ -19,8 +13,7 @@
 }
 
 .country-filter__countries-list {
-  padding: 0;
-  margin: 0 0 28px 0;
+  margin-bottom: 28px;
 }
 
 .country-filter__bottom-close-button {
