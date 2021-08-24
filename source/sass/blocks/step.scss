@@ -10,6 +10,10 @@
   margin-bottom: 20px;
 }
 
+.step__children-checkbox {
+  @include text-2;
+}
+
 .step__calendar {
   margin-bottom: 22px;
 }

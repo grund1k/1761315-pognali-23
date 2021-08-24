@@ -1,3 +1,7 @@
+.user-profile {
+  @include text-2;
+}
+
 .user-profile__image {
   border-radius: 50%;
 }
