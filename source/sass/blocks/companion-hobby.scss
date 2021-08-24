@@ -1,3 +1,4 @@
 .companion-hobby__title {
+  @include companion-form-title;
   margin-bottom: 12px;
 }

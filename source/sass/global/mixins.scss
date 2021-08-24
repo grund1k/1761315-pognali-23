@@ -51,3 +51,22 @@
   font-size: 15px;
   line-height: 15px;
 }
+
+@mixin button {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+@mixin button-2 {
+  font-size: 18px;
+  line-height: 18px;
+}
+
+@mixin companion-form-title {
+  font-weight: bold;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $basic-blue-light;
+}

@@ -1,8 +1,5 @@
 .button {
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 20px;
-  text-transform: uppercase;
+  @include button;
 
   &--yellow {
     background-color: $button-yellow;
@@ -27,7 +24,6 @@
   }
 
   &--large {
-    font-size: 18px;
-    line-height: 18px;
+    @include button-2;
   }
 }

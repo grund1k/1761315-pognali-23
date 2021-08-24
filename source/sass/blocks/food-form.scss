@@ -1,3 +1,4 @@
 .food-form__title {
+  @include companion-form-title;
   margin-bottom: 12px;
 }
