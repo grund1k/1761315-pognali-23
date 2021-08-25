@@ -1,4 +1,5 @@
 .country-enviroment__title {
+  @include subtitle;
   color: $basic-blue-light;
 }
 
