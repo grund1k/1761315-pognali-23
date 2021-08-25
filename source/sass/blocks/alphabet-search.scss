@@ -21,4 +21,18 @@
     background: $basic-grey;
     color: $basic-blue-light;
   }
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    background-color: inherit;
+  }
+}
+
+.alphabet-search__countries-list {
+  display: none;
+  text-align: start;
+
+  @media (min-width: $desktop-width){
+    display: block;
+  }
 }

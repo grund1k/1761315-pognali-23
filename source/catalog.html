@@ -102,86 +102,679 @@
       </div>
       <section class="country-filter">
         <div class="container">
-          <p class="country-filter__title bold">Фильтрация по странам:</p>
-          <button class="country-filter__close-button" type="button"><span class="visually-hidden">Открыть фильтрацию по странам</span></button>
-          <ul class="country-filter__continent-list continent-list bold">
-            <li class="continent-list__item continent-list__item--chosen">Европа</li>
-            <li class="continent-list__item">Азия</li>
-            <li class="continent-list__item">Америка</li>
-            <li class="continent-list__item">Острова</li>
-          </ul>
-          <table class="country-filter__table alphabet-search medium">
-            <tr class="alphabet-search__table-row">
-              <td class="alphabet-search__table-cell alphabet-search__table-cell--chosen">А</td>
-              <td class="alphabet-search__table-cell">Б</td>
-              <td class="alphabet-search__table-cell">В</td>
-              <td class="alphabet-search__table-cell">Г</td>
-              <td class="alphabet-search__table-cell">Д</td>
-            </tr>
-            <tr class="alphabet-search__table-row">
-              <td class="alphabet-search__table-cell">Е</td>
-              <td class="alphabet-search__table-cell">З</td>
-              <td class="alphabet-search__table-cell">И</td>
-              <td class="alphabet-search__table-cell">К</td>
-              <td class="alphabet-search__table-cell">Л</td>
-            </tr>
-            <tr class="alphabet-search__table-row">
-              <td class="alphabet-search__table-cell">М</td>
-              <td class="alphabet-search__table-cell">Н</td>
-              <td class="alphabet-search__table-cell">О</td>
-              <td class="alphabet-search__table-cell">П</td>
-              <td class="alphabet-search__table-cell">Р</td>
-            </tr>
-            <tr class="alphabet-search__table-row">
-              <td class="alphabet-search__table-cell">С</td>
-              <td class="alphabet-search__table-cell">Т</td>
-              <td class="alphabet-search__table-cell">У</td>
-              <td class="alphabet-search__table-cell">Ф</td>
-              <td class="alphabet-search__table-cell">Х</td>
-            </tr>
-            <tr class="alphabet-search__table-row">
-              <td class="alphabet-search__table-cell">Ч</td>
-              <td class="alphabet-search__table-cell">Ш</td>
-              <td class="alphabet-search__table-cell">Э</td>
-              <td class="alphabet-search__table-cell">Ю</td>
-              <td class="alphabet-search__table-cell">Я</td>
-            </tr>
-          </table>
-          <ul class="country-filter__countries-list countries-list">
-            <li class="countries-list__item">
-              <a class="countries-list__link" href="/eroupe/">Австралия</a>
-            </li>
-            <li class="countries-list__item">
-              <a class="countries-list__link" href="/eroupe/">Австрия</a>
-            </li>
-            <li class="countries-list__item">
-              <a class="countries-list__link" href="/eroupe/">Азербайджан</a>
-            </li>
-            <li class="countries-list__item">
-              <a class="countries-list__link" href="/eroupe/">Албания</a>
-            </li>
-            <li class="countries-list__item">
-              <a class="countries-list__link" href="/eroupe/">Алжир</a>
-            </li>
-            <li class="countries-list__item">
-              <a class="countries-list__link" href="/eroupe/">Ангола</a>
-            </li>
-            <li class="countries-list__item">
-              <a class="countries-list__link" href="/eroupe/">Андорра</a>
-            </li>
-            <li class="countries-list__item">
-              <a class="countries-list__link" href="/eroupe/">Антигуа и Барбуда</a>
-            </li>
-            <li class="countries-list__item">
-              <a class="countries-list__link" href="/eroupe/">Аргентина</a>
-            </li>
-            <li class="countries-list__item">
-              <a class="countries-list__link" href="/eroupe/">Армения</a>
-            </li>
-            <li class="countries-list__item">
-              <a class="countries-list__link" href="/eroupe/">Афганистан</a>
-            </li>
-          </ul>
+          <div class="country-filter__header">
+            <p class="country-filter__title bold">Фильтрация по странам:</p>
+            <button class="country-filter__close-button" type="button"><span class="country-filter__close-button-text">Свернуть</span></button>
+            <ul class="country-filter__continent-list continent-list bold">
+              <li class="continent-list__item continent-list__item--chosen">Европа</li>
+              <li class="continent-list__item">Азия</li>
+              <li class="continent-list__item">Америка</li>
+              <li class="continent-list__item">Острова</li>
+            </ul>
+          </div>
+          <div class="country-filter__search-wrapper">
+            <table class="country-filter__table alphabet-search medium">
+              <tr class="alphabet-search__table-row">
+                <td class="alphabet-search__table-cell alphabet-search__table-cell--chosen">
+                  А
+                  <ul class="alphabet-search__countries-list countries-list">
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Австралия</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Австрия</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Азербайджан</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Албания</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Алжир</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Ангола</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Андорра</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Антигуа и Барбуда</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Аргентина</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Армения</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Афганистан</a>
+                    </li>
+                  </ul>
+                </td>
+                <td class="alphabet-search__table-cell">
+                  Б
+                  <ul class="alphabet-search__countries-list">
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Багамские Острова</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Бангладеш</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Барбадос</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Бахрейн</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Белоруссия</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Белиз</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Бельгия</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Бенин</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Болгария</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Боливия</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Босния и Герцеговина</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Ботсвана</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Бразилия</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Бруней</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Буркина-Фасо</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Бурунди</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Бутан</a>
+                    </li>
+                  </ul>
+                </td>
+                <td class="alphabet-search__table-cell">
+                  В
+                  <ul class="alphabet-search__countries-list countries-list">
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Вануату</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Великобритания</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Венгрия</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Венесуэла</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Восточный Тимор</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Вьетнам</a>
+                    </li>
+                  </ul>
+                </td>
+                <td class="alphabet-search__table-cell">
+                  Г
+                  <ul class="alphabet-search__countries-list countries-list">
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Габон</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Гаити</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Гайана</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Гамбия</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Гана</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Гватемала</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Гвинея</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Гвинея-Бисау</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Германия</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Гондурас</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Гренада</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Греция</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Грузия</a>
+                    </li>
+                  </ul>
+                </td>
+                <td class="alphabet-search__table-cell">
+                  Д
+                  <ul class="alphabet-search__countries-list countries-list">
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Дания</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Джибути</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Доминика</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Доминикана</a>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr class="alphabet-search__table-row">
+                <td class="alphabet-search__table-cell">
+                  Е
+                  <ul class="alphabet-search__countries-list countries-list">
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Египет</a>
+                    </li>
+                  </ul>
+                </td>
+                <td class="alphabet-search__table-cell">
+                  З
+                  <ul class="alphabet-search__countries-list countries-list">
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Замбия</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Зимбабве</a>
+                    </li>
+                  </ul>
+                </td>
+                <td class="alphabet-search__table-cell">
+                  И
+                  <ul class="alphabet-search__countries-list countries-list">
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Израиль</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Индия</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Индонезия</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Иордания</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Ирак</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Иран</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Ирландия</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Исландия</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Испания</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Италия</a>
+                    </li>
+                  </ul>
+                </td>
+                <td class="alphabet-search__table-cell">
+                  К
+                  <ul class="alphabet-search__countries-list countries-list">
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Кабо-Верде</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Казахстан</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Камбоджа</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Камерун</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Канада</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Катар</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Кения</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Кипр</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Киргизия</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Кирибати</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Китай</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Колумбия</a>
+                    </li>
+                  </ul>
+                </td>
+                <td class="alphabet-search__table-cell">
+                  Л
+                  <ul class="alphabet-search__countries-list countries-list">
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Лаос</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Латвия</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Лесото</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Либерия</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Ливан</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Ливия</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Литва</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Лихтенштейн</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Люксембург</a>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr class="alphabet-search__table-row">
+                <td class="alphabet-search__table-cell">
+                  М
+                  <ul class="alphabet-search__countries-list countries-list">
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Маврикий</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Мавритания</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Мадагаскар</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Малави</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Малайзия</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Мали</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Мальдивы</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Мальта</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Марокко</a>
+                    </li>
+                  </ul>
+                </td>
+                <td class="alphabet-search__table-cell">
+                  Н
+                  <ul class="alphabet-search__countries-list countries-list">
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Намибия</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Науру</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Непал</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Нигер</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Нигерия</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Нидерланды</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Никарагуа</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Новая Зеландия</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Норвегия</a>
+                    </li>
+                  </ul>
+                </td>
+                <td class="alphabet-search__table-cell">
+                  О
+                  <ul class="alphabet-search__countries-list countries-list">
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">ОАЭ</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Оман</a>
+                    </li>
+                  </ul>
+                </td>
+                <td class="alphabet-search__table-cell">
+                  П
+                  <ul class="alphabet-search__countries-list countries-list">
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Пакистан</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Палау</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Панама</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Папуа - Новая Гвинея</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Парагвай</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Перу</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Польша</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Португалия</a>
+                    </li>
+                  </ul>
+                </td>
+                <td class="alphabet-search__table-cell">
+                  Р
+                  <ul class="alphabet-search__countries-list countries-list">
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Руанда</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Румыния</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Россия</a>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr class="alphabet-search__table-row">
+                <td class="alphabet-search__table-cell">
+                  С
+                  <ul class="alphabet-search__countries-list countries-list">
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Сальвадор</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Самоа</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Сан-Марино</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Саудовская Аравия</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Сейшелы</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Сенегал</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Сербия</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Сингапур</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Сирия</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Словакия</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Словения</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">США</a>
+                    </li>
+                  </ul>
+                </td>
+                <td class="alphabet-search__table-cell">
+                  Т
+                  <ul class="alphabet-search__countries-list countries-list">
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Таджикистан</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Таиланд</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Танзания</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Того</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Тонга</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Тринидад и Тобаго</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Тувалу</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Тунис</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Туркмения</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Турция</a>
+                    </li>
+                  </ul>
+                </td>
+                <td class="alphabet-search__table-cell">
+                  У
+                  <ul class="alphabet-search__countries-list countries-list">
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Уганда</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Узбекистан</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Украина</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Уругвай</a>
+                    </li>
+                  </ul>
+                </td>
+                <td class="alphabet-search__table-cell">
+                  Ф
+                  <ul class="alphabet-search__countries-list countries-list">
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Фиджи</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Филиппины</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Финляндия</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Франция</a>
+                    </li>
+                  </ul>
+                </td>
+                <td class="alphabet-search__table-cell">
+                  Х
+                  <ul class="alphabet-search__countries-list countries-list">
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Хорватия</a>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr class="alphabet-search__table-row">
+                <td class="alphabet-search__table-cell">
+                  Ч
+                  <ul class="alphabet-search__countries-list countries-list">
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Чад</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Черногория</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Чехия</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Чили</a>
+                    </li>
+                  </ul>
+                </td>
+                <td class="alphabet-search__table-cell">
+                  Ш
+                  <ul class="alphabet-search__countries-list countries-list">
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Швейцария</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Швеция</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Шри-Ланка</a>
+                    </li>
+                  </ul>
+                </td>
+                <td class="alphabet-search__table-cell">
+                  Э
+                  <ul class="alphabet-search__countries-list countries-list">
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Эквадор</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Эритрея</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Эсватини</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Эстония</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Эфиопия</a>
+                    </li>
+                  </ul>
+                </td>
+                <td class="alphabet-search__table-cell">
+                  Ю
+                  <ul class="alphabet-search__countries-list countries-list">
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">ЮАР</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Южный Судан</a>
+                    </li>
+                  </ul>
+                </td>
+                <td class="alphabet-search__table-cell">
+                  Я
+                  <ul class="alphabet-search__countries-list countries-list">
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Ямайка</a>
+                    </li>
+                    <li class="countries-list__item">
+                      <a class="countries-list__link" href="/eroupe/">Япония</a>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+            <ul class="country-filter__countries-list countries-list">
+              <li class="countries-list__item">
+                <a class="countries-list__link" href="/eroupe/">Австралия</a>
+              </li>
+              <li class="countries-list__item">
+                <a class="countries-list__link" href="/eroupe/">Австрия</a>
+              </li>
+              <li class="countries-list__item">
+                <a class="countries-list__link" href="/eroupe/">Азербайджан</a>
+              </li>
+              <li class="countries-list__item">
+                <a class="countries-list__link" href="/eroupe/">Албания</a>
+              </li>
+              <li class="countries-list__item">
+                <a class="countries-list__link" href="/eroupe/">Алжир</a>
+              </li>
+              <li class="countries-list__item">
+                <a class="countries-list__link" href="/eroupe/">Ангола</a>
+              </li>
+              <li class="countries-list__item">
+                <a class="countries-list__link" href="/eroupe/">Андорра</a>
+              </li>
+              <li class="countries-list__item">
+                <a class="countries-list__link" href="/eroupe/">Антигуа и Барбуда</a>
+              </li>
+              <li class="countries-list__item">
+                <a class="countries-list__link" href="/eroupe/">Аргентина</a>
+              </li>
+              <li class="countries-list__item">
+                <a class="countries-list__link" href="/eroupe/">Армения</a>
+              </li>
+              <li class="countries-list__item">
+                <a class="countries-list__link" href="/eroupe/">Афганистан</a>
+              </li>
+            </ul>
+          </div>
           <a class="country-filter__bottom-close-button bold" href="#">Свернуть</a>
         </div>
       </section>
