@@ -1,0 +1,58 @@
+.profile-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: min-content 1fr min-content;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.profile-form__level-pie {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: -59px;
+    right: 100px; // значения пока условны
+  }
+}
+
+.profile-form__user-image-wrapper {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: -59px;
+    right: 0;
+  }
+}
+
+.profile-form__upload-button {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.profile-form__photo-button {
+  grid-column: 1/-1;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.profile-form__tags-fieldset {
+  grid-column: 1/-1;
+}
+
+.profile-form__transport-checkbox {
+  grid-column: 1/-1;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+}
