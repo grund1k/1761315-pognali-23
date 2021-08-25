@@ -16,6 +16,7 @@
 
 .users__title {
   @include h2;
+  color: $special-orange;
   margin-bottom: 19px;
 }
 

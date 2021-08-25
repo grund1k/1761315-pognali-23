@@ -9,6 +9,7 @@
 
 .about-service__title {
   @include h2;
+  color: $special-orange;
 }
 
 .about-service__text {
