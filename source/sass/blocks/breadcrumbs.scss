@@ -1,0 +1,13 @@
+.breadcrumbs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.breadcrumbs__title {
+  @include h1;
+}
+
+.breadcrumbs__index-link {
+  display: none;
+  color: $basic-white;
+}

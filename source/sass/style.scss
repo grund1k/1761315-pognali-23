@@ -9,28 +9,9 @@
 //Blocks
 
 //Text
-@import "blocks/text/body-1.scss";
 @import "blocks/text/bold.scss";
-@import "blocks/text/text-1.scss";
-@import "blocks/text/text-2.scss";
-@import "blocks/text/h1.scss";
-@import "blocks/text/h2.scss";
-@import "blocks/text/h3.scss";
-@import "blocks/text/h4.scss";
-@import "blocks/text/subtitle.scss";
 @import "blocks/text/light.scss";
 @import "blocks/text/medium.scss";
-@import "blocks/text/companion-form-title.scss";
-
-//Text-colors
-@import "blocks/text-colors/special-grey.scss";
-@import "blocks/text-colors/dark-blue.scss";
-@import "blocks/text-colors/light-blue.scss";
-@import "blocks/text-colors/basic-blue-light.scss";
-@import "blocks/text-colors/orange.scss";
-@import "blocks/text-colors/blue.scss";
-@import "blocks/text-colors/black.scss";
-@import "blocks/text-colors/yellow.scss";
 
 // Index
 @import "blocks/page-body.scss";
@@ -58,6 +39,7 @@
 
 
 //Catalog
+@import "blocks/breadcrumbs.scss";
 @import "blocks/country-filter.scss";
 @import "blocks/continent-list.scss";
 @import "blocks/alphabet-search.scss";
