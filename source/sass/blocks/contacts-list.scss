@@ -10,4 +10,8 @@
 .contacts-list__link {
   color: $blue;
   text-transform: uppercase;
+
+  &--yellow-text {
+    color: $button-yellow;
+  }
 }
