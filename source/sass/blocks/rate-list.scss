@@ -1,3 +1,7 @@
+.rate-list {
+  color: $special-grey;
+}
+
 .rate-list__item {
   @media (min-width: $tablet-width) {
     display: flex;

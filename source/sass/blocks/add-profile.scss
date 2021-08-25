@@ -45,6 +45,10 @@
   margin-bottom: 28px;
 }
 
+.add-profile__modal-list {
+  color: $special-grey;
+}
+
 .add-profile__modal-item {
   @media (min-width: $tablet-width) {
     display: flex;

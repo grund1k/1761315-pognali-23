@@ -1,5 +1,6 @@
 .user-profile {
   @include text-2;
+  color: $special-grey;
 }
 
 .user-profile__image {

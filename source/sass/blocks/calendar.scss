@@ -4,6 +4,10 @@
   border-collapse: collapse;
 }
 
+.calendar__days {
+  color: $special-grey;
+}
+
 .calendar__day {
   font-weight: normal;
 
