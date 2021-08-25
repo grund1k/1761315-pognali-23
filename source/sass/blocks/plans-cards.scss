@@ -17,6 +17,7 @@
 
 .plans-cards__change-link {
   @include text-1;
+  color: $black;
   letter-spacing: 0.42px;
   text-transform: uppercase;
   opacity: 0.3;
