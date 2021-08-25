@@ -8,22 +8,45 @@
   </head>
   <body class="page-body">
     <header class="page-header">
-      <!-- <div class="container">
-        <a class="page-header__logo-link" href="index.html">
-          <img class="page-header__logo" src="img/logo_text.svg" alt="Логотип «Погнали»" width="96" height="15">
-        </a>
-        <button class="page-header__nav-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      </div> -->
-      <nav class="nav nav--menu-opened">
-        <div class="container">
-          <div class="nav__logo-wrapper">
-            <a class="nav__logo-link" href="index.html">
-              <img class="page-header__logo" src="img/logo_text.svg" alt="Логотип «Погнали»" width="96" height="15">
-            </a>
-            <button class="nav__toggle" type="button" aria-label="Открыть меню"></button>
-          </div>
-          <div class="nav__menu-wrapper">
-            <ul class="nav-list medium">
+      <nav class="nav nav--menu-opened nav--no-js">
+        <div class="container nav__wrapper">
+          <a class="nav__logo-link" href="index.html">
+            <img class="nav__logo" src="img/logo_text.svg" alt="Логотип «Погнали»" width="96" height="15">
+          </a>
+          <button class="nav__toggle" type="button" aria-label="Открыть меню"></button>
+          <ul class="nav__site-list nav-list medium">
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="#">О сервисе</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="form.html">Направления</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="catalog.html">Попутчики</a>
+            </li>
+          </ul>
+          <ul class="nav__conatacts contacts-list">
+            <li class="contacts-list__item">
+              <img src="img/icon_phone_btn.svg" alt="Иконка телефона" width="40" height="40">
+              <a class="contacts-list__link" href="tel:88005558628"><span class="visually-hidden">8 800 555-86-28</span></a>
+            </li>
+            <li class="contacts-list__item">
+              <img src="img/icon_mail_btn.svg" alt="Иконка E-mail" width="40" height="40">
+              <a class="contacts-list__link" href="mailto:mail@htmlacademy.ru"><span class="visually-hidden">mail@htmlacademy.ru</span></a>
+            </li>
+          </ul>
+          <a class="nav__button-authorization button button--authorization button--yellow button--dark-blue-text" href="#">Авторизация</a>
+        </div>
+
+        <div class="nav__menu-wrapper modal-menu">
+          <div class="container modal-menu__wrapper">
+            <div class="modal-menu__logo-wrapper">
+              <a class="modal-menu__logo-link" href="index.html">
+                <img class="modal-menu__logo" src="img/logo_footer.svg" alt="Логотип «Погнали»" width="96" height="15">
+              </a>
+              <button class="modal-menu__toggle" type="button" aria-label="Открыть меню"></button>
+            </div>
+            <ul class="modal-menu__site-list nav-list medium">
               <li class="nav-list__item">
                 <a class="nav-list__link" href="#">О сервисе</a>
               </li>
@@ -34,8 +57,8 @@
                 <a class="nav-list__link" href="catalog.html">Попутчики</a>
               </li>
             </ul>
-            <a class="nav__button button button--authorization button--yellow button--dark-blue-text" href="#">Авторизация</a>
-            <ul class="nav__contacts contacts-list bold">
+            <a class="modal-menu__button button button--authorization button--yellow button--dark-blue-text" href="#">Авторизация</a>
+            <ul class="modal-menu__contacts contacts-list bold">
               <li class="contacts-list__item">
                 <img class="contacts-list__icon" src="img/contacts_icon_dark_phone.svg" alt="Изображение телефона" width="45" height="45">
                 <a class="contacts-list__link" href="tel:88005558628">8 800 555-86-28</a>
@@ -45,7 +68,7 @@
                 <a class="contacts-list__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
               </li>
             </ul>
-            <ul class="nav__socials social-list">
+            <ul class="modal-menu__socials social-list">
               <li class="social-list__item">
                 <a class="social-list__link" href="https://www.facebook.com">
                   <img class="social-list__icon" src="img/icon_facebook.svg" alt="Логотип Facebook" width="11" height="21">
@@ -429,5 +452,31 @@
         </a>
       </div>
     </footer>
+    <script>
+      const navigation = document.querySelector(".nav");
+      const navigationOn = document.querySelector(".nav__toggle");
+      const navigationOff = document.querySelector(".modal-menu__toggle");
+
+      navigation.classList.remove("nav--no-js");
+      navigation.classList.remove("nav--menu-opened");
+
+      navigationOn.addEventListener('click', function() {
+        if (navigation.classList.contains('nav--menu-closed')) {
+          navigation.classList.remove('nav--menu-closed');
+          navigation.classList.add('nav--menu-opened');
+        } else {
+          navigation.classList.add('nav--menu-opened')
+        }
+      });
+
+      navigationOff.addEventListener('click', function() {
+        if (navigation.classList.contains('nav--menu-opened')) {
+          navigation.classList.remove('nav--menu-opened');
+          navigation.classList.add('nav--menu-closed');
+        } else {
+          navigation.classList.add('nav--menu-closed')
+        }
+      });
+    </script>
   </body>
 </html>
