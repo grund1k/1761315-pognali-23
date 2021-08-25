@@ -18,6 +18,7 @@
 
 .direction-card__title {
   @include h3;
+  color: $black;
 }
 
 .direction-card__text {
@@ -25,5 +26,6 @@
 }
 
 .direction-card__people-number {
+  color: $dark-blue;
   opacity: 0.3;
 }

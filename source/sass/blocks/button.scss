@@ -26,4 +26,8 @@
   &--large {
     @include button-2;
   }
+
+  &--dark-blue-text {
+    color: $dark-blue;
+  }
 }

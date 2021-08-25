@@ -5,6 +5,7 @@
 }
 
 .country-filter__title {
+  color: $blue;
   text-transform: uppercase;
 }
 
@@ -17,6 +18,7 @@
 }
 
 .country-filter__bottom-close-button {
+  color: $blue;
   letter-spacing: 0.8px;
   text-transform: uppercase;
   background: $filter-button-blue;

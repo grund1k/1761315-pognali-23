@@ -1,5 +1,6 @@
 .calendar {
   @include text-1;
+  color: $basic-blue-light;
   border-collapse: collapse;
 }
 
