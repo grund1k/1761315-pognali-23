@@ -4,6 +4,7 @@
 
 .step__title {
   @include h3;
+  color: $basic-blue-light;
 }
 
 .step__description {
@@ -12,6 +13,7 @@
 
 .step__children-checkbox {
   @include text-2;
+  color: $basic-blue-light;
 }
 
 .step__calendar {

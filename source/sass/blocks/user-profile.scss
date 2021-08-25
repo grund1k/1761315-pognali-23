@@ -6,6 +6,11 @@
   border-radius: 50%;
 }
 
+.user-profile__user-name {
+  @include h3;
+  color: $basic-blue-light;
+}
+
 .user-profile__likes-number {
   @include text-1;
   text-transform: uppercase;
