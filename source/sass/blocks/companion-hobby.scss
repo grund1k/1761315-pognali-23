@@ -1,3 +1,9 @@
+.companion-hobby {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+    display: flex;
+  }
+}
+
 .companion-hobby__title {
   @include companion-form-title;
   margin-bottom: 12px;
