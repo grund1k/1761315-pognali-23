@@ -1,6 +1,4 @@
-.month-slider__text {
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 20px;
+.month-slider {
+  @include h3-size-s;
   color: $basic-blue-light;
 }

@@ -1,5 +1,13 @@
 .direction-card {
-  @include text-medium;
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.direction-card__pic {
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
 }
 
 .direction-card__wrapper {
@@ -9,23 +17,16 @@
 }
 
 .direction-card__title {
-  font-weight: bold;
-  font-size: 21px;
-  line-height: 21px;
+  @include h3;
   color: $black;
-  margin: 0;
 }
 
 .direction-card__text {
-  line-height: 18px;
   color: $special-grey;
   opacity: 0.3;
-  margin: 0;
 }
 
 .direction-card__people-number {
-  line-height: 20px;
-  color: $dark-grey;
+  color: $dark-blue;
   opacity: 0.3;
-  margin: 0;
 }

@@ -7,16 +7,14 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
-    <header class="page-header page-header--statick page-header--sticky">
-      <div class="container">
-        <a class="page-header__logo-link">
-          <img class="page-header__logo" src="img/logo_text.svg" alt="Логотип «Погнали»" width="96" height="15">
-        </a>
-        <button class="page-header__nav-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      </div>
-      <nav class="nav">
-        <div class="container">
-          <ul class="nav-list">
+    <header class="page-header">
+      <nav class="nav nav--menu-opened nav--no-js">
+        <div class="container nav__wrapper">
+          <a class="nav__logo-link">
+            <img class="nav__logo" src="img/logo_text.svg" alt="Логотип «Погнали»" width="96" height="15">
+          </a>
+          <button class="nav__toggle" type="button" aria-label="Открыть меню"></button>
+          <ul class="nav__site-list nav-list medium">
             <li class="nav-list__item">
               <a class="nav-list__link" href="#">О сервисе</a>
             </li>
@@ -27,48 +25,7 @@
               <a class="nav-list__link" href="catalog.html">Попутчики</a>
             </li>
           </ul>
-          <a class="nav__button button-authorization" href="#">Авторизация</a>
-          <ul class="nav__contacts contacts-list">
-            <li class="contacts-list__item">
-              <img class="contacts-list__icon" src="img/contacts_icon_dark_phone.svg" alt="Изображение телефона" width="45" height="45">
-              <a class="contacts-list__link" href="tel:88005558628">8 800 555-86-28</a>
-            </li>
-            <li class="contacts-list__item">
-              <img class="contacts-list__icon" src="img/contacts_icon_dark_email.svg" alt="Изображение почты" width="45" height="45">
-              <a class="contacts-list__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            </li>
-          </ul>
-          <ul class="nav__socials social-list">
-            <li class="social-list__item">
-              <a class="social-list__link" href="https://www.facebook.com">
-                <img class="social-list__icon" src="img/icon_facebook.svg" alt="Логотип Facebook" width="11" height="21">
-                <span class="visually-hidden">Мы в Фейсбуке</span>
-              </a>
-            </li>
-            <li class="social-list__item">
-              <a class="social-list__link" href="https://vk.com">
-                <img class="social-list__icon" src="img/icon_vkontakte.svg" alt="Логотип Вконтакте" width="23" height="12">
-                <span class="visually-hidden">Мы во Вконтакте</span>
-              </a>
-            </li>
-            <li class="social-list__item">
-              <a class="social-list__link" href="https://www.instagram.com">
-                <img class="social-list__icon" src="img/icon_instagram.svg" alt="Логотип Instagram" width="18" height="18">
-                <span class="visually-hidden">Мы в Инстаграме</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-
-    <main class="page-main">
-      <h1 class="visually-hidden"> Онлайн-площадка подбора попутчиков «Погнали»</h1>
-      <section class="description">
-        <div class="container">
-          <p class="description__title">В путешествие с крутыми попутчиками!</p>
-          <h2 class="visually-hidden">Как пользоваться сервисом</h2>
-          <ul class="description__conatacts contacts-list">
+          <ul class="nav__conatacts contacts-list">
             <li class="contacts-list__item">
               <img src="img/icon_phone_btn.svg" alt="Иконка телефона" width="40" height="40">
               <a class="contacts-list__link" href="tel:88005558628"><span class="visually-hidden">8 800 555-86-28</span></a>
@@ -78,16 +35,92 @@
               <a class="contacts-list__link" href="mailto:mail@htmlacademy.ru"><span class="visually-hidden">mail@htmlacademy.ru</span></a>
             </li>
           </ul>
-          <a class="description__button-authorization button-authorization button-authorization--small" href="#">Авторизация</a>
+          <a class="nav__button-authorization button button--authorization button--yellow button--dark-blue-text" href="#">Авторизация</a>
+        </div>
+
+        <div class="nav__menu-wrapper modal-menu">
+          <div class="container modal-menu__wrapper">
+            <div class="modal-menu__logo-wrapper">
+              <a class="modal-menu__logo-link">
+                <img class="modal-menu__logo" src="img/logo_footer.svg" alt="Логотип «Погнали»" width="96" height="15">
+              </a>
+              <button class="modal-menu__toggle" type="button" aria-label="Открыть меню"></button>
+            </div>
+            <ul class="modal-menu__site-list nav-list medium">
+              <li class="nav-list__item">
+                <a class="nav-list__link" href="#">О сервисе</a>
+              </li>
+              <li class="nav-list__item">
+                <a class="nav-list__link" href="form.html">Направления</a>
+              </li>
+              <li class="nav-list__item">
+                <a class="nav-list__link" href="catalog.html">Попутчики</a>
+              </li>
+            </ul>
+            <a class="modal-menu__button button button--authorization button--yellow button--dark-blue-text" href="#">Авторизация</a>
+            <ul class="modal-menu__contacts contacts-list bold">
+              <li class="contacts-list__item">
+                <img class="contacts-list__icon" src="img/contacts_icon_dark_phone.svg" alt="Изображение телефона" width="45" height="45">
+                <a class="contacts-list__link" href="tel:88005558628">8 800 555-86-28</a>
+              </li>
+              <li class="contacts-list__item">
+                <img class="contacts-list__icon" src="img/contacts_icon_dark_email.svg" alt="Изображение почты" width="45" height="45">
+                <a class="contacts-list__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+              </li>
+            </ul>
+            <ul class="modal-menu__socials social-list">
+              <li class="social-list__item">
+                <a class="social-list__link" href="https://www.facebook.com">
+                  <img class="social-list__icon" src="img/icon_facebook.svg" alt="Логотип Facebook" width="11" height="21">
+                  <span class="visually-hidden">Мы в Фейсбуке</span>
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a class="social-list__link" href="https://vk.com">
+                  <img class="social-list__icon" src="img/icon_vkontakte.svg" alt="Логотип Вконтакте" width="23" height="12">
+                  <span class="visually-hidden">Мы во Вконтакте</span>
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a class="social-list__link" href="https://www.instagram.com">
+                  <img class="social-list__icon" src="img/icon_instagram.svg" alt="Логотип Instagram" width="18" height="18">
+                  <span class="visually-hidden">Мы в Инстаграме</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <h1 class="visually-hidden"> Онлайн-площадка подбора попутчиков «Погнали»</h1>
+      <section class="description">
+        <div class="container description__wrapper">
+          <p class="description__title">В путешествие с крутыми попутчиками!</p>
+          <h2 class="visually-hidden">Как пользоваться сервисом</h2>
+          <div class="description__interaction-buttons">
+            <ul class="description__conatacts contacts-list">
+              <li class="contacts-list__item">
+                <img src="img/icon_phone_btn.svg" alt="Иконка телефона" width="40" height="40">
+                <a class="contacts-list__link" href="tel:88005558628"><span class="visually-hidden">8 800 555-86-28</span></a>
+              </li>
+              <li class="contacts-list__item">
+                <img src="img/icon_mail_btn.svg" alt="Иконка E-mail" width="40" height="40">
+                <a class="contacts-list__link" href="mailto:mail@htmlacademy.ru"><span class="visually-hidden">mail@htmlacademy.ru</span></a>
+              </li>
+            </ul>
+            <a class="description__button-authorization button button--authorization button--yellow button--dark-blue-text" href="#">Авторизация</a>
+          </div>
           <blockquote class="description__quoute quoute">
-            <p class="quoute__paragraph">«Лучшее приложение,<br>
+            <p class="quoute__paragraph light">«Лучшее приложение,<br>
               что я видел в жизни!»</p>
-            <cite class="quoute__author">
+            <cite class="quoute__author bold">
               Мурат Эльтазин<br>
               главный редактор<br>
               газеты «гаджетлайф»</cite>
           </blockquote>
-          <ol class="usage-steps">
+          <ol class="description__list usage-steps bold">
             <li class="usage-steps__item">
               Выберите<br>
               направление
@@ -107,25 +140,27 @@
           </ol>
         </div>
       </section>
-      <section class="about-service">
+      <section class="about-service"> <!--Тут не вижу смысла делать сетку, достаточно будет ограничить ширину текста, на этапе пиксель перфекта-->
         <div class="container">
           <h2 class="about-service__title">О сервисе</h2>
-          <p class="about-service__text">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
-          <p class="about-service__text about-service__text--bold">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
+          <p class="about-service__text light">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
+          <p class="about-service__text bold">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
         </div>
       </section>
-      <section class="ditections">
-        <div class="container">
-          <h2 class="directions__title">Направления</h2>
-          <p class="directions__text">
-            Мы не продаем туры<br>
-            и ничего не рекламируем.<br>
-            Люди сами пишут о странах,<br>
-            куда хотели бы отправиться<br>
-            и чем можно там заняться.
-          </p>
+      <section class="directions">
+        <div class="container directions__wrapper">
+          <div class="directions__text-wrapper">
+            <h2 class="directions__title">Направления</h2>
+            <p class="directions__text light">
+              Мы не продаем туры<br>
+              и ничего не рекламируем.<br>
+              Люди сами пишут о странах,<br>
+              куда хотели бы отправиться<br>
+              и чем можно там заняться.
+            </p>
+          </div>
           <ul class="directions__cards-list">
-            <li class="directions__cards-item direction-card">
+            <li class="directions__cards-item direction-card medium">
               <img class="direction-card__pic" src="img/thailand-w270.png" alt="Тайланд" width="270" height="110">
               <div class="direction-card__info">
                 <img class="direction-card__country-flag" src="img/thailand-flag_w35.png" alt="Флаг Тайланда" width="35" height="24">
@@ -139,7 +174,7 @@
                 </div>
               </div>
             </li>
-            <li class="directions__cards-item direction-card">
+            <li class="directions__cards-item direction-card medium">
               <img class="direction-card__pic" src="img/france-w270.jpg" alt="Франция" width="270" height="110">
               <div class="direction-card__info">
                 <img class="direction-card__country-flag" src="img/france-flag_w35.png" alt="Флаг Франции" width="35" height="24">
@@ -153,7 +188,7 @@
                 </div>
               </div>
             </li>
-            <li class="directions__cards-item direction-card">
+            <li class="directions__cards-item direction-card medium">
               <img class="direction-card__pic" src="img/czech-w270.jpg" alt="Чехия" width="270" height="110">
               <div class="direction-card__info">
                 <img class="direction-card__country-flag" src="img/czech-flag_w35.png" alt="Флаг Чехии" width="35" height="24">
@@ -168,17 +203,19 @@
               </div>
             </li>
           </ul>
-          <a class="directions__button button" href="form.html">Показать все</a>
+          <a class="directions__button button button--yellow button--large" href="form.html">Показать все</a>
         </div>
       </section>
 
       <section class="users">
-        <div class="container">
-          <h2 class="users__title">Попутчики</h2>
-          <p class="users__text">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
-          <p class="user__text users__text--bold">
-            Теперь можно легко найти<br>
-            единомышленников!</p>
+        <div class="container users__wrapper">
+          <div class="users__text-wrapper">
+            <h2 class="users__title">Попутчики</h2>
+            <p class="users__text light">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
+            <p class="user__text bold">
+              Теперь можно легко найти<br>
+              единомышленников!</p>
+          </div>
           <ul class="users__cards-list">
             <li class="users__cards-item user-card">
               <img class="user-card__photo" src="img/user-image-tatiyana_w270.jpg" alt="Фотография пользователя" width="270" height="270">
@@ -246,14 +283,14 @@
               </ul>
             </li>
           </ul>
-          <a class="users__button button" href="catalog.html">Показать всех</a>
+          <a class="users__button button button--yellow button--large" href="catalog.html">Показать всех</a>
         </div>
       </section>
 
       <section class="add-profile">
         <div class="container">
           <h2 class="add-profile__title">Добавьте свой профиль</h2>
-          <ol class="add-profile__list rate-list">
+          <ol class="add-profile__list rate-list light">
             <li class="rate-list__item">
               <p class="rate-list__text">Базовое размещение</p>
               <p class="rate-list__tax">Бесплатно</p>
@@ -267,11 +304,11 @@
               <p class="rate-list__tax">59 руб./мес</p>
             </li>
           </ol>
-          <a class="add-profile__modal" href="#">Показать тарифы для бизнеса</a>
+          <a class="add-profile__modal bold" href="#">Показать тарифы для бизнеса</a>
           <div class="add-profile__modal-popup">
             <div class="add-profile__modal-wrapper">
               <h2 class="add-profile__modal-title">Бизнес-тарифы</h2>
-              <ul class="add-profile__modal-list">
+              <ul class="add-profile__modal-list light">
                 <li class="add-profile__modal-item">
                   <p class="add-profile__modal-text">Реклама у блоггера</p>
                   <p class="add-profile__modal-tax">300 000 руб./пост</p>
@@ -290,7 +327,7 @@
                 </li>
               </ul>
             </div>
-            <button class="add-profile__modal-close" >Закрыть окно</button>
+            <button class="add-profile__modal-close bold" >Закрыть окно</button>
           </div>
         </div>
       </section>
@@ -299,7 +336,7 @@
         <div class="container">
           <h2 class="visually-hidden">Создайте аккаунт в нашем сервисе!</h2>
           <p class="registration__title">Заинтересовались?</p>
-          <p class="registration__text">
+          <p class="registration__text light">
             Зарегистрируйтесь,<br> это быстро и бесплатно!<br> Уже зарегистрированы? Тогда скорее
             <a class="login-link" href="authorization.html">авторизуйтесь</a>.
           </p>
@@ -308,15 +345,15 @@
             <input type="text" id="feedback-email" name="feedback-email" placeholder="E-mail">
             <button class="registration__button button" type="submit" value="Регистрация"><span class="visually-hidden">Зарегистрироваться</span></button>
           </form>
-          <p class="registration__text">Остались вопросы?<br> Мы с радостью на них ответим!</p>
+          <p class="registration__text light">Остались вопросы?<br> Мы с радостью на них ответим!</p>
           <ul class="registration__conatacts-list contacts-list">
             <li class="contacts-list__item">
               <img src="img/contacts_icon_dark_phone.svg" alt="Изображение телефона" width="45" height="45">
-              <a class="contacts-list__link contacts-list__link--yellow " href="tel:88005558628">8 800 555-86-28</a>
+              <a class="contacts-list__link contacts-list__link--yellow-text bold" href="tel:88005558628">8 800 555-86-28</a>
             </li>
             <li class="contacts-list__item">
               <img src="img/contacts_icon_dark_email.svg" alt="Изображение почты" width="45" height="45">
-              <a class="contacts-list__link contacts-list__link--yellow " href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+              <a class="contacts-list__link contacts-list__link--yellow-text bold" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </li>
           </ul>
         </div>
@@ -327,7 +364,7 @@
         <div class="map__wrapper">
           <div class="container">
             <img class="map__icon" src="img/map_mark.svg" alt="Иконка карты" width="45" height="45">
-            <address class="map__address">ул. Большая<br> Конюшенная, 19/8</address>
+            <address class="map__address bold">ул. Большая<br> Конюшенная, 19/8</address>
             <a class="map__link" href="https://yandex.com/maps/-/CCUiNJWULC">
               <span class="map__button button button--blue-border">Проложить маршрут</span>
             </a>
@@ -337,7 +374,7 @@
     </main>
 
     <footer class="page-footer">
-      <div class="container">
+      <div class="container page-footer__wrapper">
         <img src="img/logo_footer.svg" alt="Логотип «Погнали»" width="96" height="15">
         <ul class="page-footer__socials social-list">
           <li class="social-list__item">
@@ -365,5 +402,31 @@
         </a>
       </div>
     </footer>
+    <script>
+      const navigation = document.querySelector(".nav");
+      const navigationOn = document.querySelector(".nav__toggle");
+      const navigationOff = document.querySelector(".modal-menu__toggle");
+
+      navigation.classList.remove("nav--no-js");
+      navigation.classList.remove("nav--menu-opened");
+
+      navigationOn.addEventListener('click', function() {
+        if (navigation.classList.contains('nav--menu-closed')) {
+          navigation.classList.remove('nav--menu-closed');
+          navigation.classList.add('nav--menu-opened');
+        } else {
+          navigation.classList.add('nav--menu-opened')
+        }
+      });
+
+      navigationOff.addEventListener('click', function() {
+        if (navigation.classList.contains('nav--menu-opened')) {
+          navigation.classList.remove('nav--menu-opened');
+          navigation.classList.add('nav--menu-closed');
+        } else {
+          navigation.classList.add('nav--menu-closed')
+        }
+      });
+    </script> <!-- Скрипты позже закину в отедельный файл -->
   </body>
 </html>

@@ -8,15 +8,10 @@
 }
 
 .about-service__title {
-  @include h2-orange;
+  @include h2;
+  color: $special-orange;
 }
 
 .about-service__text {
-  @include text-light;
-  margin: 0 0 20px 0;
-
-  &--bold {
-    font-weight: bold;
-    margin: 0;
-  }
+  margin-bottom: 20px;
 }

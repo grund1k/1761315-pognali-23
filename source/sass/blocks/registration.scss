@@ -5,12 +5,18 @@
 }
 
 .registration__title {
-  @include h2-orange;
+  @include h2;
+  color: $special-orange;
   text-align: center;
   margin-bottom: 19px;
 }
 
 .registration__text {
-  @include text-light;
   text-align: center;
+}
+
+.registration__conatacts-list {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }

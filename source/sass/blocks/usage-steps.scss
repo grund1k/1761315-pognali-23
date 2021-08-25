@@ -1,10 +1,6 @@
 .usage-steps {
-  @include text-large-bold;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  line-height: 18px;
-  color: $text-dark-blue;
+  @include subtitle;
+  color: $dark-blue;
 }
 
 .usage-steps__item {

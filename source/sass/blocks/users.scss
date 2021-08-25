@@ -7,23 +7,30 @@
   padding-bottom: 31px;
 }
 
-.users__title {
-  @include h2-orange;
-  margin: 0 0 19px 0;
-}
-
-.users__text {
-  @include text-light;
-  color: $basic-white;
-  margin: 0 0 25px 0;
-
-  &--bold {
-    font-weight: bold;
+.users__wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
+.users__title {
+  @include h2;
+  color: $special-orange;
+  margin-bottom: 19px;
+}
+
+.users__text {
+  margin-bottom: 25px;
+}
+
 .users__cards-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
 }

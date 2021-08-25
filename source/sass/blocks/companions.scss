@@ -1,19 +1,6 @@
-.companions__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
 .companions__profile {
   margin-bottom: 10px;
   background-color: $basic-white;
   border-radius: 20px;
   padding: 15px 20px 23px 18px;
-}
-
-.companions__more-button {
-  @include button-text;
-  text-decoration: none;
-  line-height: 30px;
-  color: $basic-blue-light;
 }

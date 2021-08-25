@@ -4,19 +4,26 @@
   padding-bottom: 34px;
 }
 
+.directions__wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .directions__title {
-  @include h2-orange;
+  @include h2;
+  color: $special-orange;
   margin-bottom: 19px;
 }
 
 .directions__text {
-  @include text-light;
   color: $special-grey;
   margin-bottom: 60px;
 }
 
 .directions__cards-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  @media (min-width: $desktop-width) {
+    grid-row: -1/3;
+  }
 }

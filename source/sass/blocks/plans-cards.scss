@@ -1,11 +1,3 @@
-.plans {
-  @include text-small-medium;
-}
-
-.plans-cards {
-  list-style: none;
-}
-
 .plans-cards__item {
   background-color: $basic-white;
   padding: 24px;
@@ -14,26 +6,20 @@
 }
 
 .plans-cards__countries {
-  @include text-bold;
-  line-height: 16px;
-  color: $basic-blue-light;
   margin-bottom: 20px;
 }
 
 .plans-cards__text {
-  line-height: 14px;
+  @include text-1;
   letter-spacing: 0.84px;
   text-transform: uppercase;
-  color: $basic-blue-light;
-  margin: 0;
 }
 
 .plans-cards__change-link {
-  text-decoration: none;
-  line-height: 14px;
+  @include text-1;
+  color: $black;
   letter-spacing: 0.42px;
   text-transform: uppercase;
-  color: $black;
   opacity: 0.3;
   margin-top: 24px;
 }

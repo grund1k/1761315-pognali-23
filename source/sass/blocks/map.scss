@@ -5,12 +5,6 @@
 }
 
 .map__address {
-  @include text-bold;
-  line-height: 22px;
-  text-transform: uppercase;
   color: $basic-blue-light;
-}
-
-.map__link {
-  text-decoration: none;
+  text-transform: uppercase;
 }

@@ -1,48 +1,24 @@
+.user-profile {
+  @include text-2;
+  color: $special-grey;
+}
+
 .user-profile__image {
   border-radius: 50%;
 }
 
-.user-profile__link {
-  text-decoration: none;
-}
-
 .user-profile__user-name {
-  @include h3-blue;
-  margin: 0;
+  @include h3;
+  color: $basic-blue-light;
 }
 
 .user-profile__likes-number {
-  @include text-small-bold;
-  line-height: 16px;
+  @include text-1;
+  color: $dark-blue;
   text-transform: uppercase;
-  color: $text-dark-blue;
-}
-
-.user-profile__user-tags {
-  @include text-meduim-15-size;
-  line-height: 18px;
-  color: $special-grey;
-}
-
-.user-profile__wish-list-title,
-.user-profile__transport-list-title {
-  @include text-meduim-15-size;
-  line-height: 16px;
-  color: $special-grey;
-}
-
-.user-profile__desire-list {
-  padding: 0;
-  margin: 0;
 }
 
 .user-profile__choose-button {
-  @include button-text;
-  line-height: 17px;
-  text-align: center;
-  color: $text-dark-blue;
-  text-decoration: none;
-  padding: 14px 78px 13px;
-  background-color: $button-yellow;
+  padding: 14px 78px 13px 78px;
   border-radius: 25px;
 }

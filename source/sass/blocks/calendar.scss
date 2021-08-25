@@ -1,13 +1,15 @@
 .calendar {
-  @include text-small-medium;
-  line-height: 18px;
+  @include text-1;
   color: $basic-blue-light;
   border-collapse: collapse;
 }
 
+.calendar__days {
+  color: $special-grey;
+}
+
 .calendar__day {
   font-weight: normal;
-  color: $special-grey;
 
   &--weekend {
     color: $red;

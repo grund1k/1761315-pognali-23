@@ -5,8 +5,9 @@
 }
 
 .add-plan__title {
-  @include h2-blue;
-  margin-bottom: 0 0 29px 0;
+  @include h2;
+  color: $basic-blue-light;
+  margin-bottom: 29px;
 }
 
 .add-plan__step {

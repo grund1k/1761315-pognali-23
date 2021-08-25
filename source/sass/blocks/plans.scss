@@ -1,16 +1,12 @@
 .plans {
+  color: $basic-blue-light;
   background: $plans-background;
   padding-top: 28px;
   padding-bottom: 30px;
 }
 
 .plans__title {
-  @include h2-blue;
+  @include h2;
   text-align: center;
   margin-bottom: 29px;
-}
-
-.plans__list {
-  margin: 0;
-  padding: 0;
 }

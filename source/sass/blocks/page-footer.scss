@@ -4,8 +4,22 @@
   padding-bottom: 18px;
 }
 
+.page-footer__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.page-footer__socials {
+  display: flex;
+}
+
+.page-footer__link {
+  display: flex;
+  justify-content: space-between;
+}
+
 .page-footer__link-text {
-  @include text;
-  line-height: 16px;
   color: $special-grey;
 }
