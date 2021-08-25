@@ -101,6 +101,7 @@
           <a class="breadcrumbs__index-link" href="index.html">На главную</a>
         </div>
       </div>
+
       <section class="profile-settings">
         <div class="container">
           <h2 class="visually-hidden">Настройки профиля</h2>
@@ -138,6 +139,7 @@
           </form>
         </div>
       </section>
+
       <section class="plans">
         <div class="container">
           <h2 class="plans__title">Мои планы:</h2>
@@ -157,6 +159,7 @@
           </ol>
         </div>
       </section>
+
       <section class="add-plan">
         <div class="container">
           <form action="http://echo.htmlacademy.ru" method="POST">
@@ -514,5 +517,31 @@
         </a>
       </div>
     </footer>
+    <script>
+      const navigation = document.querySelector(".nav");
+      const navigationOn = document.querySelector(".nav__toggle");
+      const navigationOff = document.querySelector(".modal-menu__toggle");
+
+      navigation.classList.remove("nav--no-js");
+      navigation.classList.remove("nav--menu-opened");
+
+      navigationOn.addEventListener('click', function() {
+        if (navigation.classList.contains('nav--menu-closed')) {
+          navigation.classList.remove('nav--menu-closed');
+          navigation.classList.add('nav--menu-opened');
+        } else {
+          navigation.classList.add('nav--menu-opened')
+        }
+      });
+
+      navigationOff.addEventListener('click', function() {
+        if (navigation.classList.contains('nav--menu-opened')) {
+          navigation.classList.remove('nav--menu-opened');
+          navigation.classList.add('nav--menu-closed');
+        } else {
+          navigation.classList.add('nav--menu-closed')
+        }
+      });
+    </script>
   </body>
 </html>
