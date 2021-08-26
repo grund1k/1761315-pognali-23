@@ -1,11 +1,27 @@
 .nav-list {
-  padding-top: 60px;
   font-size: 30px;
   line-height: 35px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.nav-list__item {
+  @media (min-width: $desktop-width) {
+    &:not(:last-child) {
+      margin-right: 34px;
+    }
+  }
 }
 
 .nav-list__link {
   color: $text-blue;
+
+  @media (min-width: $desktop-width) {
+    color: $basic-white;
+  }
 }
