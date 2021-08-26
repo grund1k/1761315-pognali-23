@@ -4,6 +4,12 @@
   text-align: center;
   text-transform: uppercase;
   border-collapse: collapse;
+
+  @media (min-width: $desktop-width) {
+    &--collapse-separate {
+      border-collapse: separate;
+    }
+  }
 }
 
 .alphabet-search__table-cell {
