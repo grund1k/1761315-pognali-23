@@ -26,6 +26,12 @@
     border: none;
     background-color: inherit;
   }
+
+  @media (min-width: $desktop-width) {
+    &--align-top {
+      vertical-align: top;
+    }
+  }
 }
 
 .alphabet-search__countries-list {
