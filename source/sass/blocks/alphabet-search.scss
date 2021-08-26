@@ -23,8 +23,10 @@
   }
 
   @media (min-width: $tablet-width) {
-    border: none;
-    background-color: inherit;
+    &--border-none {
+      border: none;
+      background-color: inherit;
+    }
   }
 
   @media (min-width: $desktop-width) {
