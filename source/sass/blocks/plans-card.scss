@@ -1,0 +1,49 @@
+.plans-card {
+  background-color: $basic-white;
+  padding: 24px;
+  border-radius: 10px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.plans-card__number {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+    width: 25%;
+    order: 1;
+  }
+}
+
+.plans-card__countries {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+    width: 75%;
+    order: 0;
+  }
+}
+
+.plans-card__text {
+  @include text-1;
+  letter-spacing: 0.84px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+    order: 2;
+  }
+}
+
+.plans-card__change-link {
+  @include text-1;
+  color: $black;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  opacity: 0.3;
+  margin-top: 24px;
+
+  @media (min-width: $tablet-width) {
+    order: 3;
+  }
+}

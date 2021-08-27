@@ -1,5 +1,9 @@
 .continent-list {
   color: $text-blue;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .continent-list__item {

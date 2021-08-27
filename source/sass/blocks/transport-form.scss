@@ -1,3 +1,9 @@
+.transport-form {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+    display: flex;
+  }
+}
+
 .transport-form__title {
   @include companion-form-title;
   margin-bottom: 19px;

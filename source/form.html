@@ -7,23 +7,47 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
-    <header class="page-header page-header--statick page-header--sticky">
-      <!-- <div class="container">
-        <a class="page-header__logo-link" href="index.html">
-          <img class="page-header__logo" src="img/logo_text.svg" alt="Логотип «Погнали»" width="96" height="15">
-        </a>
-        <button class="page-header__nav-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      </div> -->
-      <nav class="nav nav--menu-opened">
-        <div class="container">
-          <div class="nav__logo-wrapper">
-            <a class="nav__logo-link" href="index.html">
-              <img class="page-header__logo" src="img/logo_text.svg" alt="Логотип «Погнали»" width="96" height="15">
-            </a>
-            <button class="nav__toggle" type="button" aria-label="Открыть меню"></button>
-          </div>
-          <div class="nav__menu-wrapper">
-            <ul class="nav-list medium">
+
+    <header class="page-header">
+      <nav class="nav nav--page-inner nav--menu-opened nav--no-js">
+        <div class="container nav__wrapper">
+          <a class="nav__logo-link" href="index.html">
+            <img class="nav__logo" src="img/logo_text.svg" alt="Логотип «Погнали»" width="96" height="15">
+          </a>
+          <button class="nav__toggle" type="button" aria-label="Открыть меню"></button>
+          <ul class="nav__site-list nav-list medium">
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="#">О сервисе</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="form.html">Направления</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="catalog.html">Попутчики</a>
+            </li>
+          </ul>
+          <ul class="nav__conatacts contacts-list">
+            <li class="contacts-list__item">
+              <img src="img/icon_phone_btn.svg" alt="Иконка телефона" width="40" height="40">
+              <a class="contacts-list__link" href="tel:88005558628"><span class="visually-hidden">8 800 555-86-28</span></a>
+            </li>
+            <li class="contacts-list__item">
+              <img src="img/icon_mail_btn.svg" alt="Иконка E-mail" width="40" height="40">
+              <a class="contacts-list__link" href="mailto:mail@htmlacademy.ru"><span class="visually-hidden">mail@htmlacademy.ru</span></a>
+            </li>
+          </ul>
+          <a class="nav__button-authorization button button--authorization button--yellow button--dark-blue-text" href="#">Авторизация</a>
+        </div>
+
+        <div class="nav__menu-wrapper modal-menu">
+          <div class="container modal-menu__wrapper">
+            <div class="modal-menu__logo-wrapper">
+              <a class="modal-menu__logo-link" href="index.html">
+                <img class="modal-menu__logo" src="img/logo_footer.svg" alt="Логотип «Погнали»" width="96" height="15">
+              </a>
+              <button class="modal-menu__toggle" type="button" aria-label="Открыть меню"></button>
+            </div>
+            <ul class="modal-menu__site-list nav-list medium">
               <li class="nav-list__item">
                 <a class="nav-list__link" href="#">О сервисе</a>
               </li>
@@ -34,8 +58,8 @@
                 <a class="nav-list__link" href="catalog.html">Попутчики</a>
               </li>
             </ul>
-            <a class="nav__button button button--authorization button--yellow button--dark-blue-text" href="#">Авторизация</a>
-            <ul class="nav__contacts contacts-list bold">
+            <a class="modal-menu__button button button--authorization button--yellow button--dark-blue-text" href="#">Авторизация</a>
+            <ul class="modal-menu__contacts contacts-list bold">
               <li class="contacts-list__item">
                 <img class="contacts-list__icon" src="img/contacts_icon_dark_phone.svg" alt="Изображение телефона" width="45" height="45">
                 <a class="contacts-list__link" href="tel:88005558628">8 800 555-86-28</a>
@@ -45,7 +69,7 @@
                 <a class="contacts-list__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
               </li>
             </ul>
-            <ul class="nav__socials social-list">
+            <ul class="modal-menu__socials social-list">
               <li class="social-list__item">
                 <a class="social-list__link" href="https://www.facebook.com">
                   <img class="social-list__icon" src="img/icon_facebook.svg" alt="Логотип Facebook" width="11" height="21">
@@ -69,20 +93,31 @@
         </div>
       </nav>
     </header>
+
     <main class="page-main">
-      <h1 class="page-main__title container">Направления</h1>
+      <div class="page-main__breadcrumbs-wrapper">
+        <div class="container breadcrumbs">
+          <h1 class="breadcrumbs__title">Направления</h1>
+          <a class="breadcrumbs__index-link" href="index.html">На главную</a>
+        </div>
+      </div>
+
       <section class="profile-settings">
         <div class="container">
           <h2 class="visually-hidden">Настройки профиля</h2>
-          <img class="profile-settings__user-image" src="img/user-image-petya_w270.jpg" alt="Фотография пользователя" width="100" height="100">
-          <a class="profile-settings__photo-button button button--blue button--dark-blue-text" href="#">Cменить фото</a>
-          <form action="http://echo.htmlacademy.ru" method="POST">
-            <fieldset class="profile-settings__tags-fieldset tags-form">
+          <form class="profile-settings__form profile-form" action="http://echo.htmlacademy.ru" method="POST">
+            <div class="profile-form__level-pie level"></div> <!--Пока просто заглушка для сетки-->
+            <div class="profile-form__user-image-wrapper">
+              <img class="profile-form__user-image" src="img/user-image-petya_w270.jpg" alt="Фотография пользователя" width="100" height="100">
+              <button class="profile-form__upload-button">Фото</button>
+            </div>
+            <a class="profile-form__photo-button button button--blue button--dark-blue-text" href="#">Cменить фото</a>
+            <fieldset class="profile-form__tags-fieldset tags-form">
               <legend class="tags-form__legend bold">Теги</legend>
               <label class="visually-hidden" for="user-tags">Впишите свои тэги</label>
               <textarea class="tags-form__textarea" name="user-tags" id="user-tags" cols="30" rows="10">#бургер #бар #футбол #концерт #крафт</textarea>
             </fieldset>
-            <fieldset class="profile-settings__transport-checkbox transport-form transport-form__fieldset">
+            <fieldset class="profile-form__transport-checkbox transport-form transport-form__fieldset">
               <legend class="transport-from__legend bold">Транспорт</legend>
               <input class="visually-hidden" type="checkbox" name="plane" id="plane" value="plane" checked>
               <label class="transport-form__checkbox" for="plane">
@@ -108,25 +143,29 @@
           </form>
         </div>
       </section>
+
       <section class="plans">
         <div class="container">
           <h2 class="plans__title">Мои планы:</h2>
           <ol class="plans__list plans-cards">
-            <li class="plans-cards__item ">
-              <p class="plans-cards__countries bold">Франция, Италия</p>
-              <p class="plans-cards__text medium">3 попутчика</p>
-              <p class="plans-cards__text medium">26 мар — 29 мар</p>
-              <a class="plans-cards__change-link medium" href="change-plans.html">Изменить</a>
+            <li class="plans__list-item  plans-card">
+              <span class="plans-card__number">1</span>
+              <p class="plans-card__countries bold">Франция, Италия</p>
+              <p class="plans-card__text medium">3 попутчика</p>
+              <p class="plans-card__text medium">26 мар — 29 мар</p>
+              <a class="plans-card__change-link medium" href="change-plans.html">Изменить</a>
             </li>
-            <li class="plans-cards__item">
-              <p class="plans-cards__countries bold">Таиланд, Индонезия</p>
-              <p class="plans-cards__text medium">1 попутчик</p>
-              <p class="plans-cards__text medium">1 июл — 15 июл</p>
-              <a class="plans-cards__change-link medium" href="change-plans.html">Изменить</a>
+            <li class="plans__list-item plans-card">
+              <span class="plans-card__number">2</span>
+              <p class="plans-card__countries bold">Таиланд, Индонезия</p>
+              <p class="plans-card__text medium">1 попутчик</p>
+              <p class="plans-card__text medium">1 июл — 15 июл</p>
+              <a class="plans-card__change-link medium" href="change-plans.html">Изменить</a>
             </li>
           </ol>
         </div>
       </section>
+
       <section class="add-plan">
         <div class="container">
           <form action="http://echo.htmlacademy.ru" method="POST">
@@ -371,58 +410,60 @@
               <div class="step__country-add country-selector">
                 <button class="country-selector__button" type="button">Выберите страну</button>
                 <button class="country-selector__delete-button" type="button">Удалить страну</button>
-                <div class="country-selector__modal countries-dropdown countries-dropdown__wrapper">
+                <div class="country-selector__modal countries-dropdown">
                   <p class="countries-dropdown__title medium">Выберите страну</p>
-                  <table class="countrise-dropdown__table alphabet-search medium">
-                    <tr class="alphabet-search__table-row">
-                      <td class="alphabet-search__table-cell alphabet-search__table-cell--chosen-grey">А</td>
-                      <td class="alphabet-search__table-cell">Б</td>
-                      <td class="alphabet-search__table-cell">В</td>
-                      <td class="alphabet-search__table-cell">Г</td>
-                      <td class="alphabet-search__table-cell">Д</td>
-                    </tr>
-                    <tr class="alphabet-search__table-row">
-                      <td class="alphabet-search__table-cell">Е</td>
-                      <td class="alphabet-search__table-cell">З</td>
-                      <td class="alphabet-search__table-cell">И</td>
-                      <td class="alphabet-search__table-cell">К</td>
-                      <td class="alphabet-search__table-cell">Л</td>
-                    </tr>
-                    <tr class="alphabet-search__table-row">
-                      <td class="alphabet-search__table-cell">М</td>
-                      <td class="alphabet-search__table-cell">Н</td>
-                      <td class="alphabet-search__table-cell">О</td>
-                      <td class="alphabet-search__table-cell">П</td>
-                      <td class="alphabet-search__table-cell">Р</td>
-                    </tr>
-                    <tr class="alphabet-search__table-row">
-                      <td class="alphabet-search__table-cell">С</td>
-                      <td class="alphabet-search__table-cell">Т</td>
-                      <td class="alphabet-search__table-cell">У</td>
-                      <td class="alphabet-search__table-cell">Ф</td>
-                      <td class="alphabet-search__table-cell">Х</td>
-                    </tr>
-                    <tr class="alphabet-search__table-row">
-                      <td class="alphabet-search__table-cell">Ч</td>
-                      <td class="alphabet-search__table-cell">Ш</td>
-                      <td class="alphabet-search__table-cell">Э</td>
-                      <td class="alphabet-search__table-cell">Ю</td>
-                      <td class="alphabet-search__table-cell">Я</td>
-                    </tr>
-                  </table>
-                  <ul class="countrise-dropdown__list countries-list">
-                    <li class="countries-list__item">Австралия</li>
-                    <li class="countries-list__item">Австрия</li>
-                    <li class="countries-list__item">Азербайджан</li>
-                    <li class="countries-list__item">Албания</li>
-                    <li class="countries-list__item">Алжир</li>
-                    <li class="countries-list__item">Ангола</li>
-                    <li class="countries-list__item">Андорра</li>
-                    <li class="countries-list__item">Антигуа и Барбуда</li>
-                    <li class="countries-list__item">Аргентина</li>
-                    <li class="countries-list__item">Армения</li>
-                    <li class="countries-list__item">Афганистан</li>
-                  </ul>
+                  <div class="countries-dropdown__alphabet-search-wrapper">
+                    <table class="countrise-dropdown__table alphabet-search alphabet-search--collapse-separate medium">
+                      <tr class="alphabet-search__table-row">
+                        <td class="alphabet-search__table-cell alphabet-search__table-cell--chosen-grey">А</td>
+                        <td class="alphabet-search__table-cell">Б</td>
+                        <td class="alphabet-search__table-cell">В</td>
+                        <td class="alphabet-search__table-cell">Г</td>
+                        <td class="alphabet-search__table-cell">Д</td>
+                      </tr>
+                      <tr class="alphabet-search__table-row">
+                        <td class="alphabet-search__table-cell">Е</td>
+                        <td class="alphabet-search__table-cell">З</td>
+                        <td class="alphabet-search__table-cell">И</td>
+                        <td class="alphabet-search__table-cell">К</td>
+                        <td class="alphabet-search__table-cell">Л</td>
+                      </tr>
+                      <tr class="alphabet-search__table-row">
+                        <td class="alphabet-search__table-cell">М</td>
+                        <td class="alphabet-search__table-cell">Н</td>
+                        <td class="alphabet-search__table-cell">О</td>
+                        <td class="alphabet-search__table-cell">П</td>
+                        <td class="alphabet-search__table-cell">Р</td>
+                      </tr>
+                      <tr class="alphabet-search__table-row">
+                        <td class="alphabet-search__table-cell">С</td>
+                        <td class="alphabet-search__table-cell">Т</td>
+                        <td class="alphabet-search__table-cell">У</td>
+                        <td class="alphabet-search__table-cell">Ф</td>
+                        <td class="alphabet-search__table-cell">Х</td>
+                      </tr>
+                      <tr class="alphabet-search__table-row">
+                        <td class="alphabet-search__table-cell">Ч</td>
+                        <td class="alphabet-search__table-cell">Ш</td>
+                        <td class="alphabet-search__table-cell">Э</td>
+                        <td class="alphabet-search__table-cell">Ю</td>
+                        <td class="alphabet-search__table-cell">Я</td>
+                      </tr>
+                    </table>
+                    <ul class="countrise-dropdown__list countries-list">
+                      <li class="countries-list__item">Австралия</li>
+                      <li class="countries-list__item">Австрия</li>
+                      <li class="countries-list__item">Азербайджан</li>
+                      <li class="countries-list__item">Албания</li>
+                      <li class="countries-list__item">Алжир</li>
+                      <li class="countries-list__item">Ангола</li>
+                      <li class="countries-list__item">Андорра</li>
+                      <li class="countries-list__item">Антигуа и Барбуда</li>
+                      <li class="countries-list__item">Аргентина</li>
+                      <li class="countries-list__item">Армения</li>
+                      <li class="countries-list__item">Афганистан</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
               <div class="step__country-add country-selector">
@@ -456,7 +497,7 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="container">
+      <div class="container page-footer__wrapper">
         <img src="img/logo_footer.svg" alt="Логотип «Погнали»" width="96" height="15">
         <ul class="page-footer__socials social-list">
           <li class="social-list__item">
@@ -484,5 +525,31 @@
         </a>
       </div>
     </footer>
+    <script>
+      const navigation = document.querySelector(".nav");
+      const navigationOn = document.querySelector(".nav__toggle");
+      const navigationOff = document.querySelector(".modal-menu__toggle");
+
+      navigation.classList.remove("nav--no-js");
+      navigation.classList.remove("nav--menu-opened");
+
+      navigationOn.addEventListener('click', function() {
+        if (navigation.classList.contains('nav--menu-closed')) {
+          navigation.classList.remove('nav--menu-closed');
+          navigation.classList.add('nav--menu-opened');
+        } else {
+          navigation.classList.add('nav--menu-opened')
+        }
+      });
+
+      navigationOff.addEventListener('click', function() {
+        if (navigation.classList.contains('nav--menu-opened')) {
+          navigation.classList.remove('nav--menu-opened');
+          navigation.classList.add('nav--menu-closed');
+        } else {
+          navigation.classList.add('nav--menu-closed')
+        }
+      });
+    </script>
   </body>
 </html>

@@ -1,0 +1,12 @@
+.companions-catalog {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1036px 1fr;
+  }
+}
+
+.companions-catalog__filter {
+  @media (min-width: $desktop-width) {
+    order: 1;
+  }
+}
