@@ -2,6 +2,11 @@
   font-weight: bold;
   font-size: 36px;
   line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 70px;
+  }
 }
 
 @mixin h2 {
@@ -40,11 +45,25 @@
     font-size: 28px;
     line-height: 33px;
   }
+
+  @media (min-width: $desktop-width) {
+    line-height: 32px;
+  }
+}
+
+@mixin body-2 {
+  font-size: 21px;
+  line-height: 25px;
 }
 
 @mixin subtitle {
   font-size: 18px;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+  }
 }
 
 @mixin text-1 {

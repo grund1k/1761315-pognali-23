@@ -1,13 +1,56 @@
 .description {
+  position: relative;
+  z-index: 1;
   background-color: $dark-blue;
   background-image:
     url("../img/traveller-illustration1.png"),
     url("../img/globe-back-1.png");
   background-repeat: no-repeat;
   background-position:
-    50% 40%,
-    center 0;
-  padding-top: 90px;
+    80px 180px,
+    0 -40px;
+  padding-top: 49px;
+  padding-bottom: 69px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 435px;
+    bottom: 0;
+    z-index: -1;
+    background: linear-gradient(to bottom, #161c35 285px, #192144 80px);
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+    background-color: $header-blue;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 66px;
+    background-image:
+      url("../img/traveller-illustration-tablet.png"),
+      url("../img/globe-back-tablet.png");
+    background-position:
+      286px 312px,
+      0 290px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 105px;
+    padding-bottom: 125px;
+    background-image:
+      url("../img/traveller-illustration-desktop.png"),
+      url("../img/globe-back-desktop.png");
+    background-position:
+      604px 9px,
+      0 -101px;
+  }
 }
 
 .description__wrapper {
@@ -21,10 +64,22 @@
   @include h1;
   text-align: center;
   margin-bottom: 245px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 88px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+    padding-left: 67px;
+  }
 }
 
 .description__interaction-buttons {
   display: flex;
+  margin-bottom: 28px;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -33,9 +88,19 @@
 
 .description__quoute {
   margin-bottom: 29px;
+  padding-left: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 33px;
+    margin-bottom: 213px;
+  }
 
   @media (min-width: $desktop-width) {
     justify-self: end;
+    padding-left: 0;
+    padding-right: 27px;
+    padding-top: 13px;
+    margin-bottom: 117px;
   }
 }
 

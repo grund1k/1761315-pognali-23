@@ -1,7 +1,21 @@
 .quoute__paragraph {
-  margin: 0 0 18px 0;
+  margin-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 46px;
+  }
 }
 
 .quoute__author {
-  font-style: normal;
+  display: block;
+  width: 180px;
+
+  @media (min-width: $tablet-width) {
+    @include body-2;
+    width: 251px;
+  }
 }
