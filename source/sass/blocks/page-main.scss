@@ -1,3 +1,13 @@
 .page-main__breadcrumbs-wrapper {
   background-color: $header-blue;
 }
+
+.page-main__users {
+  position: relative;
+  z-index: -1;
+  margin-top: -25px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -60px;
+  }
+}

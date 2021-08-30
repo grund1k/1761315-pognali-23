@@ -222,17 +222,20 @@
         </div>
       </section>
 
-      <section class="users">
+      <section class="users page-main__users"> <!--Не знаю насколько верно мое решение тут.-->
         <div class="container users__wrapper">
           <div class="users__text-wrapper">
             <h2 class="users__title">Попутчики</h2>
-            <p class="users__text light">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
-            <p class="user__text bold">
-              Теперь можно легко найти<br>
-              единомышленников!</p>
+            <p class="users__text light">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль,<br class="users__text-br"> а другому маршрут для хайкинга.</p>
+            <p class="users__text users__text--small bold">Теперь можно легко&nbsp;<br class="users__text-br">найти единомышленников!</p>
           </div>
           <ul class="users__cards-list">
             <li class="users__cards-item user-card">
+              <div class="user-card__level level">
+                <img class="level__status-bar" src="img/99-level.svg" alt="99 уровень">
+                <p class="level__number bold">99</p>
+                <p class="level__dimension">level</p>
+              </div>
               <img class="user-card__photo" src="img/user-image-tatiyana_w270.jpg" alt="Фотография пользователя" width="270" height="270">
               <ul class="user-card__countries-list country-list">
                 <li class="country-list__item">
@@ -267,6 +270,11 @@
               </ul>
             </li>
             <li class="users__cards-item user-card">
+              <div class="user-card__level level">
+                <img class="level__status-bar" src="img/80-level.svg" alt="80 уровень">
+                <p class="level__number bold">80</p>
+                <p class="level__dimension">level</p>
+              </div>
               <img class="user-card__photo" src="img/user-image-petya_w270.jpg" alt="Фотография пользователя" width="270" height="270">
               <ul class="user-card__countries-list country-list">
                 <li class="country-list__item">
