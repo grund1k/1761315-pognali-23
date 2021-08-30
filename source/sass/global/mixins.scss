@@ -13,6 +13,11 @@
   font-weight: bold;
   font-size: 24px;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 45px;
+    line-height: 45px;
+  }
 }
 
 @mixin h2-size-s {
@@ -91,6 +96,11 @@
 @mixin button-2 {
   font-size: 18px;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+  }
 }
 
 @mixin companion-form-title {

@@ -4,6 +4,10 @@
   &--yellow {
     background-color: $button-yellow;
     border-radius: 10px;
+
+    @media (min-width: $tablet-width) {
+      border-radius: 20px;
+    }
   }
 
   &--authorization {

@@ -10,7 +10,7 @@
     80px 180px,
     0 -40px;
   padding-top: 49px;
-  padding-bottom: 69px;
+  padding-bottom: 27px;
 
   &::before {
     content: "";
@@ -23,7 +23,7 @@
     background: linear-gradient(to bottom, #161c35 285px, #192144 80px);
   }
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+  @media (min-width: $tablet-width) {
     background-color: $header-blue;
   }
 
