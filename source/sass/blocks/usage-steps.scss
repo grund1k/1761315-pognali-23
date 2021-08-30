@@ -53,7 +53,12 @@
       border-bottom-left-radius: 20px;
     }
 
+    &:nth-child(1n) {
+      width: 303px;
+    }
+
     &:nth-child(2n) {
+      width: 278px;
       margin-left: -25px;
     }
 
@@ -63,7 +68,7 @@
 
     &:not(:last-child) {
       height: 87px;
-    }
+    } // если есть варинты облегчить всю эту простыню когда, готов выслушать, потому что пока мне не очень нравится это решение
   }
 
   @media (min-width: $desktop-width) {
@@ -105,7 +110,7 @@
       height: 49px;
     }
   }
-} // если есть варинты облегчить всю эту простыню когда, готов выслушать, потому что пока мне не очень нравится это решение
+}
 
 .usage-steps__number {
   color: $basic-white;
