@@ -77,6 +77,10 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+
+    &--desktop {
+      display: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
