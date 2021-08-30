@@ -2,13 +2,15 @@
   background-color: $text-blue;
   background-image: url("../img/back.png");
   background-repeat: no-repeat;
-  background-position: center 40px;
+  background-position: 6% 6%;
   padding-top: 92px;
   padding-bottom: 31px;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
 
   @media (min-width: $tablet-width) {
+    background-image: url("../img/users-back-tablet.png");
+    background-position: 36% 16%;
     padding-top: 198px;
     padding-bottom: 88px;
     border-bottom-left-radius: 60px;
@@ -16,6 +18,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    background-image: url("../img/users-back-desktop.png");
+    background-position: 7.5% 62%;
     padding-bottom: 50px;
   }
 }
