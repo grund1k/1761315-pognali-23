@@ -109,16 +109,11 @@
 }
 
 .registration__button {
-  position: relative;
   width: 60px;
   height: 62px;
   margin-left: -25px;
 
   &::after {
-    content: "";
-    position: absolute;
-    border: 6px solid transparent;
-    border-left: 10px solid $basic-blue-light;
     top: 43%;
     right: 17px;
   }
