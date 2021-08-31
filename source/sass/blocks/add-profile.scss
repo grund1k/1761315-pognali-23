@@ -9,6 +9,8 @@
   @media (min-width: $tablet-width) {
     padding-top: 70px;
     padding-bottom: 65px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
   }
 
   @media (min-width: $desktop-width) {

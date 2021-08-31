@@ -361,27 +361,26 @@
         </div>
       </section>
 
-      <section class="registration">
+      <section class="registration page-main__registration">
         <div class="container">
           <h2 class="visually-hidden">Создайте аккаунт в нашем сервисе!</h2>
           <p class="registration__title">Заинтересовались?</p>
-          <p class="registration__text light">
-            Зарегистрируйтесь,<br> это быстро и бесплатно!<br> Уже зарегистрированы? Тогда скорее
+          <p class="registration__text light">Зарегистрируйтесь, это&nbsp;быстро&nbsp;и бесплатно! Уже&nbsp;зарегистрированы? Тогда скорее
             <a class="login-link" href="authorization.html">авторизуйтесь</a>.
           </p>
           <form class="registration__form" action="https://echo.htmlacademy.ru" method="GET">
             <label class="visually-hidden" for="feedback-email">Введите свой E-mail</label>
-            <input type="text" id="feedback-email" name="feedback-email" placeholder="E-mail">
-            <button class="registration__button button" type="submit" value="Регистрация"><span class="visually-hidden">Зарегистрироваться</span></button>
+            <input class="registration__input bold" type="text" id="feedback-email" name="feedback-email" placeholder="E-mail">
+            <button class="registration__button button button--yellow" type="submit" value="Регистрация"><span class="registration__button-text">Регистрация</span></button>
           </form>
-          <p class="registration__text light">Остались вопросы?<br> Мы с радостью на них ответим!</p>
+          <p class="registration__text light">Остались вопросы?<br class="registration__text-br"> Мы с радостью на них ответим!</p>
           <ul class="registration__conatacts-list contacts-list">
             <li class="contacts-list__item">
-              <img src="img/contacts_icon_dark_phone.svg" alt="Изображение телефона" width="45" height="45">
+              <img class="contacts-list__icon contacts-list__icon--registration"  src="img/contacts_icon_dark_phone.svg" alt="Изображение телефона" width="45" height="45">
               <a class="contacts-list__link contacts-list__link--yellow-text bold" href="tel:88005558628">8 800 555-86-28</a>
             </li>
             <li class="contacts-list__item">
-              <img src="img/contacts_icon_dark_email.svg" alt="Изображение почты" width="45" height="45">
+              <img class="contacts-list__icon contacts-list__icon--registration" src="img/contacts_icon_dark_email.svg" alt="Изображение почты" width="45" height="45">
               <a class="contacts-list__link contacts-list__link--yellow-text bold" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </li>
           </ul>
