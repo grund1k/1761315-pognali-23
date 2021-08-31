@@ -15,6 +15,16 @@
   }
 }
 
+.social-list__icon {
+  width: 45px;
+  height: 45px;
+
+  @media (min-width: $tablet-width) {
+    width: 62px;
+    height: 62px;
+  }
+}
+
 .social-list__fb-icon {
   width: 11px;
   height: 21px;
