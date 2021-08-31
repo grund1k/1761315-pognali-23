@@ -76,6 +76,25 @@
   display: block;
   font-size: 18px;
 
+  &:hover,
+  &:focus {
+    color: $basic-white;
+    background: #192144;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    border-left: 10px solid $basic-white;
+  }
+
+  &:active {
+    color: rgba(225, 225, 225, 0.3);
+  }
+
+  &:active::after {
+    border-left: 10px solid rgba(225, 225, 225, 0.3);
+  }
+
   &::after {
     content: "";
     position: absolute;

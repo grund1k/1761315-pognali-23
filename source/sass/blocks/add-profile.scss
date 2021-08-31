@@ -116,6 +116,15 @@
   color: $light-blue;
   padding-left: 25px;
 
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     @include body-3;
     display: flex;
@@ -257,6 +266,15 @@
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   width: 100%;
+
+  &:hover,
+  &:focus {
+    background: #edeff6;
+  }
+
+  &:active {
+    color: rgba(29, 46, 91, 0.3);
+  }
 
   @media (min-width: $tablet-width) {
     text-transform: none;

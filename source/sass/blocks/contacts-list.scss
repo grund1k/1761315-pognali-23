@@ -39,6 +39,16 @@
   color: $text-blue;
   text-transform: uppercase;
 
+  &:hover,
+  &:focus {
+    color: #ffbd30;
+  }
+
+  &:active {
+    color: #ffd74b;
+    opacity: 0.3;
+  }
+
   &--yellow-text {
     color: $button-yellow;
   }
