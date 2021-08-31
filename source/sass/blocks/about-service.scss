@@ -6,7 +6,7 @@
   background-color: $text-blue;
   background-image: url("../img/about-mobile.png");
   background-repeat: no-repeat;
-  background-position: 0 10px;
+  background-position: 35% 77%;
 
   @media (min-width: $tablet-width) {
     padding-top: 107px;
@@ -14,14 +14,14 @@
     border-bottom-right-radius: 60px;
     border-bottom-left-radius: 60px;
     background-image: url("../img/about-tablet-back.png");
-    background-position: 41px 69px;
+    background-position: 85% 44%;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 125px;
     padding-bottom: 164px;
     background-image: url("../img/about-desktop-back.png");
-    background-position: 60px 69px;
+    background-position: 50% 99%;
   }
 }
 

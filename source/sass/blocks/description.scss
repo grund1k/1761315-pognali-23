@@ -7,8 +7,8 @@
     url("../img/globe-back-1.png");
   background-repeat: no-repeat;
   background-position:
-    80px 180px,
-    0 -40px;
+    63% 24.5%,
+    50% -10%;
   padding-top: 49px;
   padding-bottom: 27px;
 
@@ -33,8 +33,8 @@
       url("../img/traveller-illustration-tablet.png"),
       url("../img/globe-back-tablet.png");
     background-position:
-      286px 312px,
-      0 290px;
+      72% 50.5%,
+      50% 64%;
 
     &::before {
       display: none;
@@ -48,8 +48,8 @@
       url("../img/traveller-illustration-desktop.png"),
       url("../img/globe-back-desktop.png");
     background-position:
-      604px 9px,
-      0 -101px;
+      60% 73%,
+      50% 102%;
   }
 }
 
