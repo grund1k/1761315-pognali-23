@@ -1,4 +1,6 @@
 .directions {
+  position: relative;
+  z-index: 2;
   background-color: $basic-grey;
   padding-top: 68px;
   padding-bottom: 35px;

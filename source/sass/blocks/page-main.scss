@@ -4,7 +4,7 @@
 
 .page-main__users {
   position: relative;
-  z-index: -1;
+  z-index: 1;
   margin-top: -25px;
 
   @media (min-width: $tablet-width) {
@@ -14,7 +14,7 @@
 
 .page-main__registration {
   position: relative;
-  z-index: -1;
+  z-index: 2;
   margin-top: -30px;
 
   @media (min-width: $tablet-width) {
