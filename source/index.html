@@ -317,17 +317,23 @@
             <li class="rate-list__item">
               <p class="rate-list__text">Базовое размещение</p>
               <p class="rate-list__tax">Бесплатно</p>
+              <div class="rate-list__number">1</div>
             </li>
             <li class="rate-list__item">
               <p class="rate-list__text">Вывод на первых позициях</p>
               <p class="rate-list__tax">99 руб./мес</p>
+              <div class="rate-list__number">2</div>
             </li>
             <li class="rate-list__item">
               <p class="rate-list__text">Кастомный цвет карточки</p>
               <p class="rate-list__tax">59 руб./мес</p>
+              <div class="rate-list__number">3</div>
             </li>
           </ol>
-          <a class="add-profile__modal bold" href="#">Показать тарифы для бизнеса</a>
+          <a class="add-profile__modal bold" href="#">
+            <img class="add-profile__modal-icon" src="img/business-rates-link.svg" alt="Иконка ссылки тарифов для бизнеса" width="68" height="68">
+            Показать тарифы для бизнеса
+          </a>
           <div class="add-profile__modal-popup">
             <div class="add-profile__modal-wrapper">
               <h2 class="add-profile__modal-title">Бизнес-тарифы</h2>
@@ -450,6 +456,19 @@
           navigation.classList.add('nav--menu-closed')
         }
       });
+
+      const addProfileModalOn = document.querySelector(".add-profile__modal")
+      const addProfileModal = document.querySelector(".add-profile__modal-popup")
+      const addProfileModalOff = document.querySelector(".add-profile__modal-close")
+
+      addProfileModalOn.addEventListener("click", function(evt) {
+        evt.preventDefault();
+        addProfileModal.style.display = "block"
+      })
+
+      addProfileModalOff.addEventListener("click", function() {
+        addProfileModal.style.display = "none"
+      })
     </script> <!--Скрипты позже закину в отедельный файл-->
   </body>
 </html>
