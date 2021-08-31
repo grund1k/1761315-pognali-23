@@ -19,8 +19,15 @@
 
   &--sticky {
     position: fixed;
-    top: 0;
-    left: 0;
+    z-index: 4;
+    background-color: $basic-white;
+    padding-bottom: 24px;
+    padding-top: 25px;
+  }
+
+  &--sticky .nav__toggle {
+    background-color: #cccccc;
+    box-shadow: 0 -7px 0 0 #cccccc;
   }
 
   &--no-js {
@@ -42,6 +49,18 @@
 
   &--menu-closed .nav__menu-wrapper {
     display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    &--sticky .nav-list__link {
+      color: $text-blue;
+    }
+
+    &--sticky .nav__logo-link {
+      &::after {
+        background-color: $text-blue;
+      }
+    }
   }
 }
 

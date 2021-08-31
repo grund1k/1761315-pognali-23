@@ -457,6 +457,18 @@
         }
       });
 
+      const navLogo = document.querySelector(".nav__logo");
+
+      window.addEventListener("scroll", function () {
+        if (window.pageYOffset > 10) {
+          navigation.classList.add("nav--sticky");
+          navLogo.src = "img/logo_footer.svg"
+        } else {
+          navigation.classList.remove("nav--sticky");
+          navLogo.src = "img/logo_text.svg"
+        }
+      })
+
       const addProfileModalOn = document.querySelector(".add-profile__modal")
       const addProfileModal = document.querySelector(".add-profile__modal-popup")
       const addProfileModalOff = document.querySelector(".add-profile__modal-close")
