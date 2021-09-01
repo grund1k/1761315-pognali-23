@@ -39,6 +39,10 @@
     @include button-2;
   }
 
+  &--20-size {
+    @include button-3;
+  }
+
   &--dark-blue-text {
     color: $dark-blue;
   }

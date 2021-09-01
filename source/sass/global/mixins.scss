@@ -113,6 +113,11 @@
   }
 }
 
+@mixin button-3 {
+  font-size: 20px;
+  line-height: 18px;
+}
+
 @mixin companion-form-title {
   font-weight: bold;
   line-height: 18px;

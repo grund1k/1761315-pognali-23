@@ -13,18 +13,54 @@
 }
 
 .profile-form__level-pie {
+  position: relative;
+  margin-left: 16px;
+  margin-right: 35px;
+  margin-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 35px;
+    margin-right: 58px;
+    margin-bottom: 49px;
+  }
+
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: -59px;
-    right: 100px; // значения пока условны
+    top: -219px;
+    right: 330px;
+    margin: 0;
   }
 }
 
 .profile-form__user-image-wrapper {
+  margin-right: 34px;
+  margin-top: -2px;
+
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: -59px;
-    right: 0;
+    top: -263px;
+    right: 95px;
+    margin: 0;
+  }
+}
+
+.profile-form__user-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 94px;
+    height: 94px;
+    border-radius: 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 190px;
+    height: 190px;
+    border-radius: 0;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
   }
 }
 
@@ -33,11 +69,31 @@
 
   @media (min-width: $desktop-width) {
     display: block;
+    text-transform: uppercase;
+    font-weight: 500;
+    background-color: $plans-background;
+    padding: 12px 70px 14px 71px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top: -5px;
   }
 }
 
 .profile-form__photo-button {
   grid-column: 1/-1;
+  margin-bottom: 23px;
+  display: block;
+  padding: 11px 55px 12px 67px;
+  font-weight: 500;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 34px;
+    margin-left: 34px;
+    margin-bottom: 52px;
+    padding: 21px 66px 21px 231px;
+    letter-spacing: 0.09em;
+    border-radius: 10px;
+  }
 
   @media (min-width: $desktop-width) {
     display: none;
@@ -46,6 +102,17 @@
 
 .profile-form__tags-fieldset {
   grid-column: 1/-1;
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 63px;
+  }
 }
 
 .profile-form__transport-checkbox {
