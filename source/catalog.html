@@ -1046,9 +1046,9 @@
         </section>
       </div>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer page-body__footer">
       <div class="container page-footer__wrapper">
-        <img src="img/logo_footer.svg" alt="Логотип «Погнали»" width="96" height="15">
+        <img class="page-footer__logo logo" src="img/logo_footer.svg" alt="Логотип «Погнали»" width="96" height="15">
         <ul class="page-footer__socials social-list">
           <li class="social-list__item">
             <a class="social-list__link" href="https://www.facebook.com">
@@ -1100,6 +1100,31 @@
           navigation.classList.add('nav--menu-closed')
         }
       });
+
+      const navLogo = document.querySelector(".nav__logo");
+
+      window.addEventListener("scroll", function () {
+        if (window.pageYOffset > 10) {
+          navigation.classList.add("nav--sticky");
+          navLogo.src = "img/logo_footer.svg"
+        } else {
+          navigation.classList.remove("nav--sticky");
+          navLogo.src = "img/logo_text.svg"
+        }
+      })
+
+      const addProfileModalOn = document.querySelector(".add-profile__modal")
+      const addProfileModal = document.querySelector(".add-profile__modal-popup")
+      const addProfileModalOff = document.querySelector(".add-profile__modal-close")
+
+      addProfileModalOn.addEventListener("click", function(evt) {
+        evt.preventDefault();
+        addProfileModal.style.display = "block"
+      })
+
+      addProfileModalOff.addEventListener("click", function() {
+        addProfileModal.style.display = "none"
+      })
     </script>
   </body>
 </html>
