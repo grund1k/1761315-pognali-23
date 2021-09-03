@@ -31,8 +31,6 @@
 }
 
 .plans-card__number {
-  margin-right: 6px;
-
   @media (min-width: $tablet-width) {
     @include body-3;
   }
@@ -48,12 +46,12 @@
 }
 
 .plans-card__countries {
-  margin-bottom: 18px;
+  margin-left: 6px;
 
   @media (min-width: $tablet-width) {
     font-size: 24px;
     line-height: 24px;
-    margin: 0 0 52px 0;
+    margin-left: 0;
   }
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
@@ -72,12 +70,17 @@
   text-transform: uppercase;
   width: 100%;
   margin-left: 3px;
-  margin-bottom: 5px;
+  margin-top: 18px;
+
+  &--date {
+    margin-top: 5px;
+  }
 
   @media (min-width: $tablet-width) {
     @include body-3;
     width: 32.75%;
-    margin: 0;
+    margin-top: 53px;
+    margin-left: 0;
     letter-spacing: 0.1em;
 
     &--date {
@@ -93,6 +96,7 @@
   @media (min-width: $desktop-width) {
     width: 15%;
     margin-left: auto;
+    margin-top: 0;
 
     &--date {
       width: 15%;
@@ -107,18 +111,19 @@
   letter-spacing: 0.42px;
   text-transform: uppercase;
   opacity: 0.3;
-  margin-top: 19px;
+  margin-top: 24px;
   margin-left: 2px;
 
   @media (min-width: $tablet-width) {
     @include body-3;
     width: 20%;
-    margin: 0;
+    margin-top: 53px;
     letter-spacing: 0.1em;
     order: 3;
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0;
     width: 9.5%;
     letter-spacing: 0.08em;
     margin-left: 129px;
