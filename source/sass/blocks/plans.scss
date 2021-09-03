@@ -8,12 +8,12 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 54px;
-    padding-bottom: 66px;
+    padding-bottom: 74px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 51px;
-    padding-bottom: 50px;
+    padding-bottom: 66px;
     border-top-left-radius: 60px;
     border-top-right-radius: 60px;
   }
@@ -35,11 +35,11 @@
   @include h2;
 
   @media (min-width: $tablet-width) {
-    margin-left: 4px;
+    @include h2-tablet-36-size;
   }
 
-  @media (min-width: $tablet-width) {
-    @include h2-tablet-36-size;
+  @media (min-width: $desktop-width) {
+    margin-left: 4px;
   }
 }
 
