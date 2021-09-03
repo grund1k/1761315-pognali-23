@@ -1,24 +1,99 @@
 .step {
-  padding: 24px 24px 23px 24px;
+  padding: 21px 24px 22px 24px;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 30px;
+    padding-top: 44px;
+    padding-left: 40px;
+  }
 }
 
 .step__title {
   @include h3;
   color: $basic-blue-light;
+  margin-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    @include h3-size-36;
+    margin-bottom: 38px;
+  }
 }
 
 .step__description {
   color: $special-grey;
+  margin-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    width: 505px;
+  }
+}
+
+.step__companion-counter {
+  margin-bottom: 16px;
+}
+
+.step__duration-counter {
   margin-bottom: 20px;
 }
 
-.step__children-checkbox {
+.step__children-checkbox + .step__checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  &::before {
+    content: "";
+    width: 26px;
+    height: 26px;
+    border: 1px solid $border-grey;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+}
+
+.step__children-checkbox:checked + .step__checkbox-label::before {
+  background-image: url("../img/icon-check-mark.svg");
+  background-size: 13px;
+  background-repeat: no-repeat;
+  background-position: 6px;
+}
+
+.step__checkbox-label {
   @include text-2;
   color: $basic-blue-light;
+  margin-bottom: 34px;
+}
+
+.step__slider {
+  position: relative;
+  margin-bottom: 27px;
+
+  &::before,
+  &::after {
+    content: "";
+    width: 221px;
+    position: absolute;
+    border: 1px solid $calendar-table-grey;
+  }
+
+  &::before {
+    top: -12px;
+  }
+
+  &::after {
+    bottom: -13px;
+  }
 }
 
 .step__calendar {
   margin-bottom: 22px;
+}
+
+.step__button-next {
+  display: block;
+  padding: 11px 10px 11px 40px;
 }
 
 .step__button-previous {

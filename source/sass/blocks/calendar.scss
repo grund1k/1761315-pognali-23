@@ -19,10 +19,37 @@
 .calendar__day,
 .calendar__date {
   width: 32px;
-  height: 32px;
+  height: 31px;
+  box-sizing: border-box;
+  padding: 0;
 }
 
 .calendar__date {
   border: 1px solid $calendar-table-grey;
   text-align: center;
+}
+
+.calendar__input {
+  & + .calendar__label {
+    background: $basic-grey;
+  }
+
+  &:checked + .calendar__label {
+    background-color: $basic-blue-light;
+    color: $basic-white;
+  }
+
+  &:disabled + .calendar__label {
+    color: $special-grey;
+    opacity: 0.3;
+    font-weight: normal;
+  }
+}
+
+.calendar__label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }

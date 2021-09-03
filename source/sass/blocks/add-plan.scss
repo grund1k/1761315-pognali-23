@@ -2,12 +2,29 @@
   background: $add-plan-background;
   padding-top: 30px;
   padding-bottom: 43px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 50px;
+  }
+}
+
+.add-plan__form-wrapper {
+  @media (min-width: $tablet-width) {
+    padding-left: 35px;
+    padding-right: 36px;
+  }
 }
 
 .add-plan__title {
   @include h2;
   color: $basic-blue-light;
   margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 59px;
+  }
 }
 
 .add-plan__step {

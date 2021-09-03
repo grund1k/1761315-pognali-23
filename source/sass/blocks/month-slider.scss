@@ -1,4 +1,18 @@
 .month-slider {
   @include h3-size-s;
   color: $basic-blue-light;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.month-slider__button {
+  width: 15px;
+  height: 21px;
+  background-image: url("../img/arrow.svg");
+  background-repeat: no-repeat;
+
+  &--rotate {
+    transform: rotate(180deg);
+  }
 }

@@ -1,4 +1,7 @@
 .counter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   text-transform: uppercase;
   color: $basic-blue-light;
 }
@@ -11,4 +14,49 @@
   text-align: right;
   letter-spacing: 1.12px;
   opacity: 0.3;
+  margin-bottom: 6px;
+}
+
+.counter__shell {
+  position: relative;
+}
+
+.counter__button {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+
+  &--amount-reduce {
+    border-bottom: 2px solid $light-silver;
+    left: 15px;
+    bottom: 20px;
+  }
+
+  &--amount-increase {
+    border-bottom: 2px solid $light-silver;
+    bottom: 20px;
+    right: 13px;
+
+    &::before {
+      content: "";
+      width: 14px;
+      position: absolute;
+      right: 0;
+      top: 12px;
+      border-bottom: 2px solid $light-silver;
+      transform: rotate(90deg);
+    }
+  }
+}
+
+.counter__input {
+  box-sizing: border-box;
+  width: 220px;
+  height: 43px;
+  font-size: 14.86px;
+  line-height: 14px;
+  text-align: center;
+  padding: 5px 20px;
+  border: 1px solid $border-grey;
+  border-radius: 4px;
 }
