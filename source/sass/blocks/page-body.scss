@@ -7,6 +7,11 @@
   align-items: start;
 }
 
+.page-body__header {
+  position: sticky;
+  z-index: 4;
+}
+
 .page-body__footer {
   margin-top: -110px;
 

@@ -25,6 +25,7 @@
   margin-bottom: 19px;
 
   @media (min-width: $tablet-width) {
+    @include h2-tablet-45-size;
     margin-bottom: 61px;
   }
 }

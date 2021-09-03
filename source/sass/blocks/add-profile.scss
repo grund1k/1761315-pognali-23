@@ -20,11 +20,24 @@
   }
 }
 
+.add-profile__wrapper {
+  padding-left: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-right: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 71px;
+    padding-right: 345px;
+  }
+}
+
 .add-profile__title {
   @include h2;
   color: $special-orange;
   position: relative;
-  padding-left: 25px;
   margin-bottom: 52px;
   width: 107px;
 
@@ -37,10 +50,11 @@
     background-repeat: no-repeat;
     position: absolute;
     top: -15px;
-    left: 169px;
+    left: 146px;
   }
 
   @media (min-width: $tablet-width) {
+    @include h2-tablet-45-size;
     width: 482px;
     padding-left: 103px;
     margin-bottom: 92px;
@@ -53,19 +67,17 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 421px;
+    padding-left: 351px;
     margin-bottom: 154px;
   }
 }
 
 .add-profile__list {
-  padding-left: 24px;
   margin-bottom: 18px;
   position: relative;
   z-index: 2;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
     margin-bottom: 27px;
 
     &::before {
@@ -75,7 +87,7 @@
       height: 285px;
       background: #e2e5f2;
       border-radius: 20px;
-      right: 0;
+      right: -38px;
       top: -53px;
       z-index: -1;
     }
@@ -87,19 +99,18 @@
       position: absolute;
       background-image: url("../img/rates.svg");
       background-repeat: no-repeat;
-      right: 45px;
+      right: 10px;
       top: 204px;
     }
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 71px;
     margin-bottom: 31px;
 
     &::before {
       width: 446px;
       height: 300px;
-      right: 184px;
+      right: -161px;
       top: -66px;
     }
 
@@ -107,7 +118,7 @@
       width: 198px;
       height: 198px;
       background-size: 198px 198px;
-      right: 73px;
+      right: -272px;
       top: -14px;
     }
   }
@@ -115,7 +126,6 @@
 
 .add-profile__modal {
   color: $light-blue;
-  padding-left: 25px;
 
   &:hover,
   &:focus {
@@ -130,11 +140,6 @@
     @include body-3;
     display: flex;
     align-items: center;
-    padding-left: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 71px;
   }
 }
 
@@ -192,6 +197,7 @@
   margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
+    @include h2-tablet-45-size;
     margin-bottom: 61px;
   }
 }

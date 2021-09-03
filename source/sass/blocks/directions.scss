@@ -25,7 +25,14 @@
 }
 
 .directions__wrapper {
+  @media (min-width: $tablet-width) {
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+
   @media (min-width: $desktop-width) {
+    padding-left: 71px;
+    padding-right: 165px;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -36,7 +43,7 @@
   margin-bottom: 60px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 34px;
+    padding-left: 0;
     margin-bottom: 122px;
   }
 
@@ -53,6 +60,7 @@
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
+    @include h2-tablet-45-size;
     margin-bottom: 59px;
   }
 }
@@ -62,13 +70,8 @@
 }
 
 .directions__cards-list {
-  @media (min-width: $tablet-width) {
-    padding-left: 37px;
-  }
-
   @media (min-width: $desktop-width) {
     grid-row: -1/3;
-    padding-left: 71px;
   }
 }
 
@@ -103,8 +106,6 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-right: 35px;
-    margin-left: 35px;
     padding: 26px 140px 29px 33px;
 
     &::after {
@@ -114,7 +115,7 @@
 
   @media (min-width: $desktop-width) {
     max-height: 32px;
-    margin-right: 240px;
+    margin-right: 75px;
     margin-left: 89px;
     padding: 26px 84px 20px 33px;
 

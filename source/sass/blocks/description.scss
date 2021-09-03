@@ -68,6 +68,7 @@
   padding-right: 16px;
 
   @media (min-width: $tablet-width) {
+    @include h1-tablet;
     margin-bottom: 88px;
   }
 

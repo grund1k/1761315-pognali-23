@@ -71,6 +71,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    @include h3-tablet-24-s;
     width: 150px;
     text-align: start;
     margin-left: 66px;
