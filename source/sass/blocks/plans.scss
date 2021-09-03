@@ -19,18 +19,27 @@
   }
 }
 
+.plans__wrapper {
+  @media (min-width: $tablet-width) {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 66px;
+    padding-right: 0;
+  }
+}
+
 .plans__title {
   @include h2;
 
   @media (min-width: $tablet-width) {
-    @include h2-tablet-36-size;
-    margin-left: 34px;
-    margin-bottom: 50px;
+    margin-left: 4px;
   }
 
-  @media (min-width: $desktop-width) {
-    margin-left: 70px;
-    margin-bottom: 52px;
+  @media (min-width: $tablet-width) {
+    @include h2-tablet-36-size;
   }
 }
 
@@ -38,13 +47,11 @@
   margin-top: 29px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 35px;
-    padding-right: 35px;
+    margin-top: 50px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 64px;
-    padding-right: 0;
+    margin-top: 52px;
   }
 }
 
