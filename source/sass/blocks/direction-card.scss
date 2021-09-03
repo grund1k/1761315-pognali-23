@@ -63,6 +63,7 @@
   color: $black;
 
   @media (min-width: $tablet-width) {
+    @include h3-tablet-24-s;
     margin-bottom: 4px;
   }
 }

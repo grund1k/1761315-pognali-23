@@ -54,6 +54,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    @include h2-tablet-45-size;
     width: 482px;
     padding-left: 103px;
     margin-bottom: 92px;
@@ -196,6 +197,7 @@
   margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
+    @include h2-tablet-45-size;
     margin-bottom: 61px;
   }
 }

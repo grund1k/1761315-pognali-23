@@ -2,22 +2,22 @@
   font-weight: bold;
   font-size: 36px;
   line-height: 40px;
+}
 
-  @media (min-width: $tablet-width) {
-    font-size: 60px;
-    line-height: 70px;
-  }
+@mixin h1-tablet {
+  font-size: 60px;
+  line-height: 70px;
 }
 
 @mixin h2 {
   font-weight: bold;
   font-size: 24px;
   line-height: 24px;
+}
 
-  @media (min-width: $tablet-width) {
-    font-size: 45px;
-    line-height: 45px;
-  }
+@mixin h2-tablet-45-size {
+  font-size: 45px;
+  line-height: 45px;
 }
 
 @mixin h2-size-s {
@@ -30,11 +30,11 @@
   font-weight: bold;
   font-size: 21px;
   line-height: 21px;
+}
 
-  @media (min-width: $tablet-width) {
-    font-size: 24px;
-    line-height: 24px;
-  }
+@mixin h3-tablet-24-s {
+  font-size: 24px;
+  line-height: 24px;
 }
 
 @mixin h3-size-s {
@@ -74,11 +74,11 @@
 @mixin subtitle {
   font-size: 18px;
   line-height: 18px;
+}
 
-  @media (min-width: $tablet-width) {
-    font-size: 24px;
-    line-height: 24px;
-  }
+@mixin subtitle-tablet-24-size {
+  font-size: 24px;
+  line-height: 21px;
 }
 
 @mixin text-1 {
