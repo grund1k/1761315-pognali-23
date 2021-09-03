@@ -20,6 +20,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    @include h1-tablet;
     margin-left: 35px;
 
     &::after {

@@ -1,5 +1,8 @@
 .level {
   display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   width: 60px;
   height: 60px;
   font-size: 24px;
@@ -7,11 +10,8 @@
   color: $basic-white;
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 50%;
-  flex-direction: column;
-  align-items: center;
   padding-top: 11px;
   box-sizing: border-box;
-  justify-content: center;
 
   &--catalog {
     width: 100px;
