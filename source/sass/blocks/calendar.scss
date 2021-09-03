@@ -6,13 +6,9 @@
 
 .calendar__days {
   color: $special-grey;
-}
 
-.calendar__day {
-  font-weight: normal;
-
-  &--weekend {
-    color: $red;
+  @media (min-width: $tablet-width) {
+    @include subtitle;
   }
 }
 
@@ -24,9 +20,49 @@
   padding: 0;
 }
 
+.calendar__day {
+  font-weight: normal;
+
+  &--weekend {
+    color: $red;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 77px;
+    height: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+    vertical-align: top;
+    padding-left: 15px;
+  }
+}
+
+.calendar__day-second-letter {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
+}
+
 .calendar__date {
   border: 1px solid $calendar-table-grey;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    @include text-1-tablet-size-20;
+    width: 77px;
+    height: 69px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include subtitle;
+    font-weight: normal;
+    width: 143px;
+    height: 71px;
+  }
 }
 
 .calendar__input {
@@ -44,6 +80,12 @@
     opacity: 0.3;
     font-weight: normal;
   }
+
+  @media (min-width: $tablet-width) {
+    &:disabled + .calendar__label {
+      @include subtitle;
+    }
+  }
 }
 
 .calendar__label {
@@ -52,4 +94,34 @@
   align-items: center;
   width: 100%;
   height: 100%;
+
+  @media (min-width: $desktop-width) {
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 12px;
+    padding-left: 16px;
+    box-sizing: border-box;
+
+    &--trip-dates {
+      flex-direction: column;
+    }
+  }
+}
+
+.calendar__trip-dates {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    margin-top: 8px;
+  }
+}
+
+.calendar__month {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+    margin-left: 5px;
+  }
 }

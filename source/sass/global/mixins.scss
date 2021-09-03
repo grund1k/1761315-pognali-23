@@ -96,6 +96,11 @@
   line-height: 14px;
 }
 
+@mixin text-1-tablet-size-20 {
+  font-size: 20px;
+  line-height: 20px;
+}
+
 @mixin text-2 {
   font-size: 15px;
   line-height: 15px;

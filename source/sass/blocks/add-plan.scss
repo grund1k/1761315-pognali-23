@@ -6,7 +6,7 @@
   border-top-right-radius: 30px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 50px;
+    padding-top: 52px;
   }
 }
 
@@ -15,16 +15,36 @@
     padding-left: 35px;
     padding-right: 36px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.add-plan__wrapper {
+  display: flex;
+  align-items: center;
 }
 
 .add-plan__title {
   @include h2;
   color: $basic-blue-light;
-  margin-bottom: 29px;
 
   @media (min-width: $tablet-width) {
     @include h2-tablet-36-size;
-    margin-bottom: 59px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 68px;
+  }
+}
+
+.add-plan__step-indicator {
+  margin-left: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
   }
 }
 
@@ -32,4 +52,14 @@
   background-color: $basic-white;
   border-radius: 10px;
   margin-bottom: 10px;
+
+  &--1 {
+    margin-top: 30px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--1 {
+      margin-top: 59px;
+    }
+  }
 }

@@ -4,6 +4,16 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    @include h3-size-36;
+    padding-left: 12px;
+    padding-right: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .month-slider__button {
@@ -14,5 +24,11 @@
 
   &--rotate {
     transform: rotate(180deg);
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 36px;
+    background-size: 30px 40px;
   }
 }

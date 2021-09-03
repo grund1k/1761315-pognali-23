@@ -176,32 +176,50 @@
       <section class="add-plan">
         <div class="container">
           <form class="add-plan__form-wrapper" action="http://echo.htmlacademy.ru" method="POST">
-            <h2 class="add-plan__title add-plan__title--small">Добавить план:</h2>
-            <div class="add-plan__step step" id="step-1">
-              <h3 class="step__title">Шаг 1.<br class="step__title-br">Даты пребывания</h3>
-              <p class="step__description">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку, и ее предполагаемую длительность.</p>
-              <div class="step__companion-counter counter medium">
-                <p class="counter__title bold">Ищу попутчиков:</p>
-                <p class="counter__dimension">чел.</p>
-                <div class="counter__shell">
-                  <button class="counter__button counter__button--amount-reduce" type="button"><span class="visually-hidden">-</span></button>
-                  <input class="counter__input medium" type="number" id="companion-count" name="companion-count" value="2" placeholder="Количество попутчиков" required min="1">
-                  <label class="visually-hidden" for="companion-count">Количество попутчиков</label>
-                  <button class="counter__button counter__button--amount-increase" type="button"><span class="visually-hidden">+</span></button>
+            <div class="add-plan__wrapper">
+              <h2 class="add-plan__title add-plan__title--small">Добавить план:</h2>
+              <ul class="add-plan__step-indicator step-indicator">
+                <li class="step-indicator__item step-indicator__item--active"></li>
+                <li class="step-indicator__item"></li>
+                <li class="step-indicator__item"></li>
+              </ul>
+            </div>
+            <div class="add-plan__step add-plan__step--1 step" id="step-1">
+              <div class="step__head-wrapper">
+                <div class="step__text-wrapper">
+                  <h3 class="step__title">Шаг 1.<br class="step__title-br"> Даты пребывания</h3>
+                  <p class="step__description">Укажите предпочтительное количество попутчиков, которых вы&nbsp;хотели&nbsp;бы позвать в поездку, и ее предполагаемую длительность.</p>
                 </div>
+                <ul class="step__marks marker-list">
+                  <li class="marker-list__item marker-list__item--active"><a class="marker-list__link marker-list__link--active" href="#step-1">Даты</a></li>
+                  <li class="marker-list__item"><a class="marker-list__link" href="#step-2">Маршрут</a></li>
+                  <li class="marker-list__item"><a class="marker-list__link" href="#step-3">Развлечения</a></li>
+                </ul>
               </div>
-              <div class="step__duration-counter counter medium">
-                <p class="counter__title bold">Длительность:</p>
-                <p class="counter__dimension">дн.</p>
-                <div class="counter__shell">
-                  <button class="counter__button counter__button--amount-reduce" type="button"><span class="visually-hidden">-</span></button>
-                  <input class="counter__input medium" type="number" id="day-count" name="day-count" value="3" placeholder="Количество дней" required min="1">
-                  <label class="visually-hidden" for="day-count">Количество дней</label>
-                  <button class="counter__button counter__button--amount-increase" type="button"><span class="visually-hidden">+</span></button>
+              <div class="step__counters-wrapper">
+                <div class="step__companion-counter counter medium">
+                  <p class="counter__title">Ищу попутчиков:</p>
+                  <p class="counter__dimension">чел.</p>
+                  <div class="counter__shell">
+                    <button class="counter__button counter__button--amount-reduce" type="button"><span class="visually-hidden">-</span></button>
+                    <input class="counter__input medium" type="number" id="companion-count" name="companion-count" value="2" placeholder="Количество попутчиков" required min="1">
+                    <label class="visually-hidden" for="companion-count">Количество попутчиков</label>
+                    <button class="counter__button counter__button--amount-increase" type="button"><span class="visually-hidden">+</span></button>
+                  </div>
                 </div>
+                <div class="step__duration-counter counter medium">
+                  <p class="counter__title">Длительность:</p>
+                  <p class="counter__dimension">дн.</p>
+                  <div class="counter__shell">
+                    <button class="counter__button counter__button--amount-reduce" type="button"><span class="visually-hidden">-</span></button>
+                    <input class="counter__input medium" type="number" id="day-count" name="day-count" value="3" placeholder="Количество дней" required min="1">
+                    <label class="visually-hidden" for="day-count">Количество дней</label>
+                    <button class="counter__button counter__button--amount-increase" type="button"><span class="visually-hidden">+</span></button>
+                  </div>
+                </div>
+                <input class="visually-hidden step__children-checkbox" type="checkbox" name="children" id="children">
+                <label class="step__checkbox-label" for="children">Можно с детьми</label>
               </div>
-              <input class="visually-hidden step__children-checkbox" type="checkbox" name="children" id="children">
-              <label class="step__checkbox-label" for="children">Можно с детьми</label>
               <div class="step__slider month-slider">
                 <button class="month-slider__button" type="button"><span class="visually-hidden">Предыдущий месяц</span></button>
                 <time class="month-slider__text" datetime="2019-03">Март 2019</time>
@@ -209,13 +227,13 @@
               </div>
               <table class="step__calendar calendar">
                 <tr class="calendar__days">
-                  <th class="calendar__day">П</th>
-                  <th class="calendar__day">В</th>
-                  <th class="calendar__day">С</th>
-                  <th class="calendar__day">Ч</th>
-                  <th class="calendar__day">П</th>
-                  <th class="calendar__day calendar__day--weekend">С</th>
-                  <th class="calendar__day calendar__day--weekend">В</th>
+                  <th class="calendar__day">П<span class="calendar__day-second-letter">н</span></th>
+                  <th class="calendar__day">В<span class="calendar__day-second-letter">т</span></th>
+                  <th class="calendar__day">С<span class="calendar__day-second-letter">р</span></th>
+                  <th class="calendar__day">Ч<span class="calendar__day-second-letter">т</span></th>
+                  <th class="calendar__day">П<span class="calendar__day-second-letter">т</span></th>
+                  <th class="calendar__day calendar__day--weekend">С<span class="calendar__day-second-letter">б</span></th>
+                  <th class="calendar__day calendar__day--weekend">В<span class="calendar__day-second-letter">c</span></th>
                 </tr>
                 <tr class="calendar__dates medium">
                   <td class="calendar__date">
@@ -244,7 +262,9 @@
                   </td>
                   <td class="calendar__date">
                     <input class="calendar__input visually-hidden" type="checkbox" name="01-03-2019" id="01-03-2019" disabled>
-                    <label class="calendar__label" for="1-03-2019">1</label>
+                    <label class="calendar__label" for="01-03-2019">1
+                      <span class="calendar__month">мар</span>
+                    </label>
                   </td>
                 </tr>
                 <tr class="calendar__dates medium">
@@ -352,7 +372,9 @@
                   </td>
                   <td class="calendar__date">
                     <input class="calendar__input visually-hidden" type="checkbox" name="26-03-2019" id="26-03-2019" checked>
-                    <label class="calendar__label" for="26-03-2019">26</label>
+                    <label class="calendar__label calendar__label--trip-dates" for="26-03-2019">26
+                      <span class="calendar__trip-dates">Заезд</span>
+                    </label>
                   </td>
                   <td class="calendar__date">
                     <input class="calendar__input visually-hidden" type="checkbox" name="27-03-2019" id="27-03-2019" checked>
@@ -360,7 +382,9 @@
                   </td>
                   <td class="calendar__date">
                     <input class="calendar__input visually-hidden" type="checkbox" name="28-03-2019" id="28-03-2019" checked>
-                    <label class="calendar__label" for="28-03-2019">28</label>
+                    <label class="calendar__label calendar__label--trip-dates" for="28-03-2019">28
+                      <span class="calendar__trip-dates">Выезд</span>
+                    </label>
                   </td>
                   <td class="calendar__date">
                     <input class="calendar__input visually-hidden" type="checkbox" name="29-03-2019" id="29-03-2019">
@@ -378,7 +402,9 @@
                   </td>
                   <td class="calendar__date">
                     <input class="calendar__input visually-hidden" type="checkbox" name="01-04-2019" id="01-04-2019">
-                    <label class="calendar__label" for="01-04-2019">1</label>
+                    <label class="calendar__label" for="01-04-2019">1
+                      <span class="calendar__month">апр</span>
+                    </label>
                   </td>
                   <td class="calendar__date">
                     <input class="calendar__input visually-hidden" type="checkbox" name="02-04-2019" id="02-04-2019">
