@@ -1,9 +1,11 @@
 .add-plan {
   background: $add-plan-background;
   padding-top: 30px;
-  padding-bottom: 43px;
+  padding-bottom: 154px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
+  position: relative;
+  z-index: 2;
 
   @media (min-width: $tablet-width) {
     padding-top: 52px;
