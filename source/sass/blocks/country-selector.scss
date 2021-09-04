@@ -222,5 +222,16 @@
 }
 
 .country-selector__modal {
-  display: none;
+  position: absolute;
+  z-index: 5;
+  top: -2px;
+  right: 0;
+
+  @media (min-width: $tablet-width) {
+    left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 1px;
+  }
 }

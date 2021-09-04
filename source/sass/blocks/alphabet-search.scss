@@ -5,7 +5,15 @@
   text-transform: uppercase;
   border-collapse: collapse;
 
+  @media (min-width: $tablet-width) {
+    @include body-3;
+    height: 345px;
+  }
+
   @media (min-width: $desktop-width) {
+    border-spacing: 16px 16px;
+    height: 438px;
+
     &--collapse-separate {
       border-collapse: separate;
     }
@@ -15,7 +23,7 @@
 .alphabet-search__table-cell {
   border: 1px solid $border-grey;
   width: 42px;
-  height: 39.78px;
+  height: 37px;
   background-color: $basic-white;
 
   &--chosen {
@@ -29,13 +37,24 @@
   }
 
   @media (min-width: $tablet-width) {
+    width: 52px;
+    box-sizing: border-box;
+
     &--border-none {
       border: none;
       background-color: inherit;
     }
+
+    &--chosen-grey {
+      background-color: $basic-blue-light;
+      color: $basic-white;
+    }
   }
 
   @media (min-width: $desktop-width) {
+    width: 59px;
+    border-radius: 4px;
+
     &--align-top {
       vertical-align: top;
     }

@@ -460,7 +460,12 @@
                     <img class="country-selector__button-logo" src="img/icon-close.svg" alt="Удалить страну">
                   </button>
                   <div class="country-selector__modal countries-dropdown">
-                    <p class="countries-dropdown__title medium">Выберите страну</p>
+                    <div class="countries-dropdown__title-wrapper">
+                      <p class="countries-dropdown__title medium">Выберите страну</p>
+                      <button class="countries-dropdown__close-button">
+                        <img class="countries-dropdown__close-button-icon" src="img/icon-close-dropdown.svg" alt="Закрыть список стран">
+                      </button>
+                    </div>
                     <div class="countries-dropdown__alphabet-search-wrapper">
                       <table class="countrise-dropdown__table alphabet-search alphabet-search--collapse-separate medium">
                         <tr class="alphabet-search__table-row">
@@ -499,7 +504,7 @@
                           <td class="alphabet-search__table-cell">Я</td>
                         </tr>
                       </table>
-                      <ul class="countrise-dropdown__list countries-list">
+                      <ul class="countries-dropdown__list countries-list">
                         <li class="countries-list__item">Австралия</li>
                         <li class="countries-list__item">Австрия</li>
                         <li class="countries-list__item">Азербайджан</li>
@@ -602,30 +607,44 @@
         }
       });
 
-      // const navLogo = document.querySelector(".nav__logo");
+      const navLogo = document.querySelector(".nav__logo");
 
-      // window.addEventListener("scroll", function () {
-      //   if (window.pageYOffset > 10) {
-      //     navigation.classList.add("nav--sticky");
-      //     navLogo.src = "img/logo_footer.svg"
-      //   } else {
-      //     navigation.classList.remove("nav--sticky");
-      //     navLogo.src = "img/logo_text.svg"
-      //   }
+      window.addEventListener("scroll", function () {
+        if (window.pageYOffset > 10) {
+          navigation.classList.add("nav--sticky");
+          navLogo.src = "img/logo_footer.svg"
+        } else {
+          navigation.classList.remove("nav--sticky");
+          navLogo.src = "img/logo_text.svg"
+        }
+      })
+
+      // const addProfileModalOn = document.querySelector(".add-profile__modal")
+      // const addProfileModal = document.querySelector(".add-profile__modal-popup")
+      // const addProfileModalOff = document.querySelector(".add-profile__modal-close")
+
+      // addProfileModalOn.addEventListener("click", function(evt) {
+      //   evt.preventDefault();
+      //   addProfileModal.style.display = "block"
       // })
 
-      const addProfileModalOn = document.querySelector(".add-profile__modal")
-      const addProfileModal = document.querySelector(".add-profile__modal-popup")
-      const addProfileModalOff = document.querySelector(".add-profile__modal-close")
+      // addProfileModalOff.addEventListener("click", function() {
+      //   addProfileModal.style.display = "none"
+      // })
 
-      addProfileModalOn.addEventListener("click", function(evt) {
+      const countryButtonChoosing = document.querySelector(".country-selector__button--choosing");
+      const countriesDropdown = document.querySelector(".countries-dropdown");
+      const countriesDropdownCloseButton = document.querySelector(".countries-dropdown__close-button");
+
+      countryButtonChoosing.addEventListener("click", function() {
+        countriesDropdown.style.display = "block"
+      })
+
+      countriesDropdownCloseButton.addEventListener("click", function(evt) {
         evt.preventDefault();
-        addProfileModal.style.display = "block"
+        countriesDropdown.style.display = "none"
       })
 
-      addProfileModalOff.addEventListener("click", function() {
-        addProfileModal.style.display = "none"
-      })
     </script>
   </body>
 </html>

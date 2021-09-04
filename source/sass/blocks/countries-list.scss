@@ -1,5 +1,23 @@
 .countries-list {
   color: $special-grey;
+  padding: 16px 20px 17px 19px;
+
+  @media (min-width: $tablet-width) {
+    @include body-3;
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 18px;
+  }
+}
+
+.countries-list__item {
+  margin-top: 4px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 7px;
+  }
 }
 
 .countries-list__link {
