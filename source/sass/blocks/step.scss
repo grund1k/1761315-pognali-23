@@ -6,6 +6,10 @@
     padding-top: 46px;
     padding-left: 40px;
     padding-bottom: 56px;
+
+    &--second {
+      padding-left: 42px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -51,12 +55,20 @@
     font-size: 20px;
     line-height: 24px;
     width: 505px;
-    margin-top: 38px;
+    margin-top: 36px;
   }
 
   @media (min-width: $desktop-width) {
     width: 581px;
     margin-top: 36px;
+  }
+}
+
+.step__description-br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 }
 
@@ -251,8 +263,103 @@
   }
 }
 
+.step__selector-wrapper {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    margin-top: 77px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 532px;
+      border: 1px solid $counter-border;
+      top: -43px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 407px;
+      background-color: $calendar-table-grey;
+      background-repeat: no-repeat;
+      background-position: right 0 bottom 0;
+      background-size: 100% 50px;
+      background-image: linear-gradient(to top, $basic-white 40%, transparent);
+      top: -42px;
+      right: 154px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 119px;
+
+    &::before {
+      width: 988px;
+      top: -64px;
+      left: 8px;
+    }
+
+    &::after {
+      top: -64px;
+      right: 233px;
+      height: 540px;
+    }
+  }
+}
+
+.step__country-add {
+  margin-top: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 14px;
+  }
+}
+
+.step__buttons-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 10px;
+  }
+}
+
 .step__button-previous {
+  display: block;
+  margin-top: 16px;
+  padding-left: 53px;
+  margin-bottom: -6px;
   letter-spacing: 0.17px;
+
+  @media (min-width: $tablet-width) {
+    text-transform: none;
+    font-size: 24px;
+    margin-top: 41px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      border: 6px solid transparent;
+      border-left: 10px solid #1d2e5b;
+      top: 3px;
+      left: 14px;
+      transform: rotate(180deg);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 52px;
+  }
 }
 
 .step__button-submit {
