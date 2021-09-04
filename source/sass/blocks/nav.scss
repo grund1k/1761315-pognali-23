@@ -1,9 +1,17 @@
 .nav {
   width: 100%;
   min-height: 24px;
-  padding-top: 25px;
+  padding-top: 18px;
   background-color: $dark-blue;
   z-index: 1;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+    background-color: $header-blue;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 43px;
+  }
 
   &--page-inner {
     background-color: $header-blue;
@@ -11,8 +19,15 @@
 
   &--sticky {
     position: fixed;
-    top: 0;
-    left: 0;
+    z-index: 4;
+    background-color: $basic-white;
+    padding-bottom: 24px;
+    padding-top: 25px;
+  }
+
+  &--sticky .nav__toggle {
+    background-color: #cccccc;
+    box-shadow: 0 -7px 0 0 #cccccc;
   }
 
   &--no-js {
@@ -25,7 +40,7 @@
 
   &--no-js .nav__menu-wrapper {
     position: relative;
-    top: -50px;
+    top: -94px;
   }
 
   &--menu-opened .nav__menu-wrapper {
@@ -35,11 +50,49 @@
   &--menu-closed .nav__menu-wrapper {
     display: none;
   }
+
+  @media (min-width: $desktop-width) {
+    &--sticky .nav-list__link {
+      color: $text-blue;
+    }
+
+    &--sticky .nav__logo-link {
+      &::after {
+        background-color: $text-blue;
+      }
+    }
+  }
 }
 
 .nav__wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    justify-content: start;
+  }
+}
+
+.nav__logo-link {
+  @media (min-width: $tablet-width) {
+    margin-right: 166px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 145px;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 60px;
+      height: 2px;
+      background-color: #ffffff;
+      position: absolute;
+      top: 31px;
+      right: -100px;
+    }
+  }
 }
 
 .nav__toggle {
@@ -49,7 +102,12 @@
   background-color: $basic-white;
   width: 25px;
   height: 3px;
-  box-shadow: 0 -6px 0 0 $basic-white;
+  box-shadow: 0 -7px 0 0 #ffffff;
+  margin-top: 4px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 143px;
+  }
 
   @media (min-width: $desktop-width) {
     display: none;
@@ -61,6 +119,8 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+    flex-wrap: wrap;
+    margin-top: 6px;
   }
 }
 
@@ -68,15 +128,23 @@
   display: none;
 
   @media (min-width: $desktop-width) {
+    margin-left: auto;
+    margin-top: 4px;
     display: flex;
   }
 }
 
 .nav__button-authorization {
   display: none;
+  padding: 16px 28px 14px 29px;
 
   @media (min-width: $tablet-width) {
     display: block;
+    margin-top: -4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 4px;
   }
 }
 
@@ -85,5 +153,5 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 4;
 }

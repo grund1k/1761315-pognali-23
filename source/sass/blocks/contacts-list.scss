@@ -4,12 +4,50 @@
 }
 
 .contacts-list__icon {
-  margin-right: 15px;
+  &--modal-menu,
+  &--registration {
+    width: 45px;
+    height: 45px;
+    margin-right: 15px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--modal-menu,
+    &--registration {
+      width: 68px;
+      height: 68px;
+      margin-right: 23px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--registration {
+      width: 90px;
+      height: 90px;
+      margin-right: 31px;
+    }
+
+    &--nav {
+      width: 50px;
+      height: 50px;
+      margin-right: 0;
+    }
+  }
 }
 
 .contacts-list__link {
   color: $text-blue;
   text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    color: #ffbd30;
+  }
+
+  &:active {
+    color: #ffd74b;
+    opacity: 0.3;
+  }
 
   &--yellow-text {
     color: $button-yellow;

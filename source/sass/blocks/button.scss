@@ -4,6 +4,18 @@
   &--yellow {
     background-color: $button-yellow;
     border-radius: 10px;
+
+    &:hover {
+      background-color: #ffbd30;
+    }
+
+    &:active {
+      color: rgba(22, 28, 53, 0.3);
+    }
+
+    @media (min-width: $tablet-width) {
+      border-radius: 20px;
+    }
   }
 
   &--authorization {
@@ -29,5 +41,16 @@
 
   &--dark-blue-text {
     color: $dark-blue;
+  }
+
+  &--arrow {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      border: 6px solid transparent;
+      border-left: 10px solid #1d2e5b;
+    }
   }
 }

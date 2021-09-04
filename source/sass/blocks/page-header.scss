@@ -1,0 +1,12 @@
+.page-header {
+  min-height: 42px;
+  background-color: $dark-blue;
+
+  @media (min-width: $tablet-width) {
+    min-height: 92px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 102px;
+  }
+}

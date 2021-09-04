@@ -6,3 +6,20 @@
   grid-template-rows: min-content 1fr min-content;
   align-items: start;
 }
+
+.page-body__header {
+  position: sticky;
+  z-index: 4;
+}
+
+.page-body__footer {
+  margin-top: -110px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 20px;
+  }
+}

@@ -1,10 +1,131 @@
 .map__wrapper {
-  background-color: $button-yellow;
-  padding-top: 31px;
+  position: relative;
+  z-index: 1;
+  margin-top: -20px;
+  padding-top: 51px;
   padding-bottom: 35px;
+  background-color: $button-yellow;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -50px;
+    padding-top: 98px;
+    padding-bottom: 85px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 103px;
+    padding-bottom: 55px;
+  }
+}
+
+.map__address-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.map__icon {
+  width: 45px;
+  height: 45px;
+
+  @media (min-width: $tablet-width) {
+    width: 68px;
+    height: 68px;
+    padding-left: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 90px;
+    height: 90px;
+    padding-left: 223px;
+  }
 }
 
 .map__address {
   color: $basic-blue-light;
   text-transform: uppercase;
+  margin-left: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 17px;
+    margin-left: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 28px;
+    margin-left: 30px;
+  }
+}
+
+.map__address-br {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.map__button {
+  padding: 16px 77px 18px 20px;
+  text-transform: none;
+  display: block;
+  font-size: 18px;
+  margin-top: 33px;
+
+  &:hover,
+  &:focus {
+    color: $basic-white;
+    background: #192144;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    border-left: 10px solid $basic-white;
+  }
+
+  &:active {
+    color: rgba(225, 225, 225, 0.3);
+  }
+
+  &:active::after {
+    border-left: 10px solid rgba(225, 225, 225, 0.3);
+  }
+
+  &::after {
+    top: 40%;
+    right: 14px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 35px;
+    font-size: 24px;
+    padding: 26px 360px 28px 33px;
+    border-radius: 20px;
+    margin-top: 43px;
+
+    &::after {
+      right: 30px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 28px 64px 28px 33px;
+    margin-top: 3px;
+    margin-left: 150px;
+
+    &::after {
+      right: 28px;
+      top: 45%;
+    }
+  }
+}
+
+.map__map-picture {
+  display: block;
+  width: 320px;
+  height: 424px;
+  margin: -51px auto 0 auto;
+  z-index: -3;
+  position: relative;
 }

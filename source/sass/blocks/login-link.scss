@@ -1,4 +1,15 @@
 .login-link {
   color: $button-yellow;
-  text-decoration: 1px $button-yellow;
+  border-bottom: 1px solid $button-yellow;
+
+  &:hover,
+  &:focus {
+    color: #ff8d30;
+    border-bottom: 1px solid #ff8d30;
+  }
+
+  &:active {
+    color: rgba(255, 141, 48, 0.3);
+    border-bottom: 1px solid rgba(255, 141, 48, 0.3);
+  }
 }

@@ -5,15 +5,23 @@
 
 .modal-menu__wrapper {
   position: relative;
+  padding-top: 25px;
+  padding-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 42px;
+  }
 }
 
 .modal-menu__logo-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 67px;
 
   @media (min-width: $tablet-width) {
-    max-width: 335px;
+    max-width: 355px;
+    margin-bottom: 91px;
   }
 }
 
@@ -36,10 +44,40 @@
   }
 }
 
-.modal-menu__button {
+.modal-menu__site-list {
+  margin-bottom: 70px;
+
   @media (min-width: $tablet-width) {
+    padding-left: 57px;
+    margin-bottom: 132px;
+  }
+}
+
+.modal-menu__button {
+  padding: 16px 81px 16px 78px;
+
+  @media (min-width: $tablet-width) {
+    padding: 17px 30px 13px 30px;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 40px;
+    right: 40px;
+  }
+}
+
+.modal-menu__contacts {
+  margin-top: 64px;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 57px;
+    margin-bottom: 129px;
+  }
+}
+
+.modal-menu__socials {
+  padding-left: 85px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 83px;
   }
 }

@@ -4,10 +4,20 @@
   line-height: 40px;
 }
 
+@mixin h1-tablet {
+  font-size: 60px;
+  line-height: 70px;
+}
+
 @mixin h2 {
   font-weight: bold;
   font-size: 24px;
   line-height: 24px;
+}
+
+@mixin h2-tablet-45-size {
+  font-size: 45px;
+  line-height: 45px;
 }
 
 @mixin h2-size-s {
@@ -20,6 +30,11 @@
   font-weight: bold;
   font-size: 21px;
   line-height: 21px;
+}
+
+@mixin h3-tablet-24-s {
+  font-size: 24px;
+  line-height: 24px;
 }
 
 @mixin h3-size-s {
@@ -35,11 +50,35 @@
   font-size: 16px;
   line-height: 22px;
   color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 32px;
+  }
+}
+
+@mixin body-2 {
+  font-size: 21px;
+  line-height: 25px;
+}
+
+@mixin body-3 {
+  font-size: 20px;
+  line-height: 23px;
 }
 
 @mixin subtitle {
   font-size: 18px;
   line-height: 18px;
+}
+
+@mixin subtitle-tablet-24-size {
+  font-size: 24px;
+  line-height: 21px;
 }
 
 @mixin text-1 {
@@ -58,11 +97,20 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $basic-blue-light;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 @mixin button-2 {
   font-size: 18px;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+  }
 }
 
 @mixin companion-form-title {

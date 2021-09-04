@@ -3,15 +3,77 @@
 }
 
 .rate-list__item {
+  display: grid;
+  grid-template-columns: 1fr min-content;
+
   @media (min-width: $tablet-width) {
     display: flex;
+    align-items: center;
+    margin-bottom: 9px;
+    position: relative;
+
+    &:first-child::before {
+      content: "";
+      position: absolute;
+      width: 560.31px;
+      border: 1px solid #e1e3e9;
+      left: 91px;
+      top: -16px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 560.31px;
+      border: 1px solid #e1e3e9;
+      left: 91px;
+      bottom: 6px;
+    }
+  }
+
+  $colors-list: $special-orange $usage-steps-yellow-dark $button-yellow;
+
+  @each $current-color in $colors-list {
+    $i: index($colors-list, $current-color);
+    &:nth-child(#{$i}) .rate-list__number {
+      background-color: $current-color;
+    }
   }
 }
 
 .rate-list__text {
-  margin-bottom: 6px;
+  @media (min-width: $tablet-width) {
+    margin-top: -25px;
+  }
 }
 
 .rate-list__tax {
-  margin-bottom: 16px;
+  margin-top: -8px;
+  margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+    margin-top: 2px;
+  }
+}
+
+.rate-list__number {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  width: 34px;
+  height: 34px;
+  text-align: center;
+  color: $basic-white;
+  border-radius: 50%;
+  line-height: 33px;
+  margin-top: -4px;
+
+  @media (min-width: $tablet-width) {
+    width: 68px;
+    height: 68px;
+    order: -1;
+    margin-right: 21px;
+    margin-top: -24px;
+    line-height: 66px;
+  }
 }

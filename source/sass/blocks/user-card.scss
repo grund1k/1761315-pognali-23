@@ -1,11 +1,40 @@
 .user-card {
   background-color: $basic-white;
   border-radius: 10px;
+
+  @media (min-width: $tablet-width) {
+    width: 285px;
+    height: 467px;
+    border-radius: 20px;
+  }
+}
+
+.user-card__level {
+  position: absolute;
+  top: 16px;
+  left: 17px;
+
+  @media (min-width: $tablet-width) {
+    top: 17px;
+    left: 21px;
+  }
 }
 
 .user-card__photo {
+  width: 270px;
+  height: 270px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.01, 1.01);
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 285px;
+    height: 285px;
+  }
 }
 
 .user-card__name {
@@ -13,14 +42,76 @@
   color: $basic-blue-light;
   text-align: center;
   margin-bottom: 15px;
+  position: relative;
+
+  &--offline::before,
+  &--online::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #f97676;
+    position: absolute;
+    left: 53px;
+    top: 10px;
+  }
+
+  &--online::before {
+    background-color: #81e31e;
+    left: 62px;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include h3-tablet-24-s;
+    width: 150px;
+    text-align: start;
+    margin-left: 66px;
+    margin-bottom: 23px;
+
+    &--offline::before,
+    &--online::before {
+      width: 8px;
+      height: 8px;
+      left: -22px;
+    }
+  }
+}
+
+.user-card__countries-list {
+  margin-top: -18px;
+  margin-left: 19px;
+  margin-bottom: 5px;
 }
 
 .user-card__tags {
   color: $special-grey;
   line-height: 18px;
   text-align: center;
+  padding-left: 46px;
+  padding-right: 45px;
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    @include body-3;
+    padding-right: 23px;
+    padding-left: 22px;
+    margin-bottom: 21px;
+  }
 }
 
 .users__cards-item:last-child {
   margin-bottom: 20px;
+}
+
+.user-card__transport-list {
+  margin-left: 20px;
 }
