@@ -530,29 +530,44 @@
               </div>
             </div>
 
-            <div class="add-plan__step step" id="step-3">
-              <h3 class="step__title">Шаг 3.<br class="step__title-br">Развлечения</h3>
-              <p class="step__description">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
-              <div class="step__country-textaera country-enviroment">
-                <p class="country-enviroment__title medium">Босния и Герцеговина</p>
-                <img class="country-enviroment__image" src="img/bosnia-and-herzegovina_w35.png" alt="Флаг Босния и Герцеговины" width="35" height="24">
+            <div class="add-plan__step add-plan__step--third step step--third" id="step-3">
+              <div class="step__head-wrapper">
+                <div class="step__text-wrapper">
+                  <h3 class="step__title">Шаг 3.<br class="step__title-br"> Развлечения</h3>
+                  <p class="step__description step__description--three">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+                </div>
+                <ul class="step__marks marker-list">
+                  <li class="marker-list__item"><a class="marker-list__link" href="#step-1">Даты</a></li>
+                  <li class="marker-list__item"><a class="marker-list__link" href="#step-2">Маршрут</a></li>
+                  <li class="marker-list__item marker-list__item--active"><a class="marker-list__link marker-list__link--active" href="#step-3">Развлечения</a></li>
+                </ul>
+              </div>
+              <div class="step__country-textaera step__country-textaera--top country-enviroment">
+                <div class="country-enviroment__head-wrapper country-enviroment__head-wrapper--first">
+                  <p class="country-enviroment__title country-enviroment__title--overflow medium">Босния и Герцеговина</p>
+                  <img class="country-enviroment__image" src="img/bosnia-and-herzegovina_w35.png" alt="Флаг Босния и Герцеговины" width="35" height="24">
+                </div>
                 <textarea class="country-enviroment__textarea" name="action-plan-first-country" id="action-plan-first-country" cols="30" rows="15" placeholder="План действий"></textarea>
                 <label class="visually-hidden" for="action-plan-first-country">Впишите свой план действий</label>
               </div>
               <div class="step__country-textaera country-enviroment">
-                <p class="country-enviroment__title medium">Чехия</p>
-                <img class="country-enviroment__image" src="img/czech-flag_w35.png" alt="Флаг Чехии" width="35" height="24">
-                <textarea class="country-enviroment__textarea" name="action-plan-second-country" id="action-plan-second-country" cols="30" rows="15" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+                <div class="country-enviroment__head-wrapper">
+                  <p class="country-enviroment__title medium">Чехия</p>
+                  <img class="country-enviroment__image" src="img/czech-flag_w35.png" alt="Флаг Чехии" width="35" height="24">
+                </div>
+                <textarea class="country-enviroment__textarea" name="action-plan-second-country" id="action-plan-second-country" cols="30" rows="15" placeholder="План действий">Пить пиво и лазить по&nbsp;старым замкам, наслаждаться архитектурой и вот это все.</textarea>
                 <label class="visually-hidden" for="action-plan-second-country">Впишите свой план действий</label>
               </div>
-              <button class="step__button-submit button button--yellow button--round" type="submit">Отправить</button>
-              <a class="step__button-previous button" href="#step-2">На шаг назад</a>
+              <div class="step__buttons-wrapper">
+                <button class="step__button-submit button button--yellow button--round" type="submit">Отправить</button>
+                <a class="step__button-previous button" href="#step-2">На шаг назад</a>
+              </div>
             </div>
           </form>
         </div>
       </section>
     </main>
-    <footer class="page-footer page-body__footer">
+    <footer class="page-footer">
       <div class="container page-footer__wrapper">
         <img class="page-footer__logo logo" src="img/logo_footer.svg" alt="Логотип «Погнали»" width="96" height="15">
         <ul class="page-footer__socials social-list">

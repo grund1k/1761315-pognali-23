@@ -10,6 +10,11 @@
     &--second {
       padding-left: 42px;
     }
+
+    &--third {
+      padding-top: 45px;
+      padding-left: 42px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -61,6 +66,10 @@
   @media (min-width: $desktop-width) {
     width: 581px;
     margin-top: 36px;
+
+    &--three {
+      width: 524px;
+    }
   }
 }
 
@@ -363,6 +372,47 @@
 }
 
 .step__button-submit {
-  padding: 8px 70px;
-  border-radius: 20px;
+  margin-top: 16px;
+  padding: 9px 71px 9px 67px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 41px;
+    padding: 27px 140px 28px 35px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      border: 6px solid transparent;
+      border-left: 10px solid #1d2e5b;
+      top: 33px;
+      right: 32px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 49px;
+  }
+}
+
+.step__country-textaera {
+  margin-top: 19px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 44px;
+
+    &--top {
+      margin-top: 68px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--top {
+      margin-top: 137px;
+    }
+  }
 }
