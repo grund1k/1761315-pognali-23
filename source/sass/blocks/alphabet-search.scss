@@ -8,11 +8,25 @@
   @media (min-width: $tablet-width) {
     @include body-3;
     height: 345px;
+
+    &--catalog {
+      font-size: 60px;
+      line-height: 60px;
+      font-weight: bold;
+      height: 412px;
+      width: 385px;
+      color: $text-blue;
+    }
   }
 
   @media (min-width: $desktop-width) {
     border-spacing: 16px 16px;
     height: 438px;
+
+    &--catalog {
+      text-align: start;
+      width: unset;
+    }
 
     &--collapse-separate {
       border-collapse: separate;
@@ -25,6 +39,10 @@
   width: 42px;
   height: 37px;
   background-color: $basic-white;
+
+  &--catalog {
+    width: 41px;
+  }
 
   &--chosen {
     background-color: $basic-blue-light;
@@ -40,7 +58,7 @@
     width: 52px;
     box-sizing: border-box;
 
-    &--border-none {
+    &--catalog {
       border: none;
       background-color: inherit;
     }
@@ -55,15 +73,33 @@
     width: 59px;
     border-radius: 4px;
 
-    &--align-top {
+    &--catalog {
       vertical-align: top;
+      width: 250px;
     }
+  }
+}
+
+.alphaber-search__letter {
+  @media (min-width: $tablet-width) {
+    opacity: 0.3;
+
+    &--chosen {
+      opacity: 1;
+      color: $text-blue;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    opacity: 1;
   }
 }
 
 .alphabet-search__countries-list {
   display: none;
   text-align: start;
+  margin-top: 37px;
+  margin-left: -2px;
 
   @media (min-width: $desktop-width) {
     display: block;
