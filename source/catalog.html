@@ -793,69 +793,89 @@
         <section class="companions-catalog__filter companion-filter">
           <div class="companion-filter__wrapper">
             <h2 class="companion-filter__title">Подберите идеального попутчика</h2>
-            <form action="http://echo.htmlacademy.ru" method="GET">
-              <div class="companion-filter__hobby companion-hobby">
-                <p class="companion-hobby__title">Хобби</p>
-                <input class="visually-hidden" type="checkbox" name="sport" id="sport" checked>
-                <label class="companion-hobby__label" for="sport">Спортзал</label>
-                <input class="visually-hidden" type="checkbox" name="hookah" id="hookah">
-                <label class="companion-hobby__label" for="hookah">Кальян</label>
-                <input class="visually-hidden" type="checkbox" name="sofa" id="sofa">
-                <label class="companion-hobby__label" for="sofa">Диван</label>
-              </div>
-              <div class="companion-filter__music music-form">
-                <p class="music-form__title">Музыка</p>
-                <input class="visually-hidden" type="checkbox" name="hard-rock" id="hard-rock" checked>
-                <label class="music-form__label" for="hard-rock">Тяжелый рок</label>
-                <input class="visually-hidden" type="checkbox" name="russian-rap" id="russian-rap" checked>
-                <label class="music-form__label" for="russian-rap">Русский рэп</label>
-                <input class="visually-hidden" type="checkbox" name="eurodance" id="eurodance">
-                <label class="music-form__label" for="eurodance">Евроденс</label>
-              </div>
-              <div class="companion-filter__food food-form">
-                <p class="food-form__title">Еда</p>
-                <input class="visually-hidden" type="checkbox" name="meat" id="meat" checked>
-                <label class="food-form__label" for="meat">Мясоед</label>
-                <input class="visually-hidden" type="checkbox" name="proper-nutrition" id="proper-nutrition">
-                <label class="food-form__label" for="proper-nutrition">Сидит на ПП</label>
-                <input class="visually-hidden" type="checkbox" name="vegan" id="vegan">
-                <label class="food-form__label" for="vegan">Веган-сыроед</label>
-              </div>
-              <div class="companion-form__transport transport-form">
-                <p class="transport-form__title">Транспорт</p>
-                <input class="visually-hidden" type="checkbox" name="plane" id="plane" value="plane" checked>
-                <label class="transport-form__checkbox" for="plane">
-                  <img class="transport-form__checkbox-icon" src="img/icon-plane_active.svg" alt="Иконка самолета" width="32" height="32">
-                  <span class="visually-hidden">Самолет</span>
-                </label>
-                <input class="visually-hidden" type="checkbox" name="bus" id="bus" value="bus" checked>
-                <label class="transport-form__checkbox" for="bus">
-                  <img class="transport-form__checkbox-icon" src="img/icon-bus_actrive.svg" alt="Иконка автобуса" width="32" height="32">
-                  <span class="visually-hidden">Автобус</span>
-                </label>
-                <input class="visually-hidden" type="checkbox" name="bike" id="bike" value="bike">
-                <label class="transport-form__checkbox" for="bike">
-                  <img class="transport-form__checkbox-icon" src="img/icon-bike_none-active.svg" alt="Иконка велосипеда" width="32" height="32">
-                  <span class="visually-hidden">Велосипед</span>
-                </label>
-                <input class="visually-hidden" type="checkbox" name="pedastrian" id="pedastrian" value="pedastrian" checked>
-                <label class="transport-form__checkbox" for="pedastrian">
-                  <img class="transport-form__checkbox-icon" src="img/icon-pedastrian_active.svg" alt="Иконка пешего туризма" width="32" height="32">
-                  <span class="visually-hidden">Пешком</span>
-                </label>
-              </div>
-              <div class="companion-filter__level level-form">
-                <p class="level-form__title">Левел</p>
-                <div class="level-form__inputs level-range">
-                  <label class="visually-hidden" for="level-from">Левел от</label>
-                  <input class="level-range__inputs" type="number" name="level-from" id="level-from" required min="0" max="100" value="30" placeholder="0-100">
-                  <label class="visually-hidden" for="level-to">Левел до</label>
-                  <input class="level-range__inputs" type="number" name="level-to" id="level-to" required min="0" max="100" value="100" placeholder="0-100">
+            <form class="companion-filter__form" action="http://echo.htmlacademy.ru" method="GET">
+              <div class="filter-form filter-form__hobby">
+                <p class="filter-form__title">Хобби
+                  <span class="filter-form__title-double-dots">:</span>
+                </p>
+                <div class="filter-form__wrapper">
+                  <input class="visually-hidden filter-form__checkbox" type="checkbox" name="sport" id="sport" checked>
+                  <label class="filter-form__label" for="sport">Спортзал</label>
+                  <input class="visually-hidden filter-form__checkbox" type="checkbox" name="hookah" id="hookah">
+                  <label class="filter-form__label" for="hookah">Кальян</label>
+                  <input class="visually-hidden filter-form__checkbox" type="checkbox" name="sofa" id="sofa">
+                  <label class="filter-form__label" for="sofa">Диван</label>
                 </div>
-                <div class="level-form__bars range-bar">
-                  <span class="visually-hidden"> Ползунок уровней</span>
-                  <button class="range-bar__buttons" type="button">от 30</button>
-                  <button class="range-bar__buttons" type="button">до 100</button>
+              </div>
+              <div class="filter-form filter-form__music">
+                <p class="filter-form__title">Музыка
+                  <span class="filter-form__title-double-dots">:</span>
+                </p>
+                <div class="filter-form__wrapper">
+                  <input class="visually-hidden filter-form__checkbox" type="checkbox" name="hard-rock" id="hard-rock" checked>
+                  <label class="filter-form__label" for="hard-rock">Тяжелый рок</label>
+                  <input class="visually-hidden filter-form__checkbox" type="checkbox" name="russian-rap" id="russian-rap" checked>
+                  <label class="filter-form__label" for="russian-rap">Русский рэп</label>
+                  <input class="visually-hidden filter-form__checkbox" type="checkbox" name="eurodance" id="eurodance">
+                  <label class="filter-form__label" for="eurodance">Евроденс</label>
+                </div>
+              </div>
+              <div class="filter-form filter-form__food">
+                <p class="filter-form__title">Еда
+                  <span class="filter-form__title-double-dots">:</span>
+                </p>
+                <div class="filter-form__wrapper">
+                  <input class="visually-hidden filter-form__checkbox" type="checkbox" name="meat" id="meat" checked>
+                  <label class="filter-form__label" for="meat">Мясоед</label>
+                  <input class="visually-hidden filter-form__checkbox" type="checkbox" name="proper-nutrition" id="proper-nutrition">
+                  <label class="filter-form__label" for="proper-nutrition">Сидит на ПП</label>
+                  <input class="visually-hidden filter-form__checkbox" type="checkbox" name="vegan" id="vegan">
+                  <label class="filter-form__label" for="vegan">Веган-сыроед</label>
+                </div>
+              </div>
+              <div class="filter-form filter-form__transport transport-form">
+                <p class="filter-form__title">Транспорт
+                  <span class="filter-form__title-double-dots">:</span>
+                </p>
+                <div class="filter-form__wrapper filter-form__wrapper--transport">
+                  <input class="visually-hidden" type="checkbox" name="plane" id="plane" value="plane" checked>
+                  <label class="transport-form__checkbox" for="plane">
+                    <img class="transport-form__checkbox-icon" src="img/icon-plane_active.svg" alt="Иконка самолета" width="32" height="32">
+                    <span class="visually-hidden">Самолет</span>
+                  </label>
+                  <input class="visually-hidden" type="checkbox" name="bus" id="bus" value="bus" checked>
+                  <label class="transport-form__checkbox" for="bus">
+                    <img class="transport-form__checkbox-icon" src="img/icon-bus_actrive.svg" alt="Иконка автобуса" width="32" height="32">
+                    <span class="visually-hidden">Автобус</span>
+                  </label>
+                  <input class="visually-hidden" type="checkbox" name="bike" id="bike" value="bike">
+                  <label class="transport-form__checkbox" for="bike">
+                    <img class="transport-form__checkbox-icon" src="img/icon-bike_none-active.svg" alt="Иконка велосипеда" width="32" height="32">
+                    <span class="visually-hidden">Велосипед</span>
+                  </label>
+                  <input class="visually-hidden" type="checkbox" name="pedastrian" id="pedastrian" value="pedastrian" checked>
+                  <label class="transport-form__checkbox" for="pedastrian">
+                    <img class="transport-form__checkbox-icon" src="img/icon-pedastrian_active.svg" alt="Иконка пешего туризма" width="32" height="32">
+                    <span class="visually-hidden">Пешком</span>
+                  </label>
+                </div>
+              </div>
+              <div class="filter-form filter-form__level">
+                <p class="filter-form__title">Левел
+                  <span class="filter-form__title-double-dots">:</span>
+                </p>
+                <div class="filter-form__wrapper">
+                  <div class="filter-form__inputs level-range">
+                    <label class="visually-hidden" for="level-from">Левел от</label>
+                    <input class="level-range__input level-range__input--min" type="number" name="level-from" id="level-from" required min="0" max="100" value="30" placeholder="0-100">
+                    <label class="visually-hidden" for="level-to">Левел до</label>
+                    <input class="level-range__input level-range__input--max" type="number" name="level-to" id="level-to" required min="0" max="100" value="100" placeholder="0-100">
+                  </div>
+                  <div class="filter-form__bar range-bar">
+                    <span class="visually-hidden"> Ползунок уровней</span>
+                    <button class="range-bar__button range-bar__button--min" type="button"><span class="visually-hidden">от 30</span></button>
+                    <button class="range-bar__button range-bar__button--max" type="button"><span class="visually-hidden">до 100</span></button>
+                  </div>
                 </div>
               </div>
               <button class="companion-filter__submit-button button button--dark-blue-text" type="submit" value="Показать">Показать</button>
@@ -1087,5 +1107,6 @@
     </footer>
     <script src="js/header.js"></script>
     <script src="js/country-filter.js"></script>
+    <script src="js/filter-form.js"></script>
   </body>
 </html>

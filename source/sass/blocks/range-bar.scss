@@ -1,0 +1,68 @@
+.range-bar {
+  width: 100%;
+  height: 2px;
+  background-color: rgba(29, 46, 91, 0.2);
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 138px;
+    height: 2px;
+    position: absolute;
+    background-color: $basic-blue-light;
+    right: 6px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 279px;
+
+    &::before {
+      width: 169px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+
+    &::before {
+      width: 116px;
+    }
+  }
+}
+
+.range-bar__button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: -3px;
+  background-color: $basic-blue-light;
+  opacity: 1;
+
+  &--min {
+    left: 30%;
+  }
+
+  &--max {
+    left: 96%;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 13px;
+    height: 13px;
+
+    &--min {
+      left: 35%;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--min {
+      left: 30%;
+    }
+
+    &--max {
+      left: 92%;
+    }
+  }
+}
