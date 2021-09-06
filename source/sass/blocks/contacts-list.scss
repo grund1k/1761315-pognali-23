@@ -1,3 +1,7 @@
+.contacts-list {
+  @include bold;
+}
+
 .contacts-list__item {
   display: flex;
   align-items: center;

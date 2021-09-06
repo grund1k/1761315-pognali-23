@@ -20,7 +20,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    @include h1-tablet;
+    @include h1-2;
     margin-left: 35px;
 
     &::after {
@@ -35,6 +35,7 @@
 }
 
 .breadcrumbs__index-link {
+  @include bold;
   display: none;
   color: $basic-white;
   text-transform: uppercase;

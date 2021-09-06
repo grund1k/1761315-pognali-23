@@ -60,13 +60,18 @@
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    @include h2-tablet-45-size;
+    @include h2-4;
     margin-bottom: 56px;
   }
 }
 
 .users__text {
+  @include light;
   margin-bottom: 22px;
+
+  &--small {
+    @include bold;
+  }
 
   @media (min-width: $tablet-width) {
     width: 427px;

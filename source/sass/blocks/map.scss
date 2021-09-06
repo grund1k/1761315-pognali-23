@@ -45,6 +45,7 @@
 }
 
 .map__address {
+  @include bold;
   color: $basic-blue-light;
   text-transform: uppercase;
   margin-left: 16px;

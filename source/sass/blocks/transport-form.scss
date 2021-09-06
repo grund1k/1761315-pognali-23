@@ -22,12 +22,13 @@
 }
 
 .transport-from__legend {
+  @include bold;
   color: $basic-blue-light;
   text-align: center;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    font-weight: 500;
+    @include medium;
     font-size: 20px;
     line-height: 20px;
     position: absolute;

@@ -54,7 +54,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    @include h2-tablet-45-size;
+    @include h2-4;
     width: 482px;
     padding-left: 103px;
     margin-bottom: 92px;
@@ -125,6 +125,7 @@
 }
 
 .add-profile__modal {
+  @include bold;
   color: $light-blue;
 
   &:hover,
@@ -197,12 +198,13 @@
   margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
-    @include h2-tablet-45-size;
+    @include h2-4;
     margin-bottom: 61px;
   }
 }
 
 .add-profile__modal-list {
+  @include light;
   color: $special-grey;
 
   @media (min-width: $tablet-width) {
@@ -265,6 +267,7 @@
 }
 
 .add-profile__modal-close {
+  @include bold;
   color: $basic-blue-light;
   text-transform: uppercase;
   text-align: center;

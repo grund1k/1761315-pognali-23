@@ -37,7 +37,7 @@
   color: $basic-blue-light;
 
   @media (min-width: $tablet-width) {
-    @include h3-size-36;
+    @include h2-3;
   }
 }
 
@@ -171,7 +171,7 @@
 
   @media (min-width: $tablet-width) {
     @include body-3;
-    font-weight: 500;
+    @include medium;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     margin-top: 25px;
@@ -377,9 +377,9 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
+    @include bold;
     margin-top: 41px;
     padding: 27px 140px 28px 35px;
-    font-weight: bold;
     font-size: 24px;
     line-height: 24px;
     text-transform: none;

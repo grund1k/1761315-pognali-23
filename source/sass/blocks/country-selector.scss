@@ -56,6 +56,7 @@
 
 .country-selector__button {
   @include text-1;
+  @include medium;
   width: 168px;
   height: 42px;
   box-sizing: border-box;

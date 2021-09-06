@@ -1,4 +1,5 @@
 .continent-list {
+  @include bold;
   color: $text-blue;
 
   @media (min-width: $tablet-width) {

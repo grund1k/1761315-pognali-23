@@ -4,7 +4,7 @@
 
   @media (min-width: $tablet-width) {
     @include body-3;
-    font-weight: bold;
+    @include bold;
     display: flex;
   }
 }

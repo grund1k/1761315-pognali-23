@@ -44,7 +44,7 @@
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    @include h2-tablet-45-size;
+    @include h2-4;
     margin-bottom: 42px;
   }
 
@@ -54,7 +54,12 @@
 }
 
 .about-service__text {
+  @include light;
   margin-bottom: 20px;
+
+  &--small {
+    @include bold;
+  }
 
   @media (min-width: $tablet-width) {
     width: 300px;

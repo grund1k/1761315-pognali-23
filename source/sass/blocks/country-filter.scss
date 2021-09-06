@@ -37,6 +37,7 @@
 }
 
 .country-filter__title {
+  @include bold;
   color: $text-blue;
   text-transform: uppercase;
   padding-left: 27px;
@@ -99,8 +100,8 @@
 
   @media (min-width: $tablet-width) {
     @include body-3;
+    @include bold;
     text-transform: uppercase;
-    font-weight: bold;
     order: 2;
     margin-left: auto;
 
@@ -213,6 +214,7 @@
 }
 
 .country-filter__bottom-close-button {
+  @include bold;
   margin-top: 14px;
   margin-left: -25px;
   display: block;

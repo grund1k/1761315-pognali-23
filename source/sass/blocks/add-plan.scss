@@ -34,7 +34,7 @@
   color: $basic-blue-light;
 
   @media (min-width: $tablet-width) {
-    @include h2-tablet-36-size;
+    @include h2-3;
   }
 
   @media (min-width: $desktop-width) {

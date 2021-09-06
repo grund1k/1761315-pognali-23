@@ -46,6 +46,7 @@
 
 .country-enviroment__title {
   @include subtitle;
+  @include medium;
   color: $basic-blue-light;
   padding-left: 12px;
   position: relative;
@@ -73,7 +74,7 @@
 
   @media (min-width: $tablet-width) {
     @include subtitle-3;
-    font-weight: bold;
+    @include bold;
     padding-left: 0;
 
     &::before {

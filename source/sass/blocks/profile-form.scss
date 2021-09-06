@@ -67,9 +67,9 @@
   display: none;
 
   @media (min-width: $desktop-width) {
+    @include medium;
     display: block;
     text-transform: uppercase;
-    font-weight: 500;
     background-color: $plans-background;
     padding: 12px 70px 14px 71px;
     border-bottom-left-radius: 10px;
@@ -79,11 +79,11 @@
 }
 
 .profile-form__photo-button {
+  @include medium;
   grid-column: 1/-1;
   margin-top: 13px;
   display: block;
   padding: 9px 55px 13px 67px;
-  font-weight: 500;
 
   @media (min-width: $tablet-width) {
     margin-top: 40px;

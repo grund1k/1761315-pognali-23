@@ -54,6 +54,8 @@
 }
 
 .level__number {
+  @include bold;
+
   &::after {
     content: "";
     position: absolute;

@@ -137,6 +137,7 @@
 }
 
 .user-profile__likes-number {
+  @include bold;
   @include text-1;
   color: $dark-blue;
   text-transform: uppercase;

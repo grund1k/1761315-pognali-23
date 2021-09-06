@@ -4,13 +4,14 @@
 }
 
 .tags-form__legend {
+  @include bold;
   color: $basic-blue-light;
   text-align: center;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    @include medium;
     letter-spacing: 0.1em;
-    font-weight: 500;
     font-size: 20px;
     line-height: 20px;
     background-color: $basic-grey;
