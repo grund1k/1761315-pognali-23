@@ -2,11 +2,31 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    &--catalog {
+      flex-direction: column;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--catalog {
+      flex-direction: row;
+    }
+  }
 }
 
 .transport-list__item {
   margin-right: 15px;
   position: relative;
+
+  &--catalog {
+    margin-right: 0;
+
+    &:not(:first-child) {
+      margin-left: 1px;
+    }
+  }
 
   @media (min-width: $desktop-width) {
     &:hover::before {
