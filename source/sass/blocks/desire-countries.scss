@@ -1,7 +1,58 @@
-.desire-counties {
+.desire-countries {
   color: $basic-blue-light;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+  }
+}
+
+.desire-counties__item {
+  display: flex;
+  align-items: center;
+
+  &:not(:first-child) {
+    margin-top: 10px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &:not(:first-child) {
+      margin-top: 0;
+      margin-left: 31px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &:not(:first-child) {
+      margin-top: 13px;
+      margin-left: 0;
+    }
+  }
+}
+
+.desire-counties__counties-flag-image {
+  width: 26px;
+  height: 18px;
+
+  @media (min-width: $tablet-width) {
+    width: 35px;
+    height: 24px;
+  }
 }
 
 .desire-counties__name {
   text-transform: uppercase;
+  margin-left: 12px;
+
+  @media (min-width: $tablet-width) {
+    @include body-3;
+    margin-left: 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 19px;
+  }
 }

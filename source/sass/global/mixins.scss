@@ -20,10 +20,20 @@
   line-height: 45px;
 }
 
+@mixin h2-tablet-36-size {
+  font-size: 36px;
+  line-height: 36px;
+}
+
 @mixin h2-size-s {
   font-weight: bold;
   font-size: 22px;
   line-height: 22px;
+}
+
+@mixin h2-5 {
+  font-size: 30px;
+  line-height: 30px;
 }
 
 @mixin h3 {
@@ -35,6 +45,11 @@
 @mixin h3-tablet-24-s {
   font-size: 24px;
   line-height: 24px;
+}
+
+@mixin h3-size-36 {
+  font-size: 36px;
+  line-height: 36px;
 }
 
 @mixin h3-size-s {
@@ -81,9 +96,19 @@
   line-height: 21px;
 }
 
+@mixin subtitle-3 {
+  font-size: 30px;
+  line-height: 30px;
+}
+
 @mixin text-1 {
   font-size: 14px;
   line-height: 14px;
+}
+
+@mixin text-1-tablet-size-20 {
+  font-size: 20px;
+  line-height: 20px;
 }
 
 @mixin text-2 {
@@ -111,6 +136,11 @@
     font-size: 24px;
     line-height: 24px;
   }
+}
+
+@mixin button-3 {
+  font-size: 20px;
+  line-height: 18px;
 }
 
 @mixin companion-form-title {

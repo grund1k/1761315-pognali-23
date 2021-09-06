@@ -1,5 +1,8 @@
 .level {
   display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   width: 60px;
   height: 60px;
   font-size: 24px;
@@ -7,11 +10,47 @@
   color: $basic-white;
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 50%;
-  flex-direction: column;
-  align-items: center;
   padding-top: 11px;
   box-sizing: border-box;
-  justify-content: center;
+
+  &--form {
+    width: 100px;
+    height: 100px;
+    font-size: 38px;
+    line-height: 52px;
+    background-color: transparent;
+    color: $dark-blue;
+    padding-top: 0;
+  }
+
+  &--catalog {
+    width: 45px;
+    height: 45px;
+    background-color: transparent;
+    color: $basic-blue-light;
+    padding: 0;
+    position: relative;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--form {
+      width: 94px;
+      height: 94px;
+    }
+
+    &--catalog {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--form {
+      width: 95px;
+      height: 95px;
+      color: $basic-white;
+    }
+  }
 }
 
 .level__number {
@@ -24,11 +63,73 @@
     opacity: 0.3;
     border-bottom: 1px solid $basic-white;
   }
+
+  &--form {
+    margin-top: -8px;
+
+    &::after {
+      width: 51px;
+      border-color: $special-grey;
+      bottom: 42px;
+      right: 24px;
+    }
+  }
+
+  &--catalog {
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &--form {
+      &::after {
+        width: 47px;
+        bottom: 40px;
+        right: 24px;
+      }
+    }
+
+    &--catalog {
+      &::after {
+        display: block;
+        opacity: 0.1;
+        border: 1px solid $black;
+        bottom: 27px;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--form {
+      &::after {
+        opacity: 0.3;
+        border: 1px solid $basic-white;
+        right: 23px;
+      }
+    }
+  }
 }
 
 .level__dimension {
   font-size: 14px;
   margin-top: -5px;
+
+  &--form {
+    font-size: 18px;
+    line-height: 18px;
+    margin-top: 0;
+  }
+
+  &--catalog {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--catalog {
+      display: block;
+    }
+  }
 }
 
 .level__status-bar {
@@ -37,4 +138,21 @@
   left: 0;
   width: 100%;
   height: 100%;
+
+  &--25 {
+    left: 22px;
+    width: 25px;
+    height: 24px;
+  }
+
+  &--50 {
+    left: 10px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--25 {
+      left: 28px;
+      width: 27px;
+    }
+  }
 }

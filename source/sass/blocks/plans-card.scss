@@ -1,27 +1,66 @@
 .plans-card {
+  display: flex;
+  flex-wrap: wrap;
   background-color: $basic-white;
-  padding: 24px;
+  padding: 20px 23px 23px 23px;
   border-radius: 10px;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 40px 33px 14px 40px;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 616px;
+      position: absolute;
+      left: 0;
+      top: 97px;
+      opacity: 0.3;
+      border: 1px solid $border-grey;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 37px 33px 36px 42px;
+
+    &::before {
+      display: none;
+    }
   }
 }
 
 .plans-card__number {
+  @media (min-width: $tablet-width) {
+    @include body-3;
+  }
+
   @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
-    width: 25%;
+    margin: 0 0 0 auto;
     order: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 37px;
   }
 }
 
 .plans-card__countries {
-  margin-bottom: 20px;
+  margin-left: 6px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+    margin-left: 0;
+  }
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
     width: 75%;
     order: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
   }
 }
 
@@ -29,9 +68,40 @@
   @include text-1;
   letter-spacing: 0.84px;
   text-transform: uppercase;
+  width: 100%;
+  margin-left: 3px;
+  margin-top: 18px;
+
+  &--date {
+    margin-top: 5px;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include body-3;
+    width: 32.75%;
+    margin-top: 53px;
+    margin-left: 0;
+    letter-spacing: 0.1em;
+
+    &--date {
+      width: 46%;
+      letter-spacing: 0.06em;
+    }
+  }
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
     order: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 15%;
+    margin-left: auto;
+    margin-top: 0;
+
+    &--date {
+      width: 15%;
+      margin-left: 0;
+    }
   }
 }
 
@@ -42,8 +112,20 @@
   text-transform: uppercase;
   opacity: 0.3;
   margin-top: 24px;
+  margin-left: 2px;
 
   @media (min-width: $tablet-width) {
+    @include body-3;
+    width: 20%;
+    margin-top: 53px;
+    letter-spacing: 0.1em;
     order: 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    width: 9.5%;
+    letter-spacing: 0.08em;
+    margin-left: 129px;
   }
 }

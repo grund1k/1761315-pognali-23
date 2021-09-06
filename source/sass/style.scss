@@ -50,18 +50,17 @@
 @import "blocks/countries-list.scss";
 @import "blocks/companions-catalog.scss";
 @import "blocks/companion-filter.scss";
-@import "blocks/companion-hobby.scss";
-@import "blocks/music-form.scss";
-@import "blocks/food-form.scss";
+@import "blocks/filter-form.scss";
 @import "blocks/transport-form.scss";
-@import "blocks/level-form.scss";
+@import "blocks/level-range.scss";
+@import "blocks/range-bar.scss";
 @import "blocks/companions.scss";
 @import "blocks/user-profile.scss";
 @import "blocks/desire-countries.scss";
 @import "blocks/pagination.scss";
 @import "blocks/pagination-items.scss";
 
-//Form
+//Formы
 @import "blocks/profile-settings.scss";
 @import "blocks/profile-form.scss";
 @import "blocks/level.scss";
@@ -69,9 +68,12 @@
 @import "blocks/plans.scss";
 @import "blocks/plans-card.scss";
 @import "blocks/add-plan.scss";
+@import "blocks/step-indicator.scss";
 @import "blocks/step.scss";
+@import "blocks/marker-list.scss";
 @import "blocks/month-slider.scss";
 @import "blocks/counter.scss";
 @import "blocks/calendar.scss";
+@import "blocks/country-selector.scss";
 @import "blocks/countries-dropdown.scss";
 @import "blocks/country-enviroment.scss";

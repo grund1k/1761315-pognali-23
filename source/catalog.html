@@ -7,31 +7,31 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
-    <header class="page-header">
+    <header class="page-header page-header--page-inner page-body__header">
       <nav class="nav nav--page-inner nav--menu-opened nav--no-js">
         <div class="container nav__wrapper">
           <a class="nav__logo-link" href="index.html">
-            <img class="nav__logo" src="img/logo_text.svg" alt="Логотип «Погнали»" width="96" height="15">
+            <img class="nav__logo logo" src="img/logo_text.svg" alt="Логотип «Погнали»" width="96" height="15">
           </a>
           <button class="nav__toggle" type="button" aria-label="Открыть меню"></button>
           <ul class="nav__site-list nav-list medium">
             <li class="nav-list__item">
-              <a class="nav-list__link" href="#">О сервисе</a>
+              <a class="nav-list__link" href="#"><span class="nav-list__link-animation" data-hover="О сервисе">О сервисе</span></a>
             </li>
             <li class="nav-list__item">
-              <a class="nav-list__link" href="form.html">Направления</a>
+              <a class="nav-list__link" href="form.html"><span class="nav-list__link-animation" data-hover="Направления">Направления</span></a>
             </li>
             <li class="nav-list__item">
-              <a class="nav-list__link" href="catalog.html">Попутчики</a>
+              <a class="nav-list__link" href="catalog.html"><span class="nav-list__link-animation" data-hover="Попутчики">Попутчики</span></a>
             </li>
           </ul>
           <ul class="nav__conatacts contacts-list">
             <li class="contacts-list__item">
-              <img src="img/icon_phone_btn.svg" alt="Иконка телефона" width="40" height="40">
+              <img class="contacts-list__icon contacts-list__icon--nav" src="img/icon_phone_btn.svg" alt="Иконка телефона" width="40" height="40">
               <a class="contacts-list__link" href="tel:88005558628"><span class="visually-hidden">8 800 555-86-28</span></a>
             </li>
             <li class="contacts-list__item">
-              <img src="img/icon_mail_btn.svg" alt="Иконка E-mail" width="40" height="40">
+              <img class="contacts-list__icon contacts-list__icon--nav" src="img/icon_mail_btn.svg" alt="Иконка E-mail" width="40" height="40">
               <a class="contacts-list__link" href="mailto:mail@htmlacademy.ru"><span class="visually-hidden">mail@htmlacademy.ru</span></a>
             </li>
           </ul>
@@ -41,8 +41,8 @@
         <div class="nav__menu-wrapper modal-menu">
           <div class="container modal-menu__wrapper">
             <div class="modal-menu__logo-wrapper">
-              <a class="modal-menu__logo-link" href="index.html">
-                <img class="modal-menu__logo" src="img/logo_footer.svg" alt="Логотип «Погнали»" width="96" height="15">
+              <a class="modal-menu__logo-link">
+                <img class="modal-menu__logo logo" src="img/logo_footer.svg" alt="Логотип «Погнали»" width="96" height="15">
               </a>
               <button class="modal-menu__toggle" type="button" aria-label="Открыть меню"></button>
             </div>
@@ -60,30 +60,30 @@
             <a class="modal-menu__button button button--authorization button--yellow button--dark-blue-text" href="#">Авторизация</a>
             <ul class="modal-menu__contacts contacts-list bold">
               <li class="contacts-list__item">
-                <img class="contacts-list__icon" src="img/contacts_icon_dark_phone.svg" alt="Изображение телефона" width="45" height="45">
+                <img class="contacts-list__icon contacts-list__icon--modal-menu" src="img/contacts_icon_dark_phone.svg" alt="Изображение телефона" width="45" height="45">
                 <a class="contacts-list__link" href="tel:88005558628">8 800 555-86-28</a>
               </li>
               <li class="contacts-list__item">
-                <img class="contacts-list__icon" src="img/contacts_icon_dark_email.svg" alt="Изображение почты" width="45" height="45">
+                <img class="contacts-list__icon contacts-list__icon--modal-menu" src="img/contacts_icon_dark_email.svg" alt="Изображение почты" width="45" height="45">
                 <a class="contacts-list__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
               </li>
             </ul>
             <ul class="modal-menu__socials social-list">
-              <li class="social-list__item">
+              <li class="social-list__item social-list__item--modal-menu">
                 <a class="social-list__link" href="https://www.facebook.com">
-                  <img class="social-list__icon" src="img/icon_facebook.svg" alt="Логотип Facebook" width="11" height="21">
+                  <img class="social-list__fb-icon" src="img/icon_facebook.svg" alt="Логотип Facebook" width="11" height="21">
                   <span class="visually-hidden">Мы в Фейсбуке</span>
                 </a>
               </li>
-              <li class="social-list__item">
+              <li class="social-list__item social-list__item--modal-menu">
                 <a class="social-list__link" href="https://vk.com">
-                  <img class="social-list__icon" src="img/icon_vkontakte.svg" alt="Логотип Вконтакте" width="23" height="12">
+                  <img class="social-list__vk-icon" src="img/icon_vkontakte.svg" alt="Логотип Вконтакте" width="23" height="12">
                   <span class="visually-hidden">Мы во Вконтакте</span>
                 </a>
               </li>
-              <li class="social-list__item">
+              <li class="social-list__item social-list__item--modal-menu">
                 <a class="social-list__link" href="https://www.instagram.com">
-                  <img class="social-list__icon" src="img/icon_instagram.svg" alt="Логотип Instagram" width="18" height="18">
+                  <img class="social-list__instagram-icon" src="img/icon_instagram.svg" alt="Логотип Instagram" width="18" height="18">
                   <span class="visually-hidden">Мы в Инстаграме</span>
                 </a>
               </li>
@@ -97,14 +97,16 @@
       <div class="page-main__breadcrumbs-wrapper">
         <div class="container breadcrumbs">
           <h1 class="breadcrumbs__title">Попутчики</h1>
-          <a class="breadcrumbs__index-link" href="index.html">На главную</a>
+          <a class="breadcrumbs__index-link bold" href="index.html">На главную</a>
         </div>
       </div>
       <section class="country-filter">
         <div class="container">
           <div class="country-filter__header">
             <p class="country-filter__title bold">Фильтрация по странам:</p>
-            <button class="country-filter__close-button" type="button"><span class="country-filter__close-button-text">Свернуть</span></button>
+            <button class="country-filter__button country-filter__button--open" type="button">
+              <span class="country-filter__button-text" id="country-filter__button-text">Показать все</span>
+            </button>
             <ul class="country-filter__continent-list continent-list bold">
               <li class="continent-list__item continent-list__item--chosen">Европа</li>
               <li class="continent-list__item">Азия</li>
@@ -113,669 +115,677 @@
             </ul>
           </div>
           <div class="country-filter__search-wrapper">
-            <table class="country-filter__table alphabet-search medium">
-              <tr class="alphabet-search__table-row">
-                <td class="alphabet-search__table-cell alphabet-search__table-cell--chosen alphabet-search__table-cell--align-top alphabet-search__table-cell--border-none">
-                  <span class="alphaber-search__letter">А</span>
-                  <ul class="alphabet-search__countries-list countries-list">
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Австралия</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Австрия</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Азербайджан</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Албания</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Алжир</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Ангола</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Андорра</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Антигуа и Барбуда</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Аргентина</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Армения</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Афганистан</a>
-                    </li>
-                  </ul>
-                </td>
-                <td class="alphabet-search__table-cell alphabet-search__table-cell--align-top alphabet-search__table-cell--border-none">
-                  <span class="alphaber-search__letter">Б</span>
-                  <ul class="alphabet-search__countries-list">
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Багамские Острова</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Бангладеш</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Барбадос</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Бахрейн</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Белоруссия</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Белиз</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Бельгия</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Бенин</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Болгария</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Боливия</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Босния и Герцеговина</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Ботсвана</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Бразилия</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Бруней</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Буркина-Фасо</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Бурунди</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Бутан</a>
-                    </li>
-                  </ul>
-                </td>
-                <td class="alphabet-search__table-cell alphabet-search__table-cell--align-top alphabet-search__table-cell--border-none">
-                  <span class="alphaber-search__letter">В</span>
-                  <ul class="alphabet-search__countries-list countries-list">
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Вануату</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Великобритания</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Венгрия</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Венесуэла</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Восточный Тимор</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Вьетнам</a>
-                    </li>
-                  </ul>
-                </td>
-                <td class="alphabet-search__table-cell alphabet-search__table-cell--align-top alphabet-search__table-cell--border-none">
-                  <span class="alphaber-search__letter">Г</span>
-                  <ul class="alphabet-search__countries-list countries-list">
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Габон</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Гаити</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Гайана</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Гамбия</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Гана</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Гватемала</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Гвинея</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Гвинея-Бисау</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Германия</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Гондурас</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Гренада</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Греция</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Грузия</a>
-                    </li>
-                  </ul>
-                </td>
-                <td class="alphabet-search__table-cell alphabet-search__table-cell--align-top alphabet-search__table-cell--border-none">
-                  <span class="alphaber-search__letter">Д</span>
-                  <ul class="alphabet-search__countries-list countries-list">
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Дания</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Джибути</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Доминика</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Доминикана</a>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-              <tr class="alphabet-search__table-row">
-                <td class="alphabet-search__table-cell alphabet-search__table-cell--align-top alphabet-search__table-cell--border-none">
-                  <span class="alphaber-search__letter">Е</span>
-                  <ul class="alphabet-search__countries-list countries-list">
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Египет</a>
-                    </li>
-                  </ul>
-                </td>
-                <td class="alphabet-search__table-cell alphabet-search__table-cell--align-top alphabet-search__table-cell--border-none">
-                  <span class="alphaber-search__letter">З</span>
-                  <ul class="alphabet-search__countries-list countries-list">
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Замбия</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Зимбабве</a>
-                    </li>
-                  </ul>
-                </td>
-                <td class="alphabet-search__table-cell alphabet-search__table-cell--align-top alphabet-search__table-cell--border-none">
-                  <span class="alphaber-search__letter">И</span>
-                  <ul class="alphabet-search__countries-list countries-list">
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Израиль</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Индия</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Индонезия</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Иордания</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Ирак</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Иран</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Ирландия</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Исландия</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Испания</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Италия</a>
-                    </li>
-                  </ul>
-                </td>
-                <td class="alphabet-search__table-cell alphabet-search__table-cell--align-top alphabet-search__table-cell--border-none">
-                  <span class="alphaber-search__letter">К</span>
-                  <ul class="alphabet-search__countries-list countries-list">
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Кабо-Верде</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Казахстан</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Камбоджа</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Камерун</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Канада</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Катар</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Кения</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Кипр</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Киргизия</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Кирибати</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Китай</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Колумбия</a>
-                    </li>
-                  </ul>
-                </td>
-                <td class="alphabet-search__table-cell alphabet-search__table-cell--align-top alphabet-search__table-cell--border-none">
-                  <span class="alphaber-search__letter">Л</span>
-                  <ul class="alphabet-search__countries-list countries-list">
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Лаос</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Латвия</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Лесото</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Либерия</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Ливан</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Ливия</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Литва</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Лихтенштейн</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Люксембург</a>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-              <tr class="alphabet-search__table-row">
-                <td class="alphabet-search__table-cell alphabet-search__table-cell--align-top alphabet-search__table-cell--border-none">
-                  <span class="alphaber-search__letter">М</span>
-                  <ul class="alphabet-search__countries-list countries-list">
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Маврикий</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Мавритания</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Мадагаскар</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Малави</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Малайзия</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Мали</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Мальдивы</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Мальта</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Марокко</a>
-                    </li>
-                  </ul>
-                </td>
-                <td class="alphabet-search__table-cell alphabet-search__table-cell--align-top alphabet-search__table-cell--border-none">
-                  <span class="alphaber-search__letter">Н</span>
-                  <ul class="alphabet-search__countries-list countries-list">
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Намибия</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Науру</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Непал</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Нигер</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Нигерия</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Нидерланды</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Никарагуа</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Новая Зеландия</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Норвегия</a>
-                    </li>
-                  </ul>
-                </td>
-                <td class="alphabet-search__table-cell alphabet-search__table-cell--align-top alphabet-search__table-cell--border-none">
-                  <span class="alphaber-search__letter">О</span>
-                  <ul class="alphabet-search__countries-list countries-list">
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">ОАЭ</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Оман</a>
-                    </li>
-                  </ul>
-                </td>
-                <td class="alphabet-search__table-cell alphabet-search__table-cell--align-top alphabet-search__table-cell--border-none">
-                  <span class="alphaber-search__letter">П</span>
-                  <ul class="alphabet-search__countries-list countries-list">
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Пакистан</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Палау</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Панама</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Папуа - Новая Гвинея</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Парагвай</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Перу</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Польша</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Португалия</a>
-                    </li>
-                  </ul>
-                </td>
-                <td class="alphabet-search__table-cell alphabet-search__table-cell--align-top alphabet-search__table-cell--border-none">
-                  <span class="alphaber-search__letter">Р</span>
-                  <ul class="alphabet-search__countries-list countries-list">
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Руанда</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Румыния</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Россия</a>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-              <tr class="alphabet-search__table-row">
-                <td class="alphabet-search__table-cell alphabet-search__table-cell--align-top alphabet-search__table-cell--border-none">
-                  <span class="alphaber-search__letter">С</span>
-                  <ul class="alphabet-search__countries-list countries-list">
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Сальвадор</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Самоа</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Сан-Марино</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Саудовская Аравия</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Сейшелы</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Сенегал</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Сербия</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Сингапур</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Сирия</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Словакия</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Словения</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">США</a>
-                    </li>
-                  </ul>
-                </td>
-                <td class="alphabet-search__table-cell alphabet-search__table-cell--align-top alphabet-search__table-cell--border-none">
-                  <span class="alphaber-search__letter">Т</span>
-                  <ul class="alphabet-search__countries-list countries-list">
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Таджикистан</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Таиланд</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Танзания</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Того</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Тонга</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Тринидад и Тобаго</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Тувалу</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Тунис</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Туркмения</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Турция</a>
-                    </li>
-                  </ul>
-                </td>
-                <td class="alphabet-search__table-cell alphabet-search__table-cell--align-top alphabet-search__table-cell--border-none">
-                  <span class="alphaber-search__letter">У</span>
-                  <ul class="alphabet-search__countries-list countries-list">
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Уганда</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Узбекистан</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Украина</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Уругвай</a>
-                    </li>
-                  </ul>
-                </td>
-                <td class="alphabet-search__table-cell alphabet-search__table-cell--align-top alphabet-search__table-cell--border-none">
-                  <span class="alphaber-search__letter">Ф</span>
-                  <ul class="alphabet-search__countries-list countries-list">
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Фиджи</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Филиппины</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Финляндия</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Франция</a>
-                    </li>
-                  </ul>
-                </td>
-                <td class="alphabet-search__table-cell alphabet-search__table-cell--align-top alphabet-search__table-cell--border-none">
-                  <span class="alphaber-search__letter">Х</span>
-                  <ul class="alphabet-search__countries-list countries-list">
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Хорватия</a>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-              <tr class="alphabet-search__table-row">
-                <td class="alphabet-search__table-cell alphabet-search__table-cell--align-top alphabet-search__table-cell--border-none">
-                  <span class="alphaber-search__letter">Ч</span>
-                  <ul class="alphabet-search__countries-list countries-list">
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Чад</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Черногория</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Чехия</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Чили</a>
-                    </li>
-                  </ul>
-                </td>
-                <td class="alphabet-search__table-cell alphabet-search__table-cell--align-top alphabet-search__table-cell--border-none">
-                  <span class="alphaber-search__letter">Ш</span>
-                  <ul class="alphabet-search__countries-list countries-list">
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Швейцария</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Швеция</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Шри-Ланка</a>
-                    </li>
-                  </ul>
-                </td>
-                <td class="alphabet-search__table-cell alphabet-search__table-cell--align-top alphabet-search__table-cell--border-none">
-                  <span class="alphaber-search__letter">Э</span>
-                  <ul class="alphabet-search__countries-list countries-list">
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Эквадор</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Эритрея</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Эсватини</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Эстония</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Эфиопия</a>
-                    </li>
-                  </ul>
-                </td>
-                <td class="alphabet-search__table-cell alphabet-search__table-cell--align-top alphabet-search__table-cell--border-none">
-                  <span class="alphaber-search__letter">Ю</span>
-                  <ul class="alphabet-search__countries-list countries-list">
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">ЮАР</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Южный Судан</a>
-                    </li>
-                  </ul>
-                </td>
-                <td class="alphabet-search__table-cell alphabet-search__table-cell--align-top alphabet-search__table-cell--border-none">
-                  <span class="alphaber-search__letter">Я</span>
-                  <ul class="alphabet-search__countries-list countries-list">
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Ямайка</a>
-                    </li>
-                    <li class="countries-list__item">
-                      <a class="countries-list__link" href="/eroupe/">Япония</a>
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-            </table>
-            <ul class="country-filter__countries-list countries-list">
-              <li class="countries-list__item">
-                <a class="countries-list__link" href="/eroupe/">Австралия</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__link" href="/eroupe/">Австрия</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__link" href="/eroupe/">Азербайджан</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__link" href="/eroupe/">Албания</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__link" href="/eroupe/">Алжир</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__link" href="/eroupe/">Ангола</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__link" href="/eroupe/">Андорра</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__link" href="/eroupe/">Антигуа и Барбуда</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__link" href="/eroupe/">Аргентина</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__link" href="/eroupe/">Армения</a>
-              </li>
-              <li class="countries-list__item">
-                <a class="countries-list__link" href="/eroupe/">Афганистан</a>
-              </li>
+            <ul class="country-filter__modal-continent-list continent-list continent-list--modal bold">
+              <li class="continent-list__item continent-list__item--chosen">Европа</li>
+              <li class="continent-list__item">Азия</li>
+              <li class="continent-list__item">Америка</li>
+              <li class="continent-list__item">Острова</li>
             </ul>
+            <div class="country-filter__alphabet-wrapper">
+              <table class="country-filter__table alphabet-search alphabet-search--catalog medium">
+                <tr class="alphabet-search__table-row">
+                  <td class="alphabet-search__table-cell alphabet-search__table-cell--chosen alphabet-search__table-cell--catalog">
+                    <span class="alphaber-search__letter alphaber-search__letter--chosen">А</span>
+                    <ul class="alphabet-search__countries-list countries-list countries-list--catalog countries-list--first-row">
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Австралия</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Австрия</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Азербайджан</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Албания</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Алжир</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Ангола</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Андорра</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Антигуа и Барбуда</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Аргентина</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Армения</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Афганистан</a>
+                      </li>
+                    </ul>
+                  </td>
+                  <td class="alphabet-search__table-cell alphabet-search__table-cell--catalog">
+                    <span class="alphaber-search__letter">Б</span>
+                    <ul class="alphabet-search__countries-list countries-list countries-list--catalog countries-list--first-row">
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Багамские Острова</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Бангладеш</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Барбадос</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Бахрейн</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Белоруссия</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Белиз</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Бельгия</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Бенин</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Болгария</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Боливия</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Босния и Герцеговина</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Ботсвана</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Бразилия</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Бруней</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Буркина-Фасо</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Бурунди</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Бутан</a>
+                      </li>
+                    </ul>
+                  </td>
+                  <td class="alphabet-search__table-cell alphabet-search__table-cell--catalog">
+                    <span class="alphaber-search__letter">В</span>
+                    <ul class="alphabet-search__countries-list countries-list countries-list--catalog countries-list--first-row">
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Вануату</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Великобритания</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Венгрия</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Венесуэла</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Восточный Тимор</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Вьетнам</a>
+                      </li>
+                    </ul>
+                  </td>
+                  <td class="alphabet-search__table-cell alphabet-search__table-cell--catalog">
+                    <span class="alphaber-search__letter">Г</span>
+                    <ul class="alphabet-search__countries-list countries-list countries-list--catalog countries-list--first-row">
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Габон</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Гаити</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Гайана</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Гамбия</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Гана</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Гватемала</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Гвинея</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Гвинея-Бисау</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Германия</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Гондурас</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Гренада</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Греция</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Грузия</a>
+                      </li>
+                    </ul>
+                  </td>
+                  <td class="alphabet-search__table-cell alphabet-search__table-cell--catalog">
+                    <span class="alphaber-search__letter">Д</span>
+                    <ul class="alphabet-search__countries-list countries-list countries-list--catalog countries-list--first-row">
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Дания</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Джибути</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Доминика</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Доминикана</a>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr class="alphabet-search__table-row">
+                  <td class="alphabet-search__table-cell alphabet-search__table-cell--catalog">
+                    <span class="alphaber-search__letter">Е</span>
+                    <ul class="alphabet-search__countries-list countries-list countries-list--catalog countries-list--second-row">
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Египет</a>
+                      </li>
+                    </ul>
+                  </td>
+                  <td class="alphabet-search__table-cell alphabet-search__table-cell--catalog">
+                    <span class="alphaber-search__letter">З</span>
+                    <ul class="alphabet-search__countries-list countries-list countries-list--catalog countries-list--second-row">
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Замбия</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Зимбабве</a>
+                      </li>
+                    </ul>
+                  </td>
+                  <td class="alphabet-search__table-cell alphabet-search__table-cell--catalog">
+                    <span class="alphaber-search__letter">И</span>
+                    <ul class="alphabet-search__countries-list countries-list countries-list--catalog countries-list--second-row">
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Израиль</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Индия</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Индонезия</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Иордания</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Ирак</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Иран</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Ирландия</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Исландия</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Испания</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Италия</a>
+                      </li>
+                    </ul>
+                  </td>
+                  <td class="alphabet-search__table-cell alphabet-search__table-cell--catalog">
+                    <span class="alphaber-search__letter">К</span>
+                    <ul class="alphabet-search__countries-list countries-list countries-list--catalog countries-list--second-row">
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Кабо-Верде</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Казахстан</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Камбоджа</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Камерун</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Канада</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Катар</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Кения</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Кипр</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Киргизия</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Кирибати</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Китай</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Колумбия</a>
+                      </li>
+                    </ul>
+                  </td>
+                  <td class="alphabet-search__table-cell alphabet-search__table-cell--catalog">
+                    <span class="alphaber-search__letter">Л</span>
+                    <ul class="alphabet-search__countries-list countries-list countries-list--catalog countries-list--second-row">
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Лаос</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Латвия</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Лесото</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Либерия</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Ливан</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Ливия</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Литва</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Лихтенштейн</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Люксембург</a>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr class="alphabet-search__table-row">
+                  <td class="alphabet-search__table-cell alphabet-search__table-cell--catalog">
+                    <span class="alphaber-search__letter">М</span>
+                    <ul class="alphabet-search__countries-list countries-list countries-list--catalog countries-list--third-row">
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Маврикий</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Мавритания</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Мадагаскар</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Малави</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Малайзия</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Мали</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Мальдивы</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Мальта</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Марокко</a>
+                      </li>
+                    </ul>
+                  </td>
+                  <td class="alphabet-search__table-cell alphabet-search__table-cell--catalog">
+                    <span class="alphaber-search__letter">Н</span>
+                    <ul class="alphabet-search__countries-list countries-list countries-list--catalog countries-list--third-row">
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Намибия</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Науру</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Непал</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Нигер</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Нигерия</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Нидерланды</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Никарагуа</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Новая Зеландия</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Норвегия</a>
+                      </li>
+                    </ul>
+                  </td>
+                  <td class="alphabet-search__table-cell alphabet-search__table-cell--catalog">
+                    <span class="alphaber-search__letter">О</span>
+                    <ul class="alphabet-search__countries-list countries-list countries-list--catalog countries-list--third-row">
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">ОАЭ</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Оман</a>
+                      </li>
+                    </ul>
+                  </td>
+                  <td class="alphabet-search__table-cell alphabet-search__table-cell--catalog">
+                    <span class="alphaber-search__letter">П</span>
+                    <ul class="alphabet-search__countries-list countries-list countries-list--catalog countries-list--third-row">
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Пакистан</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Палау</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Панама</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Папуа - Новая Гвинея</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Парагвай</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Перу</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Польша</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Португалия</a>
+                      </li>
+                    </ul>
+                  </td>
+                  <td class="alphabet-search__table-cell alphabet-search__table-cell--catalog">
+                    <span class="alphaber-search__letter">Р</span>
+                    <ul class="alphabet-search__countries-list countries-list countries-list--catalog countries-list--third-row">
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Руанда</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Румыния</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Россия</a>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr class="alphabet-search__table-row">
+                  <td class="alphabet-search__table-cell alphabet-search__table-cell--catalog">
+                    <span class="alphaber-search__letter">С</span>
+                    <ul class="alphabet-search__countries-list countries-list countries-list--catalog countries-list--fourth-row">
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Сальвадор</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Самоа</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Сан-Марино</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Саудовская Аравия</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Сейшелы</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Сенегал</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Сербия</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Сингапур</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Сирия</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Словакия</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Словения</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">США</a>
+                      </li>
+                    </ul>
+                  </td>
+                  <td class="alphabet-search__table-cell alphabet-search__table-cell--catalog">
+                    <span class="alphaber-search__letter">Т</span>
+                    <ul class="alphabet-search__countries-list countries-list countries-list--catalog countries-list--fourth-row">
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Таджикистан</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Таиланд</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Танзания</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Того</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Тонга</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Тринидад и Тобаго</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Тувалу</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Тунис</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Туркмения</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Турция</a>
+                      </li>
+                    </ul>
+                  </td>
+                  <td class="alphabet-search__table-cell alphabet-search__table-cell--catalog">
+                    <span class="alphaber-search__letter">У</span>
+                    <ul class="alphabet-search__countries-list countries-list countries-list--catalog countries-list--fourth-row">
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Уганда</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Узбекистан</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Украина</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Уругвай</a>
+                      </li>
+                    </ul>
+                  </td>
+                  <td class="alphabet-search__table-cell alphabet-search__table-cell--catalog">
+                    <span class="alphaber-search__letter">Ф</span>
+                    <ul class="alphabet-search__countries-list countries-list countries-list--catalog countries-list--fourth-row">
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Фиджи</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Филиппины</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Финляндия</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Франция</a>
+                      </li>
+                    </ul>
+                  </td>
+                  <td class="alphabet-search__table-cell alphabet-search__table-cell--catalog">
+                    <span class="alphaber-search__letter">Х</span>
+                    <ul class="alphabet-search__countries-list countries-list countries-list--catalog countries-list--fourth-row">
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Хорватия</a>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr class="alphabet-search__table-row">
+                  <td class="alphabet-search__table-cell alphabet-search__table-cell--catalog">
+                    <span class="alphaber-search__letter">Ч</span>
+                    <ul class="alphabet-search__countries-list countries-list countries-list--catalog">
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Чад</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Черногория</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Чехия</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Чили</a>
+                      </li>
+                    </ul>
+                  </td>
+                  <td class="alphabet-search__table-cell alphabet-search__table-cell--catalog">
+                    <span class="alphaber-search__letter">Ш</span>
+                    <ul class="alphabet-search__countries-list countries-list countries-list--catalog">
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Швейцария</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Швеция</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Шри-Ланка</a>
+                      </li>
+                    </ul>
+                  </td>
+                  <td class="alphabet-search__table-cell alphabet-search__table-cell--catalog">
+                    <span class="alphaber-search__letter">Э</span>
+                    <ul class="alphabet-search__countries-list countries-list countries-list--catalog">
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Эквадор</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Эритрея</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Эсватини</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Эстония</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Эфиопия</a>
+                      </li>
+                    </ul>
+                  </td>
+                  <td class="alphabet-search__table-cell alphabet-search__table-cell--catalog">
+                    <span class="alphaber-search__letter">Ю</span>
+                    <ul class="alphabet-search__countries-list countries-list countries-list--catalog">
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">ЮАР</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Южный Судан</a>
+                      </li>
+                    </ul>
+                  </td>
+                  <td class="alphabet-search__table-cell alphabet-search__table-cell--catalog">
+                    <span class="alphaber-search__letter">Я</span>
+                    <ul class="alphabet-search__countries-list countries-list countries-list--catalog">
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Ямайка</a>
+                      </li>
+                      <li class="countries-list__item">
+                        <a class="countries-list__link" href="/eroupe/">Япония</a>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+              <ul class="country-filter__countries-list countries-list countries-list--catalog">
+                <li class="countries-list__item countries-list__item--catalog">
+                  <a class="countries-list__link" href="/eroupe/">Австралия</a>
+                </li>
+                <li class="countries-list__item countries-list__item--catalog">
+                  <a class="countries-list__link" href="/eroupe/">Австрия</a>
+                </li>
+                <li class="countries-list__item countries-list__item--catalog">
+                  <a class="countries-list__link" href="/eroupe/">Азербайджан</a>
+                </li>
+                <li class="countries-list__item countries-list__item--catalog">
+                  <a class="countries-list__link" href="/eroupe/">Албания</a>
+                </li>
+                <li class="countries-list__item countries-list__item--catalog">
+                  <a class="countries-list__link" href="/eroupe/">Алжир</a>
+                </li>
+                <li class="countries-list__item countries-list__item--catalog">
+                  <a class="countries-list__link" href="/eroupe/">Ангола</a>
+                </li>
+                <li class="countries-list__item countries-list__item--catalog">
+                  <a class="countries-list__link" href="/eroupe/">Андорра</a>
+                </li>
+                <li class="countries-list__item countries-list__item--catalog">
+                  <a class="countries-list__link" href="/eroupe/">Антигуа и Барбуда</a>
+                </li>
+                <li class="countries-list__item countries-list__item--catalog">
+                  <a class="countries-list__link" href="/eroupe/">Аргентина</a>
+                </li>
+                <li class="countries-list__item countries-list__item--catalog">
+                  <a class="countries-list__link" href="/eroupe/">Армения</a>
+                </li>
+                <li class="countries-list__item countries-list__item--catalog">
+                  <a class="countries-list__link" href="/eroupe/">Афганистан</a>
+                </li>
+              </ul>
+            </div>
+            <a class="country-filter__bottom-close-button bold" href="#">Свернуть</a>
           </div>
-          <a class="country-filter__bottom-close-button bold" href="#">Свернуть</a>
         </div>
       </section>
 
@@ -783,69 +793,89 @@
         <section class="companions-catalog__filter companion-filter">
           <div class="companion-filter__wrapper">
             <h2 class="companion-filter__title">Подберите идеального попутчика</h2>
-            <form action="http://echo.htmlacademy.ru" method="GET">
-              <div class="companion-filter__hobby companion-hobby">
-                <p class="companion-hobby__title">Хобби</p>
-                <input class="visually-hidden" type="checkbox" name="sport" id="sport" checked>
-                <label class="companion-hobby__label" for="sport">Спортзал</label>
-                <input class="visually-hidden" type="checkbox" name="hookah" id="hookah">
-                <label class="companion-hobby__label" for="hookah">Кальян</label>
-                <input class="visually-hidden" type="checkbox" name="sofa" id="sofa">
-                <label class="companion-hobby__label" for="sofa">Диван</label>
-              </div>
-              <div class="companion-filter__music music-form">
-                <p class="music-form__title">Музыка</p>
-                <input class="visually-hidden" type="checkbox" name="hard-rock" id="hard-rock" checked>
-                <label class="music-form__label" for="hard-rock">Тяжелый рок</label>
-                <input class="visually-hidden" type="checkbox" name="russian-rap" id="russian-rap" checked>
-                <label class="music-form__label" for="russian-rap">Русский рэп</label>
-                <input class="visually-hidden" type="checkbox" name="eurodance" id="eurodance">
-                <label class="music-form__label" for="eurodance">Евроденс</label>
-              </div>
-              <div class="companion-filter__food food-form">
-                <p class="food-form__title">Еда</p>
-                <input class="visually-hidden" type="checkbox" name="meat" id="meat" checked>
-                <label class="food-form__label" for="meat">Мясоед</label>
-                <input class="visually-hidden" type="checkbox" name="proper-nutrition" id="proper-nutrition">
-                <label class="food-form__label" for="proper-nutrition">Сидит на ПП</label>
-                <input class="visually-hidden" type="checkbox" name="vegan" id="vegan">
-                <label class="food-form__label" for="vegan">Веган-сыроед</label>
-              </div>
-              <div class="companion-form__transport transport-form">
-                <p class="transport-form__title">Транспорт</p>
-                <input class="visually-hidden" type="checkbox" name="plane" id="plane" value="plane" checked>
-                <label class="transport-form__checkbox" for="plane">
-                  <img class="transport-form__checkbox-icon" src="img/icon-plane_active.svg" alt="Иконка самолета" width="32" height="32">
-                  <span class="visually-hidden">Самолет</span>
-                </label>
-                <input class="visually-hidden" type="checkbox" name="bus" id="bus" value="bus" checked>
-                <label class="transport-form__checkbox" for="bus">
-                  <img class="transport-form__checkbox-icon" src="img/icon-bus_actrive.svg" alt="Иконка автобуса" width="32" height="32">
-                  <span class="visually-hidden">Автобус</span>
-                </label>
-                <input class="visually-hidden" type="checkbox" name="bike" id="bike" value="bike">
-                <label class="transport-form__checkbox" for="bike">
-                  <img class="transport-form__checkbox-icon" src="img/icon-bike_none-active.svg" alt="Иконка велосипеда" width="32" height="32">
-                  <span class="visually-hidden">Велосипед</span>
-                </label>
-                <input class="visually-hidden" type="checkbox" name="pedastrian" id="pedastrian" value="pedastrian" checked>
-                <label class="transport-form__checkbox" for="pedastrian">
-                  <img class="transport-form__checkbox-icon" src="img/icon-pedastrian_active.svg" alt="Иконка пешего туризма" width="32" height="32">
-                  <span class="visually-hidden">Пешком</span>
-                </label>
-              </div>
-              <div class="companion-filter__level level-form">
-                <p class="level-form__title">Левел</p>
-                <div class="level-form__inputs level-range">
-                  <label class="visually-hidden" for="level-from">Левел от</label>
-                  <input class="level-range__inputs" type="number" name="level-from" id="level-from" required min="0" max="100" value="30" placeholder="0-100">
-                  <label class="visually-hidden" for="level-to">Левел до</label>
-                  <input class="level-range__inputs" type="number" name="level-to" id="level-to" required min="0" max="100" value="100" placeholder="0-100">
+            <form class="companion-filter__form" action="http://echo.htmlacademy.ru" method="GET">
+              <div class="filter-form filter-form__hobby">
+                <p class="filter-form__title">Хобби
+                  <span class="filter-form__title-double-dots">:</span>
+                </p>
+                <div class="filter-form__wrapper">
+                  <input class="visually-hidden filter-form__checkbox" type="checkbox" name="sport" id="sport" checked>
+                  <label class="filter-form__label" for="sport">Спортзал</label>
+                  <input class="visually-hidden filter-form__checkbox" type="checkbox" name="hookah" id="hookah">
+                  <label class="filter-form__label" for="hookah">Кальян</label>
+                  <input class="visually-hidden filter-form__checkbox" type="checkbox" name="sofa" id="sofa">
+                  <label class="filter-form__label" for="sofa">Диван</label>
                 </div>
-                <div class="level-form__bars range-bar">
-                  <span class="visually-hidden"> Ползунок уровней</span>
-                  <button class="range-bar__buttons" type="button">от 30</button>
-                  <button class="range-bar__buttons" type="button">до 100</button>
+              </div>
+              <div class="filter-form filter-form__music">
+                <p class="filter-form__title">Музыка
+                  <span class="filter-form__title-double-dots">:</span>
+                </p>
+                <div class="filter-form__wrapper">
+                  <input class="visually-hidden filter-form__checkbox" type="checkbox" name="hard-rock" id="hard-rock" checked>
+                  <label class="filter-form__label" for="hard-rock">Тяжелый рок</label>
+                  <input class="visually-hidden filter-form__checkbox" type="checkbox" name="russian-rap" id="russian-rap" checked>
+                  <label class="filter-form__label" for="russian-rap">Русский рэп</label>
+                  <input class="visually-hidden filter-form__checkbox" type="checkbox" name="eurodance" id="eurodance">
+                  <label class="filter-form__label" for="eurodance">Евроденс</label>
+                </div>
+              </div>
+              <div class="filter-form filter-form__food">
+                <p class="filter-form__title">Еда
+                  <span class="filter-form__title-double-dots">:</span>
+                </p>
+                <div class="filter-form__wrapper">
+                  <input class="visually-hidden filter-form__checkbox" type="checkbox" name="meat" id="meat" checked>
+                  <label class="filter-form__label" for="meat">Мясоед</label>
+                  <input class="visually-hidden filter-form__checkbox" type="checkbox" name="proper-nutrition" id="proper-nutrition">
+                  <label class="filter-form__label" for="proper-nutrition">Сидит на ПП</label>
+                  <input class="visually-hidden filter-form__checkbox" type="checkbox" name="vegan" id="vegan">
+                  <label class="filter-form__label" for="vegan">Веган-сыроед</label>
+                </div>
+              </div>
+              <div class="filter-form filter-form__transport transport-form">
+                <p class="filter-form__title">Транспорт
+                  <span class="filter-form__title-double-dots">:</span>
+                </p>
+                <div class="filter-form__wrapper filter-form__wrapper--transport">
+                  <input class="visually-hidden" type="checkbox" name="plane" id="plane" value="plane" checked>
+                  <label class="transport-form__checkbox" for="plane">
+                    <img class="transport-form__checkbox-icon" src="img/icon-plane_active.svg" alt="Иконка самолета" width="32" height="32">
+                    <span class="visually-hidden">Самолет</span>
+                  </label>
+                  <input class="visually-hidden" type="checkbox" name="bus" id="bus" value="bus" checked>
+                  <label class="transport-form__checkbox" for="bus">
+                    <img class="transport-form__checkbox-icon" src="img/icon-bus_actrive.svg" alt="Иконка автобуса" width="32" height="32">
+                    <span class="visually-hidden">Автобус</span>
+                  </label>
+                  <input class="visually-hidden" type="checkbox" name="bike" id="bike" value="bike">
+                  <label class="transport-form__checkbox" for="bike">
+                    <img class="transport-form__checkbox-icon" src="img/icon-bike_none-active.svg" alt="Иконка велосипеда" width="32" height="32">
+                    <span class="visually-hidden">Велосипед</span>
+                  </label>
+                  <input class="visually-hidden" type="checkbox" name="pedastrian" id="pedastrian" value="pedastrian" checked>
+                  <label class="transport-form__checkbox" for="pedastrian">
+                    <img class="transport-form__checkbox-icon" src="img/icon-pedastrian_active.svg" alt="Иконка пешего туризма" width="32" height="32">
+                    <span class="visually-hidden">Пешком</span>
+                  </label>
+                </div>
+              </div>
+              <div class="filter-form filter-form__level">
+                <p class="filter-form__title">Левел
+                  <span class="filter-form__title-double-dots">:</span>
+                </p>
+                <div class="filter-form__wrapper">
+                  <div class="filter-form__inputs level-range">
+                    <label class="visually-hidden" for="level-from">Левел от</label>
+                    <input class="level-range__input level-range__input--min" type="number" name="level-from" id="level-from" required min="0" max="100" value="30" placeholder="0-100">
+                    <label class="visually-hidden" for="level-to">Левел до</label>
+                    <input class="level-range__input level-range__input--max" type="number" name="level-to" id="level-to" required min="0" max="100" value="100" placeholder="0-100">
+                  </div>
+                  <div class="filter-form__bar range-bar">
+                    <span class="visually-hidden"> Ползунок уровней</span>
+                    <button class="range-bar__button range-bar__button--min" type="button"><span class="visually-hidden">от 30</span></button>
+                    <button class="range-bar__button range-bar__button--max" type="button"><span class="visually-hidden">до 100</span></button>
+                  </div>
                 </div>
               </div>
               <button class="companion-filter__submit-button button button--dark-blue-text" type="submit" value="Показать">Показать</button>
@@ -856,182 +886,270 @@
           <h2 class="visually-hidden">Профили пользоватей</h2>
           <ul class="companions__list">
             <li class="companions__profile user-profile">
-              <a class="user-profile__link" href="#">
-                <img class="user-profile__image" src="img/user-image-tatiyana_w270.jpg" alt="Фотография пользователя" width="70" height="70">
-                <p class="user-profile__user-name">Таня Фирсова</p>
-              </a>
-              <button class="user-profile__like-button">Лайк</button>
-              <p class="user-profile__likes-number bold">1,5 М</p>
-              <p class="user-profile__user-tags">#ЗОЖ #ПП #Фитнес #пляж  #авокадо #смузи</p>
-              <p class="user-profile__wish-list-title">хочет посетить:</p>
-              <ul class="user-profile__desire-list desire-countries medium">
-                <li class="desire-counties__item">
-                  <img class="desire-counties__counties-flag-image" src="img/sri-Lanka-flag_w35.png" alt="Флаг Шри-Ланки" width="26" height="18">
-                  <p class="desire-counties__name">Шри-ланка</p>
-                </li>
-                <li class="desire-counties__item">
-                  <img class="desire-counties__counties-flag-image" src="img/thailand-flag_w35.png" alt="Флаг Тайланда" width="26" height="18">
-                  <p class="desire-counties__name">Тайланд</p>
-                </li>
-                <li class="desire-counties__item">
-                  <img class="desire-counties__counties-flag-image" src="img/seychelles-flag_w35.png" alt="Флаг Сейшел" width="26" height="18">
-                  <p class="desire-counties__name">Сейшелы</p>
-                </li>
-              </ul>
-              <p class="user-profile__transport-list-title">Транспорт</p>
-              <ul class="user-profile__transport-list transport-list">
-                <li class="transport-list__item">
-                  <img class="transport-list__icon" src="img/icon-users-plane.svg" alt="Иконка самолета" width="32" height="32">
-                  <span class="visually-hidden">Самолет</span>
-                </li>
-                <li class="transport-list__item ">
-                  <img class="transport-list__icon transport-list__icon--disadbled" src="img/icon-bus_none-active.svg" alt="Иконка автобуса" width="32" height="32">
-                  <span class="visually-hidden">Автобус</span>
-                </li>
-                <li class="transport-list__item">
-                  <img class="transport-list__icon transport-list__icon--disadbled" src="img/icon-users-bike_disabled.svg" alt="Иконка велосипеда" width="32" height="32">
-                  <span class="visually-hidden">Велосипед</span>
-                </li>
-                <li class="transport-list__item">
-                  <img class="transport-list__icon transport-list__icon--disadbled" src="img/icon-pedastrian_none-active.svg" alt="Иконка пешего туризма" width="32" height="32">
-                  <span class="visually-hidden">Пешком</span>
-                </li>
-              </ul>
-              <a class="user-profile__choose-button button button--yellow button--dark-blue-text" href="">Позвать!</a>
+              <div class="user-profile__head-wrapper">
+                <a class="user-profile__photo-link" href="#">
+                  <img class="user-profile__image" src="img/user-image-tatiyana_w270.jpg" alt="Фотография пользователя" width="70" height="70">
+                </a>
+                <div class="user-profile__main-info-wrapper">
+                  <a class="user-profile__name-link">
+                    <p class="user-profile__user-name">Таня Фирсова</p>
+                  </a>
+                  <p class="user-profile__user-tags">#ЗОЖ #ПП #Фитнес #пляж  #авокадо #смузи</p>
+                  <div class="user-profile__interaction-buttons">
+                    <a class="user-profile__choose-button button button--yellow button--dark-blue-text" href="">Позвать!</a>
+                    <button class="user-profile__like-button user-profile__like-button--active"><span class="visually-hidden">Лайк</span></button>
+                    <p class="user-profile__likes-number bold">1,5 М</p>
+                  </div>
+                </div>
+              </div>
+              <div class="user-profile__desire-list-wrapper">
+                <p class="user-profile__wish-list-title">хочет посетить:</p>
+                <ul class="user-profile__desire-list desire-countries medium">
+                  <li class="desire-counties__item">
+                    <img class="desire-counties__counties-flag-image" src="img/sri-Lanka-flag_w35.png" alt="Флаг Шри-Ланки" width="26" height="18">
+                    <p class="desire-counties__name">Шри-ланка</p>
+                  </li>
+                  <li class="desire-counties__item">
+                    <img class="desire-counties__counties-flag-image" src="img/thailand-flag_w35.png" alt="Флаг Тайланда" width="26" height="18">
+                    <p class="desire-counties__name">Тайланд</p>
+                  </li>
+                  <li class="desire-counties__item">
+                    <img class="desire-counties__counties-flag-image" src="img/seychelles-flag_w35.png" alt="Флаг Сейшел" width="26" height="18">
+                    <p class="desire-counties__name">Сейшелы</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="user-profile__bottom-wrapper">
+                <div class="user-profile__transport-wrapper">
+                  <p class="user-profile__transport-list-title">Транспорт</p>
+                  <ul class="user-profile__transport-list transport-list transport-list--catalog">
+                    <li class="transport-list__item transport-list__item--catalog">
+                      <img class="transport-list__icon" src="img/icon-users-plane.svg" alt="Иконка самолета" width="32" height="32">
+                      <span class="visually-hidden">Самолет</span>
+                    </li>
+                    <li class="transport-list__item transport-list__item--catalog">
+                      <img class="transport-list__icon transport-list__icon--disadbled" src="img/icon-bus_none-active.svg" alt="Иконка автобуса" width="32" height="32">
+                      <span class="visually-hidden">Автобус</span>
+                    </li>
+                    <li class="transport-list__item transport-list__item--catalog">
+                      <img class="transport-list__icon transport-list__icon--disadbled" src="img/icon-users-bike_disabled.svg" alt="Иконка велосипеда" width="32" height="32">
+                      <span class="visually-hidden">Велосипед</span>
+                    </li>
+                    <li class="transport-list__item transport-list__item--catalog">
+                      <img class="transport-list__icon transport-list__icon--disadbled" src="img/icon-pedastrian_none-active.svg" alt="Иконка пешего туризма" width="32" height="32">
+                      <span class="visually-hidden">Пешком</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="user-profile__level-wrapper">
+                  <p class="user-profile__level-title">левел</p>
+                  <div class="user-profile__level-pie level level--catalog">
+                    <img class="level__status-bar" src="img/99-level.svg" alt="99 уровень">
+                    <p class="level__number level__number--catalog bold">99</p>
+                    <p class="level__dimension level__dimension--catalog">level</p>
+                  </div>
+                </div>
+              </div>
             </li>
             <li class="companions__profile user-profile">
-              <a class="user-profile__link" href="#">
-                <img class="user-profile__image" src="img/user-image-petya_w270.jpg" alt="Фотография пользователя" width="70" height="70">
-                <p class="user-profile__user-name">Петя Демин</p>
-              </a>
-              <button class="user-profile__like-button">Лайк</button>
-              <p class="user-profile__likes-number bold">1500</p>
-              <p class="user-profile__user-tags">#бургер #бар #футбол #концерт #крафт</p>
-              <p class="user-profile__wish-list-title">хочет посетить:</p>
-              <ul class="user-profile__desire-list desire-countries medium">
-                <li class="desire-counties__item">
-                  <img class="desire-counties__counties-flag-image" src="img/belgium-flag_w35.png" alt="Флаг Бельгии" width="26" height="18">
-                  <p class="desire-counties__name">Бельгия</p>
-                </li>
-                <li class="desire-counties__item">
-                  <img class="desire-counties__counties-flag-image" src="img/czech-flag_w35.png" alt="Флаг Чехии" width="26" height="18">
-                  <p class="desire-counties__name">Чехия</p>
-                </li>
-              </ul>
-              <p class="user-profile__transport-list-title">Транспорт</p>
-              <ul class="user-profile__transport-list transport-list">
-                <li class="transport-list__item">
-                  <img class="transport-list__icon" src="img/icon-users-plane.svg" alt="Иконка самолета" width="32" height="32">
-                  <span class="visually-hidden">Самолет</span>
-                </li>
-                <li class="transport-list__item">
-                  <img class="transport-list__icon" src="img/icon-card-bus.svg" alt="Иконка автобуса" width="32" height="32">
-                  <span class="visually-hidden">Автобус</span>
-                </li>
-                <li class="transport-list__item">
-                  <img class="transport-list__icon transport-list__icon--disadbled" src="img/icon-users-bike_disabled.svg" alt="Иконка велосипеда" width="32" height="32">
-                  <span class="visually-hidden">Велосипед</span>
-                </li>
-                <li class="transport-list__item">
-                  <img class="transport-list__icon" src="img/icon-users-pedastrian.svg" alt="Иконка пешего туризма" width="32" height="32">
-                  <span class="visually-hidden">Пешком</span>
-                </li>
-              </ul>
-              <a class="user-profile__choose-button button button--yellow button--dark-blue-text" href="#">Позвать!</a>
+              <div class="user-profile__head-wrapper">
+                <a class="user-profile__photo-link" href="#">
+                  <img class="user-profile__image" src="img/user-image-petya_w270.jpg" alt="Фотография пользователя" width="70" height="70">
+                </a>
+                <div class="user-profile__main-info-wrapper">
+                  <a class="user-profile__name-link">
+                    <p class="user-profile__user-name">Петя Демин</p>
+                  </a>
+                  <p class="user-profile__user-tags">#бургер #бар #футбол #концерт #крафт</p>
+                  <div class="user-profile__interaction-buttons">
+                    <a class="user-profile__choose-button button button--yellow button--dark-blue-text" href="">Позвать!</a>
+                    <button class="user-profile__like-button"><span class="visually-hidden">Лайк</span></button>
+                    <p class="user-profile__likes-number bold">1,500</p>
+                  </div>
+                </div>
+              </div>
+              <div class="user-profile__desire-list-wrapper">
+                <p class="user-profile__wish-list-title">хочет посетить:</p>
+                <ul class="user-profile__desire-list desire-countries medium">
+                  <li class="desire-counties__item">
+                    <img class="desire-counties__counties-flag-image" src="img/belgium-flag_w35.png" alt="Флаг Бельгии" width="26" height="18">
+                    <p class="desire-counties__name">Бельгия</p>
+                  </li>
+                  <li class="desire-counties__item">
+                    <img class="desire-counties__counties-flag-image" src="img/czech-flag_w35.png" alt="Флаг Чехии" width="26" height="18">
+                    <p class="desire-counties__name">Чехия</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="user-profile__bottom-wrapper">
+                <div class="user-profile__transport-wrapper">
+                  <p class="user-profile__transport-list-title">Транспорт</p>
+                  <ul class="user-profile__transport-list transport-list transport-list--catalog">
+                    <li class="transport-list__item transport-list__item--catalog">
+                      <img class="transport-list__icon" src="img/icon-users-plane.svg" alt="Иконка самолета" width="32" height="32">
+                      <span class="visually-hidden">Самолет</span>
+                    </li>
+                    <li class="transport-list__item transport-list__item--catalog">
+                      <img class="transport-list__icon" src="img/icon-card-bus.svg" alt="Иконка автобуса" width="32" height="32">
+                      <span class="visually-hidden">Автобус</span>
+                    </li>
+                    <li class="transport-list__item transport-list__item--catalog">
+                      <img class="transport-list__icon transport-list__icon--disadbled" src="img/icon-users-bike_disabled.svg" alt="Иконка велосипеда" width="32" height="32">
+                      <span class="visually-hidden">Велосипед</span>
+                    </li>
+                    <li class="transport-list__item transport-list__item--catalog">
+                      <img class="transport-list__icon" src="img/icon-users-pedastrian.svg" alt="Иконка пешего туризма" width="32" height="32">
+                      <span class="visually-hidden">Пешком</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="user-profile__level-wrapper">
+                  <p class="user-profile__level-title">левел</p>
+                  <div class="user-profile__level-pie level level--catalog">
+                    <img class="level__status-bar" src="img/80-catalog.svg" alt="80 уровень">
+                    <p class="level__number level__number--catalog bold">80</p>
+                    <p class="level__dimension level__dimension--catalog">level</p>
+                  </div>
+                </div>
+              </div>
             </li>
             <li class="companions__profile user-profile">
-              <a class="user-profile__link" href="#">
-                <img class="user-profile__image" src="img/user-image-smolov_w270.jpg" alt="Фотография пользователя" width="70" height="70">
-                <p class="user-profile__user-name">Марк Смолов</p>
-              </a>
-              <button class="user-profile__like-button">Лайк</button>
-              <p class="user-profile__likes-number bold">170</p>
-              <p class="user-profile__user-tags">#рэп #тату #хайпбист #кроссовки #суприм</p>
-              <p class="user-profile__wish-list-title">хочет посетить:</p>
-              <ul class="user-profile__desire-list desire-countries medium">
-                <li class="desire-counties__item">
-                  <img class="desire-counties__counties-flag-image" src="img/usa-flag_w35.png" alt="Флаг США" width="26" height="18">
-                  <p class="desire-counties__name">США</p>
-                </li>
-                <li class="desire-counties__item">
-                  <img class="desire-counties__counties-flag-image" src="img/australia-flag_w35.png" alt="Флаг Австралии" width="26" height="18">
-                  <p class="desire-counties__name">Австралия</p>
-                </li>
-                <li class="desire-counties__item">
-                  <img class="desire-counties__counties-flag-image" src="img/dominica-flag_w35.png" alt="Флаг Доминиканы" width="26" height="18">
-                  <p class="desire-counties__name">Доминика</p>
-                </li>
-              </ul>
-              <p class="user-profile__transport-list-title">Транспорт</p>
-              <ul class="user-profile__transport-list transport-list">
-                <li class="transport-list__item">
-                  <img class="transport-list__icon" src="img/icon-users-plane.svg" alt="Иконка самолета" width="32" height="32">
-                  <span class="visually-hidden">Самолет</span>
-                </li>
-                <li class="transport-list__item">
-                  <img class="transport-list__icon transport-list__icon--disadbled" src="img/icon-bus_none-active.svg" alt="Иконка автобуса" width="32" height="32">
-                  <span class="visually-hidden">Автобус</span>
-                </li>
-                <li class="transport-list__item">
-                  <img class="transport-list__icon" src="img/icon-bike_active.svg" alt="Иконка велосипеда" width="32" height="32">
-                  <span class="visually-hidden">Велосипед</span>
-                </li>
-                <li class="transport-list__item">
-                  <img class="transport-list__icon transport-list__icon--disadbled" src="img/icon-pedastrian_none-active.svg" alt="Иконка пешего туризма" width="32" height="32">
-                  <span class="visually-hidden">Пешком</span>
-                </li>
-              </ul>
-              <a class="user-profile__choose-button button button--yellow button--dark-blue-text" href="#">Позвать!</a>
+              <div class="user-profile__head-wrapper">
+                <a class="user-profile__photo-link" href="#">
+                  <img class="user-profile__image" src="img/user-image-smolov_w270.jpg" alt="Фотография пользователя" width="70" height="70">
+                </a>
+                <div class="user-profile__main-info-wrapper">
+                  <a class="user-profile__name-link">
+                    <p class="user-profile__user-name">Марк Смолов</p>
+                  </a>
+                  <p class="user-profile__user-tags">#рэп #тату #хайпбист #кроссовки #суприм</p>
+                  <div class="user-profile__interaction-buttons">
+                    <a class="user-profile__choose-button button button--yellow button--dark-blue-text" href="">Позвать!</a>
+                    <button class="user-profile__like-button"><span class="visually-hidden">Лайк</span></button>
+                    <p class="user-profile__likes-number bold">170</p>
+                  </div>
+                </div>
+              </div>
+              <div class="user-profile__desire-list-wrapper">
+                <p class="user-profile__wish-list-title">хочет посетить:</p>
+                <ul class="user-profile__desire-list desire-countries medium">
+                  <li class="desire-counties__item">
+                    <img class="desire-counties__counties-flag-image" src="img/usa-flag_w35.png" alt="Флаг США" width="26" height="18">
+                    <p class="desire-counties__name">США</p>
+                  </li>
+                  <li class="desire-counties__item">
+                    <img class="desire-counties__counties-flag-image" src="img/australia-flag_w35.png" alt="Флаг Австралии" width="26" height="18">
+                    <p class="desire-counties__name">Австралия</p>
+                  </li>
+                  <li class="desire-counties__item">
+                    <img class="desire-counties__counties-flag-image" src="img/dominica-flag_w35.png" alt="Флаг Доминиканы" width="26" height="18">
+                    <p class="desire-counties__name">Доминика</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="user-profile__bottom-wrapper">
+                <div class="user-profile__transport-wrapper">
+                  <p class="user-profile__transport-list-title">Транспорт</p>
+                  <ul class="user-profile__transport-list transport-list transport-list--catalog">
+                    <li class="transport-list__item transport-list__item--catalog">
+                      <img class="transport-list__icon" src="img/icon-users-plane.svg" alt="Иконка самолета" width="32" height="32">
+                      <span class="visually-hidden">Самолет</span>
+                    </li>
+                    <li class="transport-list__item transport-list__item--catalog">
+                      <img class="transport-list__icon transport-list__icon--disadbled" src="img/icon-bus_none-active.svg" alt="Иконка автобуса" width="32" height="32">
+                      <span class="visually-hidden">Автобус</span>
+                    </li>
+                    <li class="transport-list__item transport-list__item--catalog">
+                      <img class="transport-list__icon" src="img/icon-bike_active.svg" alt="Иконка велосипеда" width="32" height="32">
+                      <span class="visually-hidden">Велосипед</span>
+                    </li>
+                    <li class="transport-list__item transport-list__item--catalog">
+                      <img class="transport-list__icon transport-list__icon--disadbled" src="img/icon-pedastrian_none-active.svg" alt="Иконка пешего туризма" width="32" height="32">
+                      <span class="visually-hidden">Пешком</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="user-profile__level-wrapper">
+                  <p class="user-profile__level-title">левел</p>
+                  <div class="user-profile__level-pie level level--catalog">
+                    <img class="level__status-bar level__status-bar--25" src="img/25-catalog.svg" alt="25 уровень">
+                    <p class="level__number level__number--catalog bold">25</p>
+                    <p class="level__dimension level__dimension--catalog">level</p>
+                  </div>
+                </div>
+              </div>
             </li>
             <li class="companions__profile user-profile">
-              <a class="user-profile__link" href="#">
-                <img class="user-profile__image" src="img/user-image-rogovaya-w270.jpg" alt="Фотография пользователя" width="70" height="70">
-                <p class="user-profile__user-name">Лариса Роговая</p>
-              </a>
-              <button class="user-profile__like-button">Лайк</button>
-              <p class="user-profile__likes-number bold">23</p>
-              <p class="user-profile__user-tags">#образование #карьера #учеба #линкедин</p>
-              <p class="user-profile__wish-list-title">хочет посетить:</p>
-              <ul class="user-profile__desire-list desire-countries medium">
-                <li class="desire-counties__item">
-                  <img class="desire-counties__counties-flag-image" src="img/united-kingdom-flag_w35.png" alt="Флаг Великобритании" width="26" height="18">
-                  <p class="desire-counties__name">Великобритания</p>
-                </li>
-                <li class="desire-counties__item">
-                  <img class="desire-counties__counties-flag-image" src="img/germany-flag_w35.png" alt="Флаг Германии" width="26" height="18">
-                  <p class="desire-counties__name">Германия</p>
-                </li>
-              </ul>
-              <p class="user-profile__transport-list-title">Транспорт</p>
-              <ul class="user-profile__transport-list transport-list">
-                <li class="transport-list__item">
-                  <img class="transport-list__icon" src="img/icon-users-plane.svg" alt="Иконка самолета" width="32" height="32">
-                  <span class="visually-hidden">Самолет</span>
-                </li>
-                <li class="transport-list__item">
-                  <img class="transport-list__icon" src="img/icon-card-bus.svg" alt="Иконка автобуса" width="32" height="32">
-                  <span class="visually-hidden">Автобус</span>
-                </li>
-                <li class="transport-list__item">
-                  <img class="transport-list__icon transport-list__icon--disadbled" src="img/icon-users-bike_disabled.svg" alt="Иконка велосипеда" width="32" height="32">
-                  <span class="visually-hidden">Велосипед</span>
-                </li>
-                <li class="transport-list__item">
-                  <img class="transport-list__icon transport-list__icon--disadbled" src="img/icon-pedastrian_none-active.svg" alt="Иконка пешего туризма" width="32" height="32">
-                  <span class="visually-hidden">Пешком</span>
-                </li>
-              </ul>
-              <a class="user-profile__choose-button button button--yellow button--dark-blue-text" href="#">Позвать!</a>
+              <div class="user-profile__head-wrapper">
+                <a class="user-profile__photo-link" href="#">
+                  <img class="user-profile__image" src="img/user-image-rogovaya-w270.jpg" alt="Фотография пользователя" width="70" height="70">
+                </a>
+                <div class="user-profile__main-info-wrapper">
+                  <a class="user-profile__name-link">
+                    <p class="user-profile__user-name">Лариса Роговая</p>
+                  </a>
+                  <p class="user-profile__user-tags">#образование #карьера #учеба #линкедин</p>
+                  <div class="user-profile__interaction-buttons">
+                    <a class="user-profile__choose-button button button--yellow button--dark-blue-text" href="">Позвать!</a>
+                    <button class="user-profile__like-button"><span class="visually-hidden">Лайк</span></button>
+                    <p class="user-profile__likes-number bold">23</p>
+                  </div>
+                </div>
+              </div>
+              <div class="user-profile__desire-list-wrapper">
+                <p class="user-profile__wish-list-title">хочет посетить:</p>
+                <ul class="user-profile__desire-list desire-countries medium">
+                  <li class="desire-counties__item">
+                    <img class="desire-counties__counties-flag-image" src="img/united-kingdom-flag_w35.png" alt="Флаг Великобритании" width="26" height="18">
+                    <p class="desire-counties__name">Великобритания</p>
+                  </li>
+                  <li class="desire-counties__item">
+                    <img class="desire-counties__counties-flag-image" src="img/germany-flag_w35.png" alt="Флаг Германии" width="26" height="18">
+                    <p class="desire-counties__name">Германия</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="user-profile__bottom-wrapper">
+                <div class="user-profile__transport-wrapper">
+                  <p class="user-profile__transport-list-title">Транспорт</p>
+                  <ul class="user-profile__transport-list transport-list transport-list--catalog">
+                    <li class="transport-list__item transport-list__item--catalog">
+                      <img class="transport-list__icon" src="img/icon-users-plane.svg" alt="Иконка самолета" width="32" height="32">
+                      <span class="visually-hidden">Самолет</span>
+                    </li>
+                    <li class="transport-list__item transport-list__item--catalog">
+                      <img class="transport-list__icon" src="img/icon-card-bus.svg" alt="Иконка автобуса" width="32" height="32">
+                      <span class="visually-hidden">Автобус</span>
+                    </li>
+                    <li class="transport-list__item transport-list__item--catalog">
+                      <img class="transport-list__icon transport-list__icon--disadbled" src="img/icon-users-bike_disabled.svg" alt="Иконка велосипеда" width="32" height="32">
+                      <span class="visually-hidden">Велосипед</span>
+                    </li>
+                    <li class="transport-list__item transport-list__item--catalog">
+                      <img class="transport-list__icon transport-list__icon--disadbled" src="img/icon-pedastrian_none-active.svg" alt="Иконка пешего туризма" width="32" height="32">
+                      <span class="visually-hidden">Пешком</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="user-profile__level-wrapper">
+                  <p class="user-profile__level-title">левел</p>
+                  <div class="user-profile__level-pie level level--catalog">
+                    <img class="level__status-bar level__status-bar--50" src="img/50-catalog.svg" alt="25 уровень">
+                    <p class="level__number level__number--catalog bold">50</p>
+                    <p class="level__dimension level__dimension--catalog">level</p>
+                  </div>
+                </div>
+              </div>
             </li>
           </ul>
           <a class="companions__more-button button" href="">Показать еще</a>
           <div class="companions__pagination-block pagination">
             <ul class="pagination__list pagination-items">
-              <li class="pagination-items__item">
+              <li class="pagination-items__item pagination-items__item--current">
                 <a class="pagination-items__pages-link" href="#">1</a>
               </li>
               <li class="pagination-items__item">
-                <a class="pagination__pages-link" href="#">2</a>
+                <a class="pagination-items__pages-link" href="#">2</a>
               </li>
               <li class="pagination-items__item">
                 <a class="pagination-items__pages-link" href="#">3</a>
@@ -1040,15 +1158,19 @@
                 <a class="pagination-items__pages-link" href="#">4</a>
               </li>
             </ul>
-            <a class="pagination__previous-page" href="catalog-prev.html">Показать предыдущую страницу</a>
-            <a class="pagination__next-page" href="catalog-next.html"> Показать следующую страницу </a>
+            <a class="pagination__previous-page" href="catalog-prev.html">
+              <span class="visually-hidden">Показать предыдущую страницу</span>
+            </a>
+            <a class="pagination__next-page" href="catalog-next.html">
+              <span class="visually-hidden">Показать следующую страницу</span>
+            </a>
           </div>
         </section>
       </div>
     </main>
     <footer class="page-footer">
       <div class="container page-footer__wrapper">
-        <img src="img/logo_footer.svg" alt="Логотип «Погнали»" width="96" height="15">
+        <img class="page-footer__logo logo" src="img/logo_footer.svg" alt="Логотип «Погнали»" width="96" height="15">
         <ul class="page-footer__socials social-list">
           <li class="social-list__item">
             <a class="social-list__link" href="https://www.facebook.com">
@@ -1075,31 +1197,8 @@
         </a>
       </div>
     </footer>
-    <script>
-      const navigation = document.querySelector(".nav");
-      const navigationOn = document.querySelector(".nav__toggle");
-      const navigationOff = document.querySelector(".modal-menu__toggle");
-
-      navigation.classList.remove("nav--no-js");
-      navigation.classList.remove("nav--menu-opened");
-
-      navigationOn.addEventListener('click', function() {
-        if (navigation.classList.contains('nav--menu-closed')) {
-          navigation.classList.remove('nav--menu-closed');
-          navigation.classList.add('nav--menu-opened');
-        } else {
-          navigation.classList.add('nav--menu-opened')
-        }
-      });
-
-      navigationOff.addEventListener('click', function() {
-        if (navigation.classList.contains('nav--menu-opened')) {
-          navigation.classList.remove('nav--menu-opened');
-          navigation.classList.add('nav--menu-closed');
-        } else {
-          navigation.classList.add('nav--menu-closed')
-        }
-      });
-    </script>
+    <script src="js/header.js"></script>
+    <script src="js/country-filter.js"></script>
+    <script src="js/filter-form.js"></script>
   </body>
 </html>

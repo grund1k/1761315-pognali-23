@@ -15,11 +15,23 @@
 .page-body__footer {
   margin-top: -110px;
 
+  &--form {
+    z-index: 2;
+  }
+
   @media (min-width: $tablet-width) {
     margin-top: 90px;
+
+    &--form {
+      margin-top: -94px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     margin-top: 20px;
+
+    &--form {
+      margin-top: -83px;
+    }
   }
 }

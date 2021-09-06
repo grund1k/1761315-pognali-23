@@ -2,6 +2,10 @@
   min-height: 42px;
   background-color: $dark-blue;
 
+  &--page-inner {
+    background-color: $header-blue;
+  }
+
   @media (min-width: $tablet-width) {
     min-height: 92px;
   }

@@ -1,19 +1,84 @@
+.companion-filter {
+  @media (min-width: $desktop-width) {
+    max-width: 285px;
+  }
+}
+
 .companion-filter__wrapper {
   background-color: $button-yellow;
   border-radius: 20px;
   padding: 26px 25px 22px 25px;
-  margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    padding: 33px 36px 36px 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 44px 47px 48px 45px;
+  }
 }
 
 .companion-filter__title {
   @include h2-size-s;
   color: $basic-blue-light;
   letter-spacing: 0.44px;
-  margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    @include h2-5;
+  }
+}
+
+.companion-filter__form {
+  margin-top: 37px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 76px;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 617px;
+      border: 1px solid #f3c72b;
+      position: absolute;
+      top: -36px;
+    }
+
+    &::after {
+      content: "";
+      width: 617px;
+      border: 1px solid #f3c72b;
+      position: absolute;
+      bottom: 87px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 35px;
+
+    &::after,
+    &::before {
+      display: none;
+    }
+  }
 }
 
 .companion-filter__submit-button {
   background: $basic-white;
   border-radius: 25px;
-  padding: 14px 73px;
+  display: block;
+  padding: 12px 78px 10px 75px;
+  margin-top: 26px;
+  margin-left: -5px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 73px;
+    width: 100%;
+    padding: 16px 78px 15px 75px;
+    margin-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 45px;
+    padding: 16px 36px 13px 43px;
+  }
 }

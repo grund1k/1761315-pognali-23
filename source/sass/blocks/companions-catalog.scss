@@ -6,7 +6,27 @@
 }
 
 .companions-catalog__filter {
+  margin-top: 19px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 43px;
+  }
+
   @media (min-width: $desktop-width) {
+    margin-top: 70px;
     order: 1;
+  }
+}
+
+.companions-catalog__cards {
+  margin-top: 28px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 30px;
+    margin-right: 85px;
   }
 }
