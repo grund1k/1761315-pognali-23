@@ -93,6 +93,9 @@
     &--catalog {
       &::after {
         display: block;
+        opacity: 0.1;
+        border: 1px solid $black;
+        bottom: 27px;
       }
     }
   }

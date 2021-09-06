@@ -164,8 +164,39 @@
 }
 
 .user-profile__wish-list-title {
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 15px;
+    border: 1px solid $basic-grey;
+    position: absolute;
+    left: -25px;
+    top: 6px;
+  }
+
+  &::after {
+    content: "";
+    width: 141px;
+    border: 1px solid $basic-grey;
+    position: absolute;
+    right: -19px;
+    top: 6px;
+  }
+
+
   @media (min-width: $tablet-width) {
     margin-left: 43px;
+
+    &::before {
+      width: 74px;
+      left: -82px;
+    }
+
+    &::after {
+      width: 502px;
+      left: 102px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -207,6 +238,25 @@
 
 .user-profile__transport-list-title {
   margin-left: 7px;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 15px;
+    border: 1px solid $basic-grey;
+    position: absolute;
+    left: -25px;
+    top: 6px;
+  }
+
+  &::after {
+    content: "";
+    width: 105px;
+    border: 1px solid $basic-grey;
+    position: absolute;
+    right: -49px;
+    top: 6px;
+  }
 }
 
 .user-profile__transport-list {
@@ -214,6 +264,19 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
+  }
+}
+
+.user-profile__level-title {
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 21px;
+    border: 1px solid $basic-grey;
+    position: absolute;
+    right: -19px;
+    top: 6px;
   }
 }
 
