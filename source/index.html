@@ -439,56 +439,7 @@
         </a>
       </div>
     </footer>
-    <script>
-      const navigation = document.querySelector(".nav");
-      const navigationOn = document.querySelector(".nav__toggle");
-      const navigationOff = document.querySelector(".modal-menu__toggle");
-
-      navigation.classList.remove("nav--no-js");
-      navigation.classList.remove("nav--menu-opened");
-
-      navigationOn.addEventListener('click', function() {
-        if (navigation.classList.contains('nav--menu-closed')) {
-          navigation.classList.remove('nav--menu-closed');
-          navigation.classList.add('nav--menu-opened');
-        } else {
-          navigation.classList.add('nav--menu-opened')
-        }
-      });
-
-      navigationOff.addEventListener('click', function() {
-        if (navigation.classList.contains('nav--menu-opened')) {
-          navigation.classList.remove('nav--menu-opened');
-          navigation.classList.add('nav--menu-closed');
-        } else {
-          navigation.classList.add('nav--menu-closed')
-        }
-      });
-
-      const navLogo = document.querySelector(".nav__logo");
-
-      window.addEventListener("scroll", function () {
-        if (window.pageYOffset > 10) {
-          navigation.classList.add("nav--sticky");
-          navLogo.src = "img/logo_footer.svg"
-        } else {
-          navigation.classList.remove("nav--sticky");
-          navLogo.src = "img/logo_text.svg"
-        }
-      })
-
-      const addProfileModalOn = document.querySelector(".add-profile__modal")
-      const addProfileModal = document.querySelector(".add-profile__modal-popup")
-      const addProfileModalOff = document.querySelector(".add-profile__modal-close")
-
-      addProfileModalOn.addEventListener("click", function(evt) {
-        evt.preventDefault();
-        addProfileModal.style.display = "block"
-      })
-
-      addProfileModalOff.addEventListener("click", function() {
-        addProfileModal.style.display = "none"
-      })
-    </script> <!--Скрипты позже закину в отедельный файл-->
+    <script src="js/header.js"></script>
+    <script src="js/modal.js"></script>
   </body>
 </html>
