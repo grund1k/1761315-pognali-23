@@ -29,8 +29,7 @@
 
   @media (min-width: $tablet-width) {
     @include medium;
-    font-size: 20px;
-    line-height: 20px;
+    @include body-3;
     position: absolute;
     bottom: -9px;
     left: 25%;

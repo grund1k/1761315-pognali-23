@@ -97,13 +97,13 @@
 }
 
 @mixin text-2 {
-  font-size: 20px;
-  line-height: 20px;
-}
-
-@mixin text-2 {
   font-size: 15px;
   line-height: 15px;
+}
+
+@mixin text-3 {
+  font-size: 22px;
+  line-height: 33px;
 }
 
 @mixin button {

@@ -71,6 +71,7 @@
 
 .registration__input {
   @include bold;
+  @include subtitle-2;
   box-sizing: border-box;
   width: 235px;
   height: 62px;
@@ -78,7 +79,6 @@
   border-radius: 10px;
   padding: 22px 25px;
   border: none;
-  font-size: 18px;
   color: rgba(68, 68, 68, 0.5);
 
   &:hover {
@@ -97,12 +97,12 @@
   }
 
   @media (min-width: $tablet-width) {
+    @include subtitle-2;
     height: 80px;
     margin-left: 37px;
     border-radius: 20px;
     width: 560px;
     padding-left: 35px;
-    font-size: 24px;
   }
 
   @media (min-width: $desktop-width) {
@@ -135,10 +135,10 @@
   }
 
   @media (min-width: $desktop-width) {
+    @include subtitle-2;
     width: 324px;
     text-align: start;
     padding-left: 36px;
-    font-size: 24px;
     text-transform: none;
   }
 }

@@ -208,7 +208,7 @@
   color: $special-grey;
 
   @media (min-width: $tablet-width) {
-    font-size: 22px;
+    @include text-3;
     padding-left: 65px;
   }
 
@@ -287,8 +287,8 @@
   }
 
   @media (min-width: $tablet-width) {
+    @include subtitle-2;
     text-transform: none;
-    font-size: 24px;
     padding-top: 35px;
     padding-bottom: 40px;
   }

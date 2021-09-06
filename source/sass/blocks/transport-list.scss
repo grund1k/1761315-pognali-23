@@ -30,6 +30,7 @@
 
   @media (min-width: $desktop-width) {
     &:hover::before {
+      @include body-3;
       position: absolute;
       z-index: 2;
       right: 50%;
@@ -38,7 +39,6 @@
       padding: 18px 25px;
       transform: translate(50%);
       line-height: 1.38;
-      font-size: 20px;
       color: #ffffff;
       border-radius: 4px;
       background-color: #101d41;

@@ -10,9 +10,9 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    @include body-3;
     @include medium;
     letter-spacing: 0.1em;
-    font-size: 20px;
     line-height: 20px;
     background-color: $basic-grey;
     position: absolute;
@@ -39,7 +39,7 @@
   overflow: hidden;
 
   @media (min-width: $tablet-width) {
-    font-size: 20px;
+    @include body-3;
     line-height: 22px;
     width: 616px;
     height: 86px;
