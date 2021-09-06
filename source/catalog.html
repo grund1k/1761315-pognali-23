@@ -1145,11 +1145,11 @@
           <a class="companions__more-button button" href="">Показать еще</a>
           <div class="companions__pagination-block pagination">
             <ul class="pagination__list pagination-items">
-              <li class="pagination-items__item">
+              <li class="pagination-items__item pagination-items__item--current">
                 <a class="pagination-items__pages-link" href="#">1</a>
               </li>
               <li class="pagination-items__item">
-                <a class="pagination__pages-link" href="#">2</a>
+                <a class="pagination-items__pages-link" href="#">2</a>
               </li>
               <li class="pagination-items__item">
                 <a class="pagination-items__pages-link" href="#">3</a>
@@ -1158,8 +1158,12 @@
                 <a class="pagination-items__pages-link" href="#">4</a>
               </li>
             </ul>
-            <a class="pagination__previous-page" href="catalog-prev.html">Показать предыдущую страницу</a>
-            <a class="pagination__next-page" href="catalog-next.html"> Показать следующую страницу </a>
+            <a class="pagination__previous-page" href="catalog-prev.html">
+              <span class="visually-hidden">Показать предыдущую страницу</span>
+            </a>
+            <a class="pagination__next-page" href="catalog-next.html">
+              <span class="visually-hidden">Показать следующую страницу</span>
+            </a>
           </div>
         </section>
       </div>
