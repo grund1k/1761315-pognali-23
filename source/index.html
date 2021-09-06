@@ -11,7 +11,10 @@
       <nav class="nav nav--menu-opened nav--no-js">
         <div class="container nav__wrapper">
           <a class="nav__logo-link">
-            <img class="nav__logo logo" src="img/logo_text.svg" alt="Логотип «Погнали»" width="96" height="15">
+            <picture>
+              <source class="nav__logo--tablet" media="(min-width: 768px)" srcset="img/logo/logo-full.svg">
+              <img class="nav__logo logo" src="img/logo/logo-mobile.svg" alt="Логотип «Погнали»" width="96" height="15">
+            </picture>
           </a>
           <button class="nav__toggle" type="button" aria-label="Открыть меню"></button>
           <ul class="nav__site-list nav-list">
@@ -42,7 +45,10 @@
           <div class="container modal-menu__wrapper">
             <div class="modal-menu__logo-wrapper">
               <a class="modal-menu__logo-link">
-                <img class="modal-menu__logo logo" src="img/logo_footer.svg" alt="Логотип «Погнали»" width="96" height="15">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/logo/logo-full-blue.svg">
+                  <img class="modal-menu__logo logo" src="img/logo/logo-mobile-blue.svg" alt="Логотип «Погнали»" width="96" height="15">
+                </picture>
               </a>
               <button class="modal-menu__toggle" type="button" aria-label="Открыть меню"></button>
             </div>
@@ -412,7 +418,10 @@
 
     <footer class="page-footer page-body__footer">
       <div class="container page-footer__wrapper">
-        <img class="page-footer__logo logo" src="img/logo_footer.svg" alt="Логотип «Погнали»" width="96" height="15">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/logo/logo-full-blue.svg">
+          <img class="page-footer__logo logo" src="img/logo/logo-mobile-blue.svg" alt="Логотип «Погнали»" width="96" height="15">
+        </picture>
         <ul class="page-footer__socials social-list">
           <li class="social-list__item">
             <a class="social-list__link" href="https://www.facebook.com">
