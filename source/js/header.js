@@ -46,4 +46,3 @@ window.addEventListener("scroll", function () {
     navLogoTablet.srcset = "img/logo/logo-full.svg";
   }
 })
-
