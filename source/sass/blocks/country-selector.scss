@@ -194,10 +194,12 @@
     height: 47px;
     border: none;
     margin-left: 46px;
+    margin-top: 7px;
   }
 
   @media (min-width: $desktop-width) {
     margin-left: 79px;
+    margin-top: 0;
   }
 }
 

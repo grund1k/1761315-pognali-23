@@ -117,7 +117,11 @@
               <p class="level__dimension level__dimension--form">level</p>
             </div>
             <div class="profile-form__user-image-wrapper">
-              <img class="profile-form__user-image" src="img/user-image-petya_w270.jpg" alt="Фотография пользователя" width="100" height="100">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/users/demin-desktop--form.jpg 1x" srcset="img/users/demin-desktop--form@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/users/demin-tablet--form.jpg 1x" srcset="img/users/demin-tablet--form@2x.jpg 2x">
+                <img class="profile-form__user-image" src="img/users/demin-mobile--form.jpg" srcset="img/users/demin-mobile--form@2x.jpg 2x" alt="Фотография пользователя" width="100" height="100">
+              </picture>
               <button class="profile-form__upload-button button button--20-size">Фото</button>
             </div>
             <a class="profile-form__photo-button button button--blue button--round button--dark-blue-text button--20-size" href="#">Cменить фото</a>
@@ -448,22 +452,37 @@
               <div class="step__selector-wrapper">
                 <div class="step__country-add country-selector">
                   <button class="country-selector__button country-selector__button--chosen country-selector__button--overflow" type="button">Босния и Герцеговина</button>
-                  <img class="country-selector__image" src="img/bosnia-and-herzegovina_w35.png" alt="Флаг Босния и Герцеговины" width="35" height="24">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="img/flags/bosnia-and-herzegovina-big.png 1x" srcset="img/flags/bosnia-and-herzegovina-big@2x.png 2x">
+                    <img class="country-selector__image" src="img/flags/bosnia-and-herzegovina-small.png" srcset="img/flags/bosnia-and-herzegovina-small@2x.png 2x" alt="Флаг Босния и Герцеговины" width="35" height="24">
+                  </picture>
                   <button class="country-selector__delete-button" type="button">
-                    <img class="country-selector__button-logo" src="img/icon-close.svg" alt="Удалить страну">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="img/icon-close-point.svg">
+                      <img class="country-selector__button-logo" src="img/icon-close.svg" alt="Удалить страну">
+                    </picture>
                   </button>
                 </div>
                 <div class="step__country-add country-selector">
                   <button class="country-selector__button country-selector__button--chosen" type="button">Чехия</button>
-                  <img class="country-selector__image" src="img/czech-flag_w35.png" alt="Флаг Чехии" width="35" height="24">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="img/flags/czech-big.png 1x" srcset="img/flags/czech-big@2x.png 2x">
+                    <img class="country-selector__image" src="img/flags/czech-small.png" srcset="img/flags/czech-small@2x.png 2x" alt="Флаг Босния и Герцеговины" width="35" height="24">
+                  </picture>
                   <button class="country-selector__delete-button" type="button">
-                    <img class="country-selector__button-logo" src="img/icon-close.svg" alt="Удалить страну">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="img/icon-close-point.svg">
+                      <img class="country-selector__button-logo" src="img/icon-close.svg" alt="Удалить страну">
+                    </picture>
                   </button>
                 </div>
                 <div class="step__country-add country-selector country-selector--choosing">
                   <button class="country-selector__button country-selector__button--choosing" type="button">Выберите страну</button>
                   <button class="country-selector__delete-button" type="button">
-                    <img class="country-selector__button-logo" src="img/icon-close.svg" alt="Удалить страну">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="img/icon-close-point.svg">
+                      <img class="country-selector__button-logo" src="img/icon-close.svg" alt="Удалить страну">
+                    </picture>
                   </button>
                   <div class="country-selector__modal countries-dropdown">
                     <div class="countries-dropdown__title-wrapper">
@@ -551,7 +570,10 @@
               <div class="step__country-textaera step__country-textaera--top country-enviroment">
                 <div class="country-enviroment__head-wrapper country-enviroment__head-wrapper--first">
                   <p class="country-enviroment__title country-enviroment__title--overflow">Босния и Герцеговина</p>
-                  <img class="country-enviroment__image" src="img/bosnia-and-herzegovina_w35.png" alt="Флаг Босния и Герцеговины" width="35" height="24">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="img/flags/bosnia-and-herzegovina-big.png 1x" srcset="img/flags/bosnia-and-herzegovina-big@2x.png 2x">
+                    <img class="country-enviroment__image" src="img/flags/bosnia-and-herzegovina-small.png" srcset="img/flags/bosnia-and-herzegovina-small@2x.png 2x" alt="Флаг Босния и Герцеговины" width="35" height="24">
+                  </picture>
                 </div>
                 <textarea class="country-enviroment__textarea" name="action-plan-first-country" id="action-plan-first-country" cols="30" rows="15" placeholder="План действий"></textarea>
                 <label class="visually-hidden" for="action-plan-first-country">Впишите свой план действий</label>
@@ -559,7 +581,10 @@
               <div class="step__country-textaera country-enviroment">
                 <div class="country-enviroment__head-wrapper">
                   <p class="country-enviroment__title">Чехия</p>
-                  <img class="country-enviroment__image" src="img/czech-flag_w35.png" alt="Флаг Чехии" width="35" height="24">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="img/flags/czech-big.png 1x" srcset="img/flags/czech-big@2x.png 2x">
+                    <img class="country-enviroment__image" src="img/flags/czech-small.png" srcset="img/flags/czech-small@2x.png 2x" alt="Флаг Босния и Герцеговины" width="35" height="24">
+                  </picture>
                 </div>
                 <textarea class="country-enviroment__textarea" name="action-plan-second-country" id="action-plan-second-country" cols="30" rows="15" placeholder="План действий">Пить пиво и лазить по&nbsp;старым замкам, наслаждаться архитектурой и вот это все.</textarea>
                 <label class="visually-hidden" for="action-plan-second-country">Впишите свой план действий</label>
