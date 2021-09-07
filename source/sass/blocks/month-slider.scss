@@ -1,12 +1,12 @@
 .month-slider {
-  @include h3-size-s;
+  @include h3-2;
   color: $basic-blue-light;
   display: flex;
   align-items: center;
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
-    @include h3-size-36;
+    @include h2-3;
     padding-left: 12px;
     padding-right: 25px;
   }

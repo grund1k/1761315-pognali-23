@@ -1,4 +1,5 @@
 .desire-countries {
+  @include medium;
   color: $basic-blue-light;
 
   @media (min-width: $tablet-width) {

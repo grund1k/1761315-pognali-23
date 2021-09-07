@@ -77,7 +77,7 @@
   color: $special-grey;
 
   @media (min-width: $tablet-width) {
-    font-size: 20px;
+    @include body-3;
     margin-right: 23px;
   }
 }

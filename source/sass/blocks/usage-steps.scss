@@ -1,9 +1,10 @@
 .usage-steps {
   @include subtitle;
+  @include bold;
   color: $dark-blue;
 
   @media (min-width: $tablet-width) {
-    @include subtitle-tablet-24-size;
+    @include subtitle-2;
   }
 }
 

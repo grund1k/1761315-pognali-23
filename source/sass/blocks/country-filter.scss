@@ -1,18 +1,19 @@
 .country-filter {
+  position: relative;
   background-color: $filter-blue;
-  padding-top: 20px;
+  padding-top: 39px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 60px;
+    padding-top: 80px;
     padding-bottom: 44px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 58px;
+    padding-top: 77px;
 
     &--open {
       background-color: transparent;
@@ -37,6 +38,7 @@
 }
 
 .country-filter__title {
+  @include bold;
   color: $text-blue;
   text-transform: uppercase;
   padding-left: 27px;
@@ -99,8 +101,8 @@
 
   @media (min-width: $tablet-width) {
     @include body-3;
+    @include bold;
     text-transform: uppercase;
-    font-weight: bold;
     order: 2;
     margin-left: auto;
 
@@ -213,6 +215,7 @@
 }
 
 .country-filter__bottom-close-button {
+  @include bold;
   margin-top: 14px;
   margin-left: -25px;
   display: block;

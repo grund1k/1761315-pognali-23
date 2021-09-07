@@ -1,4 +1,5 @@
 .counter {
+  @include medium;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -125,6 +126,7 @@
 
 .counter__input {
   @include text-1;
+  @include medium;
   box-sizing: border-box;
   width: 220px;
   height: 43px;

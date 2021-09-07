@@ -12,6 +12,10 @@
   }
 }
 
+.calendar__dates {
+  @include medium;
+}
+
 .calendar__day,
 .calendar__date {
   width: 32px;
@@ -52,7 +56,7 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    @include text-1-tablet-size-20;
+    @include text-2;
     width: 77px;
     height: 69px;
   }

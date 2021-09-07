@@ -14,7 +14,7 @@
             <img class="nav__logo logo" src="img/logo_text.svg" alt="Логотип «Погнали»" width="96" height="15">
           </a>
           <button class="nav__toggle" type="button" aria-label="Открыть меню"></button>
-          <ul class="nav__site-list nav-list medium">
+          <ul class="nav__site-list nav-list">
             <li class="nav-list__item">
               <a class="nav-list__link" href="#"><span class="nav-list__link-animation" data-hover="О сервисе">О сервисе</span></a>
             </li>
@@ -46,7 +46,7 @@
               </a>
               <button class="modal-menu__toggle" type="button" aria-label="Открыть меню"></button>
             </div>
-            <ul class="modal-menu__site-list nav-list medium">
+            <ul class="modal-menu__site-list nav-list">
               <li class="nav-list__item">
                 <a class="nav-list__link" href="#">О сервисе</a>
               </li>
@@ -58,7 +58,7 @@
               </li>
             </ul>
             <a class="modal-menu__button button button--authorization button--yellow button--dark-blue-text" href="#">Авторизация</a>
-            <ul class="modal-menu__contacts contacts-list bold">
+            <ul class="modal-menu__contacts contacts-list">
               <li class="contacts-list__item">
                 <img class="contacts-list__icon contacts-list__icon--modal-menu" src="img/contacts_icon_dark_phone.svg" alt="Изображение телефона" width="45" height="45">
                 <a class="contacts-list__link" href="tel:88005558628">8 800 555-86-28</a>
@@ -97,17 +97,17 @@
       <div class="page-main__breadcrumbs-wrapper">
         <div class="container breadcrumbs">
           <h1 class="breadcrumbs__title">Попутчики</h1>
-          <a class="breadcrumbs__index-link bold" href="index.html">На главную</a>
+          <a class="breadcrumbs__index-link" href="index.html">На главную</a>
         </div>
       </div>
-      <section class="country-filter">
+      <section class="page-main__country-filter country-filter">
         <div class="container">
           <div class="country-filter__header">
-            <p class="country-filter__title bold">Фильтрация по странам:</p>
+            <p class="country-filter__title">Фильтрация по странам:</p>
             <button class="country-filter__button country-filter__button--open" type="button">
               <span class="country-filter__button-text" id="country-filter__button-text">Показать все</span>
             </button>
-            <ul class="country-filter__continent-list continent-list bold">
+            <ul class="country-filter__continent-list continent-list">
               <li class="continent-list__item continent-list__item--chosen">Европа</li>
               <li class="continent-list__item">Азия</li>
               <li class="continent-list__item">Америка</li>
@@ -115,14 +115,14 @@
             </ul>
           </div>
           <div class="country-filter__search-wrapper">
-            <ul class="country-filter__modal-continent-list continent-list continent-list--modal bold">
+            <ul class="country-filter__modal-continent-list continent-list continent-list--modal">
               <li class="continent-list__item continent-list__item--chosen">Европа</li>
               <li class="continent-list__item">Азия</li>
               <li class="continent-list__item">Америка</li>
               <li class="continent-list__item">Острова</li>
             </ul>
             <div class="country-filter__alphabet-wrapper">
-              <table class="country-filter__table alphabet-search alphabet-search--catalog medium">
+              <table class="country-filter__table alphabet-search alphabet-search--catalog">
                 <tr class="alphabet-search__table-row">
                   <td class="alphabet-search__table-cell alphabet-search__table-cell--chosen alphabet-search__table-cell--catalog">
                     <span class="alphaber-search__letter alphaber-search__letter--chosen">А</span>
@@ -784,7 +784,7 @@
                 </li>
               </ul>
             </div>
-            <a class="country-filter__bottom-close-button bold" href="#">Свернуть</a>
+            <a class="country-filter__bottom-close-button" href="#">Свернуть</a>
           </div>
         </div>
       </section>
@@ -898,13 +898,13 @@
                   <div class="user-profile__interaction-buttons">
                     <a class="user-profile__choose-button button button--yellow button--dark-blue-text" href="">Позвать!</a>
                     <button class="user-profile__like-button user-profile__like-button--active"><span class="visually-hidden">Лайк</span></button>
-                    <p class="user-profile__likes-number bold">1,5 М</p>
+                    <p class="user-profile__likes-number">1,5 М</p>
                   </div>
                 </div>
               </div>
               <div class="user-profile__desire-list-wrapper">
                 <p class="user-profile__wish-list-title">хочет посетить:</p>
-                <ul class="user-profile__desire-list desire-countries medium">
+                <ul class="user-profile__desire-list desire-countries">
                   <li class="desire-counties__item">
                     <img class="desire-counties__counties-flag-image" src="img/sri-Lanka-flag_w35.png" alt="Флаг Шри-Ланки" width="26" height="18">
                     <p class="desire-counties__name">Шри-ланка</p>
@@ -945,7 +945,7 @@
                   <p class="user-profile__level-title">левел</p>
                   <div class="user-profile__level-pie level level--catalog">
                     <img class="level__status-bar" src="img/99-level.svg" alt="99 уровень">
-                    <p class="level__number level__number--catalog bold">99</p>
+                    <p class="level__number level__number--catalog">99</p>
                     <p class="level__dimension level__dimension--catalog">level</p>
                   </div>
                 </div>
@@ -964,13 +964,13 @@
                   <div class="user-profile__interaction-buttons">
                     <a class="user-profile__choose-button button button--yellow button--dark-blue-text" href="">Позвать!</a>
                     <button class="user-profile__like-button"><span class="visually-hidden">Лайк</span></button>
-                    <p class="user-profile__likes-number bold">1,500</p>
+                    <p class="user-profile__likes-number">1,500</p>
                   </div>
                 </div>
               </div>
               <div class="user-profile__desire-list-wrapper">
                 <p class="user-profile__wish-list-title">хочет посетить:</p>
-                <ul class="user-profile__desire-list desire-countries medium">
+                <ul class="user-profile__desire-list desire-countries">
                   <li class="desire-counties__item">
                     <img class="desire-counties__counties-flag-image" src="img/belgium-flag_w35.png" alt="Флаг Бельгии" width="26" height="18">
                     <p class="desire-counties__name">Бельгия</p>
@@ -1007,7 +1007,7 @@
                   <p class="user-profile__level-title">левел</p>
                   <div class="user-profile__level-pie level level--catalog">
                     <img class="level__status-bar" src="img/80-catalog.svg" alt="80 уровень">
-                    <p class="level__number level__number--catalog bold">80</p>
+                    <p class="level__number level__number--catalog">80</p>
                     <p class="level__dimension level__dimension--catalog">level</p>
                   </div>
                 </div>
@@ -1026,13 +1026,13 @@
                   <div class="user-profile__interaction-buttons">
                     <a class="user-profile__choose-button button button--yellow button--dark-blue-text" href="">Позвать!</a>
                     <button class="user-profile__like-button"><span class="visually-hidden">Лайк</span></button>
-                    <p class="user-profile__likes-number bold">170</p>
+                    <p class="user-profile__likes-number">170</p>
                   </div>
                 </div>
               </div>
               <div class="user-profile__desire-list-wrapper">
                 <p class="user-profile__wish-list-title">хочет посетить:</p>
-                <ul class="user-profile__desire-list desire-countries medium">
+                <ul class="user-profile__desire-list desire-countries">
                   <li class="desire-counties__item">
                     <img class="desire-counties__counties-flag-image" src="img/usa-flag_w35.png" alt="Флаг США" width="26" height="18">
                     <p class="desire-counties__name">США</p>
@@ -1073,7 +1073,7 @@
                   <p class="user-profile__level-title">левел</p>
                   <div class="user-profile__level-pie level level--catalog">
                     <img class="level__status-bar level__status-bar--25" src="img/25-catalog.svg" alt="25 уровень">
-                    <p class="level__number level__number--catalog bold">25</p>
+                    <p class="level__number level__number--catalog">25</p>
                     <p class="level__dimension level__dimension--catalog">level</p>
                   </div>
                 </div>
@@ -1092,13 +1092,13 @@
                   <div class="user-profile__interaction-buttons">
                     <a class="user-profile__choose-button button button--yellow button--dark-blue-text" href="">Позвать!</a>
                     <button class="user-profile__like-button"><span class="visually-hidden">Лайк</span></button>
-                    <p class="user-profile__likes-number bold">23</p>
+                    <p class="user-profile__likes-number">23</p>
                   </div>
                 </div>
               </div>
               <div class="user-profile__desire-list-wrapper">
                 <p class="user-profile__wish-list-title">хочет посетить:</p>
-                <ul class="user-profile__desire-list desire-countries medium">
+                <ul class="user-profile__desire-list desire-countries">
                   <li class="desire-counties__item">
                     <img class="desire-counties__counties-flag-image" src="img/united-kingdom-flag_w35.png" alt="Флаг Великобритании" width="26" height="18">
                     <p class="desire-counties__name">Великобритания</p>
@@ -1135,7 +1135,7 @@
                   <p class="user-profile__level-title">левел</p>
                   <div class="user-profile__level-pie level level--catalog">
                     <img class="level__status-bar level__status-bar--50" src="img/50-catalog.svg" alt="25 уровень">
-                    <p class="level__number level__number--catalog bold">50</p>
+                    <p class="level__number level__number--catalog">50</p>
                     <p class="level__dimension level__dimension--catalog">level</p>
                   </div>
                 </div>

@@ -1,4 +1,5 @@
 .nav-list {
+  @include medium;
   font-size: 30px;
   line-height: 35px;
   text-align: center;
@@ -11,8 +12,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 20px;
-    line-height: 20px;
+    @include body-3;
   }
 }
 

@@ -4,7 +4,7 @@
   line-height: 40px;
 }
 
-@mixin h1-tablet {
+@mixin h1-2 {
   font-size: 60px;
   line-height: 70px;
 }
@@ -15,20 +15,20 @@
   line-height: 24px;
 }
 
-@mixin h2-tablet-45-size {
-  font-size: 45px;
-  line-height: 45px;
+@mixin h2-2 {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 22px;
 }
 
-@mixin h2-tablet-36-size {
+@mixin h2-3 {
   font-size: 36px;
   line-height: 36px;
 }
 
-@mixin h2-size-s {
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 22px;
+@mixin h2-4 {
+  font-size: 45px;
+  line-height: 45px;
 }
 
 @mixin h2-5 {
@@ -42,17 +42,7 @@
   line-height: 21px;
 }
 
-@mixin h3-tablet-24-s {
-  font-size: 24px;
-  line-height: 24px;
-}
-
-@mixin h3-size-36 {
-  font-size: 36px;
-  line-height: 36px;
-}
-
-@mixin h3-size-s {
+@mixin h3-2 {
   font-weight: bold;
   font-size: 20px;
   line-height: 20px;
@@ -91,7 +81,7 @@
   line-height: 18px;
 }
 
-@mixin subtitle-tablet-24-size {
+@mixin subtitle-2 {
   font-size: 24px;
   line-height: 21px;
 }
@@ -106,14 +96,14 @@
   line-height: 14px;
 }
 
-@mixin text-1-tablet-size-20 {
-  font-size: 20px;
-  line-height: 20px;
-}
-
 @mixin text-2 {
   font-size: 15px;
   line-height: 15px;
+}
+
+@mixin text-3 {
+  font-size: 22px;
+  line-height: 33px;
 }
 
 @mixin button {
@@ -148,4 +138,16 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $basic-blue-light;
+}
+
+@mixin bold {
+  font-weight: bold;
+}
+
+@mixin medium {
+  font-weight: 500;
+}
+
+@mixin light {
+  font-weight: 300;
 }

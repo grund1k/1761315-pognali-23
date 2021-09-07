@@ -60,12 +60,13 @@
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    @include h2-tablet-45-size;
+    @include h2-4;
     margin-bottom: 59px;
   }
 }
 
 .directions__text {
+  @include light;
   color: $special-grey;
 }
 

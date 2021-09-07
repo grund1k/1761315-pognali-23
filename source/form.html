@@ -15,7 +15,7 @@
             <img class="nav__logo logo" src="img/logo_text.svg" alt="Логотип «Погнали»" width="96" height="15">
           </a>
           <button class="nav__toggle" type="button" aria-label="Открыть меню"></button>
-          <ul class="nav__site-list nav-list medium">
+          <ul class="nav__site-list nav-list">
             <li class="nav-list__item">
               <a class="nav-list__link" href="#"><span class="nav-list__link-animation" data-hover="О сервисе">О сервисе</span></a>
             </li>
@@ -47,7 +47,7 @@
               </a>
               <button class="modal-menu__toggle" type="button" aria-label="Открыть меню"></button>
             </div>
-            <ul class="modal-menu__site-list nav-list medium">
+            <ul class="modal-menu__site-list nav-list">
               <li class="nav-list__item">
                 <a class="nav-list__link" href="#">О сервисе</a>
               </li>
@@ -59,7 +59,7 @@
               </li>
             </ul>
             <a class="modal-menu__button button button--authorization button--yellow button--dark-blue-text" href="#">Авторизация</a>
-            <ul class="modal-menu__contacts contacts-list bold">
+            <ul class="modal-menu__contacts contacts-list">
               <li class="contacts-list__item">
                 <img class="contacts-list__icon contacts-list__icon--modal-menu" src="img/contacts_icon_dark_phone.svg" alt="Изображение телефона" width="45" height="45">
                 <a class="contacts-list__link" href="tel:88005558628">8 800 555-86-28</a>
@@ -107,7 +107,7 @@
           <form class="profile-settings__form profile-form" action="http://echo.htmlacademy.ru" method="POST">
             <div class="profile-form__level-pie level level--form">
               <img class="level__status-bar" src="img/80-level--catalog.svg" alt="99 уровень">
-              <p class="level__number level__number--form bold">80</p>
+              <p class="level__number level__number--form">80</p>
               <p class="level__dimension level__dimension--form">level</p>
             </div>
             <div class="profile-form__user-image-wrapper">
@@ -116,12 +116,12 @@
             </div>
             <a class="profile-form__photo-button button button--blue button--round button--dark-blue-text button--20-size" href="#">Cменить фото</a>
             <fieldset class="profile-form__tags-fieldset tags-form">
-              <legend class="tags-form__legend bold">Тэги</legend>
+              <legend class="tags-form__legend">Тэги</legend>
               <label class="visually-hidden" for="user-tags">Впишите свои тэги</label>
               <textarea class="tags-form__textarea" name="user-tags" id="user-tags" cols="30" rows="10">#бургер #бар #футбол #концерт #крафт</textarea>
             </fieldset>
             <fieldset class="profile-form__transport-checkbox transport-form transport-form__fieldset">
-              <legend class="transport-from__legend bold">Транспорт</legend>
+              <legend class="transport-from__legend">Транспорт</legend>
               <div class="transport-form__inputs-wrapper">
                 <input class="visually-hidden" type="checkbox" name="plane" id="plane" value="plane" checked>
                 <label class="transport-form__checkbox" for="plane">
@@ -155,18 +155,18 @@
             <h2 class="plans__title">Мои планы:</h2>
             <ol class="plans__list plans-cards">
               <li class="plans__list-item  plans-card">
-                <span class="plans-card__number medium">1.</span>
-                <p class="plans-card__countries bold">Франция, Италия</p>
-                <p class="plans-card__text medium">3 попутчика</p>
-                <p class="plans-card__text plans-card__text--date medium">26 мар — 29 мар</p>
-                <a class="plans-card__change-link medium" href="change-plans.html">Изменить</a>
+                <span class="plans-card__number">1.</span>
+                <p class="plans-card__countries">Франция, Италия</p>
+                <p class="plans-card__text">3 попутчика</p>
+                <p class="plans-card__text plans-card__text--date">26 мар — 29 мар</p>
+                <a class="plans-card__change-link" href="change-plans.html">Изменить</a>
               </li>
               <li class="plans__list-item plans-card">
-                <span class="plans-card__number medium">2.</span>
-                <p class="plans-card__countries bold">Таиланд, Индонезия</p>
-                <p class="plans-card__text medium">1 попутчик</p>
-                <p class="plans-card__text plans-card__text--date medium">1 июл — 15 июл</p>
-                <a class="plans-card__change-link medium" href="change-plans.html">Изменить</a>
+                <span class="plans-card__number">2.</span>
+                <p class="plans-card__countries">Таиланд, Индонезия</p>
+                <p class="plans-card__text">1 попутчик</p>
+                <p class="plans-card__text plans-card__text--date">1 июл — 15 июл</p>
+                <a class="plans-card__change-link" href="change-plans.html">Изменить</a>
               </li>
             </ol>
           </div>
@@ -197,22 +197,22 @@
                 </ul>
               </div>
               <div class="step__counters-wrapper">
-                <div class="step__companion-counter counter medium">
+                <div class="step__companion-counter counter">
                   <p class="counter__title">Ищу попутчиков:</p>
                   <p class="counter__dimension">чел.</p>
                   <div class="counter__shell">
                     <button class="counter__button counter__button--amount-reduce" type="button"><span class="visually-hidden">-</span></button>
-                    <input class="counter__input medium" type="number" id="companion-count" name="companion-count" value="2" placeholder="Количество попутчиков" required min="1">
+                    <input class="counter__input" type="number" id="companion-count" name="companion-count" value="2" placeholder="Количество попутчиков" required min="1">
                     <label class="visually-hidden" for="companion-count">Количество попутчиков</label>
                     <button class="counter__button counter__button--amount-increase" type="button"><span class="visually-hidden">+</span></button>
                   </div>
                 </div>
-                <div class="step__duration-counter counter medium">
+                <div class="step__duration-counter counter">
                   <p class="counter__title">Длительность:</p>
                   <p class="counter__dimension">дн.</p>
                   <div class="counter__shell">
                     <button class="counter__button counter__button--amount-reduce" type="button"><span class="visually-hidden">-</span></button>
-                    <input class="counter__input medium" type="number" id="day-count" name="day-count" value="3" placeholder="Количество дней" required min="1">
+                    <input class="counter__input" type="number" id="day-count" name="day-count" value="3" placeholder="Количество дней" required min="1">
                     <label class="visually-hidden" for="day-count">Количество дней</label>
                     <button class="counter__button counter__button--amount-increase" type="button"><span class="visually-hidden">+</span></button>
                   </div>
@@ -235,7 +235,7 @@
                   <th class="calendar__day calendar__day--weekend">С<span class="calendar__day-second-letter">б</span></th>
                   <th class="calendar__day calendar__day--weekend">В<span class="calendar__day-second-letter">c</span></th>
                 </tr>
-                <tr class="calendar__dates medium">
+                <tr class="calendar__dates">
                   <td class="calendar__date">
                     <input class="calendar__input visually-hidden" type="checkbox" name="23-02-2019" id="23-02-2019" disabled>
                     <label class="calendar__label" for="23-02-2019">23</label>
@@ -267,7 +267,7 @@
                     </label>
                   </td>
                 </tr>
-                <tr class="calendar__dates medium">
+                <tr class="calendar__dates">
                   <td class="calendar__date">
                     <input class="calendar__input visually-hidden" type="checkbox" name="02-03-2019" id="02-03-2019" disabled>
                     <label class="calendar__label" for="02-03-2019">2</label>
@@ -297,7 +297,7 @@
                     <label class="calendar__label" for="08-03-2019">8</label>
                   </td>
                 </tr>
-                <tr class="calendar__dates medium">
+                <tr class="calendar__dates">
                   <td class="calendar__date">
                     <input class="calendar__input visually-hidden" type="checkbox" name="09-03-2019" id="09-03-2019" disabled>
                     <label class="calendar__label" for="09-03-2019">9</label>
@@ -327,7 +327,7 @@
                     <label class="calendar__label" for="15-03-2019">15</label>
                   </td>
                 </tr>
-                <tr class="calendar__dates medium">
+                <tr class="calendar__dates">
                   <td class="calendar__date">
                     <input class="calendar__input visually-hidden" type="checkbox" name="16-03-2019" id="16-03-2019" disabled>
                     <label class="calendar__label" for="16-03-2019">16</label>
@@ -357,7 +357,7 @@
                     <label class="calendar__label" for="22-03-2019">22</label>
                   </td>
                 </tr>
-                <tr class="calendar__dates medium">
+                <tr class="calendar__dates">
                   <td class="calendar__date">
                     <input class="calendar__input visually-hidden" type="checkbox" name="23-03-2019" id="23-03-2019" disabled>
                     <label class="calendar__label" for="23-03-2019">23</label>
@@ -391,7 +391,7 @@
                     <label class="calendar__label" for="29-03-2019">29</label>
                   </td>
                 </tr>
-                <tr class="calendar__dates medium">
+                <tr class="calendar__dates">
                   <td class="calendar__date">
                     <input class="calendar__input visually-hidden" type="checkbox" name="30-03-2019" id="30-03-2019">
                     <label class="calendar__label" for="30-03-2019">30</label>
@@ -441,33 +441,33 @@
               </div>
               <div class="step__selector-wrapper">
                 <div class="step__country-add country-selector">
-                  <button class="country-selector__button country-selector__button--chosen medium country-selector__button--overflow" type="button">Босния и Герцеговина</button>
+                  <button class="country-selector__button country-selector__button--chosen country-selector__button--overflow" type="button">Босния и Герцеговина</button>
                   <img class="country-selector__image" src="img/bosnia-and-herzegovina_w35.png" alt="Флаг Босния и Герцеговины" width="35" height="24">
                   <button class="country-selector__delete-button" type="button">
                     <img class="country-selector__button-logo" src="img/icon-close.svg" alt="Удалить страну">
                   </button>
                 </div>
                 <div class="step__country-add country-selector">
-                  <button class="country-selector__button country-selector__button--chosen medium" type="button">Чехия</button>
+                  <button class="country-selector__button country-selector__button--chosen" type="button">Чехия</button>
                   <img class="country-selector__image" src="img/czech-flag_w35.png" alt="Флаг Чехии" width="35" height="24">
                   <button class="country-selector__delete-button" type="button">
                     <img class="country-selector__button-logo" src="img/icon-close.svg" alt="Удалить страну">
                   </button>
                 </div>
                 <div class="step__country-add country-selector country-selector--choosing">
-                  <button class="country-selector__button country-selector__button--choosing medium" type="button">Выберите страну</button>
+                  <button class="country-selector__button country-selector__button--choosing" type="button">Выберите страну</button>
                   <button class="country-selector__delete-button" type="button">
                     <img class="country-selector__button-logo" src="img/icon-close.svg" alt="Удалить страну">
                   </button>
                   <div class="country-selector__modal countries-dropdown">
                     <div class="countries-dropdown__title-wrapper">
-                      <p class="countries-dropdown__title medium">Выберите страну</p>
+                      <p class="countries-dropdown__title">Выберите страну</p>
                       <button class="countries-dropdown__close-button">
                         <img class="countries-dropdown__close-button-icon" src="img/icon-close-dropdown.svg" alt="Закрыть список стран">
                       </button>
                     </div>
                     <div class="countries-dropdown__alphabet-search-wrapper">
-                      <table class="countrise-dropdown__table alphabet-search alphabet-search--collapse-separate medium">
+                      <table class="countrise-dropdown__table alphabet-search alphabet-search--collapse-separate">
                         <tr class="alphabet-search__table-row">
                           <td class="alphabet-search__table-cell alphabet-search__table-cell--chosen-grey">А</td>
                           <td class="alphabet-search__table-cell">Б</td>
@@ -521,7 +521,7 @@
                   </div>
                 </div>
                 <div class="step__country-add country-selector country-selector--choosing country-selector-adding">
-                  <button class="country-selector__button country-selector__button--adding medium" type="button">Добавить страну</button>
+                  <button class="country-selector__button country-selector__button--adding" type="button">Добавить страну</button>
                 </div>
               </div>
               <div class="step__buttons-wrapper">
@@ -544,7 +544,7 @@
               </div>
               <div class="step__country-textaera step__country-textaera--top country-enviroment">
                 <div class="country-enviroment__head-wrapper country-enviroment__head-wrapper--first">
-                  <p class="country-enviroment__title country-enviroment__title--overflow medium">Босния и Герцеговина</p>
+                  <p class="country-enviroment__title country-enviroment__title--overflow">Босния и Герцеговина</p>
                   <img class="country-enviroment__image" src="img/bosnia-and-herzegovina_w35.png" alt="Флаг Босния и Герцеговины" width="35" height="24">
                 </div>
                 <textarea class="country-enviroment__textarea" name="action-plan-first-country" id="action-plan-first-country" cols="30" rows="15" placeholder="План действий"></textarea>
@@ -552,7 +552,7 @@
               </div>
               <div class="step__country-textaera country-enviroment">
                 <div class="country-enviroment__head-wrapper">
-                  <p class="country-enviroment__title medium">Чехия</p>
+                  <p class="country-enviroment__title">Чехия</p>
                   <img class="country-enviroment__image" src="img/czech-flag_w35.png" alt="Флаг Чехии" width="35" height="24">
                 </div>
                 <textarea class="country-enviroment__textarea" name="action-plan-second-country" id="action-plan-second-country" cols="30" rows="15" placeholder="План действий">Пить пиво и лазить по&nbsp;старым замкам, наслаждаться архитектурой и вот это все.</textarea>

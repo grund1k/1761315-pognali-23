@@ -1,4 +1,6 @@
 .direction-card {
+  @include medium;
+
   @media (min-width: $tablet-width) {
     display: flex;
   }
@@ -63,7 +65,7 @@
   color: $black;
 
   @media (min-width: $tablet-width) {
-    @include h3-tablet-24-s;
+    @include h2;
     margin-bottom: 4px;
   }
 }

@@ -4,7 +4,7 @@
   padding-bottom: 13px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-
+  z-index: 2;
   position: relative;
 
   &--yellow-bottom::after {
@@ -55,4 +55,8 @@
 
 .page-main__add-plan {
   margin-top: -25px;
+}
+
+.page-main__country-filter {
+  margin-top: -20px;
 }
