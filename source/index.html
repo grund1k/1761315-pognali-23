@@ -442,7 +442,11 @@
             </a>
           </div>
         </div>
-        <img class="map__map-picture" src="img/background_map.png" alt="Карта с адресом ул. Большая Конюшенная, 19/8" width="320" height="424">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/index/map-desktop.png 1x" srcset="img/index/map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/index/map-tablet.png 1x" srcset="img/index/map-tablet@2x.png 2x">
+          <img class="map__map-picture" src="img/index/map-mobile.png" srcset="img/index/map-mobile.png 2x" alt="Карта с адресом ул. Большая Конюшенная, 19/8" width="320" height="424">
+        </picture>
       </section>
     </main>
 

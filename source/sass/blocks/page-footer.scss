@@ -29,6 +29,7 @@
   margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
+    margin-top: 11px;
     margin-bottom: 0;
     margin-left: 0;
     margin-right: 85px;
@@ -69,7 +70,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-top: 13px;
+    margin-top: 18px;
   }
 }
 
@@ -88,6 +89,6 @@
   height: 33px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 4px;
+    margin-top: 0;
   }
 }
