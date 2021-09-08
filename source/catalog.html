@@ -876,24 +876,32 @@
                   <span class="filter-form__title-double-dots">:</span>
                 </p>
                 <div class="filter-form__wrapper filter-form__wrapper--transport">
-                  <input class="visually-hidden" type="checkbox" name="plane" id="plane" value="plane" checked>
-                  <label class="transport-form__checkbox" for="plane">
-                    <img class="transport-form__checkbox-icon" src="img/icon-plane_active.svg" alt="Иконка самолета" width="32" height="32">
+                  <input class="visually-hidden transport-form__checkbox" type="checkbox" name="plane" id="plane" value="plane" checked>
+                  <label class="transport-form__label" for="plane">
+                    <svg class="transport-form__label-icon" alt="Иконка самолета" width="21" height="21">
+                        <use xlink:href="img/sprite.svg#icon-plane"></use>
+                    </svg>
                     <span class="visually-hidden">Самолет</span>
                   </label>
-                  <input class="visually-hidden" type="checkbox" name="bus" id="bus" value="bus" checked>
-                  <label class="transport-form__checkbox" for="bus">
-                    <img class="transport-form__checkbox-icon" src="img/icon-bus_actrive.svg" alt="Иконка автобуса" width="32" height="32">
+                  <input class="visually-hidden transport-form__checkbox" type="checkbox" name="bus" id="bus" value="bus" checked>
+                  <label class="transport-form__label" for="bus">
+                    <svg class="transport-form__label-icon" alt="Иконка автобуса" width="17" height="19">
+                        <use xlink:href="img/sprite.svg#icon-bus"></use>
+                    </svg>
                     <span class="visually-hidden">Автобус</span>
                   </label>
-                  <input class="visually-hidden" type="checkbox" name="bike" id="bike" value="bike">
-                  <label class="transport-form__checkbox" for="bike">
-                    <img class="transport-form__checkbox-icon" src="img/icon-bike_none-active.svg" alt="Иконка велосипеда" width="32" height="32">
+                  <input class="visually-hidden transport-form__checkbox" type="checkbox" name="bike" id="bike" value="bike">
+                  <label class="transport-form__label" for="bike">
+                    <svg class="transport-form__label-icon" alt="Иконка велосипеда" width="24" height="24">
+                        <use xlink:href="img/sprite.svg#icon-bicyle"></use>
+                    </svg>
                     <span class="visually-hidden">Велосипед</span>
                   </label>
-                  <input class="visually-hidden" type="checkbox" name="pedastrian" id="pedastrian" value="pedastrian" checked>
-                  <label class="transport-form__checkbox" for="pedastrian">
-                    <img class="transport-form__checkbox-icon" src="img/icon-pedastrian_active.svg" alt="Иконка пешего туризма" width="32" height="32">
+                  <input class="visually-hidden transport-form__checkbox" type="checkbox" name="pedastrian" id="pedastrian" value="pedastrian" checked>
+                  <label class="transport-form__label" for="pedastrian">
+                    <svg class="transport-form__label-icon" alt="Иконка пешего туризма" width="21" height="23">
+                        <use xlink:href="img/sprite.svg#icon-pedastrian"></use>
+                    </svg>
                     <span class="visually-hidden">Пешком</span>
                   </label>
                 </div>
@@ -965,20 +973,28 @@
                 <div class="user-profile__transport-wrapper">
                   <p class="user-profile__transport-list-title">Транспорт</p>
                   <ul class="user-profile__transport-list transport-list transport-list--catalog">
-                    <li class="transport-list__item transport-list__item--catalog">
-                      <img class="transport-list__icon" src="img/icon-users-plane.svg" alt="Иконка самолета" width="32" height="32">
+                    <li class="transport-list__item transport-list__item--background-grey transport-list__item--catalog">
+                      <svg class="transport-list__icon transport-list__icon--plane" alt="Иконка самолета" width="14" height="16">
+                        <use xlink:href="img/sprite.svg#icon-plane"></use>
+                      </svg>
                       <span class="visually-hidden">Самолет</span>
                     </li>
-                    <li class="transport-list__item transport-list__item--catalog">
-                      <img class="transport-list__icon transport-list__icon--disadbled" src="img/icon-bus_none-active.svg" alt="Иконка автобуса" width="32" height="32">
+                    <li class="transport-list__item transport-list__item--background-grey transport-list__item--catalog">
+                      <svg class="transport-list__icon transport-list__icon--bus transport-list__icon--disabled" alt="Иконка автобуса" width="13" height="16">
+                        <use xlink:href="img/sprite.svg#icon-bus"></use>
+                      </svg>
                       <span class="visually-hidden">Автобус</span>
                     </li>
-                    <li class="transport-list__item transport-list__item--catalog">
-                      <img class="transport-list__icon transport-list__icon--disadbled" src="img/icon-users-bike_disabled.svg" alt="Иконка велосипеда" width="32" height="32">
+                    <li class="transport-list__item transport-list__item--background-grey transport-list__item--catalog">
+                      <svg class="transport-list__icon transport-list__icon--bicyle transport-list__icon--disabled" alt="Иконка велосипеда" width="15" height="17">
+                        <use xlink:href="img/sprite.svg#icon-bicyle"></use>
+                      </svg>
                       <span class="visually-hidden">Велосипед</span>
                     </li>
-                    <li class="transport-list__item transport-list__item--catalog">
-                      <img class="transport-list__icon transport-list__icon--disadbled" src="img/icon-pedastrian_none-active.svg" alt="Иконка пешего туризма" width="32" height="32">
+                    <li class="transport-list__item transport-list__item--background-grey transport-list__item--catalog">
+                      <svg class="transport-list__icon transport-list__icon--pedastrian transport-list__icon--disabled" alt="Иконка пешего туризма" width="13" height="17">
+                        <use xlink:href="img/sprite.svg#icon-pedastrian"></use>
+                      </svg>
                       <span class="visually-hidden">Пешком</span>
                     </li>
                   </ul>
@@ -1031,20 +1047,28 @@
                 <div class="user-profile__transport-wrapper">
                   <p class="user-profile__transport-list-title">Транспорт</p>
                   <ul class="user-profile__transport-list transport-list transport-list--catalog">
-                    <li class="transport-list__item transport-list__item--catalog">
-                      <img class="transport-list__icon" src="img/icon-users-plane.svg" alt="Иконка самолета" width="32" height="32">
+                    <li class="transport-list__item transport-list__item--background-grey transport-list__item--catalog">
+                      <svg class="transport-list__icon transport-list__icon--plane" alt="Иконка самолета" width="14" height="16">
+                        <use xlink:href="img/sprite.svg#icon-plane"></use>
+                      </svg>
                       <span class="visually-hidden">Самолет</span>
                     </li>
-                    <li class="transport-list__item transport-list__item--catalog">
-                      <img class="transport-list__icon" src="img/icon-card-bus.svg" alt="Иконка автобуса" width="32" height="32">
+                    <li class="transport-list__item transport-list__item--background-grey transport-list__item--catalog">
+                      <svg class="transport-list__icon transport-list__icon--bus" alt="Иконка автобуса" width="13" height="16">
+                        <use xlink:href="img/sprite.svg#icon-bus"></use>
+                      </svg>
                       <span class="visually-hidden">Автобус</span>
                     </li>
-                    <li class="transport-list__item transport-list__item--catalog">
-                      <img class="transport-list__icon transport-list__icon--disadbled" src="img/icon-users-bike_disabled.svg" alt="Иконка велосипеда" width="32" height="32">
+                    <li class="transport-list__item transport-list__item--background-grey transport-list__item--catalog">
+                      <svg class="transport-list__icon transport-list__icon--bicyle transport-list__icon--disabled" alt="Иконка велосипеда" width="15" height="17">
+                        <use xlink:href="img/sprite.svg#icon-bicyle"></use>
+                      </svg>
                       <span class="visually-hidden">Велосипед</span>
                     </li>
-                    <li class="transport-list__item transport-list__item--catalog">
-                      <img class="transport-list__icon" src="img/icon-users-pedastrian.svg" alt="Иконка пешего туризма" width="32" height="32">
+                    <li class="transport-list__item transport-list__item--background-grey transport-list__item--catalog">
+                      <svg class="transport-list__icon transport-list__icon--pedastrian" alt="Иконка пешего туризма" width="13" height="17">
+                        <use xlink:href="img/sprite.svg#icon-pedastrian"></use>
+                      </svg>
                       <span class="visually-hidden">Пешком</span>
                     </li>
                   </ul>
@@ -1101,20 +1125,28 @@
                 <div class="user-profile__transport-wrapper">
                   <p class="user-profile__transport-list-title">Транспорт</p>
                   <ul class="user-profile__transport-list transport-list transport-list--catalog">
-                    <li class="transport-list__item transport-list__item--catalog">
-                      <img class="transport-list__icon" src="img/icon-users-plane.svg" alt="Иконка самолета" width="32" height="32">
+                    <li class="transport-list__item transport-list__item--background-grey transport-list__item--catalog">
+                      <svg class="transport-list__icon transport-list__icon--plane" alt="Иконка самолета" width="14" height="16">
+                        <use xlink:href="img/sprite.svg#icon-plane"></use>
+                      </svg>
                       <span class="visually-hidden">Самолет</span>
                     </li>
-                    <li class="transport-list__item transport-list__item--catalog">
-                      <img class="transport-list__icon transport-list__icon--disadbled" src="img/icon-bus_none-active.svg" alt="Иконка автобуса" width="32" height="32">
+                    <li class="transport-list__item transport-list__item--background-grey transport-list__item--catalog">
+                      <svg class="transport-list__icon transport-list__icon--bus transport-list__icon--disabled" alt="Иконка автобуса" width="13" height="16">
+                        <use xlink:href="img/sprite.svg#icon-bus"></use>
+                      </svg>
                       <span class="visually-hidden">Автобус</span>
                     </li>
-                    <li class="transport-list__item transport-list__item--catalog">
-                      <img class="transport-list__icon" src="img/icon-bike_active.svg" alt="Иконка велосипеда" width="32" height="32">
+                    <li class="transport-list__item transport-list__item--background-grey transport-list__item--catalog">
+                      <svg class="transport-list__icon transport-list__icon--bicyle" alt="Иконка велосипеда" width="15" height="17">
+                        <use xlink:href="img/sprite.svg#icon-bicyle"></use>
+                      </svg>
                       <span class="visually-hidden">Велосипед</span>
                     </li>
-                    <li class="transport-list__item transport-list__item--catalog">
-                      <img class="transport-list__icon transport-list__icon--disadbled" src="img/icon-pedastrian_none-active.svg" alt="Иконка пешего туризма" width="32" height="32">
+                    <li class="transport-list__item transport-list__item--background-grey transport-list__item--catalog">
+                      <svg class="transport-list__icon transport-list__icon--pedastrian transport-list__icon--disabled" alt="Иконка пешего туризма" width="13" height="17">
+                        <use xlink:href="img/sprite.svg#icon-pedastrian"></use>
+                      </svg>
                       <span class="visually-hidden">Пешком</span>
                     </li>
                   </ul>
@@ -1167,20 +1199,28 @@
                 <div class="user-profile__transport-wrapper">
                   <p class="user-profile__transport-list-title">Транспорт</p>
                   <ul class="user-profile__transport-list transport-list transport-list--catalog">
-                    <li class="transport-list__item transport-list__item--catalog">
-                      <img class="transport-list__icon" src="img/icon-users-plane.svg" alt="Иконка самолета" width="32" height="32">
+                    <li class="transport-list__item transport-list__item--background-grey transport-list__item--catalog">
+                      <svg class="transport-list__icon transport-list__icon--plane" alt="Иконка самолета" width="14" height="16">
+                        <use xlink:href="img/sprite.svg#icon-plane"></use>
+                      </svg>
                       <span class="visually-hidden">Самолет</span>
                     </li>
-                    <li class="transport-list__item transport-list__item--catalog">
-                      <img class="transport-list__icon" src="img/icon-card-bus.svg" alt="Иконка автобуса" width="32" height="32">
+                    <li class="transport-list__item transport-list__item--background-grey transport-list__item--catalog">
+                      <svg class="transport-list__icon transport-list__icon--bus" alt="Иконка автобуса" width="13" height="16">
+                        <use xlink:href="img/sprite.svg#icon-bus"></use>
+                      </svg>
                       <span class="visually-hidden">Автобус</span>
                     </li>
-                    <li class="transport-list__item transport-list__item--catalog">
-                      <img class="transport-list__icon transport-list__icon--disadbled" src="img/icon-users-bike_disabled.svg" alt="Иконка велосипеда" width="32" height="32">
+                    <li class="transport-list__item transport-list__item--background-grey transport-list__item--catalog">
+                      <svg class="transport-list__icon transport-list__icon--bicyle transport-list__icon--disabled" alt="Иконка велосипеда" width="15" height="17">
+                        <use xlink:href="img/sprite.svg#icon-bicyle"></use>
+                      </svg>
                       <span class="visually-hidden">Велосипед</span>
                     </li>
-                    <li class="transport-list__item transport-list__item--catalog">
-                      <img class="transport-list__icon transport-list__icon--disadbled" src="img/icon-pedastrian_none-active.svg" alt="Иконка пешего туризма" width="32" height="32">
+                    <li class="transport-list__item transport-list__item--background-grey transport-list__item--catalog">
+                      <svg class="transport-list__icon transport-list__icon--pedastrian transport-list__icon--disabled" alt="Иконка пешего туризма" width="13" height="17">
+                        <use xlink:href="img/sprite.svg#icon-pedastrian"></use>
+                      </svg>
                       <span class="visually-hidden">Пешком</span>
                     </li>
                   </ul>

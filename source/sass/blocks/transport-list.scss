@@ -28,6 +28,22 @@
     }
   }
 
+  &--background-grey {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $basic-grey;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--background-grey {
+      background-color: transparent;
+    }
+  }
+
   @media (min-width: $desktop-width) {
     &:hover::before {
       @include body-3;
@@ -79,5 +95,47 @@
 .transport-list__icon {
   &--disabled {
     opacity: 0.15;
+  }
+
+  &--plane {
+    width: 14px;
+    height: 16px;
+  }
+
+  &-bus {
+    width: 13px;
+    height: 16px;
+  }
+
+  &--bicyle {
+    width: 15px;
+    height: 17px;
+  }
+
+  &--pedastrian {
+    width: 13px;
+    height: 17px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--plane {
+      width: 22px;
+      height: 22px;
+    }
+
+    &-bus {
+      width: 18px;
+      height: 20px;
+    }
+
+    &--bicyle {
+      width: 25px;
+      height: 25px;
+    }
+
+    &--pedastrian {
+      width: 22px;
+      height: 24px;
+    }
   }
 }
