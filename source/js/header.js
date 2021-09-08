@@ -24,13 +24,25 @@ navigationOff.addEventListener("click", function() {
 });
 
 const navLogo = document.querySelector(".nav__logo");
+const navLogoTablet = document.querySelector(".nav__logo--tablet");
 
 window.addEventListener("scroll", function () {
-  if (window.pageYOffset > 10) {
+  if (window.pageYOffset > 20) {
     navigation.classList.add("nav--sticky");
-    navLogo.src = "img/logo_footer.svg";
   } else {
     navigation.classList.remove("nav--sticky");
-    navLogo.src = "img/logo_text.svg";
+  };
+
+  if (navLogo.src = "img/logo/logo-mobile.svg" && window.innerWidth < 768) {
+    navLogo.src = "img/logo/logo-mobile-blue.svg";
+  } else if (navLogoTablet.srcset = "img/logo/logo-full.svg" && window.innerWidth >= 768 ) {
+    navLogoTablet.srcset = "img/logo/logo-full-blue.svg";
   }
 });
+
+window.addEventListener("scroll", function () {
+  if (window.pageYOffset < 20) {
+    navLogo.src = "img/logo/logo-mobile.svg";
+    navLogoTablet.srcset = "img/logo/logo-full.svg";
+  }
+})

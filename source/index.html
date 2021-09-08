@@ -5,13 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Погнали</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/180.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page-body">
     <header class="page-header page-body__header">
       <nav class="nav nav--menu-opened nav--no-js">
         <div class="container nav__wrapper">
           <a class="nav__logo-link">
-            <img class="nav__logo logo" src="img/logo_text.svg" alt="Логотип «Погнали»" width="96" height="15">
+            <picture>
+              <source class="nav__logo--tablet" media="(min-width: 768px)" srcset="img/logo/logo-full.svg">
+              <img class="nav__logo logo" src="img/logo/logo-mobile.svg" alt="Логотип «Погнали»" width="96" height="15">
+            </picture>
           </a>
           <button class="nav__toggle" type="button" aria-label="Открыть меню"></button>
           <ul class="nav__site-list nav-list">
@@ -42,7 +49,10 @@
           <div class="container modal-menu__wrapper">
             <div class="modal-menu__logo-wrapper">
               <a class="modal-menu__logo-link">
-                <img class="modal-menu__logo logo" src="img/logo_footer.svg" alt="Логотип «Погнали»" width="96" height="15">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/logo/logo-full-blue.svg">
+                  <img class="modal-menu__logo logo" src="img/logo/logo-mobile-blue.svg" alt="Логотип «Погнали»" width="96" height="15">
+                </picture>
               </a>
               <button class="modal-menu__toggle" type="button" aria-label="Открыть меню"></button>
             </div>
@@ -179,9 +189,14 @@
             </div>
             <ul class="directions__cards-list">
               <li class="directions__cards-item direction-card">
-                <img class="direction-card__pic" src="img/thailand-w270.png" alt="Тайланд" width="270" height="110">
+                <div class="directions-card__picture-wrapper">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="img/countries/thailand-desktop.png 1x" srcset="img/countries/thailand-desktop@2x.png 2x">
+                    <img class="direction-card__pic" src="img/countries/thailand-mobile.png" srcset="img/countries/thailand-mobile@2x.png 2x"  alt="Тайланд" width="270" height="110">
+                  </picture>
+                </div>
                 <div class="direction-card__info">
-                  <img class="direction-card__country-flag" src="img/thailand-flag_w35.png" alt="Флаг Тайланда" width="35" height="24">
+                  <img class="direction-card__country-flag" src="img/flags/thailand.png" alt="Флаг Тайланда" width="35" height="24">
                   <div class="direction-card__wrapper">
                     <p class="direction-card__title">Таиланд</p>
                     <p class="direction-card__text">Джунгли зовут!</p>
@@ -193,9 +208,14 @@
                 </div>
               </li>
               <li class="directions__cards-item direction-card">
-                <img class="direction-card__pic" src="img/france-w270.jpg" alt="Франция" width="270" height="110">
+                <div class="directions-card__picture-wrapper">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="img/countries/france-desktop.png 1x" srcset="img/countries/france-desktop@2x.png 2x">
+                    <img class="direction-card__pic" src="img/countries/france-mobile.png" srcset="img/countries/france-mobile@2x.png 2x" alt="Франция" width="270" height="110">
+                  </picture>
+                </div>
                 <div class="direction-card__info">
-                  <img class="direction-card__country-flag" src="img/france-flag_w35.png" alt="Флаг Франции" width="35" height="24">
+                  <img class="direction-card__country-flag" src="img/flags/france.png" alt="Флаг Франции" width="35" height="24">
                   <div class="direction-card__wrapper">
                     <p class="direction-card__title">Франция</p>
                     <p class="direction-card__text">Трэ бьен, манифик!</p>
@@ -207,9 +227,14 @@
                 </div>
               </li>
               <li class="directions__cards-item direction-card">
-                <img class="direction-card__pic" src="img/czech-w270.jpg" alt="Чехия" width="270" height="110">
+                <div class="directions-card__picture-wrapper">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="img/countries/czech-desktop.png 1x" srcset="img/countries/czech-desktop@2x.png 2x">
+                    <img class="direction-card__pic" src="img/countries/czech-mobile.png" srcset="img/countries/czech-mobile@2x.png 2x" alt="Чехия" width="270" height="110">
+                  </picture>
+                </div>
                 <div class="direction-card__info">
-                  <img class="direction-card__country-flag" src="img/czech-flag_w35.png" alt="Флаг Чехии" width="35" height="24">
+                  <img class="direction-card__country-flag" src="img/flags/czechia.png" alt="Флаг Чехии" width="35" height="24">
                   <div class="direction-card__wrapper">
                     <p class="direction-card__title">Чехия</p>
                     <p class="direction-card__text">Закоулки старой Европы</p>
@@ -241,16 +266,19 @@
                   <p class="level__number">99</p>
                   <p class="level__dimension">level</p>
                 </div>
-                <img class="user-card__photo" src="img/user-image-tatiyana_w270.jpg" alt="Фотография пользователя" width="270" height="270">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/users/firsova-desktop.jpg 1x" srcset="img/users/firsova-desktop@2x.jpg 2x" >
+                  <img class="user-card__photo" src="img/users/firsova-mobile.jpg" srcset="img/users/firsova-mobile@2x.jpg 2x" alt="Фотография пользователя" width="270" height="270">
+                </picture>
                 <ul class="user-card__countries-list country-list">
                   <li class="country-list__item country-list__item--sri-lanka">
-                    <img src="img/sri-Lanka-flag_w35.png" alt="Флаг Шри-Ланки" width="35" height="25">
+                    <img src="img/flags/sri-lanka.png" alt="Флаг Шри-Ланки" width="35" height="25">
                   </li>
                   <li class="country-list__item country-list__item--thailand">
-                    <img src="img/thailand-flag_w35.png" alt="Флаг Таиланда" width="35" height="25">
+                    <img src="img/flags/thailand.png" alt="Флаг Таиланда" width="35" height="25">
                   </li>
                   <li class="country-list__item country-list__item--seychelles">
-                    <img src="img/seychelles-flag_w35.png" alt="Флаг Сейшел" width="35" height="25">
+                    <img src="img/flags/seychelles.png" alt="Флаг Сейшел" width="35" height="25">
                   </li>
                 </ul>
                 <p class="user-card__name user-card__name--offline">Таня Фирсова</p>
@@ -280,13 +308,16 @@
                   <p class="level__number">80</p>
                   <p class="level__dimension">level</p>
                 </div>
-                <img class="user-card__photo" src="img/user-image-petya_w270.jpg" alt="Фотография пользователя" width="270" height="270">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/users/demin-desktop.jpg 1px" srcset="img/users/demin-desktop@2x.jpg 2x">
+                  <img class="user-card__photo" src="img/users/demin-mobile.jpg" srcset="img/users/demin-mobile@2x.jpg 2x" alt="Фотография пользователя" width="270" height="270">
+                </picture>
                 <ul class="user-card__countries-list country-list">
                   <li class="country-list__item country-list__item--belgium">
-                    <img src="img/belgium-flag_w35.png" alt="Флаг Бельгии" width="35" height="25">
+                    <img src="img/flags/belgium.png" alt="Флаг Бельгии" width="35" height="25">
                   </li>
                   <li class="country-list__item country-list__item--czech">
-                    <img src="img/czech-flag_w35.png" alt="Флаг Чехии" width="35" height="25">
+                    <img src="img/flags/czechia.png" alt="Флаг Чехии" width="35" height="25">
                   </li>
                 </ul>
                 <p class="user-card__name user-card__name--online">Петя Демин</p>
@@ -406,13 +437,20 @@
             </a>
           </div>
         </div>
-        <img class="map__map-picture" src="img/background_map.png" alt="Карта с адресом ул. Большая Конюшенная, 19/8" width="320" height="424">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/index/map-desktop.png 1x" srcset="img/index/map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/index/map-tablet.png 1x" srcset="img/index/map-tablet@2x.png 2x">
+          <img class="map__map-picture" src="img/index/map-mobile.png" srcset="img/index/map-mobile.png 2x" alt="Карта с адресом ул. Большая Конюшенная, 19/8" width="320" height="424">
+        </picture>
       </section>
     </main>
 
     <footer class="page-footer page-body__footer">
       <div class="container page-footer__wrapper">
-        <img class="page-footer__logo logo" src="img/logo_footer.svg" alt="Логотип «Погнали»" width="96" height="15">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/logo/logo-full-blue.svg">
+          <img class="page-footer__logo logo" src="img/logo/logo-mobile-blue.svg" alt="Логотип «Погнали»" width="96" height="15">
+        </picture>
         <ul class="page-footer__socials social-list">
           <li class="social-list__item">
             <a class="social-list__link" href="https://www.facebook.com">

@@ -3,8 +3,8 @@
   z-index: 1;
   background-color: $dark-blue;
   background-image:
-    url("../img/traveller-illustration1.png"),
-    url("../img/globe-back-1.png");
+    url("../img/index/traveller-illustration-mobile.png"),
+    url("../img/index/description-back-mobile.png");
   background-repeat: no-repeat;
   background-position:
     63% 24.5%,
@@ -23,6 +23,15 @@
     background: linear-gradient(to bottom, #161c35 285px, #192144 80px);
   }
 
+  @media (min-resolution: 2dppx) {
+    background-image:
+      url("../img/index/traveller-illustration-mobile@2x.png"),
+      url("../img/index/description-back-mobile@2x.png");
+    background-size:
+      192px 255px,
+      320px auto;
+  }
+
   @media (min-width: $tablet-width) {
     background-color: $header-blue;
   }
@@ -30,11 +39,20 @@
   @media (min-width: $tablet-width) {
     padding-top: 66px;
     background-image:
-      url("../img/traveller-illustration-tablet.png"),
-      url("../img/globe-back-tablet.png");
+      url("../img/index/traveller-illustration-tablet.png"),
+      url("../img/index/description-back-tablet.png");
     background-position:
       72% 50.5%,
       50% 64%;
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+        url("../img/index/traveller-illustration-tablet@2x.png"),
+        url("../img/index/description-back-tablet@2x.png");
+      background-size:
+        372px 451px,
+        768px auto;
+    }
 
     &::before {
       display: none;
@@ -45,11 +63,20 @@
     padding-top: 105px;
     padding-bottom: 125px;
     background-image:
-      url("../img/traveller-illustration-desktop.png"),
-      url("../img/globe-back-desktop.png");
+      url("../img/index/traveller-illustration-desktop.png"),
+      url("../img/index/description-back-desktop.png");
     background-position:
       60% 73%,
       50% 102%;
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+        url("../img/index/traveller-illustration-desktop@2x.png"),
+        url("../img/index/description-back-desktop@2x.png");
+      background-size:
+        431px 640px,
+        1440px auto;
+    }
   }
 }
 

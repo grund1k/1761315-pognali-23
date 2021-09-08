@@ -5,13 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Погнали</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/180.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page-body">
     <header class="page-header page-header--page-inner page-body__header">
       <nav class="nav nav--page-inner nav--menu-opened nav--no-js">
         <div class="container nav__wrapper">
           <a class="nav__logo-link" href="index.html">
-            <img class="nav__logo logo" src="img/logo_text.svg" alt="Логотип «Погнали»" width="96" height="15">
+            <picture>
+              <source class="nav__logo--tablet" media="(min-width: 768px)" srcset="img/logo/logo-full.svg">
+              <img class="nav__logo logo" src="img/logo/logo-mobile.svg" alt="Логотип «Погнали»" width="96" height="15">
+            </picture>
           </a>
           <button class="nav__toggle" type="button" aria-label="Открыть меню"></button>
           <ul class="nav__site-list nav-list">
@@ -41,8 +48,11 @@
         <div class="nav__menu-wrapper modal-menu">
           <div class="container modal-menu__wrapper">
             <div class="modal-menu__logo-wrapper">
-              <a class="modal-menu__logo-link">
-                <img class="modal-menu__logo logo" src="img/logo_footer.svg" alt="Логотип «Погнали»" width="96" height="15">
+              <a class="modal-menu__logo-link" href="index.html">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/logo/logo-full-blue.svg">
+                  <img class="modal-menu__logo logo" src="img/logo/logo-mobile-blue.svg" alt="Логотип «Погнали»" width="96" height="15">
+                </picture>
               </a>
               <button class="modal-menu__toggle" type="button" aria-label="Открыть меню"></button>
             </div>
@@ -888,7 +898,11 @@
             <li class="companions__profile user-profile">
               <div class="user-profile__head-wrapper">
                 <a class="user-profile__photo-link" href="#">
-                  <img class="user-profile__image" src="img/user-image-tatiyana_w270.jpg" alt="Фотография пользователя" width="70" height="70">
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="img/users/firsova-desktop--catalog.jpg 1x" srcset="img/users/firsova-desktop--catalog@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/users/firsova-tablet--catalog.jpg 1x" srcset="img/users/firsova-tablet--catalog@2x.jpg 2x">
+                    <img class="user-profile__image" src="img/users/firsova-mobile--catalog.jpg" srcset="img/users/firsova-mobile--catalog@2x.jpg 2x" alt="Фотография пользователя" width="70" height="70">
+                  </picture>
                 </a>
                 <div class="user-profile__main-info-wrapper">
                   <a class="user-profile__name-link">
@@ -906,15 +920,15 @@
                 <p class="user-profile__wish-list-title">хочет посетить:</p>
                 <ul class="user-profile__desire-list desire-countries">
                   <li class="desire-counties__item">
-                    <img class="desire-counties__counties-flag-image" src="img/sri-Lanka-flag_w35.png" alt="Флаг Шри-Ланки" width="26" height="18">
+                    <img class="desire-counties__counties-flag-image" src="img/flags/sri-lanka-2.png" alt="Флаг Шри-Ланки" width="26" height="18">
                     <p class="desire-counties__name">Шри-ланка</p>
                   </li>
                   <li class="desire-counties__item">
-                    <img class="desire-counties__counties-flag-image" src="img/thailand-flag_w35.png" alt="Флаг Тайланда" width="26" height="18">
+                    <img class="desire-counties__counties-flag-image" src="img/flags/thailand.png" alt="Флаг Тайланда" width="26" height="18">
                     <p class="desire-counties__name">Тайланд</p>
                   </li>
                   <li class="desire-counties__item">
-                    <img class="desire-counties__counties-flag-image" src="img/seychelles-flag_w35.png" alt="Флаг Сейшел" width="26" height="18">
+                    <img class="desire-counties__counties-flag-image" src="img/flags/seychelles.png" alt="Флаг Сейшел" width="26" height="18">
                     <p class="desire-counties__name">Сейшелы</p>
                   </li>
                 </ul>
@@ -954,7 +968,11 @@
             <li class="companions__profile user-profile">
               <div class="user-profile__head-wrapper">
                 <a class="user-profile__photo-link" href="#">
-                  <img class="user-profile__image" src="img/user-image-petya_w270.jpg" alt="Фотография пользователя" width="70" height="70">
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="img/users/demin-desktop--catalog.jpg 1x" srcset="img/users/demin-desktop--catalog@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/users/demin-tablet--catalog.jpg 1x" srcset="img/users/demin-tablet--catalog@2x.jpg 2x">
+                    <img class="user-profile__image" src="img/users/demin-mobile--catalog.jpg" srcset="img/users/demin-mobile--catalog@2x.jpg 2x" alt="Фотография пользователя" width="70" height="70">
+                  </picture>
                 </a>
                 <div class="user-profile__main-info-wrapper">
                   <a class="user-profile__name-link">
@@ -972,11 +990,11 @@
                 <p class="user-profile__wish-list-title">хочет посетить:</p>
                 <ul class="user-profile__desire-list desire-countries">
                   <li class="desire-counties__item">
-                    <img class="desire-counties__counties-flag-image" src="img/belgium-flag_w35.png" alt="Флаг Бельгии" width="26" height="18">
+                    <img class="desire-counties__counties-flag-image" src="img/flags/belgium.png" alt="Флаг Бельгии" width="26" height="18">
                     <p class="desire-counties__name">Бельгия</p>
                   </li>
                   <li class="desire-counties__item">
-                    <img class="desire-counties__counties-flag-image" src="img/czech-flag_w35.png" alt="Флаг Чехии" width="26" height="18">
+                    <img class="desire-counties__counties-flag-image" src="img/flags/czechia.png" alt="Флаг Чехии" width="26" height="18">
                     <p class="desire-counties__name">Чехия</p>
                   </li>
                 </ul>
@@ -1016,7 +1034,11 @@
             <li class="companions__profile user-profile">
               <div class="user-profile__head-wrapper">
                 <a class="user-profile__photo-link" href="#">
-                  <img class="user-profile__image" src="img/user-image-smolov_w270.jpg" alt="Фотография пользователя" width="70" height="70">
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="img/users/smolov-desktop--catalog.jpg 1x" srcset="img/users/smolov-desktop--catalog@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/users/smolov-tablet--catalog.jpg 1x" srcset="img/users/smolov-tablet--catalog@2x.jpg 2x">
+                    <img class="user-profile__image" src="img/users/smolov-mobile--catalog.jpg" srcset="img/users/smolov-mobile--catalog@2x.jpg 2x" alt="Фотография пользователя" width="70" height="70">
+                  </picture>
                 </a>
                 <div class="user-profile__main-info-wrapper">
                   <a class="user-profile__name-link">
@@ -1034,15 +1056,15 @@
                 <p class="user-profile__wish-list-title">хочет посетить:</p>
                 <ul class="user-profile__desire-list desire-countries">
                   <li class="desire-counties__item">
-                    <img class="desire-counties__counties-flag-image" src="img/usa-flag_w35.png" alt="Флаг США" width="26" height="18">
+                    <img class="desire-counties__counties-flag-image" src="img/flags/usa.png" alt="Флаг США" width="26" height="18">
                     <p class="desire-counties__name">США</p>
                   </li>
                   <li class="desire-counties__item">
-                    <img class="desire-counties__counties-flag-image" src="img/australia-flag_w35.png" alt="Флаг Австралии" width="26" height="18">
+                    <img class="desire-counties__counties-flag-image" src="img/flags/australia.png" alt="Флаг Австралии" width="26" height="18">
                     <p class="desire-counties__name">Австралия</p>
                   </li>
                   <li class="desire-counties__item">
-                    <img class="desire-counties__counties-flag-image" src="img/dominica-flag_w35.png" alt="Флаг Доминиканы" width="26" height="18">
+                    <img class="desire-counties__counties-flag-image" src="img/flags/dominica.png" alt="Флаг Доминиканы" width="26" height="18">
                     <p class="desire-counties__name">Доминика</p>
                   </li>
                 </ul>
@@ -1082,7 +1104,11 @@
             <li class="companions__profile user-profile">
               <div class="user-profile__head-wrapper">
                 <a class="user-profile__photo-link" href="#">
-                  <img class="user-profile__image" src="img/user-image-rogovaya-w270.jpg" alt="Фотография пользователя" width="70" height="70">
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="img/users/rogovaya-desktop--catalog.jpg 1x" srcset="img/users/rogovaya-desktop--catalog@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/users/rogovaya-tablet--catalog.jpg 1x" srcset="img/users/rogovaya-tablet--catalog@2x.jpg 2x">
+                    <img class="user-profile__image" src="img/users/rogovaya-mobile--catalog.jpg" srcset="img/users/rogovaya-mobile--catalog@2x.jpg 2x" alt="Фотография пользователя" width="70" height="70">
+                  </picture>
                 </a>
                 <div class="user-profile__main-info-wrapper">
                   <a class="user-profile__name-link">
@@ -1100,11 +1126,11 @@
                 <p class="user-profile__wish-list-title">хочет посетить:</p>
                 <ul class="user-profile__desire-list desire-countries">
                   <li class="desire-counties__item">
-                    <img class="desire-counties__counties-flag-image" src="img/united-kingdom-flag_w35.png" alt="Флаг Великобритании" width="26" height="18">
+                    <img class="desire-counties__counties-flag-image" src="img/flags/uk.png" alt="Флаг Великобритании" width="26" height="18">
                     <p class="desire-counties__name">Великобритания</p>
                   </li>
                   <li class="desire-counties__item">
-                    <img class="desire-counties__counties-flag-image" src="img/germany-flag_w35.png" alt="Флаг Германии" width="26" height="18">
+                    <img class="desire-counties__counties-flag-image" src="img/flags/germany.png" alt="Флаг Германии" width="26" height="18">
                     <p class="desire-counties__name">Германия</p>
                   </li>
                 </ul>
@@ -1170,7 +1196,10 @@
     </main>
     <footer class="page-footer">
       <div class="container page-footer__wrapper">
-        <img class="page-footer__logo logo" src="img/logo_footer.svg" alt="Логотип «Погнали»" width="96" height="15">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/logo/logo-full-blue.svg">
+          <img class="page-footer__logo logo" src="img/logo/logo-mobile-blue.svg" alt="Логотип «Погнали»" width="96" height="15">
+        </picture>
         <ul class="page-footer__socials social-list">
           <li class="social-list__item">
             <a class="social-list__link" href="https://www.facebook.com">

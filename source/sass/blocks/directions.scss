@@ -9,18 +9,28 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 80px;
-    background-image: url("../img/flags-back-tablet.png");
+    background-image: url("../img/index/directions-tablet-back.png");
     background-repeat: no-repeat;
     background-position: 50% 15%;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index/directions-tablet-back@2x.png");
+      background-size: 688px 574px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 177px;
-    padding-bottom: 102px;
-    background-image: url("../img/flags-back-desktop.png");
+    padding-bottom: 95px;
+    background-image: url("../img/index/directions-desktop-back.png");
     background-position: 50% 50%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index/directions-desktop-back@2x.png");
+      background-size: 1320px 575px;
+    }
   }
 }
 
@@ -48,8 +58,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 87px;
-    margin-top: -14px;
+    padding-left: 172px;
+    margin-top: -16px;
     margin-bottom: 58px;
   }
 }
@@ -84,15 +94,15 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 24px;
+    margin-bottom: 19px;
 
     &:last-child {
-      margin-bottom: 47px;
+      margin-bottom: 43px;
     }
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 27px;
+    margin-bottom: 18px;
   }
 }
 
@@ -117,7 +127,7 @@
   @media (min-width: $desktop-width) {
     max-height: 32px;
     margin-right: 75px;
-    margin-left: 89px;
+    margin-left: 172px;
     padding: 26px 84px 20px 33px;
 
     &::after {
