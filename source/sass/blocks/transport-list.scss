@@ -75,3 +75,9 @@
     }
   }
 }
+
+.transport-list__icon {
+  &--disabled {
+    opacity: 0.15;
+  }
+}
