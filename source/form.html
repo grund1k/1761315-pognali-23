@@ -165,24 +165,32 @@
             <fieldset class="profile-form__transport-checkbox transport-form transport-form__fieldset">
               <legend class="transport-from__legend">Транспорт</legend>
               <div class="transport-form__inputs-wrapper">
-                <input class="visually-hidden" type="checkbox" name="plane" id="plane" value="plane" checked>
-                <label class="transport-form__checkbox" for="plane">
-                  <img class="transport-form__checkbox-icon" src="img/icon-plane_active.svg" alt="Иконка самолета" width="32" height="32">
+                <input class="visually-hidden transport-form__checkbox" type="checkbox" name="plane" id="plane" value="plane" checked>
+                <label class="transport-form__label" for="plane">
+                  <svg class="transport-form__label-icon" alt="Иконка самолета" width="21" height="21">
+                      <use xlink:href="img/sprite.svg#icon-plane"></use>
+                  </svg>
                   <span class="visually-hidden">Самолет</span>
                 </label>
-                <input class="visually-hidden" type="checkbox" name="bus" id="bus" value="bus" checked>
-                <label class="transport-form__checkbox" for="bus">
-                  <img class="transport-form__checkbox-icon" src="img/icon-bus_actrive.svg" alt="Иконка автобуса" width="32" height="32">
+                <input class="visually-hidden transport-form__checkbox" type="checkbox" name="bus" id="bus" value="bus" checked>
+                <label class="transport-form__label" for="bus">
+                  <svg class="transport-form__label-icon" alt="Иконка автобуса" width="17" height="19">
+                      <use xlink:href="img/sprite.svg#icon-bus"></use>
+                  </svg>
                   <span class="visually-hidden">Автобус</span>
                 </label>
-                <input class="visually-hidden" type="checkbox" name="bike" id="bike" value="bike">
-                <label class="transport-form__checkbox" for="bike">
-                  <img class="transport-form__checkbox-icon" src="img/icon-bike_none-active.svg" alt="Иконка велосипеда" width="32" height="32">
+                <input class="visually-hidden transport-form__checkbox" type="checkbox" name="bike" id="bike" value="bike">
+                <label class="transport-form__label" for="bike">
+                  <svg class="transport-form__label-icon" alt="Иконка велосипеда" width="24" height="24">
+                      <use xlink:href="img/sprite.svg#icon-bicyle"></use>
+                  </svg>
                   <span class="visually-hidden">Велосипед</span>
                 </label>
-                <input class="visually-hidden" type="checkbox" name="pedastrian" id="pedastrian" value="pedastrian" checked>
-                <label class="transport-form__checkbox" for="pedastrian">
-                  <img class="transport-form__checkbox-icon" src="img/icon-pedastrian_active.svg" alt="Иконка пешего туризма" width="32" height="32">
+                <input class="visually-hidden transport-form__checkbox" type="checkbox" name="pedastrian" id="pedastrian" value="pedastrian" checked>
+                <label class="transport-form__label" for="pedastrian">
+                  <svg class="transport-form__label-icon" alt="Иконка пешего туризма" width="21" height="23">
+                      <use xlink:href="img/sprite.svg#icon-pedastrian"></use>
+                  </svg>
                   <span class="visually-hidden">Пешком</span>
                 </label>
               </div>
@@ -514,7 +522,9 @@
                     <div class="countries-dropdown__title-wrapper">
                       <p class="countries-dropdown__title">Выберите страну</p>
                       <button class="countries-dropdown__close-button">
-                        <img class="countries-dropdown__close-button-icon" src="img/icon-close-dropdown.svg" alt="Закрыть список стран">
+                        <svg class="countries-dropdown__close-button-icon" alt="Закрыть список стран" width="9" height="10">
+                          <use xlink:href="img/sprite.svg#icon-close-white"></use>
+                        </svg>
                       </button>
                     </div>
                     <div class="countries-dropdown__alphabet-search-wrapper">
