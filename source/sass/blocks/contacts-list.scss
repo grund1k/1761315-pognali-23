@@ -2,44 +2,9 @@
   @include bold;
 }
 
-.contacts-list__item {
+.contacts-list__link {
   display: flex;
   align-items: center;
-}
-
-.contacts-list__icon {
-  &--modal-menu,
-  &--registration {
-    width: 45px;
-    height: 45px;
-    margin-right: 15px;
-  }
-
-  @media (min-width: $tablet-width) {
-    &--modal-menu,
-    &--registration {
-      width: 68px;
-      height: 68px;
-      margin-right: 23px;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &--registration {
-      width: 90px;
-      height: 90px;
-      margin-right: 31px;
-    }
-
-    &--nav {
-      width: 50px;
-      height: 50px;
-      margin-right: 0;
-    }
-  }
-}
-
-.contacts-list__link {
   color: $text-blue;
   text-transform: uppercase;
 
@@ -55,5 +20,74 @@
 
   &--yellow-text {
     color: $button-yellow;
+  }
+}
+
+.contact-list__icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+
+  &--background-blue {
+    background-color: $contacts-background;
+  }
+
+  &--background-orange {
+    background-color: $special-orange;
+  }
+
+  &--background-yellow {
+    background-color: $button-yellow;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 68px;
+    height: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.contactas-list__icon-telephone {
+  width: 16px;
+  height: 16px;
+}
+
+.contactas-list__icon-telephone-big {
+  width: 18px;
+  height: 17px;
+
+  @media (min-width: $tablet-width) {
+    width: 27px;
+    height: 25px;
+  }
+}
+
+.contactas-list__icon-mail {
+  width: 16px;
+  height: 14px;
+}
+
+.contactas-list__icon-mail-big {
+  width: 23px;
+  height: 25px;
+
+  @media (min-width: $tablet-width) {
+    width: 35px;
+    height: 38px;
+  }
+}
+
+.contacts-list__text {
+  margin-left: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 23px;
   }
 }
