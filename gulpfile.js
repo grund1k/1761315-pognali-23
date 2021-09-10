@@ -131,11 +131,6 @@ const watcher = () => {
   gulp.watch("source/js/*.js", gulp.series(scripts));
   gulp.watch("source/*.html").on("change", sync.reload);
 }
-
-exports.default = gulp.series(
-  styles, server, watcher
-);
-
 // Build
 
 const build = gulp.series(
@@ -146,11 +141,8 @@ const build = gulp.series(
     styles,
     scripts,
     sprite
-  ),
-  gulp.series(
-    server,
-    watcher
-  ));
+  )
+);
 
 exports.build = build;
 
