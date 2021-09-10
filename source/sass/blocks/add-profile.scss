@@ -144,13 +144,18 @@
   }
 }
 
-.add-profile__modal-icon {
+
+.add-profile__modal-icon-wrapper {
   display: none;
   width: 68px;
   height: 68px;
+  background-color: $modal-icon-button;
+  border-radius: 50%;
 
   @media (min-width: $tablet-width) {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-right: 21px;
   }
 }

@@ -44,6 +44,7 @@
 }
 
 .transport-form__inputs-wrapper {
+  display: flex;
   padding-left: 71px;
   padding-top: 5px;
 
@@ -59,12 +60,24 @@
 }
 
 .transport-form__checkbox {
-  font-size: 0;
+  & + .transport-form__label .transport-form__label-icon {
+    opacity: 0.15;
+  }
+
+  &:checked + .transport-form__label .transport-form__label-icon {
+    opacity: 1;
+  }
 }
 
-.transport-form__checkbox-icon {
+.transport-form__label {
+  font-size: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 32px;
   height: 32px;
+  background-color: $basic-white;
+  border-radius: 50%;
 
   @media (min-width: $tablet-width) {
     width: 44px;

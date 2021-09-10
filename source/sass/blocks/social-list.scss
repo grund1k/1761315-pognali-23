@@ -15,13 +15,23 @@
   }
 }
 
-.social-list__icon {
-  width: 45px;
-  height: 45px;
+
+.social-list__link {
+  &--background-yellow {
+    width: 45px;
+    height: 45px;
+    background-color: $button-yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
 
   @media (min-width: $tablet-width) {
-    width: 62px;
-    height: 62px;
+    &--background-yellow {
+      width: 62px;
+      height: 62px;
+    }
   }
 }
 
