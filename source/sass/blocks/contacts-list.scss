@@ -31,6 +31,11 @@
   width: 45px;
   height: 45px;
 
+  &--small {
+    width: 40px;
+    height: 40px;
+  }
+
   &--background-blue {
     background-color: $contacts-background;
   }
@@ -72,6 +77,11 @@
     width: 27px;
     height: 25px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 36px;
+    height: 34px;
+  }
 }
 
 .contactas-list__icon-mail {
@@ -87,6 +97,11 @@
     width: 35px;
     height: 38px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 47px;
+    height: 50px;
+  }
 }
 
 .contacts-list__text {
@@ -94,5 +109,9 @@
 
   @media (min-width: $tablet-width) {
     margin-left: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 30px;
   }
 }
