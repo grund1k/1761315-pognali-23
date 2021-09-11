@@ -1,3 +1,13 @@
+.map {
+  &--no-js .map__map-iframe {
+    display: none;
+  }
+
+  &--no-js .map__map-picture {
+    display: block;
+  }
+}
+
 .map__wrapper {
   position: relative;
   z-index: 1;
@@ -123,7 +133,7 @@
 }
 
 .map__map-picture {
-  display: block;
+  display: none;
   width: 320px;
   height: 424px;
   margin: -51px auto 0 auto;
@@ -139,5 +149,19 @@
     width: 1440px;
     height: 584px;
     margin-top: -116px;
+  }
+}
+
+.map__map-iframe {
+  border: none;
+  height: 424px;
+  margin-top: -50px;
+
+  @media (min-width: $tablet-width) {
+    height: 581px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 584px;
   }
 }
