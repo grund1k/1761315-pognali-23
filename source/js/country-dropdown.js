@@ -2,11 +2,13 @@ const countryButtonChoosing = document.querySelector(".country-selector__button-
 const countriesDropdown = document.querySelector(".countries-dropdown");
 const countriesDropdownCloseButton = document.querySelector(".countries-dropdown__close-button");
 
+countriesDropdown.classList.remove("countries-dropdown--open");
+
 countryButtonChoosing.addEventListener("click", function() {
-  countriesDropdown.style.display = "block";
+  countriesDropdown.classList.add("countries-dropdown--open");
 });
 
 countriesDropdownCloseButton.addEventListener("click", function(evt) {
   evt.preventDefault();
-  countriesDropdown.style.display = "none";
+  countriesDropdown.classList.remove("countries-dropdown--open");
 });
