@@ -26,6 +26,10 @@
     &::after {
       display: none;
     }
+
+    &--collapsed .filter-form__wrapper {
+      display: flex;
+    }
   }
 
   @media (min-width: $desktop-width) {
