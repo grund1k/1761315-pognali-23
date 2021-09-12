@@ -41,6 +41,10 @@
   &--no-js .nav__menu-wrapper {
     position: relative;
     top: -94px;
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
   }
 
   &--menu-opened .nav__menu-wrapper {

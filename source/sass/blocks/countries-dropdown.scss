@@ -1,6 +1,10 @@
 .countries-dropdown {
   display: none;
   max-width: 730px;
+
+  &--open {
+    display: block;
+  }
 }
 
 .countries-dropdown__title-wrapper {
