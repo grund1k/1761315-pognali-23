@@ -17,7 +17,7 @@
         <div class="container nav__wrapper">
           <a class="nav__logo-link" href="index.html">
             <picture>
-              <source media="(min-width: 768px)" srcset="img/logo/logo-full.svg">
+              <source class="nav__logo nav__logo--tablet" media="(min-width: 768px)" srcset="img/logo/logo-full.svg">
               <img class="nav__logo logo" src="img/logo/logo-mobile.svg" alt="Логотип «Погнали»" width="96" height="15">
             </picture>
           </a>
@@ -36,8 +36,8 @@
           <ul class="nav__conatacts contacts-list">
             <li class="contacts-list__item">
               <a class="contacts-list__link" href="tel:88005558628">
-                <span class="contact-list__icon-wrapper contact-list__icon-wrapper--desktop contact-list__icon-wrapper--background-orange">
-                  <svg class="contactas-list__icon-telephone" width="16" height="16">
+                <span class="contacts-list__icon-wrapper contacts-list__icon-wrapper--desktop contacts-list__icon-wrapper--background-orange">
+                  <svg class="contacts-list__icon-telephone" width="16" height="16">
                     <use xlink:href="img/sprite.svg#icon-telephone-2"></use>
                   </svg>
                 </span>
@@ -45,8 +45,8 @@
             </li>
             <li class="contacts-list__item">
               <a class="contacts-list__link" href="mailto:mail@htmlacademy.ru">
-                <span class="contact-list__icon-wrapper contact-list__icon-wrapper--desktop contact-list__icon-wrapper--background-yellow">
-                  <svg class="contactas-list__icon-mail" width="16" height="14">
+                <span class="contacts-list__icon-wrapper contacts-list__icon-wrapper--desktop contacts-list__icon-wrapper--background-yellow">
+                  <svg class="contacts-list__icon-mail" width="16" height="14">
                     <use xlink:href="img/sprite.svg#icon-mail-2"></use>
                   </svg>
                 </span>
@@ -61,7 +61,7 @@
             <div class="modal-menu__logo-wrapper">
               <a class="modal-menu__logo-link" href="index.html">
                 <picture>
-                  <source class="nav__logo--tablet" media="(min-width: 768px)" srcset="img/logo/logo-full-blue.svg">
+                  <source media="(min-width: 768px)" srcset="img/logo/logo-full-blue.svg">
                   <img class="modal-menu__logo logo" src="img/logo/logo-mobile-blue.svg" alt="Логотип «Погнали»" width="96" height="15">
                 </picture>
               </a>
@@ -82,8 +82,8 @@
             <ul class="modal-menu__contacts contacts-list">
               <li class="contacts-list__item">
                 <a class="contacts-list__link" href="tel:88005558628">
-                  <span class="contact-list__icon-wrapper contact-list__icon-wrapper--background-blue">
-                    <svg class="contactas-list__icon-telephone-big" width="18" height="17">
+                  <span class="contacts-list__icon-wrapper contacts-list__icon-wrapper--background-blue">
+                    <svg class="contacts-list__icon-telephone-big" width="18" height="17">
                       <use xlink:href="img/sprite.svg#icon-telephone-1--yellow-fill"></use>
                     </svg>
                   </span>
@@ -92,8 +92,8 @@
               </li>
               <li class="contacts-list__item">
                 <a class="contacts-list__link" href="mailto:mail@htmlacademy.ru">
-                  <span class="contact-list__icon-wrapper contact-list__icon-wrapper--background-blue">
-                    <svg class="contactas-list__icon-mail-big" width="23" height="25">
+                  <span class="contacts-list__icon-wrapper contacts-list__icon-wrapper--background-blue">
+                    <svg class="contacts-list__icon-mail-big" width="23" height="25">
                       <use xlink:href="img/sprite.svg#icon-mail-1--yellow-fill"></use>
                     </svg>
                   </span>
@@ -162,8 +162,8 @@
               <label class="visually-hidden" for="user-tags">Впишите свои тэги</label>
               <textarea class="tags-form__textarea" name="user-tags" id="user-tags" cols="30" rows="10">#бургер #бар #футбол #концерт #крафт</textarea>
             </fieldset>
-            <fieldset class="profile-form__transport-checkbox transport-form transport-form__fieldset">
-              <legend class="transport-from__legend">Транспорт</legend>
+            <fieldset class="profile-form__transport-checkbox transport-form transport-form--fieldset">
+              <legend class="transport-form__legend">Транспорт</legend>
               <div class="transport-form__inputs-wrapper">
                 <input class="visually-hidden transport-form__checkbox" type="checkbox" name="plane" id="plane" value="plane" checked>
                 <label class="transport-form__label" for="plane">
