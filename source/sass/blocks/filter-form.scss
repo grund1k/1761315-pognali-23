@@ -149,7 +149,7 @@
   }
 }
 
-.filter-form__label {
+.filter-form--label {
   @include text-2;
   color: $black;
   margin-top: 10px;
@@ -165,7 +165,7 @@
   }
 }
 
-.filter-form__music {
+.filter-form--music {
   margin-top: 20px;
 
   @media (min-width: $tablet-width) {
@@ -177,7 +177,7 @@
   }
 }
 
-.filter-form__food {
+.filter-form--food {
   margin-top: 33px;
 
   @media (min-width: $tablet-width) {
@@ -189,7 +189,7 @@
   }
 }
 
-.filter-form__transport {
+.filter-form--transport {
   margin-top: 22px;
 
   @media (min-width: $tablet-width) {
@@ -197,7 +197,7 @@
   }
 }
 
-.filter-form__level {
+.filter-form--level {
   margin-top: 31px;
 
   @media (min-width: $tablet-width) {

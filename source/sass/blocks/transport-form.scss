@@ -4,7 +4,7 @@
   }
 }
 
-.transport-form__fieldset {
+.transport-form--fieldset {
   border: 1px solid $border-grey;
   border-radius: 10px;
   width: 268px;
@@ -21,7 +21,7 @@
   }
 }
 
-.transport-from__legend {
+.transport-form__legend {
   @include bold;
   color: $basic-blue-light;
   text-align: center;
