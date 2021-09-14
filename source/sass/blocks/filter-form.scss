@@ -123,6 +123,30 @@
   }
 }
 
+.transport-form__label-icon {
+  @media (min-width: $tablet-width) {
+    &--plane {
+      width: 23px;
+      height: 22px;
+    }
+
+    &--bus {
+      width: 23px;
+      height: 22px;
+    }
+
+    &--bicyle {
+      width: 23px;
+      height: 22px;
+    }
+
+    &--pedastrian {
+      width: 23px;
+      height: 22px;
+    }
+  }
+}
+
 .filter-form__checkbox + .filter-form__label {
   display: flex;
   align-items: center;
@@ -206,6 +230,10 @@
   @media (min-width: $tablet-width) {
     margin-top: 24px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 19px;
+  }
 }
 
 .filter-form--level {
@@ -216,7 +244,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 17px;
+    margin-top: 34px;
   }
 }
 
