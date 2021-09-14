@@ -146,10 +146,17 @@
     background-image: url("../img/icon-check-mark.svg");
     background-repeat: no-repeat;
     background-position: 2px;
+    background-size: 14px 13px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      background-size: 18px 17px;
+    }
   }
 }
 
-.filter-form--label {
+.filter-form__label {
   @include text-2;
   color: $black;
   margin-top: 10px;

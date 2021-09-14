@@ -23,7 +23,7 @@ navigationOff.addEventListener("click", function() {
   }
 });
 
-const navLogo = document.querySelector(".nav__logo");
+const navLogo = document.querySelector(".nav__logo--mobile");
 const navLogoTablet = document.querySelector(".nav__logo--tablet");
 
 window.addEventListener("scroll", function () {

@@ -40,7 +40,11 @@
 
   &--no-js .nav__menu-wrapper {
     position: relative;
-    top: -94px;
+    top: -42px;
+
+    @media (min-width: $tablet-width) {
+      top: -93px;
+    }
 
     @media (min-width: $desktop-width) {
       display: none;

@@ -124,6 +124,7 @@
   height: 30px;
   background-image: url("../img/like-btn.svg");
   background-repeat: no-repeat;
+  background-position: center;
 
   &--active {
     background-image: url("../img/like-btn_active.svg");
@@ -131,7 +132,7 @@
 
   @media (min-width: $tablet-width) {
     width: 50px;
-    height: 50px;
+    height: 51px;
     background-size: 50px;
   }
 }

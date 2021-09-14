@@ -25,6 +25,7 @@
 
   @media (min-width: $tablet-width) {
     @include h2-5;
+    letter-spacing: normal;
   }
 }
 

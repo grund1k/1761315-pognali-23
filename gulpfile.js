@@ -35,7 +35,7 @@ exports.styles = styles;
 // Scripts
 
 const scripts = () => {
-  let fileName = ["country-dropdown", "country-filter", "filter-form", "header", "modal"];
+  let fileName = ["country-dropdown", "country-filter", "filter-form", "header", "modal", "map"];
   let streams = [];
   fileName.forEach(function(name) {
     let stream = gulp.src("source/js/" + name + ".js")
@@ -113,7 +113,7 @@ exports.clean = clean;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'build'
+      baseDir: "build"
     },
     cors: true,
     notify: false,

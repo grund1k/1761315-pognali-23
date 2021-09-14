@@ -18,7 +18,7 @@
           <a class="nav__logo-link" href="index.html">
             <picture>
               <source class="nav__logo nav__logo--tablet" media="(min-width: 768px)" srcset="img/logo/logo-full.svg">
-              <img class="nav__logo logo" src="img/logo/logo-mobile.svg" alt="Логотип «Погнали»" width="96" height="15">
+              <img class="nav__logo nav__logo--mobile logo" src="img/logo/logo-mobile.svg" alt="Логотип «Погнали»" width="96" height="15">
             </picture>
           </a>
           <button class="nav__toggle" type="button" aria-label="Открыть меню"></button>
@@ -248,22 +248,20 @@
               </div>
               <div class="step__counters-wrapper">
                 <div class="step__companion-counter counter">
-                  <p class="counter__title">Ищу попутчиков:</p>
+                  <label class="counter__title" for="companion-count">Ищу попутчиков:</label>
                   <p class="counter__dimension">чел.</p>
                   <div class="counter__shell">
                     <button class="counter__button counter__button--amount-reduce" type="button"><span class="visually-hidden">-</span></button>
                     <input class="counter__input" type="number" id="companion-count" name="companion-count" value="2" placeholder="Количество попутчиков" required min="1">
-                    <label class="visually-hidden" for="companion-count">Количество попутчиков</label>
                     <button class="counter__button counter__button--amount-increase" type="button"><span class="visually-hidden">+</span></button>
                   </div>
                 </div>
                 <div class="step__duration-counter counter">
-                  <p class="counter__title">Длительность:</p>
+                  <label class="counter__title" for="day-count">Длительность</label>
                   <p class="counter__dimension">дн.</p>
                   <div class="counter__shell">
                     <button class="counter__button counter__button--amount-reduce" type="button"><span class="visually-hidden">-</span></button>
                     <input class="counter__input" type="number" id="day-count" name="day-count" value="3" placeholder="Количество дней" required min="1">
-                    <label class="visually-hidden" for="day-count">Количество дней</label>
                     <button class="counter__button counter__button--amount-increase" type="button"><span class="visually-hidden">+</span></button>
                   </div>
                 </div>
