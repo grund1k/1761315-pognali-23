@@ -19,7 +19,7 @@
     flex-wrap: nowrap;
     justify-content: flex-start;
     padding: 0;
-    height: 285px;
+    min-height: 285px;
   }
 }
 
@@ -30,6 +30,10 @@
   @media (min-width: $desktop-width) {
     margin-right: 0;
   }
+}
+
+.user-profile__photo-link {
+  max-height: 285px;
 }
 
 .user-profile__image {
