@@ -39,6 +39,10 @@
     &::after {
       display: block;
     }
+
+    &--collapsed .filter-form__wrapper {
+      display: none;
+    }
   }
 }
 
@@ -119,6 +123,30 @@
   }
 }
 
+.transport-form__label-icon {
+  @media (min-width: $tablet-width) {
+    &--plane {
+      width: 23px;
+      height: 22px;
+    }
+
+    &--bus {
+      width: 23px;
+      height: 22px;
+    }
+
+    &--bicyle {
+      width: 23px;
+      height: 22px;
+    }
+
+    &--pedastrian {
+      width: 23px;
+      height: 22px;
+    }
+  }
+}
+
 .filter-form__checkbox + .filter-form__label {
   display: flex;
   align-items: center;
@@ -146,10 +174,17 @@
     background-image: url("../img/icon-check-mark.svg");
     background-repeat: no-repeat;
     background-position: 2px;
+    background-size: 14px 13px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      background-size: 18px 17px;
+    }
   }
 }
 
-.filter-form--label {
+.filter-form__label {
   @include text-2;
   color: $black;
   margin-top: 10px;
@@ -195,6 +230,10 @@
   @media (min-width: $tablet-width) {
     margin-top: 24px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 19px;
+  }
 }
 
 .filter-form--level {
@@ -205,7 +244,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 17px;
+    margin-top: 34px;
   }
 }
 

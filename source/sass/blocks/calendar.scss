@@ -2,6 +2,10 @@
   @include text-1;
   color: $basic-blue-light;
   border-collapse: collapse;
+
+  @media (min-width: $desktop-width) {
+    color: $special-grey;
+  }
 }
 
 .calendar__days {
@@ -98,6 +102,18 @@
   align-items: center;
   width: 100%;
   height: 100%;
+
+  &:hover,
+  &:focus {
+    box-shadow: inset 0 0 0 2px #ff5c23;
+  }
+
+  @media (min-width: $tablet-width) {
+    &:hover,
+    &:focus {
+      box-shadow: inset 0 0 0 4px #ff5c23;
+    }
+  }
 
   @media (min-width: $desktop-width) {
     align-items: flex-start;

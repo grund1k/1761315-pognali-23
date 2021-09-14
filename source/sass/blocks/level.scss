@@ -93,11 +93,13 @@
     }
 
     &--catalog {
+      margin-top: 5px;
+
       &::after {
         display: block;
         opacity: 0.1;
         border: 1px solid $black;
-        bottom: 27px;
+        bottom: 23px;
       }
     }
   }
@@ -109,6 +111,10 @@
         border: 1px solid $basic-white;
         right: 23px;
       }
+    }
+
+    &--catalog {
+      margin-top: 7px;
     }
   }
 }
@@ -130,6 +136,7 @@
   @media (min-width: $tablet-width) {
     &--catalog {
       display: block;
+      margin-top: 0;
     }
   }
 }
@@ -153,8 +160,13 @@
 
   @media (min-width: $tablet-width) {
     &--25 {
-      left: 28px;
-      width: 27px;
+      left: 10px;
+      width: 76px;
+      height: 31px;
+    }
+
+    &--50 {
+      left: 17px;
     }
   }
 }

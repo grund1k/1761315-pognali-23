@@ -19,7 +19,7 @@
     flex-wrap: nowrap;
     justify-content: flex-start;
     padding: 0;
-    height: 285px;
+    min-height: 285px;
   }
 }
 
@@ -30,6 +30,10 @@
   @media (min-width: $desktop-width) {
     margin-right: 0;
   }
+}
+
+.user-profile__photo-link {
+  max-height: 285px;
 }
 
 .user-profile__image {
@@ -124,6 +128,7 @@
   height: 30px;
   background-image: url("../img/like-btn.svg");
   background-repeat: no-repeat;
+  background-position: center;
 
   &--active {
     background-image: url("../img/like-btn_active.svg");
@@ -131,7 +136,7 @@
 
   @media (min-width: $tablet-width) {
     width: 50px;
-    height: 50px;
+    height: 51px;
     background-size: 50px;
   }
 }
@@ -230,7 +235,7 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    bottom: 35px;
+    bottom: 41px;
     right: 45px;
     flex-direction: row;
     align-items: center;

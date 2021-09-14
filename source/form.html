@@ -18,7 +18,7 @@
           <a class="nav__logo-link" href="index.html">
             <picture>
               <source class="nav__logo nav__logo--tablet" media="(min-width: 768px)" srcset="img/logo/logo-full.svg">
-              <img class="nav__logo logo" src="img/logo/logo-mobile.svg" alt="Логотип «Погнали»" width="96" height="15">
+              <img class="nav__logo nav__logo--mobile logo" src="img/logo/logo-mobile.svg" alt="Логотип «Погнали»" width="96" height="15">
             </picture>
           </a>
           <button class="nav__toggle" type="button" aria-label="Открыть меню"></button>
@@ -248,22 +248,20 @@
               </div>
               <div class="step__counters-wrapper">
                 <div class="step__companion-counter counter">
-                  <p class="counter__title">Ищу попутчиков:</p>
+                  <label class="counter__title" for="companion-count">Ищу попутчиков:</label>
                   <p class="counter__dimension">чел.</p>
                   <div class="counter__shell">
                     <button class="counter__button counter__button--amount-reduce" type="button"><span class="visually-hidden">-</span></button>
                     <input class="counter__input" type="number" id="companion-count" name="companion-count" value="2" placeholder="Количество попутчиков" required min="1">
-                    <label class="visually-hidden" for="companion-count">Количество попутчиков</label>
                     <button class="counter__button counter__button--amount-increase" type="button"><span class="visually-hidden">+</span></button>
                   </div>
                 </div>
                 <div class="step__duration-counter counter">
-                  <p class="counter__title">Длительность:</p>
+                  <label class="counter__title" for="day-count">Длительность</label>
                   <p class="counter__dimension">дн.</p>
                   <div class="counter__shell">
                     <button class="counter__button counter__button--amount-reduce" type="button"><span class="visually-hidden">-</span></button>
                     <input class="counter__input" type="number" id="day-count" name="day-count" value="3" placeholder="Количество дней" required min="1">
-                    <label class="visually-hidden" for="day-count">Количество дней</label>
                     <button class="counter__button counter__button--amount-increase" type="button"><span class="visually-hidden">+</span></button>
                   </div>
                 </div>
@@ -288,31 +286,31 @@
                 <tr class="calendar__dates">
                   <td class="calendar__date">
                     <input class="calendar__input visually-hidden" type="checkbox" name="23-02-2019" id="23-02-2019" disabled>
-                    <label class="calendar__label" for="23-02-2019">23</label>
+                    <label class="calendar__label" for="23-02-2019" tabindex="0">23</label>
                   </td>
                   <td class="calendar__date">
                     <input class="calendar__input visually-hidden" type="checkbox" name="24-02-2019" id="24-02-2019" disabled>
-                    <label class="calendar__label" for="24-02-2019">24</label>
+                    <label class="calendar__label" for="24-02-2019" tabindex="0">24</label>
                   </td>
                   <td class="calendar__date">
                     <input class="calendar__input visually-hidden" type="checkbox" name="25-02-2019" id="25-02-2019" disabled>
-                    <label class="calendar__label" for="25-02-2019">25</label>
+                    <label class="calendar__label" for="25-02-2019" tabindex="0">25</label>
                   </td>
                   <td class="calendar__date">
                     <input class="calendar__input visually-hidden" type="checkbox" name="26-02-2019" id="26-02-2019" disabled>
-                    <label class="calendar__label" for="26-02-2019">26</label>
+                    <label class="calendar__label" for="26-02-2019" tabindex="0">26</label>
                   </td>
                   <td class="calendar__date">
                     <input class="calendar__input visually-hidden" type="checkbox" name="27-02-2019" id="27-02-2019" disabled>
-                    <label class="calendar__label" for="27-02-2019">27</label>
+                    <label class="calendar__label" for="27-02-2019" tabindex="0">27</label>
                   </td>
                   <td class="calendar__date">
                     <input class="calendar__input visually-hidden" type="checkbox" name="28-02-2019" id="28-02-2019" disabled>
-                    <label class="calendar__label" for="28-02-2019">28</label>
+                    <label class="calendar__label" for="28-02-2019" tabindex="0">28</label>
                   </td>
                   <td class="calendar__date">
                     <input class="calendar__input visually-hidden" type="checkbox" name="01-03-2019" id="01-03-2019" disabled>
-                    <label class="calendar__label" for="01-03-2019">1
+                    <label class="calendar__label" for="01-03-2019" tabindex="0">1
                       <span class="calendar__month">мар</span>
                     </label>
                   </td>
@@ -320,157 +318,157 @@
                 <tr class="calendar__dates">
                   <td class="calendar__date">
                     <input class="calendar__input visually-hidden" type="checkbox" name="02-03-2019" id="02-03-2019" disabled>
-                    <label class="calendar__label" for="02-03-2019">2</label>
+                    <label class="calendar__label" for="02-03-2019" tabindex="0">2</label>
                   </td>
                   <td class="calendar__date">
                     <input class="calendar__input visually-hidden" type="checkbox" name="03-03-2019" id="03-03-2019" disabled>
-                    <label class="calendar__label" for="03-03-2019">3</label>
+                    <label class="calendar__label" for="03-03-2019" tabindex="0">3</label>
                   </td>
                   <td class="calendar__date">
                     <input class="calendar__input visually-hidden" type="checkbox" name="04-03-2019" id="04-03-2019" disabled>
-                    <label class="calendar__label" for="04-03-2019">4</label>
+                    <label class="calendar__label" for="04-03-2019" tabindex="0">4</label>
                   </td>
                   <td class="calendar__date">
                     <input class="calendar__input visually-hidden" type="checkbox" name="05-03-2019" id="05-03-2019" disabled>
-                    <label class="calendar__label" for="05-03-2019">5</label>
+                    <label class="calendar__label" for="05-03-2019" tabindex="0">5</label>
                   </td>
                   <td class="calendar__date">
                     <input class="calendar__input visually-hidden" type="checkbox" name="06-03-2019" id="06-03-2019" disabled>
-                    <label class="calendar__label" for="06-03-2019">6</label>
+                    <label class="calendar__label" for="06-03-2019" tabindex="0">6</label>
                   </td>
                   <td class="calendar__date">
                     <input class="calendar__input visually-hidden" type="checkbox" name="07-03-2019" id="07-03-2019" disabled>
-                    <label class="calendar__label" for="07-03-2019">7</label>
+                    <label class="calendar__label" for="07-03-2019" tabindex="0">7</label>
                   </td>
                   <td class="calendar__date">
                     <input class="calendar__input visually-hidden" type="checkbox" name="08-03-2019" id="08-03-2019" disabled>
-                    <label class="calendar__label" for="08-03-2019">8</label>
+                    <label class="calendar__label" for="08-03-2019" tabindex="0">8</label>
                   </td>
                 </tr>
                 <tr class="calendar__dates">
                   <td class="calendar__date">
                     <input class="calendar__input visually-hidden" type="checkbox" name="09-03-2019" id="09-03-2019" disabled>
-                    <label class="calendar__label" for="09-03-2019">9</label>
+                    <label class="calendar__label" for="09-03-2019" tabindex="0">9</label>
                   </td>
                   <td class="calendar__date">
                     <input class="calendar__input visually-hidden" type="checkbox" name="10-03-2019" id="10-03-2019" disabled>
-                    <label class="calendar__label" for="10-03-2019">10</label>
+                    <label class="calendar__label" for="10-03-2019" tabindex="0">10</label>
                   </td>
                   <td class="calendar__date">
                     <input class="calendar__input visually-hidden" type="checkbox" name="11-03-2019" id="11-03-2019" disabled>
-                    <label class="calendar__label" for="11-03-2019">11</label>
+                    <label class="calendar__label" for="11-03-2019" tabindex="0">11</label>
                   </td>
                   <td class="calendar__date">
                     <input class="calendar__input visually-hidden" type="checkbox" name="12-03-2019" id="12-03-2019" disabled>
-                    <label class="calendar__label" for="12-03-2019">12</label>
+                    <label class="calendar__label" for="12-03-2019" tabindex="0">12</label>
                   </td>
                   <td class="calendar__date">
                     <input class="calendar__input visually-hidden" type="checkbox" name="13-03-2019" id="13-03-2019" disabled>
-                    <label class="calendar__label" for="13-03-2019">13</label>
+                    <label class="calendar__label" for="13-03-2019" tabindex="0">13</label>
                   </td>
                   <td class="calendar__date">
                     <input class="calendar__input visually-hidden" type="checkbox" name="14-03-2019" id="14-03-2019" disabled>
-                    <label class="calendar__label" for="14-03-2019">14</label>
+                    <label class="calendar__label" for="14-03-2019" tabindex="0">14</label>
                   </td>
                   <td class="calendar__date">
                     <input class="calendar__input visually-hidden" type="checkbox" name="15-03-2019" id="15-03-2019" disabled>
-                    <label class="calendar__label" for="15-03-2019">15</label>
+                    <label class="calendar__label" for="15-03-2019" tabindex="0">15</label>
                   </td>
                 </tr>
                 <tr class="calendar__dates">
                   <td class="calendar__date">
                     <input class="calendar__input visually-hidden" type="checkbox" name="16-03-2019" id="16-03-2019" disabled>
-                    <label class="calendar__label" for="16-03-2019">16</label>
+                    <label class="calendar__label" for="16-03-2019" tabindex="0">16</label>
                   </td>
                   <td class="calendar__date">
                     <input class="calendar__input visually-hidden" type="checkbox" name="17-03-2019" id="17-03-2019" disabled>
-                    <label class="calendar__label" for="17-03-2019">17</label>
+                    <label class="calendar__label" for="17-03-2019" tabindex="0">17</label>
                   </td>
                   <td class="calendar__date">
                     <input class="calendar__input visually-hidden" type="checkbox" name="18-03-2019" id="18-03-2019" disabled>
-                    <label class="calendar__label" for="18-03-2019">18</label>
+                    <label class="calendar__label" for="18-03-2019" tabindex="0">18</label>
                   </td>
                   <td class="calendar__date">
                     <input class="calendar__input visually-hidden" type="checkbox" name="19-03-2019" id="19-03-2019" disabled>
-                    <label class="calendar__label" for="19-03-2019">19</label>
+                    <label class="calendar__label" for="19-03-2019" tabindex="0">19</label>
                   </td>
                   <td class="calendar__date">
                     <input class="calendar__input visually-hidden" type="checkbox" name="20-03-2019" id="20-03-2019" disabled>
-                    <label class="calendar__label" for="20-03-2019">20</label>
+                    <label class="calendar__label" for="20-03-2019" tabindex="0">20</label>
                   </td>
                   <td class="calendar__date">
                     <input class="calendar__input visually-hidden" type="checkbox" name="21-03-2019" id="21-03-2019" disabled>
-                    <label class="calendar__label" for="21-03-2019">21</label>
+                    <label class="calendar__label" for="21-03-2019" tabindex="0">21</label>
                   </td>
                   <td class="calendar__date">
                     <input class="calendar__input visually-hidden" type="checkbox" name="22-03-2019" id="22-03-2019" disabled>
-                    <label class="calendar__label" for="22-03-2019">22</label>
+                    <label class="calendar__label" for="22-03-2019" tabindex="0">22</label>
                   </td>
                 </tr>
                 <tr class="calendar__dates">
                   <td class="calendar__date">
                     <input class="calendar__input visually-hidden" type="checkbox" name="23-03-2019" id="23-03-2019" disabled>
-                    <label class="calendar__label" for="23-03-2019">23</label>
+                    <label class="calendar__label" for="23-03-2019" tabindex="0">23</label>
                   </td>
                   <td class="calendar__date">
                     <input class="calendar__input visually-hidden" type="checkbox" name="24-03-2019" id="24-03-2019" disabled>
-                    <label class="calendar__label" for="24-03-2019">24</label>
+                    <label class="calendar__label" for="24-03-2019" tabindex="0">24</label>
                   </td>
                   <td class="calendar__date">
                     <input class="calendar__input visually-hidden" type="checkbox" name="25-03-2019" id="25-03-2019" disabled>
-                    <label class="calendar__label" for="25-03-2019">25</label>
+                    <label class="calendar__label" for="25-03-2019" tabindex="0">25</label>
                   </td>
                   <td class="calendar__date">
                     <input class="calendar__input visually-hidden" type="checkbox" name="26-03-2019" id="26-03-2019" checked>
-                    <label class="calendar__label calendar__label--trip-dates" for="26-03-2019">26
+                    <label class="calendar__label calendar__label--trip-dates" tabindex="0" for="26-03-2019">26
                       <span class="calendar__trip-dates">Заезд</span>
                     </label>
                   </td>
                   <td class="calendar__date">
                     <input class="calendar__input visually-hidden" type="checkbox" name="27-03-2019" id="27-03-2019" checked>
-                    <label class="calendar__label" for="27-03-2019">27</label>
+                    <label class="calendar__label" for="27-03-2019" tabindex="0">27</label>
                   </td>
                   <td class="calendar__date">
                     <input class="calendar__input visually-hidden" type="checkbox" name="28-03-2019" id="28-03-2019" checked>
-                    <label class="calendar__label calendar__label--trip-dates" for="28-03-2019">28
+                    <label class="calendar__label calendar__label--trip-dates" tabindex="0" for="28-03-2019">28
                       <span class="calendar__trip-dates">Выезд</span>
                     </label>
                   </td>
                   <td class="calendar__date">
                     <input class="calendar__input visually-hidden" type="checkbox" name="29-03-2019" id="29-03-2019">
-                    <label class="calendar__label" for="29-03-2019">29</label>
+                    <label class="calendar__label" for="29-03-2019" tabindex="0">29</label>
                   </td>
                 </tr>
                 <tr class="calendar__dates">
                   <td class="calendar__date">
                     <input class="calendar__input visually-hidden" type="checkbox" name="30-03-2019" id="30-03-2019">
-                    <label class="calendar__label" for="30-03-2019">30</label>
+                    <label class="calendar__label" for="30-03-2019" tabindex="0">30</label>
                   </td>
                   <td class="calendar__date">
                     <input class="calendar__input visually-hidden" type="checkbox" name="31-03-2019" id="31-03-2019">
-                    <label class="calendar__label" for="31-03-2019">31</label>
+                    <label class="calendar__label" for="31-03-2019" tabindex="0">31</label>
                   </td>
                   <td class="calendar__date">
                     <input class="calendar__input visually-hidden" type="checkbox" name="01-04-2019" id="01-04-2019">
-                    <label class="calendar__label" for="01-04-2019">1
+                    <label class="calendar__label" for="01-04-2019" tabindex="0">1
                       <span class="calendar__month">апр</span>
                     </label>
                   </td>
                   <td class="calendar__date">
                     <input class="calendar__input visually-hidden" type="checkbox" name="02-04-2019" id="02-04-2019">
-                    <label class="calendar__label" for="02-04-2019">2</label>
+                    <label class="calendar__label" for="02-04-2019" tabindex="0">2</label>
                   </td>
                   <td class="calendar__date">
                     <input class="calendar__input visually-hidden" type="checkbox" name="03-04-2019" id="03-04-2019">
-                    <label class="calendar__label" for="03-04-2019">3</label>
+                    <label class="calendar__label" for="03-04-2019" tabindex="0">3</label>
                   </td>
                   <td class="calendar__date">
                     <input class="calendar__input visually-hidden" type="checkbox" name="04-04-2019" id="04-04-2019">
-                    <label class="calendar__label" for="04-04-2019">4</label>
+                    <label class="calendar__label" for="04-04-2019" tabindex="0">4</label>
                   </td>
                   <td class="calendar__date">
                     <input class="calendar__input visually-hidden" type="checkbox" name="05-04-2019" id="05-04-2019">
-                    <label class="calendar__label" for="05-04-2019">5</label>
+                    <label class="calendar__label" for="05-04-2019" tabindex="0">5</label>
                   </td>
                 </tr>
               </table>
