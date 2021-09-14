@@ -39,6 +39,10 @@
     &::after {
       display: block;
     }
+
+    &--collapsed .filter-form__wrapper {
+      display: none;
+    }
   }
 }
 
