@@ -1,6 +1,6 @@
 {
   "name": "pognali-23",
-  "private": true,
+  "private": false,
   "description": "Личный проект «Погнали» от HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
